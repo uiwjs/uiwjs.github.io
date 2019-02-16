@@ -63,9 +63,26 @@
 .w-datepicker-week > div:active > div {
   background-color: #d2d2d2;
 }
+.w-datepicker-week > div.disabled > div,
+.w-datepicker-week > div.disabled:hover > div,
+.w-datepicker-week > div.disabled:active > div {
+  color: #d3d3d3;
+  cursor: not-allowed;
+  background-color: #EAEAEA;
+}
+.w-datepicker-week > div.disabled.today > div,
+.w-datepicker-week > div.disabled:hover.today > div,
+.w-datepicker-week > div.disabled:active.today > div {
+  background-color: rgba(46, 163, 244, 0.47);
+  color: #fff;
+}
+.w-datepicker-body {
+  padding-top: 5px;
+}
 .w-datepicker-caption {
   text-align: center;
   padding: 3px 0;
+  border-bottom: 1px solid #ececec;
 }
 .w-datepicker-caption-year,
 .w-datepicker-caption-month {
@@ -92,7 +109,7 @@
 .w-datepicker-year {
   text-align: center;
   max-width: 100%;
-  padding: 3px 0 5px 0;
+  padding: 8px 0 10px 0;
 }
 .w-datepicker-month > div,
 .w-datepicker-year > div {
