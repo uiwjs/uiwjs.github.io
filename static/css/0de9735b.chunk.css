@@ -1,52 +1,9 @@
-.w-radio {
-  vertical-align: middle;
+.c6b2f6f3 h1 {
+  margin: 0;
+}
+.c6b2f6f3 a {
   display: inline-block;
-  font-size: 12px;
-}
-.w-radio input[type=radio] {
-  outline: none;
-  position: relative;
-  width: 16px;
-  height: 16px;
-  background-clip: border-box;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  margin: -0.15px 0.6px 0 0;
-  border-radius: 50%;
-  background-color: #fff;
-  border: 1px solid #d7d7d7;
-  transition: border 0.25s, box-shadow 0.25s;
-}
-.w-radio input[type=radio],
-.w-radio-text {
-  vertical-align: middle;
-}
-.w-radio input[type=radio]:checked {
-  border: 5px solid #008EF0;
-}
-.w-radio input[type=radio]:checked:focus {
-  box-shadow: 0 0 0 2px rgba(0, 142, 240, 0.25);
-}
-.w-radio.disabled {
-  color: #c7c7c7;
-  cursor: not-allowed;
-}
-.w-radio.disabled input[type=radio] {
-  cursor: not-allowed;
-}
-.w-radio.disabled:not(.checked) input[type=radio] {
-  background-color: #efefef;
-}
-.w-radio-text {
-  display: inline-block;
-  margin-left: 4px;
-  margin-right: 5px;
-  font-size: 14px;
-}
-
-.w-radio-group {
-  font-size: 0;
+  margin: 5px 5px;
 }
 
 .w-btn {
@@ -481,7 +438,8 @@
   font-size: 20px;
 }
 .w-btn-size-small {
-  padding: 0 7px;
+  padding: 0 3px;
+  min-width: 20px;
   font-size: 12px;
   line-height: 24px;
   min-height: 20px;

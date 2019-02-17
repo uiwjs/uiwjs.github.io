@@ -711,7 +711,8 @@
   font-size: 20px;
 }
 .w-btn-size-small {
-  padding: 0 7px;
+  padding: 0 3px;
+  min-width: 20px;
   font-size: 12px;
   line-height: 24px;
   min-height: 20px;

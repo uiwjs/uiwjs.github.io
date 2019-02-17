@@ -1,12 +1,22 @@
-.w-copy-to-clipboard {
+.w-back-top {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
   cursor: pointer;
+  z-index: 1006;
+  transition: all 1s;
 }
-.w-copy-to-clipboard-select {
-  -webkit-user-select: text;
-     -moz-user-select: text;
-      -ms-user-select: text;
-          user-select: text;
-  display: none;
+.w-back-top.no-fixed {
+  cursor: auto;
+  position: static;
+}
+.w-back-top-hide {
+  transition: all 1s;
+  opacity: 0;
+  height: 0px;
+}
+.w-back-top-show {
+  opacity: 1;
 }
 
 .w-btn {
@@ -441,7 +451,8 @@
   font-size: 20px;
 }
 .w-btn-size-small {
-  padding: 0 7px;
+  padding: 0 3px;
+  min-width: 20px;
   font-size: 12px;
   line-height: 24px;
   min-height: 20px;
@@ -489,101 +500,5 @@
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
-}
-
-.w-input {
-  position: relative;
-  font-size: 14px;
-}
-.w-input-inner {
-  outline: none;
-  border: none;
-  border-radius: 3px;
-  box-shadow: 0 0 0 0 rgba(19, 124, 189, 0), 0 0 0 0 rgba(19, 124, 189, 0), inset 0 0 0 1px rgba(16, 22, 26, 0.15), inset 0 1px 1px rgba(16, 22, 26, 0.2);
-  background: #fff;
-  height: 30px;
-  padding: 0 10px;
-  vertical-align: middle;
-  line-height: 30px;
-  color: #393E48;
-  font-weight: 400;
-  transition: box-shadow 0.1s cubic-bezier(0.4, 1, 0.75, 0.9);
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-.w-input-inner:not(:first-child) {
-  padding-left: 30px;
-}
-.w-input-inner:focus {
-  box-shadow: 0 0 0 1px #393E48, 0 0 0 3px rgba(57, 62, 72, 0.17), inset 0 1px 1px rgba(16, 22, 26, 0.2);
-}
-.w-input-inner:hover {
-  box-shadow: 0 0 0 1px #6E6E6E, 0 0 0 3px rgba(57, 62, 72, 0), inset 0 1px 1px rgba(16, 22, 26, 0.2);
-}
-.w-input-inner:focus.w-input-inner:hover {
-  box-shadow: 0 0 0 1px #6E6E6E, 0 0 0 3px rgba(57, 62, 72, 0.17), inset 0 1px 1px rgba(16, 22, 26, 0.2);
-}
-.w-input-inner:disabled {
-  box-shadow: none;
-  background: #DDDDDD;
-  opacity: 0.75;
-  color: #A5A5A5;
-  cursor: not-allowed;
-  resize: none;
-}
-.w-input .w-input-inner {
-  width: 100%;
-}
-.w-input > :last-child:not(input) {
-  right: 5px;
-}
-.w-input > .w-icon {
-  position: absolute;
-  margin: 0 7px 0 7px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  top: 50%;
-}
-.w-input-addon-after {
-  position: absolute;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  top: 50%;
-}
-.w-input-addon-after .w-tag,
-.w-input-addon-after .w-btn {
-  display: table;
-  height: 100%;
-  line-height: 14px;
-}
-.w-input-addon-after .w-tag > span,
-.w-input-addon-after .w-btn > span {
-  display: table-cell;
-  vertical-align: middle;
-}
-.w-input-addon-after .w-tag {
-  background: transparent;
-}
-.w-input-addon-after .w-btn:focus {
-  box-shadow: 0 0 0 0;
-}
-.w-input-large {
-  font-size: 16px;
-}
-.w-input-large .w-input-inner {
-  line-height: 36px;
-  height: 36px;
-}
-.w-input-small .w-input-inner {
-  line-height: 24px;
-  height: 24px;
-}
-.w-input-small .w-input-addon-after .w-tag,
-.w-input-small .w-input-addon-after .w-btn {
-  line-height: 14px;
-}
-.w-input-small > :last-child:not(input) {
-  right: 2px;
 }
 
