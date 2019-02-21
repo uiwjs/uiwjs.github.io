@@ -624,6 +624,7 @@
 }
 ._98b26b9b ._3dadf11c {
   overflow: auto;
+  min-width: 100px;
 }
 ._98b26b9b._6ed438c3 {
   position: fixed;

@@ -81,7 +81,7 @@
   text-align: center;
 }
 ._83616108 a:hover svg.gitee path {
-  fill: #C71D23;
+  fill: #C71D23 !important;
 }
 ._7a4a99ce svg path {
   fill: #fff;
@@ -109,6 +109,12 @@
 ._47ec87ba a.e3272b02 {
   padding: 4px 6px;
   margin: 0 0;
+}
+._47ec87ba a:hover:not(._7a4a99ce) {
+  color: #1890ff;
+}
+._47ec87ba a:hover:not(._7a4a99ce) svg path {
+  fill: #1890ff;
 }
 ._47ec87ba ._7a4a99ce {
   color: #fff;
