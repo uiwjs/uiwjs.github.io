@@ -85,8 +85,7 @@
   padding: 0 0 3px 0;
   border-bottom: 1px solid #ececec;
 }
-.w-datepicker-caption-year,
-.w-datepicker-caption-month {
+.w-datepicker-caption-pane {
   transition: background-color 0.3s;
   display: inline-block;
   border-radius: 3px;
@@ -94,23 +93,47 @@
   font-weight: bold;
   cursor: pointer;
 }
-.w-datepicker-caption-year:hover,
-.w-datepicker-caption-month:hover {
+.w-datepicker-caption-pane:hover {
   background-color: #EAEAEA;
 }
-.w-datepicker-caption-year:active,
-.w-datepicker-caption-month:active {
+.w-datepicker-caption-pane:active {
   background-color: #d2d2d2;
 }
-.w-datepicker-caption-year + .w-datepicker-caption-month {
+.w-datepicker-caption-pane.year + .w-datepicker-caption-pane.month {
   margin-left: 5px;
+}
+.w-datepicker-caption-today {
+  cursor: pointer;
+  background: #676767;
+  border-radius: 3px;
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  overflow: hidden;
+  margin: 0 0 0 2px;
+  transition: background-color 0.3s;
+}
+.w-datepicker-caption-today::before {
+  content: '';
+  display: block;
+  height: 4px;
+  width: 4px;
+  border-radius: 3px;
+  margin: 3px 0 0 3px;
+  background-color: #a0a0a0;
+}
+.w-datepicker-caption-today:hover {
+  background-color: #2EA3F4;
+}
+.w-datepicker-caption-today:hover::before {
+  background-color: #fff;
 }
 
 .w-datepicker-month,
 .w-datepicker-year {
   text-align: center;
   max-width: 100%;
-  padding: 8px 0 10px 0;
+  padding: 7px 0 5px 0;
 }
 .w-datepicker-month > div,
 .w-datepicker-year > div {
