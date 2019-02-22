@@ -1,80 +1,98 @@
-.w-checkbox {
-  vertical-align: middle;
-  font-size: 0;
-}
-.w-checkbox input[type=checkbox] {
-  outline: none;
-  width: 14px;
-  height: 14px;
-  font-size: 14px;
-  border-radius: 2px;
-  background-clip: border-box;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  background-color: #d7d7d7;
-  transition: background-color 0.3s;
-}
-.w-checkbox input[type=checkbox]:after {
-  content: "";
-}
-.w-checkbox.disabled,
-.w-checkbox.disabled input[type=checkbox] {
-  cursor: not-allowed;
-}
-.w-checkbox.disabled input[type=checkbox] {
-  opacity: 0.5;
-}
-.w-checkbox.disabled .w-checkbox-text {
-  color: #6E6E6E;
-}
-.w-checkbox.indeterminate input[type=checkbox],
-.w-checkbox.indeterminate input[type=checkbox]:checked {
-  background-color: transparent;
-  box-shadow: inset 0 0 0 1px #008ef0;
-}
-.w-checkbox.indeterminate input[type=checkbox]:after,
-.w-checkbox.indeterminate input[type=checkbox]:checked:after {
-  display: inline-block;
-  background-color: #008df8;
-  -webkit-transform: rotate(0);
-          transform: rotate(0);
+.w-message {
+  padding: 10px 15px;
   position: relative;
-  top: -5px;
-  right: -3px;
-  border-width: 0;
-  border-radius: 2px;
-  height: 8px;
-  width: 8px;
+  margin-bottom: 10px;
 }
-.w-checkbox input[type=checkbox],
-.w-checkbox-text {
-  vertical-align: middle;
+.w-message-title,
+.w-message-description {
+  display: block;
 }
-.w-checkbox input[type=checkbox]:checked {
-  background-color: #008EF0;
+.w-message-rounded {
+  border-radius: 5px;
 }
-.w-checkbox input[type=checkbox]:checked:after {
-  transition: background-color 0.2s ease-in;
-  display: inline-block;
-  border: solid #fff;
-  border-width: 0 2px 2px 0;
-  -webkit-transform: rotate(33deg);
-          transform: rotate(33deg);
-  position: relative;
-  top: -5px;
-  right: -4px;
-  height: 10px;
-  width: 6px;
+.w-message-description {
+  color: rgba(0, 0, 0, 0.65);
 }
-.w-checkbox-text {
-  display: inline-block;
-  margin-left: 4px;
-  margin-right: 5px;
-  font-size: 14px;
-  line-height: 14px;
+.w-message-title {
+  color: rgba(0, 0, 0, 0.85);
 }
-
+.w-message-title-description > .w-icon {
+  font-size: 24px;
+}
+.w-message-title-description .w-message-title {
+  font-size: 16px;
+}
+.w-message-title-description .w-message-title,
+.w-message-title-description .w-message-description {
+  padding-left: 16px;
+}
+.w-message-icon {
+  padding-left: 34px;
+}
+.w-message-success {
+  background: #afecbd;
+  color: #28a745;
+}
+.w-message > button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.w-message > button.w-btn {
+  padding: 2px;
+  min-width: 16px;
+  min-height: 16px;
+  color: rgba(0, 0, 0, 0.38);
+}
+.w-message > button.w-btn:hover {
+  background-color: rgba(255, 255, 255, 0.21) !important;
+}
+.w-message > button.w-btn:active {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+.w-message-warning {
+  background: #fff4d3;
+  color: #ffc107;
+}
+.w-message-info {
+  background: #bde4ff;
+  color: #008EF0;
+}
+.w-message-error {
+  background: #fae3e5;
+  color: #dc3545;
+}
+.w-message > .w-icon {
+  top: 14px;
+  left: 14px;
+  position: absolute;
+}
+.w-message-enter {
+  -webkit-transform: scaleY(0.5);
+          transform: scaleY(0.5);
+  opacity: 0;
+}
+.w-message-enter-active {
+  opacity: 1;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+  transition: opacity 300ms ease, -webkit-transform 300ms ease;
+  transition: transform 300ms ease, opacity 300ms ease;
+  transition: transform 300ms ease, opacity 300ms ease, -webkit-transform 300ms ease;
+}
+.w-message-exit {
+  opacity: 1;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+  transition: opacity 300ms ease, -webkit-transform 300ms ease;
+  transition: transform 300ms ease, opacity 300ms ease;
+  transition: transform 300ms ease, opacity 300ms ease, -webkit-transform 300ms ease;
+}
+.w-message-exit-active {
+  -webkit-transform: scaleY(0.5);
+          transform: scaleY(0.5);
+  opacity: 0;
+}
 
 .w-btn {
   -webkit-user-select: none;
@@ -96,6 +114,7 @@
   font-size: 14px;
   min-width: 30px;
   min-height: 30px;
+  text-align: center;
   color: #fff;
   transition: background-color 0.5s, opacity 1s;
 }

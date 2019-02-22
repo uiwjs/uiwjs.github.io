@@ -1,23 +1,80 @@
-.w-back-top {
-  position: fixed;
-  bottom: 50px;
-  right: 50px;
-  cursor: pointer;
-  z-index: 1006;
-  transition: all 1s;
+.w-checkbox {
+  vertical-align: middle;
+  font-size: 0;
 }
-.w-back-top.no-fixed {
-  cursor: auto;
-  position: static;
+.w-checkbox input[type=checkbox] {
+  outline: none;
+  width: 14px;
+  height: 14px;
+  font-size: 14px;
+  border-radius: 2px;
+  background-clip: border-box;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #d7d7d7;
+  transition: background-color 0.3s;
 }
-.w-back-top-hide {
-  transition: all 1s;
-  opacity: 0;
-  height: 0px;
+.w-checkbox input[type=checkbox]:after {
+  content: "";
 }
-.w-back-top-show {
-  opacity: 1;
+.w-checkbox.disabled,
+.w-checkbox.disabled input[type=checkbox] {
+  cursor: not-allowed;
 }
+.w-checkbox.disabled input[type=checkbox] {
+  opacity: 0.5;
+}
+.w-checkbox.disabled .w-checkbox-text {
+  color: #6E6E6E;
+}
+.w-checkbox.indeterminate input[type=checkbox],
+.w-checkbox.indeterminate input[type=checkbox]:checked {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 1px #008ef0;
+}
+.w-checkbox.indeterminate input[type=checkbox]:after,
+.w-checkbox.indeterminate input[type=checkbox]:checked:after {
+  display: inline-block;
+  background-color: #008df8;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  position: relative;
+  top: -5px;
+  right: -3px;
+  border-width: 0;
+  border-radius: 2px;
+  height: 8px;
+  width: 8px;
+}
+.w-checkbox input[type=checkbox],
+.w-checkbox-text {
+  vertical-align: middle;
+}
+.w-checkbox input[type=checkbox]:checked {
+  background-color: #008EF0;
+}
+.w-checkbox input[type=checkbox]:checked:after {
+  transition: background-color 0.2s ease-in;
+  display: inline-block;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(33deg);
+          transform: rotate(33deg);
+  position: relative;
+  top: -5px;
+  right: -4px;
+  height: 10px;
+  width: 6px;
+}
+.w-checkbox-text {
+  display: inline-block;
+  margin-left: 4px;
+  margin-right: 5px;
+  font-size: 14px;
+  line-height: 14px;
+}
+
 
 .w-btn {
   -webkit-user-select: none;
@@ -39,6 +96,7 @@
   font-size: 14px;
   min-width: 30px;
   min-height: 30px;
+  text-align: center;
   color: #fff;
   transition: background-color 0.5s, opacity 1s;
 }

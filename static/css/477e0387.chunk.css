@@ -137,6 +137,7 @@
   font-size: 14px;
   min-width: 30px;
   min-height: 30px;
+  text-align: center;
   color: #fff;
   transition: background-color 0.5s, opacity 1s;
 }
