@@ -2,6 +2,21 @@
   overflow: hidden;
   border-radius: 4px;
 }
+.w-timepicker-input.disabled .w-timepicker-close-btn {
+  display: none;
+}
+.w-timepicker-input .w-timepicker-close-btn {
+  display: none;
+  margin: 0 3px;
+  color: #A5A5A5;
+  cursor: pointer;
+}
+.w-timepicker-input .w-timepicker-close-btn:hover {
+  color: #393E48;
+}
+.w-timepicker-input:not(.disabled):hover .w-timepicker-close-btn {
+  display: flex;
+}
 
 .w-popover {
   position: relative;
