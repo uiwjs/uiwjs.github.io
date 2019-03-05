@@ -639,6 +639,18 @@
   right: 0;
   z-index: 99;
 }
+._6e50b31c {
+  display: none;
+}
+._96febcc3 {
+  z-index: 2;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0 !important;
+  color: #dc3545;
+  background-color: #fbeff0;
+}
 
 /* Based on Sublime Text's Monokai theme */
 .CodeMirror pre {
