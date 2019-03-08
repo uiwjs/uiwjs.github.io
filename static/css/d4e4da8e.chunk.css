@@ -1,13 +1,15 @@
 .w-tag {
+  border-radius: 3px;
+  display: inline-block;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   font-size: 12px;
-  padding: 4px 6px;
-  border-radius: 3px;
+  padding: 1px 5px;
   position: relative;
   white-space: nowrap;
+  vertical-align: middle;
 }
 .w-tag + .w-tag {
   margin-left: 5px;
@@ -15,6 +17,15 @@
 .w-tag.disabled {
   opacity: 0.75;
   cursor: not-allowed;
+}
+.w-tag-light .w-tag-close:hover {
+  background-color: currentcolor;
+}
+.w-tag-light .w-tag-close:hover path {
+  fill: #fff;
+}
+.w-tag-light .w-tag-close:active {
+  background-color: rgba(0, 0, 0, 0.15);
 }
 .w-tag-close {
   vertical-align: middle;
@@ -25,10 +36,10 @@
   cursor: pointer;
 }
 .w-tag-close:hover {
-  background-color: rgba(0, 0, 0, 0.12);
+  background-color: rgba(0, 0, 0, 0.22);
 }
 .w-tag-close:active {
-  background-color: rgba(0, 0, 0, 0.22);
+  background-color: rgba(0, 0, 0, 0.32);
 }
 
 .w-icon,
