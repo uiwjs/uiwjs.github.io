@@ -658,6 +658,9 @@
 ._98b26b9b {
   display: flex;
 }
+._98b26b9b ._04926f4e {
+  position: relative;
+}
 ._98b26b9b:not(._6ed438c3) {
   transition: all 0.3s;
 }
