@@ -12,6 +12,9 @@
 .w-tree li {
   list-style: none !important;
 }
+.w-tree li + li {
+  margin-top: 2px !important;
+}
 .w-tree li:first-child {
   padding-top: 3px;
 }
@@ -24,7 +27,7 @@
           transform: scale(0.79) rotate(0deg);
   margin-right: 2px;
 }
-.w-tree-label .w-icon.open:not(.custom-icon) {
+.w-tree-label .w-icon.open:not(.no-animation) {
   -webkit-transform: scale(0.79) rotate(90deg) !important;
           transform: scale(0.79) rotate(90deg) !important;
 }
