@@ -24,25 +24,54 @@
           transform: scale(0.79) rotate(0deg);
   margin-right: 2px;
 }
-.w-tree-label .w-icon.open {
+.w-tree-label .w-icon.open:not(.custom-icon) {
   -webkit-transform: scale(0.79) rotate(90deg) !important;
           transform: scale(0.79) rotate(90deg) !important;
 }
 .w-tree-label .w-icon:not(.no-child) {
   cursor: pointer;
 }
-.w-tree-label .no-child svg {
+.w-tree-label .no-child:not(.custom-icon) svg {
   display: none;
 }
 .w-tree-label > * {
   vertical-align: middle;
 }
 .w-tree-title {
-  padding: 3px 3px;
+  display: inline-block;
+  padding: 2px 5px;
   cursor: pointer;
 }
 .w-tree-title.selected {
   background-color: #d5e8fc;
+}
+.w-tree-line li {
+  position: relative;
+}
+.w-tree-line li li:before,
+.w-tree-line li li::after {
+  content: " ";
+  border-left: 1px solid #d9d9d9;
+  left: -12px;
+  position: absolute;
+}
+.w-tree-line li li::after {
+  height: 100%;
+  top: 5px;
+}
+.w-tree-line li li:last-child::after {
+  height: 16px;
+  top: -18px;
+}
+.w-tree-line li li:before {
+  content: " ";
+  width: 10px;
+  height: 16px;
+  border-bottom: 1px solid #d9d9d9;
+  top: -2px;
+}
+.w-tree-line li li:last-child::before {
+  border-radius: 0 0 0 3px;
 }
 
 .w-icon,
