@@ -31,6 +31,9 @@
   -webkit-transform: scale(0.79) rotate(90deg) !important;
           transform: scale(0.79) rotate(90deg) !important;
 }
+.w-tree-label .w-icon:hover {
+  color: #2EA3F4;
+}
 .w-tree-label .w-icon:not(.no-child) {
   cursor: pointer;
 }
