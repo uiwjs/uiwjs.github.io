@@ -782,7 +782,6 @@
   z-index: 1;
 }
 .w-split > .w-split-pane {
-  flex: 1 1;
   -webkit-transform: none;
           transform: none;
 }
