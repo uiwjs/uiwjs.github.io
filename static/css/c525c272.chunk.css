@@ -5,6 +5,7 @@
   padding: 0 !important;
   transition: 0.3s all;
   overflow: hidden;
+  margin: 0;
 }
 .w-tree ul ul {
   padding-left: 18px !important;
