@@ -770,6 +770,17 @@
   transition: background-color 0.3s;
   background: #ecf7ff;
 }
+.w-split.dragging .w-split-pane {
+  position: relative;
+}
+.w-split.dragging .w-split-pane::before {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
 .w-split > .w-split-pane {
   flex: 1 1;
   -webkit-transform: none;
