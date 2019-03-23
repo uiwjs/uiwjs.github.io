@@ -1,5 +1,4 @@
 .w-loader {
-  color: #2d8cf0;
   position: relative;
   display: inline-block;
 }
@@ -46,6 +45,7 @@
   display: inline-block;
 }
 .w-loader-tips {
+  color: #2d8cf0;
   text-align: center;
   position: relative;
   height: 100%;
@@ -65,6 +65,15 @@
 }
 .w-loader-tips:not(:last-child):before {
   display: inline-block;
+}
+.w-loader-text {
+  display: inline-block;
+  margin-left: 5px;
+}
+.w-loader-vertical {
+  display: block;
+  margin-left: 0;
+  margin-top: 5px;
 }
 @-webkit-keyframes loaderRotate {
   to {
@@ -109,21 +118,21 @@
 @-webkit-keyframes loaderColor {
   0%,
   to {
-    stroke: #5BB5F4;
+    stroke: currentColor;
   }
   80%,
   90% {
-    stroke: #008EF0;
+    stroke: currentColor;
   }
 }
 @keyframes loaderColor {
   0%,
   to {
-    stroke: #5BB5F4;
+    stroke: currentColor;
   }
   80%,
   90% {
-    stroke: #008EF0;
+    stroke: currentColor;
   }
 }
 
