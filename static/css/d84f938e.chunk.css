@@ -22,27 +22,33 @@
 .w-tree-close {
   height: 0;
 }
-.w-tree-label .w-icon {
-  transition: 0.3s all;
-  -webkit-transform: scale(0.79) rotate(0deg);
-          transform: scale(0.79) rotate(0deg);
-  margin-right: 2px;
-}
-.w-tree-label .w-icon.open:not(.no-animation) {
-  -webkit-transform: scale(0.79) rotate(90deg) !important;
-          transform: scale(0.79) rotate(90deg) !important;
-}
-.w-tree-label .w-icon:hover {
-  color: #2EA3F4;
-}
-.w-tree-label .w-icon:not(.no-child) {
-  cursor: pointer;
-}
-.w-tree-label .no-child:not(.custom-icon) svg {
+.w-tree-label .no-child:not(.w-tree-switcher-noop) svg {
   display: none;
 }
 .w-tree-label > * {
   vertical-align: middle;
+}
+.w-tree-switcher {
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  width: 14px;
+  height: 14px;
+  line-height: 14px;
+  display: inline-block;
+  text-align: center;
+}
+.w-tree-switcher:hover {
+  color: #2EA3F4;
+}
+.w-tree-switcher .w-icon {
+  transition: 0.3s all;
+  -webkit-transform: scale(0.79) rotate(0deg);
+          transform: scale(0.79) rotate(0deg);
+}
+.w-tree-switcher .w-icon.open:not(.no-animation) {
+  -webkit-transform: scale(0.79) rotate(90deg) !important;
+          transform: scale(0.79) rotate(90deg) !important;
 }
 .w-tree-title {
   display: inline-block;
