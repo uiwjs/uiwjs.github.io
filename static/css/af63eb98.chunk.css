@@ -521,7 +521,7 @@
 
 .w-menu {
   margin: 0 !important;
-  padding: 5px !important;
+  padding: 5px;
   box-sizing: border-box;
   border-radius: 3px;
   min-width: 100%;
@@ -653,7 +653,6 @@
 .w-menu-subitem-collapse ul {
   min-width: 100%;
   padding-right: 0px !important;
-  padding-left: 10px !important;
 }
 .w-menu-subitem-collapse-icon {
   -webkit-transform: scale(0.79);
