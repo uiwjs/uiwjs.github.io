@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://uiwjs.github.io">
-    <img width="150" src="https://raw.githubusercontent.com/uiwjs/uiw/master/src/assets/logo-README.svg?sanitize=true">
+    <img width="150" src="https://raw.githubusercontent.com/uiwjs/uiw/92f189f53312f1177466f48991736f95f86da0a6/src/assets/logo-README.svg?sanitize=true">
   </a>
 </p>
 <p align="center">
@@ -32,18 +32,18 @@
 </p>
 
 <p align="center">
-  <a href="https://uiwjs.github.io"><img src="https://raw.githubusercontent.com/uiwjs/uiw/master/src/assets/uiw-doc.png" /></a>
+  <a href="https://uiwjs.github.io"><img src="https://raw.githubusercontent.com/uiwjs/uiw/92f189f53312f1177466f48991736f95f86da0a6/src/assets/uiw-doc.png" /></a>
 </p>
 
 uiw
 ---
 
-A high quality UI Toolkit, A Component Library for React 16+. 💘
+The official documentation site for [`uiw`](https://github.com/uiwjs/uiw). A high quality UI Toolkit, A Component Library for React 16+. 💘
 
 ### Installation
 
 ```bash
-npm install uiw@2.0.1 --save
+npm install uiw --save
 ```
 
 You can use [`kkt`](https://github.com/jaywcjlove/kkt) to quickly create a react + uiw project.
@@ -115,9 +115,8 @@ Folders
 ├── LICENSE
 ├── README.md
 ├── package.json
-├── packages        # Component library source code
-│   ├── core
-│   |   └── src
+├── packages        
+│   ├── core        # Component library source code
 │   └── doc
 ├── public          # Document the static file.
 └── src             # Document website source code.
