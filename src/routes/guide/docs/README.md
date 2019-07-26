@@ -25,18 +25,18 @@ https://unpkg.com/uiw@1.16.14/dist/index.html
 
 ### 文档离线预览
 
-根据上述特点，可将文档网站资源下载到本地，通过类似 [ssr](https://www.npmjs.com/package/ssr) 的工具，启静态服务进行预览。
+根据上述特点，可将文档网站资源下载到本地，通过类似 [sgo](https://www.npmjs.com/package/sgo) 的工具，启静态服务进行预览。
 
 ```bash
 # 安装静态服务工具
-$ mpm install -g ssr
+$ mpm install -g sgo
 # 安装下载文档
 $ npm install --save-dev @uiw/doc
 $ npm install --save-dev @uiw/doc@2.0.0-beta.12
 
 # 进入目录
 cd node_modules/@uiw/doc/web
-ssr # 启动服务
+sgo # 启动服务
 ```
 
 ### 文档编写
