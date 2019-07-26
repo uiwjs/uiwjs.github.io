@@ -15,7 +15,7 @@
   "scripts": {
     "start": "kkt start",
     "build": "kkt build",
-    "deploy": "gh-pages -d dist -b master -r git@github.com:uiwjs/uiwjs.github.io.git",
+    "deploy": "gh-pages -d dist -b gh-pages -r git@github.com:uiwjs/uiwjs.github.io.git",
     "deploy:pages": "gh-pages -d dist -b gh-pages",
     "released": "node script/released.js"
   },
