@@ -7,6 +7,22 @@ Github [`更新日志`](https://github.com/uiwjs/uiw/releases)
 
 ## v3.0.1
 
+`2019-07-28`	
+
+- 🌟 feat(Table): Table supports row/column span. [e3c7f616](https://github.com/uiwjs/uiw/commit/e3c7f616) 
+- 🌟 feat(Table): onCell add keyName parameter. [4a3d1d40](https://github.com/uiwjs/uiw/commit/4a3d1d40) 
+- 🐞 fix(Drawer): Fix type errors. [3f7cea34](https://github.com/uiwjs/uiw/commit/3f7cea34) 
+- 🐞 fix(Overlay): Fix the maskCloseable parameter to invalidate. [e7b19ece](https://github.com/uiwjs/uiw/commit/e7b19ece) 
+- 💄 chore: Upgrade devDependencies. [a8a356ac](https://github.com/uiwjs/uiw/commit/a8a356ac) 
+- ⛑ test: Update .travis.yml [8673840b](https://github.com/uiwjs/uiw/commit/8673840b) 
+- ⛑ test: Add .travis.yml file. [cfcdb692](https://github.com/uiwjs/uiw/commit/cfcdb692) 
+- 📖 doc: Add README-zh.md [a7926dea](https://github.com/uiwjs/uiw/commit/a7926dea) 
+- 📖 doc(OverlayTrigger): Update example code. [83e69b98](https://github.com/uiwjs/uiw/commit/83e69b98) 
+- 📖 doc: Modify images URLs. [6f040c66](https://github.com/uiwjs/uiw/commit/6f040c66) 
+- 📖 doc: Split the document website code. [27939d51](https://github.com/uiwjs/uiw/commit/27939d51) 
+
+## v3.0.1
+
 `2019-07-16`	
 
 - 🐞fix(uiw-core): Add babel config. [7433bde](https://github.com/uiwjs/uiw/commit/7433bdece176705e175455192574117d4c8a7d33)
@@ -15,22 +31,22 @@ Github [`更新日志`](https://github.com/uiwjs/uiw/releases)
 
 `2019-07-08`	
 
-- 🌟基于 TypeScript 核心组件库代码重构
-- 🌟Form 表单组件新函数 afterSubmit 支持
-- 🌟DatePicker 日历组件 renderDay 增强
-- 🌟Slider 滑块组件 删除冗余属性 range，通过 value 值判断，展示双滑块
-- 🐞Calendar 日历组件 onSelectDay 方法变动
+- 🌟 基于 TypeScript 核心组件库代码重构
+- 🌟 Form 表单组件新函数 afterSubmit 支持
+- 🌟 DatePicker 日历组件 renderDay 增强
+- 🌟 Slider 滑块组件 删除冗余属性 range，通过 value 值判断，展示双滑块
+- 🐞 Calendar 日历组件 onSelectDay 方法变动
 
 ## v2.0.0	
 
 `2019-04-25`	
 
-- 🌟重构版本，API变化比较大。	
-- 🌟删除了冗余功能和组件。	
-- 🌟兼容服务端渲染 (server-side rendering)。	
-- 🌟重新设计了组件和样式。	
-- 🌟重构了官网和实例展示。	
-- 🌟增加官网实例实时编辑功能。
+- 🌟 重构版本，API变化比较大。	
+- 🌟 删除了冗余功能和组件。	
+- 🌟 兼容服务端渲染 (server-side rendering)。	
+- 🌟 重新设计了组件和样式。	
+- 🌟 重构了官网和实例展示。	
+- 🌟 增加官网实例实时编辑功能。
 
 ## v1.16.12
 
