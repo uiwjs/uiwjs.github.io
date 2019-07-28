@@ -1,19 +1,20 @@
 #!/usr/bin/env node
 
-// released `uiw`
-
-// 1. Copy `README.md` to the `/packages/core/` directory.
-// 2. Creacte document static resource.
-// 3. Entry the `/packages/core/` and run the `npm run build` command.
-// 4. Copy static resource to the `/packages/core/docs` directory.
+/**
+ * released `uiw`
+ * 1. ~~Copy `README.md` to the `/packages/core/` directory~~.
+ * 2. Creacte document static resource.
+ * 3. Entry the `/packages/core/` and run the `npm run build` command.
+ * 4. Copy static resource to the `/packages/core/docs` directory.
+ */
 
 const fs = require('fs-extra');
 const { join } = require('path');
 const { spawn } = require('child_process')
 
 const libPath = join(process.cwd(), 'packages', 'core');
-const libReadmePath = join(libPath, 'README.md');
-const readmePath = join(process.cwd(), 'README.md');
+// const libReadmePath = join(libPath, 'README.md');
+// const readmePath = join(process.cwd(), 'README.md');
 
 const docsPath = join(process.cwd(), 'dist');
 const docRepoPath = join(process.cwd(), 'packages', 'doc');
@@ -23,8 +24,8 @@ const docVersion = join(process.cwd(), 'src', 'version.json');
 
 (async () => {
   try {
-    const readmeContent = await fs.readFile(readmePath);
-    await fs.outputFile(libReadmePath, readmeContent);
+    // const readmeContent = await fs.readFile(readmePath);
+    // await fs.outputFile(libReadmePath, readmeContent);
 
     // Modify document version data.
     const uiwPkgContent = await fs.readJson(uiwPkg);
@@ -74,15 +75,17 @@ const docVersion = join(process.cwd(), 'src', 'version.json');
     await execute(`cd ${docRepoPath} && npm publish`);
     /**
      * Publish the documentation website.
-     * Repo => `git@github.com:uiwjs/uiwjs.github.io.git`
+     * Repo => Push `git@github.com:uiwjs/uiw.git` to `gh-pages`.
      */
-    await execute(`cd ${process.cwd()} && ./node_modules/.bin/gh-pages -d dist -b master -r git@github.com:uiwjs/uiw.git -m 'released v${uiwPkgContent.version} ${new Date()}'`);
+    await execute(`cd ${process.cwd()} && ./node_modules/.bin/gh-pages -d dist -b gh-pages -r git@github.com:uiwjs/uiw.git -m 'released uiw@${uiwPkgContent.version} ${new Date()}'`);
     /**
      * Used for publishing documents on other platforms.
+     * Repo => Push `git@github.com:uiwjs/uiwjs.github.io.git` to `master`.
      */
-    await execute(`cd ${process.cwd()} && ./node_modules/.bin/gh-pages -d dist -b gh-pages -m 'released v${uiwPkgContent.version} ${new Date()}'`);
+    await execute(`cd ${process.cwd()} && ./node_modules/.bin/gh-pages -d dist -b master -m 'released uiw@${uiwPkgContent.version} ${new Date()}'`);
     await execute(`git tag -a v${uiwPkgContent.version} -m "released v${uiwPkgContent.version}"`);
     await execute('git push --tags');
+    await execute(`cd ${libPath} && git commit -m "released v${uiwPkgContent.version}"`);
     await execute(`cd ${libPath} && npm publish`);
   } catch (error) {
     console.log('error:', error);
