@@ -31,6 +31,9 @@ export const getRouterData = () => {
     '/guide/docs': {
       component: dynamicWrapper([], () => import('../routes/guide/docs')),
     },
+    '/guide/vscode': {
+      component: dynamicWrapper([], () => import('../routes/guide/vscode')),
+    },
     '/guide/changelog': {
       component: dynamicWrapper([], () => import('../routes/guide/changelog')),
     },
