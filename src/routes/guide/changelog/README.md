@@ -5,9 +5,21 @@
 
 Github [`更新日志`](https://github.com/uiwjs/uiw/releases)
 
+## v3.1.0
+
+`2019-08-04`
+
+- 🌟 feat: Inherit more propertiers. [2ff7977a](https://github.com/uiwjs/uiw/commit/2ff7977a) 
+- 🐞 fix(Drawer|Overlay): Modify props transitionDuration => timeout name. [1b7cc4ed](https://github.com/uiwjs/uiw/commit/1b7cc4ed) 
+- 🐞 fix(Radio|Checkbox): Fix size prop type issue. [07f1ec9d](https://github.com/uiwjs/uiw/commit/07f1ec9d) 
+- 🐞 fix(Split): Fix props visiable&disable type errors. [a9f8bf4a](https://github.com/uiwjs/uiw/commit/a9f8bf4a) 
+- 🐞 fix(Drawer): Fix type errors. [3f7cea3](https://github.com/uiwjs/uiw/commit/3f7cea3) 
+- 💄 style(Split): Modify bar style. [c4b64518](https://github.com/uiwjs/uiw/commit/c4b64518) 
+- 📖 doc(Form): Fix example issue. [f795b287](https://github.com/uiwjs/uiw/commit/f795b287) 
+
 ## v3.0.1
 
-`2019-07-28`	
+`2019-07-28`
 
 - 🌟 feat(Table): Table supports row/column span. [e3c7f616](https://github.com/uiwjs/uiw/commit/e3c7f616) 
 - 🌟 feat(Table): onCell add keyName parameter. [4a3d1d40](https://github.com/uiwjs/uiw/commit/4a3d1d40) 
@@ -23,13 +35,13 @@ Github [`更新日志`](https://github.com/uiwjs/uiw/releases)
 
 ## v3.0.1
 
-`2019-07-16`	
+`2019-07-16`
 
 - 🐞fix(uiw-core): Add babel config. [7433bde](https://github.com/uiwjs/uiw/commit/7433bdece176705e175455192574117d4c8a7d33)
 
 ## v3.0.0	
 
-`2019-07-08`	
+`2019-07-08`
 
 - 🌟 基于 TypeScript 核心组件库代码重构
 - 🌟 Form 表单组件新函数 afterSubmit 支持
@@ -39,7 +51,7 @@ Github [`更新日志`](https://github.com/uiwjs/uiw/releases)
 
 ## v2.0.0	
 
-`2019-04-25`	
+`2019-04-25`
 
 - 🌟 重构版本，API变化比较大。	
 - 🌟 删除了冗余功能和组件。	
