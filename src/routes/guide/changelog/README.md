@@ -1,13 +1,36 @@
 更新日志
 ===
+[![](https://img.shields.io/github/release/uiwjs/uiw.svg)](https://github.com/uiwjs/uiw/releases)
 
 严格遵循 [`Semantic Versioning 2.0.0`](http://semver.org/lang/zh-CN/) 语义化版本规范。
 
 Github [`更新日志`](https://github.com/uiwjs/uiw/releases)
 
-## v3.1.0
+## v3.2.1 ~ v3.2.4
+
+`2019-08-06`
+
+- 🐞fix(Split): Fix visiable props type issue. [cf07fd5c](https://github.com/uiwjs/uiw/commit/cf07fd5c) 
+- 🐞fix(TypeScript): Fix component default props issue. [9257c13b](https://github.com/uiwjs/uiw/commit/9257c13b) 
+- 🐞fix(type): Fix import type issue. [42532102](https://github.com/uiwjs/uiw/commit/42532102) 
+- 💄chore: Remove the typing of package.json files. [3c305fb8](https://github.com/uiwjs/uiw/commit/3c305fb8) 
+- 📖doc(CopyToClipboard): Update document. [150c1a0a](https://github.com/uiwjs/uiw/commit/150c1a0a) 
+
+## v3.2.0
 
 `2019-08-04`
+
+- 🌟feat: Inherit more propertiers. [2ff7977a](https://github.com/uiwjs/uiw/commit/2ff7977a) 
+- 🐞fix(Drawer|Overlay): Modify props `transitionDuration` =>` timeout` name. [1b7cc4ed](https://github.com/uiwjs/uiw/commit/1b7cc4ed) 
+- 🐞fix(Radio|Checkbox): Fix size prop type issue. [07f1ec9d](https://github.com/uiwjs/uiw/commit/07f1ec9d) 
+- 🐞fix(Split): Fix props visiable&disable type errors. [a9f8bf4a](https://github.com/uiwjs/uiw/commit/a9f8bf4a) 
+- 🐞fix(Drawer): Fix type errors. [3f7cea34](https://github.com/uiwjs/uiw/commit/3f7cea34) 
+- 💄style(Split): Modify bar style. [c4b64518](https://github.com/uiwjs/uiw/commit/c4b64518) 
+- 📖doc(Form): Fix example issue. [f795b287](https://github.com/uiwjs/uiw/commit/f795b287) 
+
+## v3.1.0
+
+`2019-07-31`
 
 - 🌟 feat: Inherit more propertiers. [2ff7977a](https://github.com/uiwjs/uiw/commit/2ff7977a) 
 - 🐞 fix(Drawer|Overlay): Modify props transitionDuration => timeout name. [1b7cc4ed](https://github.com/uiwjs/uiw/commit/1b7cc4ed) 
