@@ -83,9 +83,18 @@ const docVersion = join(process.cwd(), 'src', 'version.json');
      * Repo => Push `git@github.com:uiwjs/uiwjs.github.io.git` to `master`.
      */
     await execute(`cd ${process.cwd()} && ./node_modules/.bin/gh-pages -d dist -b master -m 'released uiw@${uiwPkgContent.version} ${new Date()}'`);
+    
+    await execute(`cd ${libPath} && git add .`);
+    await execute(`cd ${libPath} && git commit -m "released v${uiwPkgContent.version}"`);
+    await execute(`cd ${libPath} && git push origin master`);
+    /**
+     * Push Tag to Github.com
+     */
     await execute(`git tag -a v${uiwPkgContent.version} -m "released v${uiwPkgContent.version}"`);
     await execute('git push --tags');
-    await execute(`cd ${libPath} && git commit -m "released v${uiwPkgContent.version}"`);
+    /**
+     * Push lib to npmjs.org
+     */
     await execute(`cd ${libPath} && npm publish`);
   } catch (error) {
     console.log('error:', error);
