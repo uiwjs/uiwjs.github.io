@@ -90,8 +90,8 @@ const docVersion = join(process.cwd(), 'src', 'version.json');
     /**
      * Push Tag to Github.com
      */
-    await execute(`git tag -a v${uiwPkgContent.version} -m "released v${uiwPkgContent.version}"`);
-    await execute('git push --tags');
+    await execute(`cd ${libPath} && git tag -a v${uiwPkgContent.version} -m "released v${uiwPkgContent.version}"`);
+    await execute(`cd ${libPath} && git push --tags`);
     /**
      * Push lib to npmjs.org
      */
