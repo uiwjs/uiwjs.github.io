@@ -6,6 +6,18 @@
 
 Github [`更新日志`](https://github.com/uiwjs/uiw/releases)
 
+## v3.2.5
+
+`2019-08-10`
+
+- 🐞 fix(FormItem): Fix invalid value for props 'initialValue' & 'validator' [f02c73dc](https://github.com/uiwjs/uiw/commit/f02c73dc) 
+- 🐞 fix(Checkbox): Fix value dulicates for issue. [751030c2](https://github.com/uiwjs/uiw/commit/751030c2) 
+- 🎨 style(Checkbox): Modify focus & hover style. [260a965e](https://github.com/uiwjs/uiw/commit/260a965e) 
+- 🎨 style(Radio): Modify hover/focus styles. [1e767ab6](https://github.com/uiwjs/uiw/commit/1e767ab6) 
+- 🎨 style(Checkbox): Modify focus/hover styles. [b3aa3f0b](https://github.com/uiwjs/uiw/commit/b3aa3f0b) 
+- 🎨 style(Checkbox): Modify focus style. [7346d047](https://github.com/uiwjs/uiw/commit/7346d047) 
+- 💄 chore: Modify babel config. [bbe5cced](https://github.com/uiwjs/uiw/commit/bbe5cced) 
+
 ## v3.2.1 ~ v3.2.4
 
 `2019-08-06`
