@@ -6,6 +6,17 @@
 
 Github [`更新日志`](https://github.com/uiwjs/uiw/releases)
 
+## v3.2.6
+
+`2019-08-11`
+
+- 🐞 fix(Switch): Remove redundant code. [4a2ae1d1](https://github.com/uiwjs/uiw/commit/4a2ae1d1) 
+- 🐞 fix(Radio): Fix controlled component issue. [897189c0](https://github.com/uiwjs/uiw/commit/897189c0) 
+- 🎨 style(Switch): Modify disabled style. [57fc5e75](https://github.com/uiwjs/uiw/commit/57fc5e75) 
+- 🎨 style(Radio): Modify disabled style. [dce91c4f](https://github.com/uiwjs/uiw/commit/dce91c4f) 
+- 🎨 style(Checkbox): Modify focus box-shadow style. [134cc907](https://github.com/uiwjs/uiw/commit/134cc907) 
+- 🎨 style(Checkbox): Modify margin left style. [32fdf8ba](https://github.com/uiwjs/uiw/commit/32fdf8ba) 
+
 ## v3.2.5
 
 `2019-08-10`
