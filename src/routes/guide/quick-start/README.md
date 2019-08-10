@@ -88,14 +88,12 @@ import { Button as ButtonView } from 'uiw';
 
 使用 [`Gitpod`](https://gitpod.io)，`GitHub` 的免费在线开发环境，点击打开下面链接，自动初始化项目，将开发环境跑起来。
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/uiwjs/uiw)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/uiwjs/uiwjs.github.io)
 
 要开发，运行自重新构建，获取代码：
 
 ```bash
-$ git clone https://github.com/uiwjs/uiw.git
-$ cd uiw
-$ npm install # or  yarn install
+$ git clone https://github.com/uiwjs/uiwjs.github.io.git --recurse-submodules
 ```
 
 要开发，运行自重新构建，这里将要跑两个任务：
@@ -103,6 +101,7 @@ $ npm install # or  yarn install
 ```bash
 # Listening compiled component code.
 $ cd ./packages/core
+$ npm install # Install `core` dependencies
 $ npm run watch
 ```
 
@@ -111,6 +110,7 @@ $ npm run watch
 # Restart the app automatically every time code changes. 
 # Useful during development.
 $ cd ./
+$ npm install # Install `website` dependencies
 $ npm start
 ```
 

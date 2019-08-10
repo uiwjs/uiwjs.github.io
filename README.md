@@ -79,25 +79,31 @@ Or Open in VSCode Preview :
 
 Use Gitpod, a free online dev environment for GitHub.
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/uiwjs/uiw)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/uiwjs/uiwjs.github.io)
 
 Or clone locally:
 
 ```bash
-$ git clone https://github.com/uiwjs/uiw.git
-$ cd uiw
-$ npm install # or  yarn install
-$ cd uiw/packages/core && npm install
+$ git clone https://github.com/uiwjs/uiwjs.github.io.git --recurse-submodules
+```
+
+Listening compiled component code.
+
+```bash
+# Listening compiled component code.
+$ cd ./packages/core
+$ npm install # Install `core` dependencies
+$ npm run watch
 ```
 
 To develop, run the self-reloading build:
 
 ```bash
-$ cd ./packages/core
-npm run watch
 # Run the app
 # Restart the app automatically every time code changes. 
 # Useful during development.
+$ cd ./
+$ npm install # Install `website` dependencies
 $ npm start
 ```
 
