@@ -7,7 +7,7 @@
 - 通过 GitHack 预览文档网站：https://raw.githack.com/uiwjs/uiw/gh-pages/index.html
 - 官网地址预览：https://uiwjs.github.io/  
 
-这是 [`v2.0.0+`](https://unpkg.com/@uiw/doc@2.0.0-beta.12/web/index.html) 版本预览方法
+这是 [`v2.0.0+`](https://unpkg.com/@uiw/doc@2.0.1/web/index.html) 版本预览方法
 
 ```bash
 https://unpkg.com/@uiw/doc@<包版本>/web/index.html
