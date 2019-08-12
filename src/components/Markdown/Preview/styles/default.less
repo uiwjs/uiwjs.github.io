@@ -1,8 +1,4 @@
 :global(.markdown-body) {
-  * {
-    box-sizing: border-box;
-  }
-
   & > *:first-child {
       margin-top: 0 !important;
   }
@@ -161,7 +157,7 @@
     font-size: 12px;
   }
 
-  p, blockquote, ul, ol, dl, table, pre {
+  p, blockquote, ul, ol, dl, table, pre:not(:global(.CodeMirror-line)) {
     margin-top: 0;
     margin-bottom: 16px;
   }

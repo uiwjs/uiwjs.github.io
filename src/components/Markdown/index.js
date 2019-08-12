@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Divider } from 'uiw';
+import CodePreview from '@uiw/react-code-preview';
 import Preview from './Preview';
-import Canvas from './Canvas';
 import styles from './index.module.less';
 
 export default class CreatePage extends React.Component {
@@ -44,10 +44,25 @@ export default class CreatePage extends React.Component {
 
         const id = offset.toString(36);
         const codeStr = code.match(/```(.*)\n([^]+)```/);
-        this.components.set(id, React.createElement(Canvas, Object.assign({
+
+        // eslint-disable-next-line
+        const version = VERSION || '2.0.0';
+        const codePenOption = !codePen ? undefined : {
+          title: `uiw${version} - demo`,
+          js: codeStr[2].replace('_mount_', 'document.getElementById("container")') || '',
+          html: '<div id="container" style="padding: 24px"></div>',
+          css_external: `https://unpkg.com/uiw@${version}/dist/uiw.min.css`,
+          js_external: `https://unpkg.com/react@16.x/umd/react.development.js;https://unpkg.com/react-dom@16.x/umd/react-dom.development.js;https://unpkg.com/classnames@2.2.6/index.js;https://unpkg.com/uiw@${version}/dist/uiw.min.js;https://unpkg.com/@uiw/codepen-require-polyfill@1.0.0/index.js`,
+        };
+        this.components.set(id, React.createElement(CodePreview, Object.assign({
+          code: codeStr[2],
           dependencies: this.dependencies || {},
-          parame: { bgWhite, noCode, noPreview, noScroll, codePen },
-        }, this.props), codeStr[2]));
+          noPreview,
+          bgWhite,
+          noCode,
+          noScroll,
+          codePenOption,
+        }), codeStr[2]));
         return `<div id=${id}></div>`;
       });
     }
