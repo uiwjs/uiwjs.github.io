@@ -11,7 +11,8 @@ export default class CreatePage extends React.Component {
     this.state = { markdown: '' };
     this.components = new Map();
   }
-  async componentWillMount() {
+  // eslint-disable-next-line camelcase
+  async UNSAFE_componentWillMount() {
     const md = await this.renderPage();
     this.setState({ markdown: md });
   }
