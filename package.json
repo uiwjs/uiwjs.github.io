@@ -15,8 +15,9 @@
   "scripts": {
     "start": "kkt start",
     "build": "kkt build",
+    "deploy:tee": "gh-pages -d dist -b gh-pages -r git@gitee.com:uiw/uiw.git",
     "deploy:uiw": "gh-pages -d dist -b gh-pages -r git@github.com:uiwjs/uiw.git",
-    "deploy": "gh-pages -d dist -b master && npm run deploy:uiw",
+    "deploy": "gh-pages -d dist -b master && gh-pages-clean && npm run deploy:uiw && gh-pages-clean && npm run deploy:tee",
     "released": "node script/released.js"
   },
   "keywords": [
