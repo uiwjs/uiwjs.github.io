@@ -6,6 +6,20 @@
 
 Github [`更新日志`](https://github.com/uiwjs/uiw/releases)
 
+
+## v3.4.1
+
+`2019-09-13`
+
+- 🌟 feat(List): Add child nodes does note have filter. [079801fb](https://github.com/uiwjs/uiw/commit/079801fb)
+
+## v3.4.0
+
+`2019-09-07`
+
+- 🌟 feat(Tree): Suport checkbox. [c1bece4](https://github.com/uiwjs/uiw/commit/c1bece4)
+- 📖 doc(Popover): Modify typo. ([#70](https://github.com/uiwjs/uiw/pull/70)) [19b90ba](https://github.com/uiwjs/uiw/commit/19b90ba) [@huyi0916](https://github.com/huyi0916)
+
 ## v3.3.0
 
 `2019-08-14`
