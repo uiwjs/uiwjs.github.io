@@ -6,6 +6,14 @@
 
 Github [`更新日志`](https://github.com/uiwjs/uiw/releases)
 
+## v3.4.5
+
+`2019-09-15`
+
+- 🌟 feat(Descriptions): Add new component. [38542da4](https://github.com/uiwjs/uiw/commit/38542da4) 
+- 🐞 fix(Form): Fix controlled component issue. [b69008c9](https://github.com/uiwjs/uiw/commit/b69008c9) 
+- 🐞 fix(Form): Fix receive props issue. [f22b8110](https://github.com/uiwjs/uiw/commit/f22b8110) 
+- 💄 chore(OverlayTrigger): Modify typing isue. [5fb01b64](https://github.com/uiwjs/uiw/commit/5fb01b64) 
 
 ## v3.4.1
 
