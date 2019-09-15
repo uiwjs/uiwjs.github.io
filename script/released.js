@@ -50,16 +50,23 @@ const docVersion = join(process.cwd(), 'src', 'version.json');
       "author": uiwPkgContent.author,
       "license": uiwPkgContent.license
     });
+    await fs.emptyDir(join(libPath, 'lib'));
+    await fs.emptyDir(join(libPath, 'dist'));
     /**
      * Run babel over the `./packages/core/src` directory and output
      * compiled common js files to `./packages/core/lib/cjs`.
      */
     await execute(`cd ${libPath} && npm run build:ts`);
+    await execute(`cd ${libPath} && npm run build:css`);
     /**
      * Run babel over the `./packages/core/src directory` and output
      * compiled `Type` Files
      */
     await execute(`cd ${libPath} && npm run build:types`);
+    /**
+     * Empty the `./dist` directory.
+     */
+    await fs.emptyDir(docsPath);
     /**
      * Bundles a minified and unminified version of [uiw] including
      * all it's immediate dependencies (excluding React, ReactDOM, etc)
