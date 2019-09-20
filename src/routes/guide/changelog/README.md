@@ -6,6 +6,17 @@
 
 Github [`更新日志`](https://github.com/uiwjs/uiw/releases)
 
+## v3.5.0
+
+`2019-09-20`
+
+- 🌟 feat(Icon): Modify the package [`uiw-iconfont`](https://www.npmjs.com/package/uiw-iconfont) to [`@uiw/icons`](https://www.npmjs.com/package/@uiw/icons). [43f15e64](https://github.com/uiwjs/uiw/commit/43f15e64) 
+- 🌟 Modify the package uiw-iconfont to @uiw/icons
+- 🌟 Add down/left/right/up svg. 
+- 🌟 Modify arrow-down/arrow-up svg icons
+- 💄 chore(Menu): Modify type issue. [e5648ebc](https://github.com/uiwjs/uiw/commit/e5648ebc) 
+- 💄 chore(Descriptions): Remove console log debugging. [e9c0740a](https://github.com/uiwjs/uiw/commit/e9c0740a) 
+
 ## v3.4.5
 
 `2019-09-15`
