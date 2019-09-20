@@ -6,6 +6,12 @@
 
 Github [`更新日志`](https://github.com/uiwjs/uiw/releases)
 
+## v3.5.1
+
+`2019-09-20`
+
+- 💄 chore: Replace componentWillReceiveProps with UNSAFE_componentWillReceiveProps. [8c1c11cc](https://github.com/uiwjs/uiw/commit/8c1c11cc)
+
 ## v3.5.0
 
 `2019-09-20`
