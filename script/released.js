@@ -63,6 +63,7 @@ const docVersion = join(process.cwd(), 'src', 'version.json');
      * compiled `Type` Files
      */
     await execute(`cd ${libPath} && npm run build:types`);
+    await execute(`cd ${libPath} && npm run build:types -- --outDir lib/cjs`);
     /**
      * Empty the `./dist` directory.
      */
