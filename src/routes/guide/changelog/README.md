@@ -6,6 +6,12 @@
 
 Github [`更新日志`](https://github.com/uiwjs/uiw/releases)
 
+## v3.5.3
+
+- 💄 chore: Upgrade [`react-transition-group`](https://github.com/reactjs/react-transition-group/releases) v4.0.1 to v4.3.0 [2713e94b](https://github.com/uiwjs/uiw/commit/2713e94b) 
+- 🎨 style(Split): Modify split bar styles. [4285f76a](https://github.com/uiwjs/uiw/commit/4285f76a) 
+- 📖 doc(Form): Update document. [0faa64fc](https://github.com/uiwjs/uiw/commit/) 
+
 ## v3.5.1
 
 `2019-09-20`
