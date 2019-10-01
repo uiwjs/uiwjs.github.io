@@ -6,11 +6,21 @@
 
 Github [`更新日志`](https://github.com/uiwjs/uiw/releases)
 
+## v3.5.4
+
+`2019-10-01`
+
+- feat(Avatar): Add onError props. ([#73](https://github.com/uiwjs/uiw/pull/73)) [c7f162a3](https://github.com/uiwjs/uiw/commit/c7f162a3) [@xyf](https://github.com/xingyuefeng)
+- style(Icon): Modify box sizing style. [e18d0390](https://github.com/uiwjs/uiw/commit/e18d0390) 
+- doc: Update tag example. [3e542e95](https://github.com/uiwjs/uiw/commit/3e542e95)
+
 ## v3.5.3
+
+`2019-09-25`
 
 - 💄 chore: Upgrade [`react-transition-group`](https://github.com/reactjs/react-transition-group/releases) v4.0.1 to v4.3.0 [2713e94b](https://github.com/uiwjs/uiw/commit/2713e94b) 
 - 🎨 style(Split): Modify split bar styles. [4285f76a](https://github.com/uiwjs/uiw/commit/4285f76a) 
-- 📖 doc(Form): Update document. [0faa64fc](https://github.com/uiwjs/uiw/commit/) 
+- 📖 doc(Form): Update document. [0faa64fc](https://github.com/uiwjs/uiw/commit/0faa64fc) 
 
 ## v3.5.1
 
