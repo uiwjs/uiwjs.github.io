@@ -6,6 +6,18 @@
 
 Github [`更新日志`](https://github.com/uiwjs/uiw/releases)
 
+
+## v3.5.8
+
+`2019-10-03`
+
+- 🐞 fix: Upgrade @uiw/icons v2.0.0 to [`v2.1.0`](https://github.com/uiwjs/icons/releases/tag/v2.1.0) [8dbd2cf7](https://github.com/uiwjs/uiw/commit/8dbd2cf7) 
+- 🐞 fix(List): Fix dataSource props issue. [3c6b127b](https://github.com/uiwjs/uiw/commit/3c6b127b) 
+- 🎨 style(Input): Modify size style. [7d3ac840](https://github.com/uiwjs/uiw/commit/7d3ac840) 
+- 🎨 style(List): Modify disabled style. [e8cf7d52](https://github.com/uiwjs/uiw/commit/e8cf7d52) 
+- 🎨 style(List): Modify href styles. [8ab89cd9](https://github.com/uiwjs/uiw/commit/8ab89cd9) 
+- 💄 chore(List): Modify type issue. [387708ff](https://github.com/uiwjs/uiw/commit/387708ff) 
+
 ## v3.5.4
 
 `2019-10-01`
