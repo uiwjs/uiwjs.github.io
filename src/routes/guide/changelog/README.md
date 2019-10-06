@@ -6,6 +6,17 @@
 
 Github [`更新日志`](https://github.com/uiwjs/uiw/releases)
 
+## v3.6.3
+
+`2019-10-06`
+
+- 🌟 feat(Icon): Upgrade @uiw/icons v2.1.0 to [`v2.2.1`](https://github.com/uiwjs/icons/releases/tag/v2.2.1) [4fb686da](https://github.com/uiwjs/uiw/commit/4fb686da) 
+- 🌟 feat(List): Add active props. [bb5e1926](https://github.com/uiwjs/uiw/commit/bb5e1926) 
+- 🌟 feat(List): Add noHover props. [afc8fbe9](https://github.com/uiwjs/uiw/commit/afc8fbe9) 
+- 🌟 feat(List.Item): Add extra props. [623b5970](https://github.com/uiwjs/uiw/commit/623b5970) 
+- 🐞 fix(Notify): Modify type issue. [87e3ffd1](https://github.com/uiwjs/uiw/commit/87e3ffd1) 
+- 🎨 style(Tag): Modify close button style. [4784cd5c](https://github.com/uiwjs/uiw/commit/4784cd5c) 
+- 💄 chore(Notify): Fix type issue. [63fd4cd3](https://github.com/uiwjs/uiw/commit/63fd4cd3) 
 
 ## v3.5.8
 
