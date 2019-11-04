@@ -115,6 +115,9 @@ export const getRouterData = () => {
     '/components/select': {
       component: dynamicWrapper([], () => import('../routes/components/select')),
     },
+    '/components/search-select': {
+      component: dynamicWrapper([], () => import('../routes/components/search-select')),
+    },
     '/components/split': {
       component: dynamicWrapper([], () => import('../routes/components/split')),
     },

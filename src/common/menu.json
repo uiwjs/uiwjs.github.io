@@ -35,6 +35,7 @@
       { "name": "Checkbox 多选框", "path": "checkbox" },
       { "name": "Switch 开关", "path": "switch" },
       { "name": "Select 选择器", "path": "select" },
+      { "name": "SearchSelect 选择器", "path": "search-select" },
       { "name": "Input 输入框", "path": "input" },
       { "name": "Slider 滑块输入条", "path": "slider" },
       { "name": "FileInput 上传输入框", "path": "file-input" },
