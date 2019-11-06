@@ -148,6 +148,9 @@ export const getRouterData = () => {
     '/components/tree': {
       component: dynamicWrapper([], () => import('../routes/components/tree')),
     },
+    '/components/tree-checked': {
+      component: dynamicWrapper([], () => import('../routes/components/tree-checked')),
+    },
     '/components/tag': {
       component: dynamicWrapper([], () => import('../routes/components/tag')),
     },
