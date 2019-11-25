@@ -1,62 +1,36 @@
-const pkg = require('./packages/core/package.json');
+import path from 'path';
 
-module.exports = {
-  plugins: [
-    require.resolve('@kkt/plugin-less'),
-  ],
-  // Modify the webpack config
-  config: (conf, { dev, env, appSrc }, webpack) => {
-    conf.resolve.alias = { '@': appSrc };
-    if (dev) {
-      conf = {
-        ...conf,
-        devServer: {
-          ...conf.devServer,
-          // fix 'Invalid Host header'
-          disableHostCheck: true,
-        }
-      }
+export const loaderOneOf = [
+  [require.resolve('@kkt/loader-less'), {}],
+];
+
+export default (conf, { paths }, webpack) => {
+  conf.resolve.alias = { '@': paths.appSrc };
+  const pkg = require(path.resolve(process.cwd(), 'package.json'));
+
+  const regexp = /^(ModuleScopePlugin)/;
+  conf.resolve.plugins = conf.resolve.plugins.map((item) => {
+    if (item.constructor && item.constructor.name && regexp.test(item.constructor.name)) {
+      return null;
     }
-    if (env === 'prod') {
-      conf.output.publicPath = './';
-      conf = {
-        ...conf,
-        optimization: {
-          ...conf.optimization,
-          // https://webpack.js.org/plugins/split-chunks-plugin/
-          splitChunks: {
-            chunks: 'async',
-            minSize: 30000,
-            minChunks: 2,
-            maxAsyncRequests: 5,
-            maxInitialRequests: 3,
-            automaticNameDelimiter: '~',
-            name: true,
-            cacheGroups: {
-              vendors: {
-                test: /[\\/]node_modules[\\/]/,
-                priority: -10
-              },
-              default: {
-                minChunks: 2,
-                priority: -20,
-                reuseExistingChunk: true
-              }
-            }
-          }
-        }
-      };
-    }
-    conf.module.rules = [
-      {
+    return item;
+  }).filter(Boolean);
+
+  conf.module.rules.map((item) => {
+    if (item.oneOf) {
+      item.oneOf.unshift({
         test: /\.md$/,
-        loader: require.resolve('raw-loader')
-      },
-      ...conf.module.rules,
-    ];
-    conf.plugins.push(new webpack.DefinePlugin({
+        use: require.resolve('raw-loader'),
+      });
+    }
+    return item;
+  });
+  // 获取版本
+  conf.plugins.push(
+    new webpack.DefinePlugin({
       VERSION: JSON.stringify(pkg.version),
-    }));
-    return conf;
-  },
-};
+    })
+  );
+  return conf;
+}
+
