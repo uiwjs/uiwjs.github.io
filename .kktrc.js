@@ -6,7 +6,7 @@ export const loaderOneOf = [
 
 export default (conf, { paths }, webpack) => {
   conf.resolve.alias = { '@': paths.appSrc };
-  const pkg = require(path.resolve(process.cwd(), 'package.json'));
+  const pkg = require(path.resolve(process.cwd(), 'packages/core/package.json'));
 
   const regexp = /^(ModuleScopePlugin)/;
   conf.resolve.plugins = conf.resolve.plugins.map((item) => {
