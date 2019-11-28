@@ -85,12 +85,12 @@ const docVersion = join(process.cwd(), 'src', 'version.json');
      * Publish the documentation website.
      * Repo => Push `git@github.com:uiwjs/uiw.git` to `gh-pages`.
      */
-    await execute(`cd ${process.cwd()} && ./node_modules/.bin/gh-pages -d dist -b gh-pages -r git@github.com:uiwjs/uiw.git -m 'released uiw@${uiwPkgContent.version} ${new Date()}'`);
+    await execute(`cd ${process.cwd()} && ./node_modules/.bin/gh-pages -d build -b gh-pages -r git@github.com:uiwjs/uiw.git -m 'released uiw@${uiwPkgContent.version} ${new Date()}'`);
     /**
      * Used for publishing documents on other platforms.
      * Repo => Push `git@github.com:uiwjs/uiwjs.github.io.git` to `master`.
      */
-    await execute(`cd ${process.cwd()} && ./node_modules/.bin/gh-pages -d dist -b master -m 'released uiw@${uiwPkgContent.version} ${new Date()}'`);
+    await execute(`cd ${process.cwd()} && ./node_modules/.bin/gh-pages -d build -b master -m 'released uiw@${uiwPkgContent.version} ${new Date()}'`);
     
     await execute(`cd ${libPath} && git add .`);
     await execute(`cd ${libPath} && git commit -m "released v${uiwPkgContent.version}"`);
