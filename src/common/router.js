@@ -19,6 +19,9 @@ export const getRouterData = () => {
     '/components': {
       component: dynamicWrapper([], () => import('../routes/overview')),
     },
+    '/extensions': {
+      component: dynamicWrapper([], () => import('../routes/extensions')),
+    },
     '/guide/quick-start': {
       component: dynamicWrapper([], () => import('../routes/guide/quick-start')),
     },

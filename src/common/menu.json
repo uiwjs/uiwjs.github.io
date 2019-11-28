@@ -86,6 +86,11 @@
     ]
   },
   {
+    "name": "扩展",
+    "path": "extensions",
+    "icon": "plugin"
+  },
+  {
     "name": "提交问题",
     "icon": "issue",
     "path": "https://github.com/uiwjs/uiw/issues/new"

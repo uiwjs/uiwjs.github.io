@@ -34,7 +34,7 @@ export default class UserLayout extends PureComponent {
     const menuData = getMenuData();
     const RouteComponents = [];
     Object.keys(routerData).forEach((path, idx) => {
-      if (/^(\/components|\/guide)/.test(path)) {
+      if (/^(\/extensions)/.test(path)) {
         RouteComponents.push(
           <Route
             exact
@@ -69,13 +69,10 @@ export default class UserLayout extends PureComponent {
             </div>
           </div>
         </div>
-        <div className={styles.sidebar} style={{ top: topmenu ? 57 : 0, left: topmenu ? 0 : 64 }}>
-          <SiderMenu topmenu={topmenu} menuData={menuData} {...this.props} />
-        </div>
         <div
           className={styles.content}
           style={{
-            marginLeft: topmenu ? 250 : 314,
+            marginLeft: topmenu ? 0 : 64,
             paddingTop: topmenu ? 90 : 20,
           }}
         >

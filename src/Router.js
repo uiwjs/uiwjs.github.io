@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 import { connect } from 'react-redux';
 import Home from './routes/home';
 import Components from './layouts/Components';
+import Extensions from './layouts/Extensions';
 
 class RoutersController extends React.PureComponent {
   render() {
@@ -10,6 +11,7 @@ class RoutersController extends React.PureComponent {
     return (
       <Switch>
         <Route path="/components" render={props => <Components {...props} {...resetProps} />} />
+        <Route path="/extensions" render={props => <Extensions {...props} {...resetProps} />} />
         <Route path="/guide" render={props => <Components {...props} {...resetProps} />} />
         <Route path="/" render={props => <Home {...props} {...resetProps} />} />
       </Switch>
