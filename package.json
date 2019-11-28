@@ -1,6 +1,6 @@
 {
   "name": "uiw",
-  "version": "3.0.0",
+  "version": "3.10.4",
   "description": "A high quality UI Toolkit, A Component Library for React 16+.",
   "private": true,
   "sideEffects": true,
@@ -14,7 +14,7 @@
   },
   "scripts": {
     "start": "kkt start",
-    "build": "kkt build",
+    "build": "GENERATE_SOURCEMAP=false kkt build",
     "deploy:tee": "gh-pages -d build -b gh-pages -r git@gitee.com:uiw/uiw.git",
     "deploy:uiw": "gh-pages -d build -b gh-pages -r git@github.com:uiwjs/uiw.git",
     "deploy:github": "gh-pages -d build -b master",

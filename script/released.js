@@ -16,11 +16,12 @@ const libPath = join(process.cwd(), 'packages', 'core');
 // const libReadmePath = join(libPath, 'README.md');
 // const readmePath = join(process.cwd(), 'README.md');
 
-const docsPath = join(process.cwd(), 'dist');
+const docsPath = join(process.cwd(), 'build');
 const docRepoPath = join(process.cwd(), 'packages', 'doc');
 
 const uiwPkg = join(libPath, 'package.json');
 const docVersion = join(process.cwd(), 'src', 'version.json');
+const docPkg = join(process.cwd(), 'package.json');
 
 (async () => {
   try {
@@ -33,7 +34,10 @@ const docVersion = join(process.cwd(), 'src', 'version.json');
     const versionList = await fs.readJson(docVersion);
     if (!versionList.includes(uiwPkgContent.version)) {
       versionList.unshift(uiwPkgContent.version);
-      await fs.outputJson(docVersion, versionList);
+      await fs.outputFile(docVersion, JSON.stringify(versionList, null, 2));
+      const docPkgContent = await fs.readJson(docPkg);
+      docPkgContent.version = uiwPkgContent.version;
+      await fs.outputFile(docPkg, JSON.stringify(docPkgContent, null, 2));
     }
     /**
      * Create a document website for `package.json`
@@ -45,6 +49,7 @@ const docVersion = join(process.cwd(), 'src', 'version.json');
       "description": "Uiw documentation website.",
       "homepage": uiwPkgContent.homepage,
       "authors": uiwPkgContent.authors,
+      "files": [ "web" ],
       "repository": uiwPkgContent.repository,
       "keywords": uiwPkgContent.keywords,
       "author": uiwPkgContent.author,
@@ -63,11 +68,6 @@ const docVersion = join(process.cwd(), 'src', 'version.json');
      * compiled `Type` Files
      */
     await execute(`cd ${libPath} && npm run build:types`);
-    await execute(`cd ${libPath} && npm run build:types -- --outDir lib/cjs`);
-    /**
-     * Empty the `./dist` directory.
-     */
-    await fs.emptyDir(docsPath);
     /**
      * Bundles a minified and unminified version of [uiw] including
      * all it's immediate dependencies (excluding React, ReactDOM, etc)
@@ -75,7 +75,11 @@ const docVersion = join(process.cwd(), 'src', 'version.json');
     await execute(`cd ${libPath} && npm run bundle`);
     await execute(`cd ${libPath} && npm run bundle:min`);
     /**
-     * Run KKT over the ./src directory and output compiled documents files to ./dist
+     * Empty the `./build` directory.
+     */
+    await fs.emptyDir(docsPath);
+    /**
+     * Run KKT over the ./src directory and output compiled documents files to ./build
      */
     await execute('npm run build');
     await fs.emptyDir(join(docRepoPath, 'web'))
