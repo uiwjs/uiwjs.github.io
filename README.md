@@ -46,7 +46,7 @@ The official documentation site for [`uiw`](https://github.com/uiwjs/uiw). A hig
 npm install uiw --save
 ```
 
-You can use [`kkt`](https://github.com/jaywcjlove/kkt) to quickly create a react + uiw project.
+You can use [`kkt`](https://github.com/kktjs/kkt-next) to quickly create a react + uiw project.
 
 ```bash
 npx kkt create my-app -e uiw

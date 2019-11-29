@@ -80,9 +80,9 @@ export default class CreatePage extends React.Component {
           <Divider type="vertical" />
           <a target="_blank" rel="noopener noreferrer" href="https://github.com/uiwjs/uiw">Github</a>
           <Divider type="vertical" />
-          <a target="_blank" rel="noopener noreferrer" href="https://github.com/jaywcjlove/kkt">kkt</a>
+          <a target="_blank" rel="noopener noreferrer" href="https://github.com/kktjs/kkt-next">kkt</a>
           <Divider type="vertical" />
-          <a target="_blank" rel="noopener noreferrer" href="https://github.com/jaywcjlove/kkt-ssr">@kkt/ssr</a>
+          <a target="_blank" rel="noopener noreferrer" href="https://github.com/kktjs/kkt-next-ssr">@kkt/ssr</a>
           <Divider type="vertical" />
           <a target="_blank" rel="noopener noreferrer" href="http://uiw.gitee.io">国内镜像</a>
         </div>
