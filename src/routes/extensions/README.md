@@ -6,7 +6,7 @@
 名称 | 版本 | 依赖 uiw | 预览 | 描述
 ---- | ---- | ---- | ---- | ----
 [@uiw/react-native](https://github.com/uiwjs/react-native-uiw) | [![](https://img.shields.io/npm/v/@uiw/react-native.svg)](https://www.npmjs.com/package/@uiw/react-native) | - | - | React Native 组件库。
-[@uiw/formatter](https://github.com/uiwjs/date-formatter) | [![](https://img.shields.io/npm/v/@uiw/formatter.svg)](https://www.npmjs.com/package/@uiw/formatter) | - | - | 获取格式化的日期。
+[@uiw/formatter](https://github.com/uiwjs/date-formatter) | [![](https://img.shields.io/npm/v/@uiw/formatter.svg)](https://www.npmjs.com/package/@uiw/formatter) | - | [demo](https://codesandbox.io/s/date-formatter-demo-jib1u) | 获取格式化的日期。
 [@uiw/reset.css](https://github.com/uiwjs/reset-css) | [![](https://img.shields.io/npm/v/@uiw/reset.css.svg)](https://www.npmjs.com/package/@uiw/reset.css) | - | - | 一个微小的现代 CSS 重置。
 [@uiw/copy-to-clipboard](https://github.com/uiwjs/copy-to-clipboard) | [![](https://img.shields.io/npm/v/@uiw/copy-to-clipboard.svg)](https://www.npmjs.com/package/@uiw/copy-to-clipboard) | - | - | 在现代浏览器中将文本复制到剪贴板。
 [@uiw/react-md-editor](https://github.com/uiwjs/react-md-editor) | [![](https://img.shields.io/npm/v/@uiw/react-md-editor.svg)](https://www.npmjs.com/package/@uiw/react-md-editor) | - | [demo](https://uiwjs.github.io/react-md-editor/) | 一个简单的带有预览的 Markdown 编辑器，使用 React 和 TypeScript 实现。

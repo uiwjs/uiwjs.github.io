@@ -1,6 +1,6 @@
 {
   "name": "uiw",
-  "version": "3.10.4",
+  "version": "3.10.5",
   "description": "A high quality UI Toolkit, A Component Library for React 16+.",
   "private": true,
   "sideEffects": true,

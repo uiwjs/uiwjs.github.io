@@ -75,6 +75,10 @@ const docPkg = join(process.cwd(), 'package.json');
     await execute(`cd ${libPath} && npm run bundle`);
     await execute(`cd ${libPath} && npm run bundle:min`);
     /**
+     * Push lib to npmjs.org
+     */
+    await execute(`cd ${libPath} && npm publish`);
+    /**
      * Empty the `./build` directory.
      */
     await fs.emptyDir(docsPath);
@@ -104,10 +108,6 @@ const docPkg = join(process.cwd(), 'package.json');
      */
     await execute(`cd ${libPath} && git tag -a v${uiwPkgContent.version} -m "released v${uiwPkgContent.version}"`);
     await execute(`cd ${libPath} && git push --tags`);
-    /**
-     * Push lib to npmjs.org
-     */
-    await execute(`cd ${libPath} && npm publish`);
   } catch (error) {
     console.log('error:', error);
   }

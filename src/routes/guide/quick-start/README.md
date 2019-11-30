@@ -8,11 +8,15 @@
 ### 使用 npm 或 yarn 安装#
 
 ```bash
-$ npm i uiw # 安装 v2.x.x 最新版本
+$ npm i uiw
+# or Use yarn
+$ yarn add uiw
 ```
 
+您可以使用 [`kkt`](https://github.com/kktjs/kkt-next) 快速创建一个 react + uiw 项目。
+
 ```bash
-$ yarn add uiw
+$ npx create-kkt my-app -e uiw
 ```
 
 ### 浏览器引入
@@ -24,7 +28,7 @@ $ yarn add uiw
 > ⚠️ 强烈不推荐使用已构建文件，这样无法按需加载。  
 > ⚠️ 浏览器引入只在 uiw v2.x 以上的版本支持。
 
-### 安装 [**v1.x**](https://unpkg.com/uiw/dist/index.html#/cn/quick-start) 旧版本
+### 安装 [**v1.x**](https://unpkg.com/uiw@1.16.19/dist/index.html#/cn/quick-start) 旧版本
 
 > ⚠️ `v1.x` 不可以升级到 `v2.x`，`v2`是对 v1 的重构和简化  
 
@@ -36,14 +40,20 @@ npm install uiw --save
 ## 通过 GitHub 仓库安装
 npm i -S uiwjs/uiw
 # 指定版本
-npm i -S uiwjs/uiw#v1.16.14
+npm i -S uiwjs/uiw#v1.16.19
 # 或者
 yarn add uiwjs/uiw
 ```
 
 >  **通过 GitHub 仓库安装**的 `win` 用户请在 `Git Bash` 下执行，因为需要用到 `git`。
 
-## 对新版本 v2.x 的更新内容
+## 升级 v3
+
+1. 基于 TypeScript 重构。
+2. v2 基本无压力升级到 v3。
+3. 一些组件优化。
+
+## 升级 v2.x
 
 1. 优化大部分组件，让组件变得更小更简单。
 2. 删除大部分组件冗余功能，直接使用样式就可以展现组件效果。

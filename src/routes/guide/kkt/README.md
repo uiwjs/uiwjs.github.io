@@ -9,7 +9,11 @@
 你可以直接通过下面命令初始化一个工程，直接开始开发
 
 ```bash
-npx kkt create my-app -e uiw
+npx create-kkt my-app -e uiw
+# or npm
+npm create kkt my-app -e uiw
+# or yarn
+yarn create kkt my-app -e uiw
 ```
 
 注意 [**npx**](https://github.com/npm/npm/releases/tag/v5.2.0) 命令只在 npm 5.2+ 或更高版本中支持。
@@ -17,7 +21,7 @@ npx kkt create my-app -e uiw
 你也可以使用 [kkt](https://github.com/kktjs/kkt-next) 工具通过下面步骤，一步一步的创建一个 [kkt](https://github.com/kktjs/kkt-next) 工程
 
 ```bash
-npx kkt create my-app
+npx create-kkt my-app
 ```
 
 此时，您将能够在本地启动默认 `kkt` 应用程序：
