@@ -24,6 +24,7 @@ export default class Home extends PureComponent {
           <div>
             <Link className={styles.AppLink} to="/guide/quick-start"> Getting Started </Link>
             <Link className={styles.AppLink} to="/components"> Components </Link>
+            <Link className={styles.AppLink} to="/extensions"> Extensions </Link>
             <a
               className={styles.AppLink}
               href="https://github.com/uiwjs/uiw"

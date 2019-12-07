@@ -25,6 +25,9 @@ export const getRouterData = () => {
     '/guide/quick-start': {
       component: dynamicWrapper([], () => import('../routes/guide/quick-start')),
     },
+    '/guide/import': {
+      component: dynamicWrapper([], () => import('../routes/guide/import')),
+    },
     '/guide/create-react-app': {
       component: dynamicWrapper([], () => import('../routes/guide/create-react-app')),
     },
