@@ -20,6 +20,9 @@ export default class SiderMenu extends Component {
             if (item.divider) {
               return <div key={idx} className={styles.divider}>{item.name}</div>;
             }
+            if (/^http(?:|s)\:\/\//.test(item.path)) {
+              return <a href={item.path} target="__blank">{item.name}</a>
+            }
             return <NavLink activeClassName={styles.selected} key={idx} to={item.path} replace>{item.name}</NavLink>;
           })}
         </div>

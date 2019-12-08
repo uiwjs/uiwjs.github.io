@@ -12,7 +12,7 @@
       { "name": "VSCode 插件", "path": "vscode" },
       { "divider": true, "name": "其它" },
       { "name": "文档编辑预览", "path": "docs" },
-      { "name": "更新日志", "path": "changelog" },
+      { "name": "更新日志", "path": "https://github.com/uiwjs/uiw/releases" },
       { "name": "社区精选组件", "path": "recommendation" }
     ]
   },
