@@ -54,13 +54,16 @@
     "uiw": "file:./packages/core"
   },
   "devDependencies": {
-    "@kkt/loader-less": "^1.0.3",
-    "kkt": "^5.0.0-alpha.12",
+    "@kkt/loader-less": "^1.0.6",
+    "kkt": "^5.1.0",
     "raw-loader": "^3.1.0",
     "react-test-renderer": "^16.12.0"
   },
   "author": "kenny wang <wowohoo@qq.com>",
   "license": "MIT",
+  "eslintConfig": {
+    "extends": "react-app"
+  },
   "browserslist": {
     "production": [
       ">0.2%",

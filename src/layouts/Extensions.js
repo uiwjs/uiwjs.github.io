@@ -3,7 +3,6 @@ import { Switch, Route, Link } from 'react-router-dom';
 import { Tooltip } from 'uiw';
 import classnames from 'classnames';
 import Nav from '@/components/Nav';
-import SiderMenu from '@/components/SiderMenu';
 import VersionSelect from '@/components/VersionSelect';
 import logo from '@/components/icons/logo';
 import menu from '@/components/icons/menu';
