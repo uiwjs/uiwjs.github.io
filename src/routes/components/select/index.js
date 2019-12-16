@@ -3,7 +3,7 @@ import Markdown from '@/components/Markdown';
 
 
 export default class Page extends Markdown {
-  path = 'packages/core/src/select/README.md';
+  path = 'src/select/README.md';
   dependencies = { Select, Form, Notify, Row, Col, Button, SearchSelect };
   async renderPage() {
     const md = await import('../../../../packages/core/src/select/README.md');

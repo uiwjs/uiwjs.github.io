@@ -3,7 +3,7 @@ import Markdown from '@/components/Markdown';
 
 
 export default class Page extends Markdown {
-  path = 'packages/core/src/slider/README.md';
+  path = 'src/slider/README.md';
   dependencies = { Slider, Divider, Button, Notify, Form, Row, Col };
   async renderPage() {
     const md = await import('../../../../packages/core/src/slider/README.md');

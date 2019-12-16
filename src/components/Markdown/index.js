@@ -67,12 +67,13 @@ export default class CreatePage extends React.Component {
         return `<div id=${id}></div>`;
       });
     }
+    const url = /^http/.test(this.path) ? this.path : `https://github.com/uiwjs/uiw/blob/master/${this.path}`;
     return (
       <div>
         <Preview source={markdown} />
         <div className={styles.docinfo}>
           犯了错误还是想对文件做出贡献？
-          <a href={`https://github.com/uiwjs/uiw/blob/master/${this.path}`} target="_blank" rel="noopener noreferrer">在Github上编辑本页！</a>
+          <a href={url} target="_blank" rel="noopener noreferrer">在Github上编辑本页！</a>
           <br />
           <a href="https://github.com/uiwjs/uiw/issues" target="_blank" rel="noopener noreferrer">反馈建议</a>
           <Divider type="vertical" />

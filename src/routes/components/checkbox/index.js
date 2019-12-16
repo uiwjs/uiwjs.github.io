@@ -3,7 +3,7 @@ import Markdown from '@/components/Markdown';
 
 
 export default class Page extends Markdown {
-  path = 'packages/core/src/checkbox/README.md';
+  path = 'src/checkbox/README.md';
   dependencies = { Checkbox, Button, Form, Row, Col, Divider };
   async renderPage() {
     const md = await import('../../../../packages/core/src/checkbox/README.md');
