@@ -6,6 +6,7 @@
 名称 | 版本 | 依赖 | 预览 | 描述
 ---- | ---- | ---- | ---- | ----
 [@uiw/react-native](https://github.com/uiwjs/react-native-uiw) | [![](https://img.shields.io/npm/v/@uiw/react-native.svg)](https://www.npmjs.com/package/@uiw/react-native) | - | - | React Native 组件库。
+[@uiw/react-native-template](https://github.com/uiwjs/react-native-template) | [![](https://img.shields.io/npm/v/@uiw/react-split.svg)](https://www.npmjs.com/package/@uiw/react-native-template) | - | - | React Native 模板生成器，集成路由、Redux、Mock API等工具。
 [@uiw/formatter](https://github.com/uiwjs/date-formatter) | [![](https://img.shields.io/npm/v/@uiw/formatter.svg)](https://www.npmjs.com/package/@uiw/formatter) | - | [demo](https://codesandbox.io/s/date-formatter-demo-jib1u) | 获取格式化的日期。
 [@uiw/reset.css](https://github.com/uiwjs/reset-css) | [![](https://img.shields.io/npm/v/@uiw/reset.css.svg)](https://www.npmjs.com/package/@uiw/reset.css) | - | - | 一个微小的现代 CSS 重置。
 [@uiw/react-split](https://github.com/uiwjs/react-split) | [![](https://img.shields.io/npm/v/@uiw/react-split.svg)](https://www.npmjs.com/package/@uiw/react-split) | - | - | 可将一块内容，分割为可以拖拽调整宽度或高度的区域。
