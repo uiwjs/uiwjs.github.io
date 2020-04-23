@@ -1,16 +1,17 @@
 扩展
 ===
 
-在开发产品过程中我们积累了一些工具和扩展，部分基于 uiw 组件库扩展，还有一些完全不依赖组件库，这些组件库并**不包含在** uiw 组件库中，你可以根据需求选择安装使用。
+在开发产品过程中我们积累了一些工具和扩展，部分基于 uiw 组件库扩展，还有一些完全不依赖组件库，这些组件库并**不包含在** [@uiw](https://github.com/uiwjs/uiw) 组件库中，你可以根据需求选择安装使用。
 
-名称 | 版本 | 依赖 uiw | 预览 | 描述
+名称 | 版本 | 依赖 | 预览 | 描述
 ---- | ---- | ---- | ---- | ----
 [@uiw/react-native](https://github.com/uiwjs/react-native-uiw) | [![](https://img.shields.io/npm/v/@uiw/react-native.svg)](https://www.npmjs.com/package/@uiw/react-native) | - | - | React Native 组件库。
 [@uiw/formatter](https://github.com/uiwjs/date-formatter) | [![](https://img.shields.io/npm/v/@uiw/formatter.svg)](https://www.npmjs.com/package/@uiw/formatter) | - | [demo](https://codesandbox.io/s/date-formatter-demo-jib1u) | 获取格式化的日期。
 [@uiw/reset.css](https://github.com/uiwjs/reset-css) | [![](https://img.shields.io/npm/v/@uiw/reset.css.svg)](https://www.npmjs.com/package/@uiw/reset.css) | - | - | 一个微小的现代 CSS 重置。
 [@uiw/copy-to-clipboard](https://github.com/uiwjs/copy-to-clipboard) | [![](https://img.shields.io/npm/v/@uiw/copy-to-clipboard.svg)](https://www.npmjs.com/package/@uiw/copy-to-clipboard) | - | - | 在现代浏览器中将文本复制到剪贴板。
 [@uiw/react-md-editor](https://github.com/uiwjs/react-md-editor) | [![](https://img.shields.io/npm/v/@uiw/react-md-editor.svg)](https://www.npmjs.com/package/@uiw/react-md-editor) | - | [demo](https://uiwjs.github.io/react-md-editor/) | 一个简单的带有预览的 Markdown 编辑器，使用 React 和 TypeScript 实现。
-[@uiw/react-code-preview](https://github.com/uiwjs/react-code-preview) | [![](https://img.shields.io/npm/v/@uiw/react-code-preview.svg)](https://www.npmjs.com/package/@uiw/react-code-preview) | [**@uiw**](https://uiwjs.github.io/#/) | [demo](https://uiwjs.github.io/react-code-preview/) | React 的代码编辑实时预览。
+[@uiw/react-code-preview](https://github.com/uiwjs/react-code-preview) | [![](https://img.shields.io/npm/v/@uiw/react-code-preview.svg)](https://www.npmjs.com/package/@uiw/react-code-preview) | [**@uiw/react-split**](https://github.com/uiwjs/react-split) | [demo](https://uiwjs.github.io/react-code-preview/) | React 的 Markdown 预览，集成代码高亮。
+[@uiw/react-markdown-preview](https://github.com/uiwjs/react-markdown-preview) | [![](https://img.shields.io/npm/v/@uiw/react-markdown-preview.svg)](https://www.npmjs.com/package/@uiw/react-code-preview) | - | [demo](https://uiwjs.github.io/react-markdown-preview/) | React 的代码编辑实时预览。
 [@uiw/react-codemirror](https://github.com/uiwjs/react-codemirror) | [![](https://img.shields.io/npm/v/@uiw/react-codemirror.svg)](https://www.npmjs.com/package/@uiw/react-codemirror) | - | [demo](https://uiwjs.github.io/react-codemirror/) | 基于 React 的 [**@CodeMirror**](https://github.com/codemirror) 组件。
 [@uiw/react-monacoeditor](https://github.com/jaywcjlove/react-monacoeditor) | [![](https://img.shields.io/npm/v/@uiw/react-monacoeditor.svg)](https://www.npmjs.com/package/@uiw/react-monacoeditor) | - | [demo](https://jaywcjlove.github.io/react-monacoeditor/) | 基于 React [**@monaco-editor**](https://github.com/Microsoft/monaco-editor) 代码编辑器组件。
 [@uiw/react-baidu-map](https://github.com/uiwjs/react-baidu-map) | [![](https://img.shields.io/npm/v/@uiw/react-baidu-map.svg)](https://www.npmjs.com/package/@uiw/react-baidu-map) | - | [demo](https://uiwjs.github.io/react-baidu-map/) | 一个基于 React 封装的百度地图组件，帮助你轻松的接入地图到 React 项目中。
@@ -20,6 +21,14 @@
 [@uiw/react-markdown-editor](https://github.com/uiwjs/react-markdown-editor) | [![](https://img.shields.io/npm/v/@uiw/react-markdown-editor.svg)](https://www.npmjs.com/package/@uiw/react-markdown-editor) | - | [demo](https://uiwjs.github.io/react-markdown-editor/) | 一个带有预览的 Markdown 编辑器，由 React.js 和 TypeScript 基于 [**@CodeMirror**](https://github.com/codemirror) 实现。
 [react-hotkeys](https://github.com/jaywcjlove/react-hotkeys) | [![](https://img.shields.io/npm/v/react-hot-keys.svg)](https://www.npmjs.com/package/react-hot-keys) | - | [demo](https://jaywcjlove.github.io/react-hotkeys/) | 基于 [hotkeys](https://github.com/jaywcjlove/hotkeys) 封装的 React 组件，侦听 keydown 和 keyup 键盘事件，定义和调度键盘快捷键。
 [province-city-china](https://github.com/uiwjs/province-city-china) | [![](https://img.shields.io/npm/v/province-city-china.svg)](https://www.npmjs.com/package/province-city-china) | - | - | 最全最新🇨🇳中国【省、市、区县、乡镇街道】json,csv,sql数据。
+
+## 依赖包
+
+包含在 uiw 组件库的依赖包，可以单独拎出来使用，下面属于 [@uiw](https://github.com/uiwjs/uiw) 组织维护。
+
+名称 | 版本 | 预览 | 描述
+---- | ---- | ---- | ---- | ----
+[@uiw/react-split](https://github.com/uiwjs/react-split) | [![](https://img.shields.io/npm/v/@uiw/react-split.svg)](https://www.npmjs.com/package/@uiw/react-split) | [demo](https://uiwjs.github.io/react-split/) | 面板分割。
 
 ## 工具
 

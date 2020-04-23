@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Divider } from 'uiw';
 import CodePreview from '@uiw/react-code-preview';
-import Preview from './Preview';
+import MarkdownPreview from '@uiw/react-markdown-preview';
+import Heading from './Heading';
 import styles from './index.module.less';
 
 export default class CreatePage extends React.Component {
@@ -70,7 +71,7 @@ export default class CreatePage extends React.Component {
     const url = /^http/.test(this.path) ? this.path : `https://github.com/uiwjs/uiw/blob/master/${this.path}`;
     return (
       <div>
-        <Preview source={markdown} />
+        <MarkdownPreview renderers={{ heading: Heading }} source={markdown} />
         <div className={styles.docinfo}>
           犯了错误还是想对文件做出贡献？
           <a href={url} target="_blank" rel="noopener noreferrer">在Github上编辑本页！</a>

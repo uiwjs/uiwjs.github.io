@@ -1,7 +1,8 @@
 import path from 'path';
 
 export const loaderOneOf = [
-  [require.resolve('@kkt/loader-less'), {}],
+  require.resolve('@kkt/loader-less'),
+  require.resolve('@kkt/loader-raw'),
 ];
 
 export default (conf, { paths }, webpack) => {
@@ -16,15 +17,6 @@ export default (conf, { paths }, webpack) => {
     return item;
   }).filter(Boolean);
 
-  conf.module.rules.map((item) => {
-    if (item.oneOf) {
-      item.oneOf.unshift({
-        test: /\.md$/,
-        use: require.resolve('raw-loader'),
-      });
-    }
-    return item;
-  });
   // 获取版本
   conf.plugins.push(
     new webpack.DefinePlugin({

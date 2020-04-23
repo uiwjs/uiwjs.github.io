@@ -5,7 +5,7 @@
 
 ## 安装
 
-### 使用 npm 或 yarn 安装#
+使用 npm 或 yarn 安装
 
 ```bash
 $ npm i uiw
@@ -63,7 +63,7 @@ yarn add uiwjs/uiw
 
 ### 使用
 
-使用过程中不需要引入 `CSS`，但是需要 [`LESS`](http://lesscss.org/) 编译环境，如果对环境使用有障碍，可以通过 [`kkt`](#/guide/kkt) 工具初始化一个工程。
+使用过程中不需要引入 `CSS`，打包工具需要支持加载 [ES Module](https://github.com/rollup/rollup/wiki/pkg.module)，如果不支持需要手工引入 `css` 或者 `less` 样式，如果对环境使用有障碍，可以通过 [`kkt`](#/guide/kkt) 工具初始化一个工程。
 
 ```js
 import React from 'react';

@@ -1,11 +1,20 @@
 import React from 'react';
 
+function getId(childs) {
+  let idStr = '';
+  childs.forEach((item) => {
+    if (item.props && item.props.value) {
+      idStr += item.props.value;
+    } else if (item.props.children) {
+      idStr += getId(item.props.children)
+    }
+  });
+  return idStr;
+}
+
 export default function Heading({ level, children }) {
   let LevelElm = null;
-  let idStr = children.filter(item => typeof item === 'string');
-  if (idStr.length > 0) {
-    idStr = idStr.join('').replace(/\s/g, '-').toLowerCase();
-  }
+  const idStr = getId(children).replace(/\s/g, '-');
   switch (level) {
     case 1: LevelElm = <h1 id={idStr}>{children}</h1>; break;
     case 2: LevelElm = <h2 id={idStr}>{children}</h2>; break;
