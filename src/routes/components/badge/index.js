@@ -5,7 +5,7 @@ export default class Page extends Markdown {
   path = 'src/badge/README.md';
   dependencies = { Badge, Divider, Row, Col, Avatar, Icon };
   async renderPage() {
-    const md = await import('../../../../packages/core/src/badge/README.md');
+    const md = await import('uiw/node_modules/@uiw/react-badge/README.md');
     return md.default || md;
   }
 }

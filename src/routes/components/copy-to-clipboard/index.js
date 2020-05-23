@@ -5,7 +5,7 @@ export default class Page extends Markdown {
   path = 'src/copy-to-clipboard/README.md';
   dependencies = { CopyToClipboard, Button, Input };
   async renderPage() {
-    const md = await import('../../../../packages/core/src/copy-to-clipboard/README.md');
+    const md = await import('uiw/node_modules/@uiw/react-copy-to-clipboard/README.md');
     return md.default || md;
   }
 }

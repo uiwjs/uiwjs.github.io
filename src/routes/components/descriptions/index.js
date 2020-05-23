@@ -6,7 +6,7 @@ export default class Page extends Markdown {
   path = 'src/descriptions/README.md';
   dependencies = { Descriptions, Divider, Badge, Radio, RadioGroup };
   async renderPage() {
-    const md = await import('../../../../packages/core/src/descriptions/README.md');
+    const md = await import('uiw/node_modules/@uiw/react-descriptions/README.md');
     return md.default || md;
   }
 }

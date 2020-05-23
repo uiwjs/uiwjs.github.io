@@ -5,7 +5,7 @@ export default class Page extends Markdown {
   path = 'src/colors/README.md';
   dependencies = { Icon, CopyToClipboard, Notify, Input };
   async renderPage() {
-    const md = await import('../../../../packages/core/src/icon/README.md');
+    const md = await import('uiw/node_modules/@uiw/react-icon/README.md');
     return md.default || md;
   }
 }

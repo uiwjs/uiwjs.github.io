@@ -6,7 +6,7 @@ export default class Page extends Markdown {
   path = 'src/tabs/README.md';
   dependencies = { Tabs, Divider };
   async renderPage() {
-    const md = await import('../../../../packages/core/src/tabs/README.md');
+    const md = await import('uiw/node_modules/@uiw/react-tabs/README.md');
     return md.default || md;
   }
 }

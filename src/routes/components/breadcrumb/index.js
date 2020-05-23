@@ -5,7 +5,7 @@ export default class Page extends Markdown {
   path = 'src/breadcrumb/README.md';
   dependencies = { Breadcrumb, Icon, Divider };
   async renderPage() {
-    const md = await import('../../../../packages/core/src/breadcrumb/README.md');
+    const md = await import('uiw/node_modules/@uiw/react-breadcrumb/README.md');
     return md.default || md;
   }
 }

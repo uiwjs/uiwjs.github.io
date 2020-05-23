@@ -6,7 +6,7 @@ export default class Page extends Markdown {
   path = 'src/divider/README.md';
   dependencies = { Divider };
   async renderPage() {
-    const md = await import('../../../../packages/core/src/divider/README.md');
+    const md = await import('uiw/node_modules/@uiw/react-divider/README.md');
     return md.default || md;
   }
 }

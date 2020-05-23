@@ -6,7 +6,7 @@ export default class Page extends Markdown {
   path = 'src/list/README.md';
   dependencies = { List };
   async renderPage() {
-    const md = await import('../../../../packages/core/src/list/README.md');
+    const md = await import('uiw/node_modules/@uiw/react-list/README.md');
     return md.default || md;
   }
 }

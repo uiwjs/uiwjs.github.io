@@ -6,7 +6,7 @@ export default class Page extends Markdown {
   path = 'src/checkbox/README.md';
   dependencies = { Checkbox, Button, Form, Row, Col, Divider };
   async renderPage() {
-    const md = await import('../../../../packages/core/src/checkbox/README.md');
+    const md = await import('uiw/node_modules/@uiw/react-checkbox/README.md');
     return md.default || md;
   }
 }

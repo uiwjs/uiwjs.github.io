@@ -5,7 +5,7 @@ export default class Page extends Markdown {
   path = 'src/textarea/README.md';
   dependencies = { Textarea, Divider, Icon, Form, Row, Col, Button, Notify };
   async renderPage() {
-    const md = await import('../../../../packages/core/src/textarea/README.md');
+    const md = await import('uiw/node_modules/@uiw/react-textarea/README.md');
     return md.default || md;
   }
 }

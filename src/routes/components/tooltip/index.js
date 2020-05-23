@@ -5,7 +5,7 @@ export default class Page extends Markdown {
   path = 'src/tooltip/README.md';
   dependencies = { Tooltip, OverlayTrigger, Switch, Button, Input, Divider };
   async renderPage() {
-    const md = await import('../../../../packages/core/src/tooltip/README.md');
+    const md = await import('uiw/node_modules/@uiw/react-tooltip/README.md');
     return md.default || md;
   }
 }

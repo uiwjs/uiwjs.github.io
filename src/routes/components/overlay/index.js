@@ -6,7 +6,7 @@ export default class Page extends Markdown {
   path = 'src/overlay/README.md';
   dependencies = { Overlay, Button, Icon, Card, Divider };
   async renderPage() {
-    const md = await import('../../../../packages/core/src/overlay/README.md');
+    const md = await import('uiw/node_modules/@uiw/react-overlay/README.md');
     return md.default || md;
   }
 }

@@ -6,7 +6,7 @@ export default class Page extends Markdown {
   path = 'src/tag/README.md';
   dependencies = { Tag, Divider, Dropdown, Checkbox, Menu, Button, Input, Icon, Row, Col };
   async renderPage() {
-    const md = await import('../../../../packages/core/src/tag/README.md');
+    const md = await import('uiw/node_modules/@uiw/react-tag/README.md');
     return md.default || md;
   }
 }

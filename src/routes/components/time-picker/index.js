@@ -5,7 +5,7 @@ export default class Page extends Markdown {
   path = 'src/time-picker/README.md';
   dependencies = { TimePicker, formatter, Notify, Button, Form, Row, Col };
   async renderPage() {
-    const md = await import('../../../../packages/core/src/time-picker/README.md');
+    const md = await import('uiw/node_modules/@uiw/react-time-picker/README.md');
     return md.default || md;
   }
 }

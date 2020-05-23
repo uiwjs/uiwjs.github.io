@@ -6,7 +6,7 @@ export default class Page extends Markdown {
   path = 'src/radio/README.md';
   dependencies = { Radio, RadioGroup, Button, Divider };
   async renderPage() {
-    const md = await import('../../../../packages/core/src/radio/README.md');
+    const md = await import('uiw/node_modules/@uiw/react-radio/README.md');
     return md.default || md;
   }
 }

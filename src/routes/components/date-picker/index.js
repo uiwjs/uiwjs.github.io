@@ -5,7 +5,7 @@ export default class Page extends Markdown {
   path = 'src/date-picker/README.md';
   dependencies = { DatePicker };
   async renderPage() {
-    const md = await import('../../../../packages/core/src/date-picker/README.md');
+    const md = await import('uiw/node_modules/@uiw/react-date-picker/README.md');
     return md.default || md;
   }
 }

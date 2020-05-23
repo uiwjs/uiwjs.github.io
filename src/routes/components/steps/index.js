@@ -5,7 +5,7 @@ export default class Page extends Markdown {
   path = 'src/steps/README.md';
   dependencies = { Steps, Icon, Button, Notify, Row, Col };
   async renderPage() {
-    const md = await import('../../../../packages/core/src/steps/README.md');
+    const md = await import('uiw/node_modules/@uiw/react-steps/README.md');
     return md.default || md;
   }
 }

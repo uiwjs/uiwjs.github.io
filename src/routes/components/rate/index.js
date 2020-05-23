@@ -6,7 +6,7 @@ export default class Page extends Markdown {
   path = 'src/rate/README.md';
   dependencies = { Rate, Icon, Divider };
   async renderPage() {
-    const md = await import('../../../../packages/core/src/rate/README.md');
+    const md = await import('uiw/node_modules/@uiw/react-rate/README.md');
     return md.default || md;
   }
 }

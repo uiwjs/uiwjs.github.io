@@ -5,7 +5,7 @@ export default class Page extends Markdown {
   path = 'src/month-picker/README.md';
   dependencies = { MonthPicker, Button, Notify, Form, Row, Col };
   async renderPage() {
-    const md = await import('../../../../packages/core/src/month-picker/README.md');
+    const md = await import('uiw/node_modules/@uiw/react-month-picker/README.md');
     return md.default || md;
   }
 }

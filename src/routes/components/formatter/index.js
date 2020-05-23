@@ -5,7 +5,7 @@ export default class Page extends Markdown {
   path = 'src/formatter/README.md';
   dependencies = { formatter, Divider, Tag, Icon };
   async renderPage() {
-    const md = await import('../../../../packages/core/src/formatter/README.md');
+    const md = await import('uiw/node_modules/@uiw/formatter/README.md');
     return md.default || md;
   }
 }

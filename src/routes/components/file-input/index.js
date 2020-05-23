@@ -5,7 +5,7 @@ export default class Page extends Markdown {
   path = 'src/file-input/README.md';
   dependencies = { FileInput };
   async renderPage() {
-    const md = await import('../../../../packages/core/src/file-input/README.md');
+    const md = await import('uiw/node_modules/@uiw/react-file-input/README.md');
     return md.default || md;
   }
 }

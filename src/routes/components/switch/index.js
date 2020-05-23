@@ -6,7 +6,7 @@ export default class Page extends Markdown {
   path = 'src/switch/README.md';
   dependencies = { Switch, Divider, Button };
   async renderPage() {
-    const md = await import('../../../../packages/core/src/switch/README.md');
+    const md = await import('uiw/node_modules/@uiw/react-switch/README.md');
     return md.default || md;
   }
 }

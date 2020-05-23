@@ -5,7 +5,7 @@ export default class Page extends Markdown {
   path = 'src/pagination/README.md';
   dependencies = { Pagination, Divider };
   async renderPage() {
-    const md = await import('../../../../packages/core/src/pagination/README.md');
+    const md = await import('uiw/node_modules/@uiw/react-pagination/README.md');
     return md.default || md;
   }
 }
