@@ -13555,14 +13555,45 @@ function Tabs(props) {
   }
 }
 
-;// CONCATENATED MODULE: ../react-textarea/esm/style/index.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const react_textarea_esm_style = ({});
+;// CONCATENATED MODULE: ../react-textarea/esm/style/index.js
+
+
+var react_textarea_esm_style_templateObject;
+
+
+
+var TextareaWarp = styled_components_browser_esm.textarea(react_textarea_esm_style_templateObject || (react_textarea_esm_style_templateObject = _taggedTemplateLiteralLoose(["\n  position: relative;\n  font-size: ", ";\n  outline: none;\n  border: none;\n  border-radius: ", ";\n  box-shadow: ", ";\n  padding: 5px 10px;\n  vertical-align: middle;\n  height: auto;\n  min-height: 30px;\n  color: ", ";\n  background: ", ";\n  font-weight: 400;\n  max-width: 100%;\n  min-width: 100%;\n  width: 100%;\n  transition: box-shadow 0.1s cubic-bezier(0.4, 1, 0.75, 0.9), -webkit-box-shadow 0.1s cubic-bezier(0.4, 1, 0.75, 0.9);\n  appearance: none;\n  &:not(:first-child) {\n    padding-left: 30px;\n  }\n  &:focus {\n    box-shadow: ", ";\n  }\n  &:hover {\n    box-shadow: ", ";\n  }\n  &:focus&:hover {\n    box-shadow: ", ";\n  }\n  &:disabled {\n    box-shadow: none;\n    background: ", ";\n    opacity: 0.75;\n    color: ", ";\n    cursor: not-allowed;\n    resize: none;\n  }\n"])), props => getThemeVariantValue(props, 'fontSizeDefault'), props => getThemeVariantValue(props, 'borderRadiusDefault'), props => getThemeVariantValue(props, 'boxShadowTextarea'), props => getThemeVariantValue(props, 'colorTextareaDefault'), props => getThemeVariantValue(props, 'backgroundColorDefault'), props => getThemeVariantValue(props, "boxShadowTextareaFocus"), props => getThemeVariantValue(props, "boxShadowTextareaFocus"), props => getThemeVariantValue(props, "boxShadowTextareaFocusHover"), props => getThemeVariantValue(props, "backgroundTextareaDisabled"), props => getThemeVariantValue(props, "colorTextareaDisabled"));
+TextareaWarp.defaultProps = {
+  defaultTheme: {
+    // 圆角
+    borderRadiusDefault: '3px',
+    // 大小设置
+    fontSizeSmall: '12px',
+    fontSizeDefault: '14px',
+    fontSizeLarge: '16px',
+    //字体颜色
+    colorTextareaDefault: '#393e48',
+    colorTextareaDark: '#fff',
+    //背景色
+    backgroundColorDefault: '#f8f9fa',
+    backgroundColorDark: '#fff',
+    // 阴影
+    boxShadowTextarea: '0 0 0 0 rgba(19, 124, 189, 0), 0 0 0 0 rgba(19, 124, 189, 0), inset 0 0 0 1px rgba(16, 22, 26, 0.15), inset 0 1px 1px rgba(16, 22, 26, 0.2)',
+    boxShadowTextareaFocus: '0 0 0 1px #393e48, 0 0 0 3px rgba(57, 62, 72, 0.17), inset 0 1px 1px rgba(16, 22, 26, 0.2)',
+    boxShadowTextareaHover: '0 0 0 1px #6e6e6e, 0 0 0 3px rgba(57, 62, 72, 0), inset 0 1px 1px rgba(16, 22, 26, 0.2)',
+    boxShadowTextareaFocusHover: '0 0 0 1px #6e6e6e, 0 0 0 3px rgba(57, 62, 72, 0.17), inset 0 1px 1px rgba(16, 22, 26, 0.2)',
+    //禁用
+    colorTextareaDisabled: '#a5a5a5',
+    backgroundTextareaDisabled: '#dddddd'
+  }
+};
+
 ;// CONCATENATED MODULE: ../react-textarea/esm/index.js
 
 
 var react_textarea_esm_excluded = ["prefixCls", "className"];
 
+// import './style/index.less';
 
 
 /* harmony default export */ const react_textarea_esm = (/*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default().forwardRef((props, ref) => {
@@ -13572,7 +13603,10 @@ var react_textarea_esm_excluded = ["prefixCls", "className"];
   } = props,
       restProps = objectWithoutPropertiesLoose_objectWithoutPropertiesLoose(props, react_textarea_esm_excluded);
 
-  return /*#__PURE__*/(0,jsx_runtime.jsx)("textarea", extends_extends({
+  {
+    console.log('1111', props);
+  }
+  return /*#__PURE__*/(0,jsx_runtime.jsx)(TextareaWarp, extends_extends({
     className: [prefixCls, className].filter(Boolean).join(' ').trim()
   }, restProps, {
     ref: ref,
