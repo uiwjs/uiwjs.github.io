@@ -748,11 +748,8 @@ __webpack_require__.d(__webpack_exports__, {
   "Progress": () => (/* reexport */ react_progress_esm),
   "Radio": () => (/* reexport */ esm_Radio),
   "RadioAbstract": () => (/* reexport */ RadioAbstract),
-  "RadioBase": () => (/* reexport */ RadioBase),
   "RadioButton": () => (/* reexport */ esm_RadioButton),
   "RadioGroup": () => (/* reexport */ esm_RadioGroup),
-  "RadioGroupBase": () => (/* reexport */ RadioGroupBase),
-  "RadioText": () => (/* reexport */ RadioText),
   "Rate": () => (/* reexport */ Rate),
   "Row": () => (/* reexport */ Row_Row),
   "SearchSelect": () => (/* reexport */ SearchSelect),
@@ -7411,39 +7408,14 @@ var RadioButton = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_reac
 
 
 
-
-;// CONCATENATED MODULE: ../react-checkbox/esm/style/index.js
-
-
-var react_checkbox_esm_style_templateObject, react_checkbox_esm_style_templateObject2, react_checkbox_esm_style_templateObject3, react_checkbox_esm_style_templateObject4;
-
-
-
-
-var disabledCss = _ref => {
-  var {
-    disabled
-  } = _ref;
-  return disabled && Ce(react_checkbox_esm_style_templateObject || (react_checkbox_esm_style_templateObject = _taggedTemplateLiteralLoose(["\n      input[type='checkbox'] {\n        cursor: not-allowed;\n        opacity: 0.5;\n      }\n      ", " {\n        color: #6e6e6e;\n      }\n    "])), RadioText);
-};
-
-var indeterminateCss = _ref2 => {
-  var {
-    indeterminate
-  } = _ref2;
-  return indeterminate && Ce(react_checkbox_esm_style_templateObject2 || (react_checkbox_esm_style_templateObject2 = _taggedTemplateLiteralLoose(["\n      input[type='checkbox']:checked {\n        background-color: transparent;\n        box-shadow: inset 0 0 0 1px rgb(0, 142, 240);\n        &:after {\n          display: inline-block;\n          background-color: #008df8;\n          box-sizing: inherit;\n          transform: rotate(0);\n          position: relative;\n          top: -1px;\n          right: -3px;\n          border-width: 0;\n          border-radius: 2px;\n          height: 8px;\n          width: 8px;\n        }\n      }\n    "])));
-};
-
-var CheckGroupBase = styled_components_browser_esm.div(react_checkbox_esm_style_templateObject3 || (react_checkbox_esm_style_templateObject3 = _taggedTemplateLiteralLoose(["\n  vertical-align: middle;\n  font-size: 0;\n  cursor: pointer;\n  white-space: nowrap;\n"])));
-var CheckboxBase = styled_components_browser_esm.div(react_checkbox_esm_style_templateObject4 || (react_checkbox_esm_style_templateObject4 = _taggedTemplateLiteralLoose(["\n  display: inline-block;\n  input[type='checkbox'] {\n    vertical-align: middle;\n    outline: none;\n    width: 14px;\n    height: 14px;\n    font-size: 14px;\n    line-height: 14px;\n    border-radius: 2px;\n    background-clip: border-box;\n    appearance: none;\n    margin: 0 !important;\n    background-color: #d7d7d7;\n    transition: background-color 0.3s, box-shadow 0.3s;\n    &:after {\n      content: '';\n      box-sizing: inherit;\n    }\n    &:not(:checked):not(:disabled):not(.disabled) {\n      &:focus,\n      &:hover {\n        box-shadow: inset 0 1px 2px rgba(16, 22, 26, 0.35);\n      }\n    }\n  }\n  ", "\n  ", "\n  input[type='checkbox']:checked {\n    background-color: #008ef0;\n    &:after {\n      transition: background-color 0.2s ease-in;\n      display: inline-block;\n      border: solid #fff;\n      border-width: 0 2px 2px 0;\n      transform: rotate(33deg);\n      position: relative;\n      top: -1px;\n      right: -4px;\n      height: 10px;\n      width: 6px;\n    }\n  }\n  ", " {\n    display: inline-block;\n    padding-left: 4px;\n    margin-right: 5px;\n    font-size: 14px;\n  }\n"])), disabledCss, indeterminateCss, RadioText);
-
-
+;// CONCATENATED MODULE: ../react-checkbox/esm/style/group.css
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const style_group = ({});
 ;// CONCATENATED MODULE: ../react-checkbox/esm/Group.js
 
 
 var Group_excluded = ["prefixCls", "className", "name", "value", "onChange"];
 
- // import './style/group.less';
 
 
 var CheckboxGroup = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default().forwardRef((props, ref) => {
@@ -7460,7 +7432,7 @@ var CheckboxGroup = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_re
   var cls = [prefixCls, className].filter(Boolean).join(' ').trim();
   var childs = external_root_React_commonjs2_react_commonjs_react_amd_react_default().Children.toArray(props.children);
   (0,external_root_React_commonjs2_react_commonjs_react_amd_react_.useMemo)(() => valueRef.current = value || [], [value]);
-  return /*#__PURE__*/(0,jsx_runtime.jsx)(CheckGroupBase, extends_extends({}, other, {
+  return /*#__PURE__*/(0,jsx_runtime.jsx)("div", extends_extends({}, other, {
     className: cls,
     ref: ref,
     children: external_root_React_commonjs2_react_commonjs_react_amd_react_default().Children.map(childs, element => {
@@ -7493,6 +7465,9 @@ var CheckboxGroup = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_re
   }));
 });
 
+;// CONCATENATED MODULE: ../react-checkbox/esm/style/index.css
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const react_checkbox_esm_style = ({});
 ;// CONCATENATED MODULE: ../react-checkbox/esm/Checkbox.js
 
 
@@ -7500,7 +7475,6 @@ var Checkbox_excluded = ["className", "prefixCls", "type", "indeterminate", "dis
 
 
 
- // import './style/index.less';
 
 
 
@@ -7516,8 +7490,7 @@ function InternalCheckbox(props, ref) {
       other = objectWithoutPropertiesLoose_objectWithoutPropertiesLoose(props, Checkbox_excluded);
 
   var cls = [className, indeterminate && 'indeterminate'].filter(Boolean).join(' ').trim();
-  return /*#__PURE__*/(0,jsx_runtime.jsx)(CheckboxBase, extends_extends({
-    as: RadioAbstract,
+  return /*#__PURE__*/(0,jsx_runtime.jsx)(RadioAbstract, extends_extends({
     ref: ref
   }, other, {
     type: type,
