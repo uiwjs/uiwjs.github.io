@@ -12534,15 +12534,57 @@ function Slider(props) {
   }));
 }
 
-;// CONCATENATED MODULE: ../react-switch/esm/style/index.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const react_switch_esm_style = ({});
+;// CONCATENATED MODULE: ../react-switch/esm/style/index.js
+
+
+var react_switch_esm_style_templateObject, react_switch_esm_style_templateObject2, react_switch_esm_style_templateObject3, react_switch_esm_style_templateObject4, react_switch_esm_style_templateObject5;
+
+
+
+var SwitchWrap = styled_components_browser_esm.div(react_switch_esm_style_templateObject || (react_switch_esm_style_templateObject = _taggedTemplateLiteralLoose(["\n  ", "\n"])), props => {
+  var psd = "props.prefix-text";
+  return Ce(react_switch_esm_style_templateObject2 || (react_switch_esm_style_templateObject2 = _taggedTemplateLiteralLoose(["\n      vertical-align: middle;\n      font-size: ", ";\n      cursor: pointer;\n      input[type='checkbox'] {\n        vertical-align: middle;\n        cursor: pointer;\n        white-space: nowrap;\n        position: relative;\n        min-width: ", ";\n        height: ", ";\n        margin: 0 !important;\n        background-clip: border-box;\n        background-color: ", ";\n        appearance: none;\n        outline: 0;\n        font-size: ", ";\n        border-radius: ", ";\n        transition: all 0.3s;\n        box-shadow: inset 0 1px 2px ", ";\n        &:before,\n        &:after {\n          display: inline-block;\n          vertical-align: middle;\n        }\n        &:before {\n          content: attr(data-checked);\n          transition: all 0.3s;\n          padding: 0 21px 0 6px;\n          color: ", ";\n          line-height: ", ";\n        }\n        &:checked {\n          background-color: ", ";\n          &:after {\n            right: 2px;\n            margin-right: 0;\n          }\n          &:before {\n            content: attr(data-unchecked);\n          }\n        }\n        &:not(:checked):before {\n          padding: 0 6px 0 21px;\n          color: ", ";\n        }\n        &:after {\n          content: ' ';\n          position: absolute;\n          margin-right: -18px;\n          right: 100%;\n          margin-top: 2px;\n          margin-left: 1px;\n          height: ", ";\n          width: ", ";\n          border-radius: ", ";\n          transition: all 0.2s;\n          background-color: ", ";\n          box-shadow: 0 1px 2px 0 ", ";\n        }\n        &:disabled {\n          cursor: not-allowed;\n          opacity: 0.45;\n        }\n        &:focus {\n          box-shadow: 0 0 0 2px ", ",\n            inset 0 1px 2px ", ";\n        }\n      }\n\n      ", "\n\n      ", "\n\n    ", "\n\n    ", " {\n        vertical-align: middle;\n        display: inline-block;\n        margin-left: 5px;\n      }\n    "])), getThemeVariantValue(props, 'fontSizeSmall'), getThemeVariantValue(props, 'minWidthSwitchCheckbox'), getThemeVariantValue(props, 'heightSwitchCheckbox'), getThemeVariantValue(props, 'backgroundColorSwitchCheckbox'), getThemeVariantValue(props, 'fontSizeSmall'), getThemeVariantValue(props, 'borderRadiusSwitchCheckbox'), getThemeVariantValue(props, 'boxShadowColorSwitchCheckbox'), getThemeVariantValue(props, 'colorSwitchCheckboxBefore'), getThemeVariantValue(props, 'lineHeightSwitchCheckboxBefore'), getThemeVariantValue(props, 'backgroundColorSwitchCheckboxChecked'), getThemeVariantValue(props, 'colorSwitchCheckboxNotCheckedBefore'), getThemeVariantValue(props, 'heightSwitchCheckboxAfter'), getThemeVariantValue(props, 'widthSwitchCheckboxAfter'), getThemeVariantValue(props, 'borderRadiusSwitchCheckboxAfter'), getThemeVariantValue(props, 'backgroundColorSwitchCheckboxAfter'), getThemeVariantValue(props, 'boxShadowColorSwitchCheckboxAfter'), getThemeVariantValue(props, 'boxShadowColorSwitchCheckboxFocus'), getThemeVariantValue(props, 'boxShadowColorInSwitchCheckboxFocus'), (props == null ? void 0 : props.disabled) && Ce(react_switch_esm_style_templateObject3 || (react_switch_esm_style_templateObject3 = _taggedTemplateLiteralLoose(["\n        cursor: not-allowed;\n      "]))), (props == null ? void 0 : props.size) === 'large' && Ce(react_switch_esm_style_templateObject4 || (react_switch_esm_style_templateObject4 = _taggedTemplateLiteralLoose(["\n        input[type='checkbox'] {\n          min-width: ", ";\n          height: ", ";\n          &::after {\n            margin-right: -22px;\n            height: ", ";\n            width: ", ";\n          }\n          &:before {\n            padding: 0 25px 0 8px;\n            margin-top: 0;\n            line-height: ", ";\n            font-size: ", ";\n          }\n          &:not(:checked):before {\n            padding: 0 8px 0 25px;\n          }\n        }\n      "])), getThemeVariantValue(props, 'minWidthSwitchLargeCheckbox'), getThemeVariantValue(props, 'heightSwitchLargeCheckbox'), getThemeVariantValue(props, 'heightSwitchLargeCheckboxAfter'), getThemeVariantValue(props, 'widthSwitchLargeCheckboxAfter'), getThemeVariantValue(props, 'lineHeightSwitchLargeCheckboxBefore'), getThemeVariantValue(props, 'fontSizeLarge')), (props == null ? void 0 : props.size) === 'small' && Ce(react_switch_esm_style_templateObject5 || (react_switch_esm_style_templateObject5 = _taggedTemplateLiteralLoose(["\n        font-size: ", ";\n        input[type='checkbox'] {\n          min-width: ", ";\n          height: ", ";\n          &::after {\n            margin-right: -14px;\n            height: ", ";\n            width: ", ";\n          }\n          &:before {\n            padding: 0 16px 0 6px;\n            line-height: ", ";\n          }\n          &:not(:checked):before {\n            padding: 0 6px 0 16px;\n          }\n        }\n      "])), getThemeVariantValue(props, 'fontSizeSmall'), getThemeVariantValue(props, 'minWidthSwitchSmallCheckbox'), getThemeVariantValue(props, 'heightSwitchSmallCheckbox'), getThemeVariantValue(props, 'heightSwitchSmallCheckboxAfter'), getThemeVariantValue(props, 'widthSwitchSmallCheckboxAfter'), getThemeVariantValue(props, 'lineHeightSwitchSmallCheckboxBefore')), psd);
+});
+SwitchWrap.defaultProps = {
+  defaultTheme: {
+    fontSizeSmall: '12px',
+    fontSizeLarge: '16px',
+    minWidthSwitchCheckbox: '35px',
+    heightSwitchCheckbox: '20px',
+    backgroundColorSwitchCheckbox: '#dfdfdf',
+    borderRadiusSwitchCheckbox: '16px',
+    boxShadowColorSwitchCheckbox: 'rgba(16, 22, 26, 0.2)',
+    colorSwitchCheckboxBefore: '#fff',
+    lineHeightSwitchCheckboxBefore: '20px',
+    backgroundColorSwitchCheckboxChecked: '#008ef0',
+    colorSwitchCheckboxNotCheckedBefore: '#393e48',
+    heightSwitchCheckboxAfter: '16px',
+    widthSwitchCheckboxAfter: '16px',
+    borderRadiusSwitchCheckboxAfter: '50%',
+    backgroundColorSwitchCheckboxAfter: '#fff',
+    boxShadowColorSwitchCheckboxAfter: 'rgba(0, 35, 11, 0.2)',
+    boxShadowColorSwitchCheckboxFocus: 'rgba(0, 142, 240, 0.25)',
+    boxShadowColorInSwitchCheckboxFocus: 'rgba(16, 22, 26, 0.2)',
+    minWidthSwitchLargeCheckbox: '38px',
+    heightSwitchLargeCheckbox: '24px',
+    heightSwitchLargeCheckboxAfter: '20px',
+    widthSwitchLargeCheckboxAfter: '20px',
+    lineHeightSwitchLargeCheckboxBefore: '24px',
+    minWidthSwitchSmallCheckbox: '15px',
+    heightSwitchSmallCheckbox: '16px',
+    heightSwitchSmallCheckboxAfter: '12px',
+    widthSwitchSmallCheckboxAfter: '12px',
+    lineHeightSwitchSmallCheckboxBefore: '16px'
+  }
+};
+
 ;// CONCATENATED MODULE: ../react-switch/esm/index.js
 
 
 var react_switch_esm_excluded = ["prefixCls"];
 
 
+ // import './style/index.less';
 
 
 /* harmony default export */ const react_switch_esm = (/*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default().forwardRef((props, ref) => {
@@ -12551,7 +12593,8 @@ var react_switch_esm_excluded = ["prefixCls"];
   } = props,
       other = objectWithoutPropertiesLoose_objectWithoutPropertiesLoose(props, react_switch_esm_excluded);
 
-  return /*#__PURE__*/(0,jsx_runtime.jsx)(RadioAbstract, extends_extends({
+  return /*#__PURE__*/(0,jsx_runtime.jsx)(SwitchWrap, extends_extends({
+    as: RadioAbstract,
     prefixCls: prefixCls
   }, extends_extends({}, other, {
     type: 'checkbox'
