@@ -106,42 +106,6 @@
   display: inherit;
 }
 
-.w-icon,
-.w-icon svg {
-  height: 1em;
-  width: 1em;
-}
-.w-icon {
-  display: inline-flex;
-  align-self: center;
-  position: relative;
-  transition: color 0.3s;
-  box-sizing: inherit;
-}
-.w-icon-baseline {
-  top: 0.125em;
-}
-.w-icon-spin svg {
-  -webkit-animation: loading-circle 1s infinite linear;
-          animation: loading-circle 1s infinite linear;
-}
-@-webkit-keyframes loading-circle {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes loading-circle {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 .w-modal {
   z-index: 1001;
 }
