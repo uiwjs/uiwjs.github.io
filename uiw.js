@@ -6977,14 +6977,31 @@ Menu.Divider = MenuDivider;
 
 /* harmony default export */ const react_menu_esm = (esm_Menu);
 
-;// CONCATENATED MODULE: ../react-cascader/esm/style/index.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const react_cascader_esm_style = ({});
+;// CONCATENATED MODULE: ../react-cascader/esm/style/index.js
+
+
+var react_cascader_esm_style_templateObject, react_cascader_esm_style_templateObject2, react_cascader_esm_style_templateObject3;
+
+
+
+
+var CascaderIcon = styled_components_browser_esm.div(react_cascader_esm_style_templateObject || (react_cascader_esm_style_templateObject = _taggedTemplateLiteralLoose(["\n  height: 1em;\n  width: 1em;\n"])));
+var CascaderIconWarp = styled_components_browser_esm(IconBase)(react_cascader_esm_style_templateObject2 || (react_cascader_esm_style_templateObject2 = _taggedTemplateLiteralLoose(["\n  ", "\n"])), props => props.closebtn && Ce(react_cascader_esm_style_templateObject3 || (react_cascader_esm_style_templateObject3 = _taggedTemplateLiteralLoose(["\n      & {\n        font-size: 15px;\n        margin-right: 1px;\n        color: ", ";\n      }\n    "])), props => getThemeVariantValue(props, 'colorCascaderClose')));
+CascaderIconWarp.defaultProps = {
+  defaultTheme: {
+    colorCascaderClose: '#393e48'
+  }
+};
+
+// EXTERNAL MODULE: ../../node_modules/@uiw/icons/lib/Close.js
+var Close = __webpack_require__(579);
 ;// CONCATENATED MODULE: ../react-cascader/esm/index.js
 
 
 
 
+
+ // import './style/index.less';
 
 
 
@@ -7239,10 +7256,13 @@ function Cascader(props) {
           style: {
             width: 'auto'
           },
-          children: !disabled && selectIconType === 'close' && /*#__PURE__*/(0,jsx_runtime.jsx)(Icon, {
-            type: selectIconType,
+          children: !disabled && selectIconType === 'close' && /*#__PURE__*/(0,jsx_runtime.jsx)(CascaderIconWarp, {
+            closebtn: true,
+            className: prefixCls + "-close",
             onClick: onClear,
-            className: prefixCls + "-close"
+            children: /*#__PURE__*/(0,jsx_runtime.jsx)(CascaderIcon, {
+              as: Close/* Close */.x
+            })
           })
         })
       }))
@@ -7903,8 +7923,6 @@ function CopyToClipboard(props) {
   }));
 }
 
-// EXTERNAL MODULE: ../../node_modules/@uiw/icons/lib/Close.js
-var Close = __webpack_require__(579);
 ;// CONCATENATED MODULE: ../react-date-input/esm/style/index.js
 
 
