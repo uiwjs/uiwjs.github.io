@@ -3596,9 +3596,52 @@ var Modal = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_
 Modal.show = CallShow;
 /* harmony default export */ const react_modal_esm = (Modal);
 
-;// CONCATENATED MODULE: ../react-alert/esm/style/index.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const react_alert_esm_style = ({});
+;// CONCATENATED MODULE: ../react-alert/esm/style/index.js
+
+
+
+var react_alert_esm_style_templateObject, esm_style_templateObject2, esm_style_templateObject3, esm_style_templateObject4, esm_style_templateObject5;
+
+
+
+
+
+
+var typeVariant = (type, color) => {
+  return Ce(react_alert_esm_style_templateObject || (react_alert_esm_style_templateObject = _taggedTemplateLiteralLoose(["\n    ", " ", " > ", " {\n      color: ", ";\n    }\n  "])), type, ModalHeader, IconBase, color);
+};
+
+var typeCss = props => {
+  console.log('props', props);
+  var {
+    type
+  } = props;
+
+  if (type === 'primary') {
+    return typeVariant(type, getThemeVariantValue(props, 'colorAlertPrimary'));
+  } else if (type === 'success') {
+    return typeVariant(type, getThemeVariantValue(props, 'colorAlertSuccess'));
+  } else if (type === 'warning') {
+    return typeVariant(type, getThemeVariantValue(props, 'colorAlertWarning'));
+  } else if (type === 'danger') {
+    return typeVariant(type, getThemeVariantValue(props, 'colorAlertDanger'));
+  }
+
+  return typeVariant('link', getThemeVariantValue(props, 'colorAlertDefault'));
+};
+
+var PropsColor = {
+  colorAlertPrimary: '#008ef0',
+  colorAlertSuccess: '#28a745',
+  colorAlertWarning: '#ffc107',
+  colorAlertDanger: '#dc3545',
+  colorAlertDefault: '#393e48'
+};
+var AlertWarp = styled_components_browser_esm.div(esm_style_templateObject2 || (esm_style_templateObject2 = _taggedTemplateLiteralLoose(["\n  ", " {\n    display: table-cell;\n    background-color: transparent;\n    padding: 20px 0 0 20px;\n    box-shadow: 0 0 0 0;\n    padding-right: 0;\n    ", " {\n      font-size: 40px;\n      margin-right: 0;\n    }\n  }\n  ", " {\n    display: table-cell;\n    padding-right: 20px;\n    padding-left: 20px;\n    vertical-align: top;\n  }\n  ", "\n  ", " ", " {\n    > button {\n      min-width: 18px;\n      min-height: 18px;\n      padding: 5px 5px;\n      position: absolute;\n      right: 10px;\n      top: 10px;\n    }\n  }\n  ", "\n  ", "\n  ", "\n"])), ModalHeader, IconBase, ModalBody, typeCss, ModalInner, ModalHeader, props => props.title && Ce(esm_style_templateObject3 || (esm_style_templateObject3 = _taggedTemplateLiteralLoose(["\n      ", " {\n        ", " {\n          word-break: break-word;\n          display: flex;\n          padding-top: 15px;\n          padding-right: 10px;\n          > ", " {\n            font-size: 40px;\n            position: absolute;\n            top: 18px;\n          }\n\n          > button > ", " {\n            font-size: 14px;\n          }\n        }\n        ", " {\n          word-break: break-word;\n          padding-top: 5px;\n        }\n      }\n    "])), ModalInner, ModalHeader, IconBase, IconBase, ModalBody), props => props.icon && Ce(esm_style_templateObject4 || (esm_style_templateObject4 = _taggedTemplateLiteralLoose(["\n      ", " > h4 {\n        padding-left: 60px;\n      }\n    "])), ModalHeader), props => props.title && props.icon && Ce(esm_style_templateObject5 || (esm_style_templateObject5 = _taggedTemplateLiteralLoose(["\n      ", " {\n        padding-left: 80px;\n      }\n    "])), ModalBody));
+AlertWarp.defaultProps = {
+  defaultTheme: extends_extends({}, PropsColor)
+};
+
 ;// CONCATENATED MODULE: ../react-alert/esm/index.js
 
 
@@ -3620,7 +3663,9 @@ var react_alert_esm_excluded = ["prefixCls", "className", "width"];
       other = objectWithoutPropertiesLoose_objectWithoutPropertiesLoose(props, react_alert_esm_excluded);
 
   var cls = [prefixCls, className].filter(Boolean).join(' ').trim();
-  return /*#__PURE__*/(0,jsx_runtime.jsx)(react_modal_esm, extends_extends({}, other, {
+  return /*#__PURE__*/(0,jsx_runtime.jsx)(AlertWarp, extends_extends({
+    as: react_modal_esm
+  }, other, {
     width: width,
     className: cls,
     children: props.children
@@ -3667,25 +3712,25 @@ var delimiter = /((?:https?:\/\/)?(?:(?:[a-z0-9]?(?:[a-z0-9\-]{1,61}[a-z0-9])?\.
 ;// CONCATENATED MODULE: ../react-avatar/esm/style/index.js
 
 
-var react_avatar_esm_style_templateObject, esm_style_templateObject2, esm_style_templateObject3, esm_style_templateObject4, esm_style_templateObject5, esm_style_templateObject6, esm_style_templateObject7;
+var react_avatar_esm_style_templateObject, react_avatar_esm_style_templateObject2, react_avatar_esm_style_templateObject3, react_avatar_esm_style_templateObject4, react_avatar_esm_style_templateObject5, esm_style_templateObject6, esm_style_templateObject7;
 
 
 
 var AvatarImg = styled_components_browser_esm.img(react_avatar_esm_style_templateObject || (react_avatar_esm_style_templateObject = _taggedTemplateLiteralLoose([""])));
-var AvatarWarp = styled_components_browser_esm.span(esm_style_templateObject2 || (esm_style_templateObject2 = _taggedTemplateLiteralLoose(["\n  display: inline-block;\n  text-align: center;\n  background: ", ";\n  color: ", ";\n  vertical-align: middle;\n  white-space: nowrap;\n  position: relative;\n  overflow: hidden;\n  font-size: ", ";\n  width: ", ";\n  height: ", ";\n  border-radius: ", ";\n  display: inline-flex;\n  justify-content: center;\n  align-items: center;\n  & + & {\n    margin-left: 5px;\n  }\n  ", "\n\n  ", " \n  &.w-avatar-circle {\n  }\n  & > ", " {\n    width: 100%;\n    height: 100%;\n    display: block;\n  }\n"])), props => getThemeVariantValue(props, 'backgroundColorAvatar'), props => getThemeVariantValue(props, 'colorAvatar'), props => getThemeVariantValue(props, 'fontSizeAvatarDefault'), props => getThemeVariantValue(props, 'widthAvatarDefault'), props => getThemeVariantValue(props, 'widthAvatarDefault'), props => getThemeVariantValue(props, 'borderRadiusDefault'), props => {
+var AvatarWarp = styled_components_browser_esm.span(react_avatar_esm_style_templateObject2 || (react_avatar_esm_style_templateObject2 = _taggedTemplateLiteralLoose(["\n  display: inline-block;\n  text-align: center;\n  background: ", ";\n  color: ", ";\n  vertical-align: middle;\n  white-space: nowrap;\n  position: relative;\n  overflow: hidden;\n  font-size: ", ";\n  width: ", ";\n  height: ", ";\n  border-radius: ", ";\n  display: inline-flex;\n  justify-content: center;\n  align-items: center;\n  & + & {\n    margin-left: 5px;\n  }\n  ", "\n\n  ", " \n  &.w-avatar-circle {\n  }\n  & > ", " {\n    width: 100%;\n    height: 100%;\n    display: block;\n  }\n"])), props => getThemeVariantValue(props, 'backgroundColorAvatar'), props => getThemeVariantValue(props, 'colorAvatar'), props => getThemeVariantValue(props, 'fontSizeAvatarDefault'), props => getThemeVariantValue(props, 'widthAvatarDefault'), props => getThemeVariantValue(props, 'widthAvatarDefault'), props => getThemeVariantValue(props, 'borderRadiusDefault'), props => {
   var {
     size
   } = props;
 
   switch (size) {
     case 'mini':
-      return Ce(esm_style_templateObject3 || (esm_style_templateObject3 = _taggedTemplateLiteralLoose(["\n          height: ", ";\n          width: ", ";\n          font-size: ", ";\n        "])), getThemeVariantValue(props, 'widthAvatarMini'), getThemeVariantValue(props, 'widthAvatarMini'), getThemeVariantValue(props, 'fontSizeAvatarMini'));
+      return Ce(react_avatar_esm_style_templateObject3 || (react_avatar_esm_style_templateObject3 = _taggedTemplateLiteralLoose(["\n          height: ", ";\n          width: ", ";\n          font-size: ", ";\n        "])), getThemeVariantValue(props, 'widthAvatarMini'), getThemeVariantValue(props, 'widthAvatarMini'), getThemeVariantValue(props, 'fontSizeAvatarMini'));
 
     case 'small':
-      return Ce(esm_style_templateObject4 || (esm_style_templateObject4 = _taggedTemplateLiteralLoose(["\n          height: ", ";\n          width: ", ";\n          font-size: ", ";\n        "])), getThemeVariantValue(props, 'widthAvatarSmall'), getThemeVariantValue(props, 'widthAvatarSmall'), getThemeVariantValue(props, 'fontSizeAvatarSmall'));
+      return Ce(react_avatar_esm_style_templateObject4 || (react_avatar_esm_style_templateObject4 = _taggedTemplateLiteralLoose(["\n          height: ", ";\n          width: ", ";\n          font-size: ", ";\n        "])), getThemeVariantValue(props, 'widthAvatarSmall'), getThemeVariantValue(props, 'widthAvatarSmall'), getThemeVariantValue(props, 'fontSizeAvatarSmall'));
 
     case 'large':
-      return Ce(esm_style_templateObject5 || (esm_style_templateObject5 = _taggedTemplateLiteralLoose(["\n          height: ", ";\n          width: ", ";\n          font-size: ", ";\n        "])), getThemeVariantValue(props, 'widthAvatarLarge'), getThemeVariantValue(props, 'widthAvatarLarge'), getThemeVariantValue(props, 'fontSizeAvatarLarge'));
+      return Ce(react_avatar_esm_style_templateObject5 || (react_avatar_esm_style_templateObject5 = _taggedTemplateLiteralLoose(["\n          height: ", ";\n          width: ", ";\n          font-size: ", ";\n        "])), getThemeVariantValue(props, 'widthAvatarLarge'), getThemeVariantValue(props, 'widthAvatarLarge'), getThemeVariantValue(props, 'fontSizeAvatarLarge'));
 
     default:
       return Ce(esm_style_templateObject6 || (esm_style_templateObject6 = _taggedTemplateLiteralLoose([""])));
