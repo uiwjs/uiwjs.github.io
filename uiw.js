@@ -160,6 +160,78 @@ exports.x = Close;
 
 /***/ }),
 
+/***/ 218:
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+var __webpack_unused_export__;
+
+
+var _interopRequireDefault = (__webpack_require__(600)["default"]);
+
+__webpack_unused_export__ = ({
+  value: true
+});
+exports.d = void 0;
+
+var _objectSpread2 = _interopRequireDefault(__webpack_require__(814));
+
+var _react = _interopRequireDefault(__webpack_require__(787));
+
+var _jsxRuntime = __webpack_require__(664);
+
+var MinusSquareO = function MinusSquareO(props) {
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)("svg", (0, _objectSpread2["default"])((0, _objectSpread2["default"])({
+    viewBox: "0 0 20 20"
+  }, props), {}, {
+    children: /*#__PURE__*/(0, _jsxRuntime.jsx)("path", {
+      d: "M1.81818182,1.36363636 C1.5671433,1.36363636 1.36363636,1.5671433 1.36363636,1.81818182 L1.36363636,18.1818182 C1.36363636,18.4328567 1.5671433,18.6363636 1.81818182,18.6363636 L18.1818182,18.6363636 C18.4328567,18.6363636 18.6363636,18.4328567 18.6363636,18.1818182 L18.6363636,1.81818182 C18.6363636,1.5671433 18.4328567,1.36363636 18.1818182,1.36363636 L1.81818182,1.36363636 Z M18.1818182,0 C19.1859723,0 20,0.814027728 20,1.81818182 L20,18.1818182 C20,19.1859723 19.1859723,20 18.1818182,20 L1.81818182,20 C0.814027728,20 0,19.1859723 0,18.1818182 L0,1.81818182 C0,0.814027728 0.814027728,0 1.81818182,0 L18.1818182,0 Z M14.686097,9.299131 L5.90909091,9.299131 C5.53253313,9.299131 5.22727273,9.6043914 5.22727273,9.98094918 C5.22727273,10.357507 5.53253313,10.6627674 5.90909091,10.6627674 L5.90909091,10.6627674 L14.686097,10.6627674 C15.0626548,10.6627674 15.3679152,10.357507 15.3679152,9.98094918 C15.3679152,9.6043914 15.0626548,9.299131 14.686097,9.299131 L14.686097,9.299131 Z",
+      fillRule: "evenodd"
+    })
+  }));
+};
+
+exports.d = MinusSquareO;
+
+
+/***/ }),
+
+/***/ 571:
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+var __webpack_unused_export__;
+
+
+var _interopRequireDefault = (__webpack_require__(600)["default"]);
+
+__webpack_unused_export__ = ({
+  value: true
+});
+exports.D = void 0;
+
+var _objectSpread2 = _interopRequireDefault(__webpack_require__(814));
+
+var _react = _interopRequireDefault(__webpack_require__(787));
+
+var _jsxRuntime = __webpack_require__(664);
+
+var PlusSquareO = function PlusSquareO(props) {
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)("svg", (0, _objectSpread2["default"])((0, _objectSpread2["default"])({
+    viewBox: "0 0 20 20"
+  }, props), {}, {
+    children: /*#__PURE__*/(0, _jsxRuntime.jsx)("path", {
+      d: "M1.81818182,1.36363636 C1.5671433,1.36363636 1.36363636,1.5671433 1.36363636,1.81818182 L1.36363636,18.1818182 C1.36363636,18.4328567 1.5671433,18.6363636 1.81818182,18.6363636 L18.1818182,18.6363636 C18.4328567,18.6363636 18.6363636,18.4328567 18.6363636,18.1818182 L18.6363636,1.81818182 C18.6363636,1.5671433 18.4328567,1.36363636 18.1818182,1.36363636 L1.81818182,1.36363636 Z M18.1818182,0 C19.1859723,0 20,0.814027728 20,1.81818182 L20,18.1818182 C20,19.1859723 19.1859723,20 18.1818182,20 L1.81818182,20 C0.814027728,20 0,19.1859723 0,18.1818182 L0,1.81818182 C0,0.814027728 0.814027728,0 1.81818182,0 L18.1818182,0 Z M10.2975939,4.91062796 C9.92103616,4.91062796 9.61577577,5.21588836 9.61577577,5.59244614 L9.61577577,5.59244614 L9.615,9.299 L5.90909091,9.299131 C5.56676565,9.299131 5.28336385,9.55141232 5.23466539,9.88019509 L5.22727273,9.98094918 C5.22727273,10.357507 5.53253313,10.6627674 5.90909091,10.6627674 L5.90909091,10.6627674 L9.615,10.662 L9.61577577,14.3694522 C9.61577577,14.7117775 9.86805709,14.9951793 10.1968399,15.0438777 L10.2975939,15.0512704 C10.6741517,15.0512704 10.9794121,14.74601 10.9794121,14.3694522 L10.9794121,14.3694522 L10.979,10.662 L14.686097,10.6627674 C15.0284222,10.6627674 15.311824,10.410486 15.3605225,10.0817033 L15.3679152,9.98094918 C15.3679152,9.6043914 15.0626548,9.299131 14.686097,9.299131 L14.686097,9.299131 L10.979,9.299 L10.9794121,5.59244614 C10.9794121,5.25012088 10.7271308,4.96671909 10.398348,4.91802062 Z",
+      fillRule: "evenodd"
+    })
+  }));
+};
+
+exports.D = PlusSquareO;
+
+
+/***/ }),
+
 /***/ 876:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
@@ -13031,6 +13103,72 @@ var react_switch_esm_excluded = ["prefixCls"];
   }));
 }));
 
+// EXTERNAL MODULE: ../../node_modules/@uiw/icons/lib/MinusSquareO.js
+var MinusSquareO = __webpack_require__(218);
+// EXTERNAL MODULE: ../../node_modules/@uiw/icons/lib/PlusSquareO.js
+var PlusSquareO = __webpack_require__(571);
+;// CONCATENATED MODULE: ../react-table/esm/style/index.js
+
+
+var react_table_esm_style_templateObject, react_table_esm_style_templateObject2, react_table_esm_style_templateObject3, react_table_esm_style_templateObject4, react_table_esm_style_templateObject5, react_table_esm_style_templateObject6, react_table_esm_style_templateObject7, react_table_esm_style_templateObject8, react_table_esm_style_templateObject9, react_table_esm_style_templateObject10, react_table_esm_style_templateObject11;
+
+
+
+var TableBaseDefaultTheme = {
+  borderColorTable: '#dfe2e5',
+  backgroundColorTableFooter: ' #fafafa',
+  borderBottomColorTableRows: '#e8e8e8',
+  backgroundColorTableTr: 'transparent',
+  backgroundColorTable: '#fff',
+  backgroundColorTableEvenRows: '#f9f9f9',
+  // 偶数行背景颜色
+  backgroundColorTableEvenRowsHover: '#efefef',
+  // 偶数行Hover背景颜色
+  backgroundColorTableHead: '#f6f9fb',
+  // 表头背影色
+  borderRightColorFixedRows: '#f0f0f0' // 固定列
+
+};
+var TableWrap = styled_components_browser_esm.div(react_table_esm_style_templateObject || (react_table_esm_style_templateObject = _taggedTemplateLiteralLoose(["\n  > table {\n    display: table !important;\n    margin: 0 !important;\n    width: 100%;\n    border-spacing: 0;\n    border-collapse: collapse;\n    tr > th,\n    tr > td {\n      border: 0;\n      padding: 5px 8px;\n      border-bottom: 1px solid ", ";\n    }\n    tr {\n      background-color: ", ";\n    }\n    > caption {\n      text-align: left;\n      padding: 10px 8px;\n    }\n    > tbody > tr {\n      transition: all 0.3s;\n      > td {\n        background-color: ", ";\n        position: relative;\n        z-index: 1;\n      }\n      &:hover,\n      &:hover:nth-child(2n) {\n        > td {\n          background-color: ", ";\n        }\n      }\n      &:nth-child(2n) {\n        > td {\n          background-color: ", ";\n        }\n      }\n    }\n    > thead {\n      > tr > th {\n        font-weight: normal;\n        padding: 8px;\n        background-color: ", ";\n        position: relative;\n        z-index: 1;\n      }\n      > tr,\n      tr:nth-child(2n) {\n        background-color: ", ";\n        border: transparent;\n      }\n    }\n  }\n  ", "\n"])), props => getThemeVariantValue(props, 'borderBottomColorTableRows'), props => getThemeVariantValue(props, 'backgroundColorTableTr'), props => getThemeVariantValue(props, 'backgroundColorTableTbodyTrTd'), props => getThemeVariantValue(props, 'backgroundColorTableEvenRowsHover'), props => getThemeVariantValue(props, 'backgroundColorTableEvenRows'), props => getThemeVariantValue(props, 'backgroundColorTableHead'), props => getThemeVariantValue(props, 'backgroundColorTableHead'), props => {
+  var _props$params;
+
+  return (props == null ? void 0 : (_props$params = props.params) == null ? void 0 : _props$params.bordered) && Ce(react_table_esm_style_templateObject2 || (react_table_esm_style_templateObject2 = _taggedTemplateLiteralLoose(["\n      > table {\n        tr > th,\n        tr > td,\n        > caption {\n          border: 1px solid ", ";\n        }\n        > caption {\n          border-bottom: 0;\n        }\n      }\n    "])), props => getThemeVariantValue(props, 'borderColorTable'));
+});
+TableWrap.defaultProps = {
+  defaultTheme: TableBaseDefaultTheme
+};
+var TheadWrap = styled_components_browser_esm.thead(react_table_esm_style_templateObject3 || (react_table_esm_style_templateObject3 = _taggedTemplateLiteralLoose([""])));
+var TheadItem = styled_components_browser_esm.th(react_table_esm_style_templateObject4 || (react_table_esm_style_templateObject4 = _taggedTemplateLiteralLoose([""]))); // 单元格
+
+var TableCol = styled_components_browser_esm.td(react_table_esm_style_templateObject5 || (react_table_esm_style_templateObject5 = _taggedTemplateLiteralLoose(["\n  text-align: ", ";\n  ", "\n"])), props => {
+  var _props$params2;
+
+  return props == null ? void 0 : (_props$params2 = props.params) == null ? void 0 : _props$params2.align;
+}, props => {
+  var _props$params3, _props$params4;
+
+  return (props == null ? void 0 : (_props$params3 = props.params) == null ? void 0 : _props$params3.fixed) && ((props == null ? void 0 : (_props$params4 = props.params) == null ? void 0 : _props$params4.fixed) === 'right' ? Ce(react_table_esm_style_templateObject6 || (react_table_esm_style_templateObject6 = _taggedTemplateLiteralLoose(["\n          position: sticky !important;\n          z-index: 2 !important;\n          // border: 0; \u900F\u98CE 1px\n          &::after {\n            box-shadow: inset -10px 0 8px -8px rgb(0 0 0 / 15%);\n            position: absolute;\n            top: 0;\n            bottom: -1px;\n            left: 0;\n            width: 30px;\n            transform: translateX(-100%);\n            transition: box-shadow 0.3s;\n            content: '';\n            pointer-events: none;\n            border-right: 1px solid ", ";\n            /* border-right: 1px solid #f0f0f0; */\n          }\n          // \u6682\u65F6\u6CA1\u6709\u770B\u5230left\n        "])), props => getThemeVariantValue(props, 'borderRightColorFixedRows')) : Ce(react_table_esm_style_templateObject7 || (react_table_esm_style_templateObject7 = _taggedTemplateLiteralLoose(["\n          position: sticky !important;\n          z-index: 2 !important;\n          // border: 0; \u900F\u98CE 1px\n          &:after {\n            box-shadow: inset 10px 0 8px -8px rgb(0 0 0 / 15%);\n            position: absolute;\n            top: 0;\n            right: 0;\n            bottom: -1px;\n            width: 30px;\n            transform: translateX(100%);\n            transition: box-shadow 0.3s;\n            content: '';\n            pointer-events: none;\n          }\n        "]))));
+});
+TableCol.defaultProps = {
+  defaultTheme: TableBaseDefaultTheme
+};
+var TableColContent = styled_components_browser_esm.span(react_table_esm_style_templateObject8 || (react_table_esm_style_templateObject8 = _taggedTemplateLiteralLoose(["\n  ", "\n"])), props => {
+  var _props$params5;
+
+  return (props == null ? void 0 : (_props$params5 = props.params) == null ? void 0 : _props$params5.ellipsis) && Ce(react_table_esm_style_templateObject9 || (react_table_esm_style_templateObject9 = _taggedTemplateLiteralLoose(["\n      overflow: hidden;\n      white-space: nowrap;\n      text-overflow: ellipsis;\n      word-break: keep-all;\n      display: block;\n    "])));
+});
+TableColContent.defaultProps = {
+  defaultTheme: TableBaseDefaultTheme
+};
+var TableFooter = styled_components_browser_esm.div(react_table_esm_style_templateObject10 || (react_table_esm_style_templateObject10 = _taggedTemplateLiteralLoose(["\n  background: ", ";\n  padding: 10px 8px;\n  ", "\n"])), props => getThemeVariantValue(props, 'backgroundColorTableFooter'), props => {
+  var _props$params6;
+
+  return ((_props$params6 = props.params) == null ? void 0 : _props$params6.bordered) && Ce(react_table_esm_style_templateObject11 || (react_table_esm_style_templateObject11 = _taggedTemplateLiteralLoose(["\n      & {\n        border: 1px solid ", ";\n        border-top: 0;\n      }\n    "])), props => getThemeVariantValue(props, 'borderColorTable'));
+});
+TableFooter.defaultProps = {
+  defaultTheme: TableBaseDefaultTheme
+};
+
 ;// CONCATENATED MODULE: ../react-table/esm/style/index.css
 // extracted by mini-css-extract-plugin
 /* harmony default export */ const react_table_esm_style = ({});
@@ -13220,6 +13358,7 @@ var ThComponent_excluded = ["title", "key", "render", "children", "ellipsis", "f
 
 
 
+
 class ThComponent extends external_root_React_commonjs2_react_commonjs_react_amd_react_.Component {
   constructor() {
     super(...arguments);
@@ -13258,11 +13397,16 @@ class ThComponent extends external_root_React_commonjs2_react_commonjs_react_amd
       }
     }
 
-    return /*#__PURE__*/(0,jsx_runtime.jsx)("th", _extends({
+    return /*#__PURE__*/(0,jsx_runtime.jsx)(TableCol, _extends({
+      as: "th",
       ref: this.wrapper
     }, thProps, {
       style: _extends({}, thProps.style, locationFixed(fixed, locationWidth, "" + rowNum + colNum)),
       className: prefixCls + "-tr-children-" + ((item == null ? void 0 : item.align) || 'left') + " " + (item.className || '') + " " + cls,
+      params: {
+        align: (item == null ? void 0 : item.align) || 'left',
+        fixed: fixed
+      },
       onClick: evn => onCellHead == null ? void 0 : onCellHead(item, colNum, rowNum, evn),
       children: titleNode
     }), colNum);
@@ -13275,6 +13419,7 @@ class ThComponent extends external_root_React_commonjs2_react_commonjs_react_amd
 
 var Thead_excluded = ["prefixCls", "className", "data", "onCellHead", "locationWidth", "updateLocation"],
     Thead_excluded2 = ["title", "key", "render", "children", "ellipsis", "fixed"];
+
 
 
 
@@ -13295,7 +13440,7 @@ function TheadComponent(props) {
   } = props,
       other = _objectWithoutPropertiesLoose(props, Thead_excluded);
 
-  return /*#__PURE__*/(0,jsx_runtime.jsx)("thead", _extends({
+  return /*#__PURE__*/(0,jsx_runtime.jsx)(TheadWrap, _extends({
     className: [prefixCls, className].filter(Boolean).join(' ').trim()
   }, other, {
     children: data && data.length > 0 && data.map((tds, rowNum) => /*#__PURE__*/(0,jsx_runtime.jsx)("tr", {
@@ -13307,8 +13452,11 @@ function TheadComponent(props) {
         } = item,
             thProps = _objectWithoutPropertiesLoose(item, Thead_excluded2);
 
-        var titleNode = /*#__PURE__*/(0,jsx_runtime.jsx)("span", {
+        var titleNode = /*#__PURE__*/(0,jsx_runtime.jsx)(TableColContent, {
           className: ellipsis ? (thProps.className || '') + " " + prefixCls + "-ellipsis" : undefined,
+          params: {
+            ellipsis
+          },
           children: typeof title === 'function' ? title(item, colNum, rowNum) : title
         });
 
@@ -13362,6 +13510,7 @@ function ExpandableComponent(_ref) {
 }
 
 ;// CONCATENATED MODULE: ../react-table/esm/TableTr.js
+
 
 
 
@@ -13476,14 +13625,21 @@ function TableTr(props) {
               }
             }
 
-            return /*#__PURE__*/(0,external_root_React_commonjs2_react_commonjs_react_amd_react_.createElement)("td", _extends({}, objs, {
+            return /*#__PURE__*/(0,external_root_React_commonjs2_react_commonjs_react_amd_react_.createElement)(TableCol, _extends({}, objs, {
               style: keyName.fixed ? _extends({}, locationFixed(keyName.fixed, locationWidth, "" + getIndex(keyName.key || 'undefined'))) : {},
-              children: /*#__PURE__*/(0,jsx_runtime.jsx)("span", {
+              children: /*#__PURE__*/(0,jsx_runtime.jsx)(TableColContent, {
                 className: ellipsis && ellipsis[keyName.key] ? prefixCls + "-ellipsis" : undefined,
+                params: {
+                  ellipsis: ellipsis && ellipsis[keyName.key]
+                },
                 children: objs.children
               }),
               key: colNum,
               className: [prefixCls + '-tr-children-' + (keyName.align || 'left'), keyName.className, objs.className].filter(it => it).join(' ').trim(),
+              params: {
+                align: keyName.align,
+                fixed: keyName.fixed
+              },
               onClick: evn => onCell(trData, {
                 rowNum,
                 colNum,
@@ -13504,6 +13660,7 @@ function TableTr(props) {
 
 
 var react_table_esm_excluded = ["prefixCls", "className", "columns", "data", "title", "footer", "bordered", "onCell", "onCellHead", "empty", "children", "expandable", "rowKey", "scroll"];
+
 
 
 
@@ -13713,11 +13870,7 @@ function Table(props) {
                 return expandable.expandIcon(expand, record, index);
               }
 
-              return expand ? /*#__PURE__*/(0,jsx_runtime.jsx)(Icon, {
-                type: "minus-square-o"
-              }) : /*#__PURE__*/(0,jsx_runtime.jsx)(Icon, {
-                type: "plus-square-o"
-              });
+              return expand ? /*#__PURE__*/(0,jsx_runtime.jsx)(MinusSquareO/* MinusSquareO */.d, {}) : /*#__PURE__*/(0,jsx_runtime.jsx)(PlusSquareO/* PlusSquareO */.D, {});
             }
           });
         }
@@ -13739,6 +13892,7 @@ function Table(props) {
 
     if (scroll) {
       if (scroll.x !== undefined) {
+        style.table.maxWidth = 'none';
         style.table.minWidth = '100%';
         style.table.width = scroll.x;
         style.div.overflowX = 'auto';
@@ -13760,10 +13914,13 @@ function Table(props) {
     ellipsis
   } = getLevelItems(self.selfColumns);
   return /*#__PURE__*/(0,jsx_runtime.jsxs)((external_root_React_commonjs2_react_commonjs_react_amd_react_default()).Fragment, {
-    children: [/*#__PURE__*/(0,jsx_runtime.jsx)("div", _extends({
+    children: [/*#__PURE__*/(0,jsx_runtime.jsx)(TableWrap, _extends({
       className: cls
     }, other, {
       style: _extends({}, other.style, style.div),
+      params: {
+        bordered
+      },
       children: /*#__PURE__*/(0,jsx_runtime.jsxs)("table", {
         style: _extends({
           tableLayout: ellipsis ? 'fixed' : 'auto'
@@ -13804,8 +13961,11 @@ function Table(props) {
           })
         }), props.children]
       })
-    })), footer && /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
+    })), footer && /*#__PURE__*/(0,jsx_runtime.jsx)(TableFooter, {
       className: prefixCls + "-footer",
+      params: {
+        bordered
+      },
       children: footer
     })]
   });
