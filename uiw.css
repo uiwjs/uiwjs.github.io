@@ -639,51 +639,6 @@
   cursor: pointer;
 }
 
-.w-form-item {
-  margin-bottom: 10px;
-}
-.w-form-item-error .w-form-help,
-.w-form-item-error .w-form-label {
-  color: #dc3545;
-}
-.w-form-item-error .w-input-inner,
-.w-form-item-error .w-select,
-.w-form-item-error .w-select-default,
-.w-form-item-error .w-select:hover,
-.w-form-item-error .w-select-default:hover,
-.w-form-item-error .w-input-inner:hover,
-.w-form-item-error .w-input-inner:focus.w-input-inner:hover,
-.w-form-item-error .w-textarea,
-.w-form-item-error .w-textarea:hover,
-.w-form-item-error .w-textarea:focus.w-textarea:hover {
-  box-shadow: 0 0 0 1px #dc3545, 0 0 0 3px rgba(220, 53, 69, 0.17), inset 0 1px 1px rgba(16, 22, 26, 0.2);
-}
-.w-form-label {
-  line-height: 32px;
-  min-height: 32px;
-  font-weight: 600;
-  font-size: 14px;
-  padding-right: 5px;
-}
-.w-form-label label {
-  display: inline-block;
-}
-.w-form-row {
-  align-items: center;
-  display: flex;
-}
-.w-form-help {
-  color: #c2c2c2;
-  font-size: 12px;
-  padding-top: 3px;
-}
-
-.w-form fieldset {
-  margin: 0;
-  padding: 0;
-  border-width: 0;
-}
-
 .w-layout,
 .w-layout * {
   box-sizing: border-box;
