@@ -764,6 +764,7 @@ __webpack_require__.d(__webpack_exports__, {
   "RadioButton": () => (/* reexport */ esm_RadioButton),
   "RadioGroup": () => (/* reexport */ esm_RadioGroup),
   "RadioGroupBase": () => (/* reexport */ RadioGroupBase),
+  "RadioInputBase": () => (/* reexport */ RadioInputBase),
   "RadioText": () => (/* reexport */ RadioText),
   "Rate": () => (/* reexport */ Rate),
   "Row": () => (/* reexport */ Row_Row),
@@ -3639,7 +3640,6 @@ var typeVariant = (type, color) => {
 };
 
 var typeCss = props => {
-  console.log('props', props);
   var {
     type
   } = props;
@@ -7390,16 +7390,17 @@ function Cascader(props) {
 ;// CONCATENATED MODULE: ../react-radio/esm/style/index.js
 
 
-var react_radio_esm_style_templateObject, react_radio_esm_style_templateObject2, react_radio_esm_style_templateObject3, react_radio_esm_style_templateObject4;
+var react_radio_esm_style_templateObject, react_radio_esm_style_templateObject2, react_radio_esm_style_templateObject3, react_radio_esm_style_templateObject4, react_radio_esm_style_templateObject5;
 
 
 
-var RadioText = styled_components_browser_esm.div(react_radio_esm_style_templateObject || (react_radio_esm_style_templateObject = _taggedTemplateLiteralLoose(["\n  vertical-align: middle;\n  display: inline-block;\n  margin-left: 4px;\n  margin-right: 5px;\n  font-size: 14px;\n"])));
-var RadioBase = styled_components_browser_esm.label(react_radio_esm_style_templateObject2 || (react_radio_esm_style_templateObject2 = _taggedTemplateLiteralLoose(["\n  ", "\n"])), props => {
+var RadioInputBase = styled_components_browser_esm.input(react_radio_esm_style_templateObject || (react_radio_esm_style_templateObject = _taggedTemplateLiteralLoose([""])));
+var RadioText = styled_components_browser_esm.div(react_radio_esm_style_templateObject2 || (react_radio_esm_style_templateObject2 = _taggedTemplateLiteralLoose(["\n  vertical-align: middle;\n  display: inline-block;\n  margin-left: 4px;\n  margin-right: 5px;\n  font-size: 14px;\n"])));
+var RadioBase = styled_components_browser_esm.label(react_radio_esm_style_templateObject3 || (react_radio_esm_style_templateObject3 = _taggedTemplateLiteralLoose(["\n  ", "\n"])), props => {
   var disabled = props == null ? void 0 : props.disabled;
-  return Ce(react_radio_esm_style_templateObject3 || (react_radio_esm_style_templateObject3 = _taggedTemplateLiteralLoose(["\n      color: ", ";\n      cursor: ", ";\n      vertical-align: middle;\n      display: inline-block;\n      font-size: ", ";\n      input[type='radio'] {\n        outline: none;\n        position: relative;\n        width: ", ";\n        height: ", ";\n        background-clip: border-box;\n        appearance: none;\n        margin: -0.15px 0.6px 0 0;\n        border-radius: 50%;\n        background-color: ", ";\n        border: ", ";\n        transition: border 0.25s, box-shadow 0.25s;\n        cursor: ", ";\n        &:not(:checked):not(:disabled):not(.disabled) {\n          background-color: ", ";\n          &:hover,\n          &:focus {\n            box-shadow: 0 0 0 2px rgba(0, 142, 240, 0.25);\n          }\n        }\n        &:checked {\n          border: ", ";\n          &:focus {\n            box-shadow: 0 0 0 2px rgba(0, 142, 240, 0.25);\n          }\n        }\n      }\n    "])), disabled && getThemeVariantValue(props, 'colorRadioDefault'), disabled && 'not-allowed', getThemeVariantValue(props, 'fontSizeSamll'), getThemeVariantValue(props, 'widthRadioDefault'), getThemeVariantValue(props, 'heightRadioDefault'), getThemeVariantValue(props, 'backgroundColorBase'), getThemeVariantValue(props, 'borderRadioDefault'), disabled && 'not-allowed', disabled && getThemeVariantValue(props, 'colorNotCheckedNotDisabledDefault'), disabled && getThemeVariantValue(props, 'borderRadioCheckedDefault'));
+  return Ce(react_radio_esm_style_templateObject4 || (react_radio_esm_style_templateObject4 = _taggedTemplateLiteralLoose(["\n      color: ", ";\n      cursor: ", ";\n      vertical-align: middle;\n      display: inline-block;\n      font-size: ", ";\n      input[type='radio'] {\n        outline: none;\n        position: relative;\n        width: ", ";\n        height: ", ";\n        background-clip: border-box;\n        appearance: none;\n        margin: -0.15px 0.6px 0 0;\n        border-radius: 50%;\n        background-color: ", ";\n        border: ", ";\n        transition: border 0.25s, box-shadow 0.25s;\n        cursor: ", ";\n        &:not(:checked):not(:disabled):not(.disabled) {\n          background-color: ", ";\n          &:hover,\n          &:focus {\n            box-shadow: 0 0 0 2px rgba(0, 142, 240, 0.25);\n          }\n        }\n        &:checked {\n          border: ", ";\n          &:focus {\n            box-shadow: 0 0 0 2px rgba(0, 142, 240, 0.25);\n          }\n        }\n      }\n    "])), disabled && getThemeVariantValue(props, 'colorRadioDefault'), disabled && 'not-allowed', getThemeVariantValue(props, 'fontSizeSamll'), getThemeVariantValue(props, 'widthRadioDefault'), getThemeVariantValue(props, 'heightRadioDefault'), getThemeVariantValue(props, 'backgroundColorBase'), getThemeVariantValue(props, 'borderRadioDefault'), disabled && 'not-allowed', disabled && getThemeVariantValue(props, 'colorNotCheckedNotDisabledDefault'), disabled && getThemeVariantValue(props, 'borderRadioCheckedDefault'));
 });
-var RadioGroupBase = styled_components_browser_esm.div(react_radio_esm_style_templateObject4 || (react_radio_esm_style_templateObject4 = _taggedTemplateLiteralLoose(["\n  font-size: 0;\n"])));
+var RadioGroupBase = styled_components_browser_esm.div(react_radio_esm_style_templateObject5 || (react_radio_esm_style_templateObject5 = _taggedTemplateLiteralLoose(["\n  font-size: 0;\n"])));
 RadioBase.defaultProps = {
   defaultTheme: {
     backgroundColorBase: '#fff',
@@ -7475,7 +7476,7 @@ var RadioAbstract = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_re
     size,
     checked,
     label,
-    children: [/*#__PURE__*/(0,jsx_runtime.jsx)("input", _extends({}, _extends({}, other, {
+    children: [/*#__PURE__*/(0,jsx_runtime.jsx)(RadioInputBase, _extends({}, _extends({}, other, {
       type,
       disabled,
       value,
