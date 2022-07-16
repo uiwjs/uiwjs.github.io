@@ -14383,10 +14383,47 @@ var react_tooltip_esm_excluded = ["prefixCls", "className", "placement", "isOpen
   }));
 });
 
+;// CONCATENATED MODULE: ../react-tree/esm/style/index.js
+
+
+var react_tree_esm_style_templateObject, react_tree_esm_style_templateObject2, react_tree_esm_style_templateObject3, react_tree_esm_style_templateObject4, react_tree_esm_style_templateObject5, react_tree_esm_style_templateObject6, react_tree_esm_style_templateObject7, react_tree_esm_style_templateObject8, react_tree_esm_style_templateObject9, react_tree_esm_style_templateObject10, react_tree_esm_style_templateObject11, react_tree_esm_style_templateObject12, react_tree_esm_style_templateObject13;
+
+
+
+var CSSTransitionWarp = styled_components_browser_esm.div(react_tree_esm_style_templateObject || (react_tree_esm_style_templateObject = _taggedTemplateLiteralLoose(["\n  font-size: ", ";\n"])), props => getThemeVariantValue(props, 'fontSizeCSSTransitionWarpDefault'));
+CSSTransitionWarp.defaultProps = {
+  defaultTheme: {
+    fontSizeCSSTransitionWarpDefault: '14px'
+  }
+};
+var TreeNodeUl = styled_components_browser_esm.ul(react_tree_esm_style_templateObject2 || (react_tree_esm_style_templateObject2 = _taggedTemplateLiteralLoose(["\n  padding: 0 !important;\n  transition: 0.3s all;\n  overflow: hidden;\n  margin: 0;\n  ul {\n    padding-left: 18px !important;\n    margin-bottom: 0;\n  }\n  li {\n    list-style: none !important;\n    & + li {\n      margin-top: 2px !important;\n    }\n    &:first-child {\n      padding-top: 3px;\n    }\n  }\n\n  ", "\n\n  ", "\n"])), props => props.level !== 1 && props.isOpen && Ce(react_tree_esm_style_templateObject3 || (react_tree_esm_style_templateObject3 = _taggedTemplateLiteralLoose([""]))), props => props.level !== 1 && !props.isOpen && Ce(react_tree_esm_style_templateObject4 || (react_tree_esm_style_templateObject4 = _taggedTemplateLiteralLoose(["\n      height: 0;\n    "]))));
+var TreeNodeUlLidiv = styled_components_browser_esm.div(react_tree_esm_style_templateObject5 || (react_tree_esm_style_templateObject5 = _taggedTemplateLiteralLoose(["\n  line-height: initial;\n  & > * {\n    vertical-align: middle;\n  }\n"])));
+var TreeNodeUlLidivSpan = styled_components_browser_esm.div(react_tree_esm_style_templateObject6 || (react_tree_esm_style_templateObject6 = _taggedTemplateLiteralLoose(["\n  cursor: pointer;\n  position: relative;\n  z-index: 1;\n  width: 14px;\n  height: 14px;\n  line-height: 14px;\n  display: inline-block;\n  text-align: center;\n  &:hover {\n    color: ", ";\n  }\n  .w-icon {\n    transition: 0.3s all;\n    transform: ", ";\n  }\n"])), props => getThemeVariantValue(props, 'colorTreeNodeUlLidivSpanDefault'), props => getThemeVariantValue(props, 'transformTreeNodeUlLidivSpanDefault'));
+TreeNodeUlLidivSpan.defaultProps = {
+  defaultTheme: {
+    colorTreeNodeUlLidivSpanDefault: '#2ea3f4',
+    transformTreeNodeUlLidivSpanDefault: 'scale(0.79) rotate(0deg)'
+  }
+};
+var TreeNodeUlLidivSpanIcon = styled_components_browser_esm.div(react_tree_esm_style_templateObject7 || (react_tree_esm_style_templateObject7 = _taggedTemplateLiteralLoose(["\n  ", "\n\n  ", "\n"])), props => props.isNoChild && !props.isIcon && Ce(react_tree_esm_style_templateObject8 || (react_tree_esm_style_templateObject8 = _taggedTemplateLiteralLoose(["\n      display: none;\n    "]))), props => props.isItemIsOpen && props.isIconAnimation && Ce(react_tree_esm_style_templateObject9 || (react_tree_esm_style_templateObject9 = _taggedTemplateLiteralLoose(["\n      transform: ", ";\n    "])), props => getThemeVariantValue(props, 'transformTreeNodeUlLidivSpanIconDefault')));
+TreeNodeUlLidivSpanIcon.defaultProps = {
+  defaultTheme: {
+    transformTreeNodeUlLidivSpanIconDefault: 'scale(0.79) rotate(90deg) !important;'
+  }
+};
+var TreeNodeUlLidivSpanDiv = styled_components_browser_esm.div(react_tree_esm_style_templateObject10 || (react_tree_esm_style_templateObject10 = _taggedTemplateLiteralLoose(["\n  display: inline-block;\n  padding: 2px 5px;\n  cursor: pointer;\n\n  ", "\n\n  ", "\n\n  > * {\n    vertical-align: middle;\n  }\n"])), props => props.judgeSelected && props.judgeisSelected && Ce(react_tree_esm_style_templateObject11 || (react_tree_esm_style_templateObject11 = _taggedTemplateLiteralLoose(["\n      background-color: #d5e8fc;\n    "]))), props => props.judgeSelected && Ce(react_tree_esm_style_templateObject12 || (react_tree_esm_style_templateObject12 = _taggedTemplateLiteralLoose(["\n      cursor: not-allowed;\n    "]))));
+var TreeNodeDiv = styled_components_browser_esm.div(react_tree_esm_style_templateObject13 || (react_tree_esm_style_templateObject13 = _taggedTemplateLiteralLoose(["\n  li {\n    position: relative;\n    li {\n      &:before,\n      &::after {\n        content: ' ';\n        border-left: 1px solid #d9d9d9;\n        left: -12px;\n        position: absolute;\n      }\n      &::after {\n        height: 100%;\n        top: 5px;\n      }\n      &:last-child::after {\n        height: 16px;\n        top: -18px;\n      }\n      &:before {\n        content: ' ';\n        width: 10px;\n        height: 16px;\n        border-bottom: 1px solid #d9d9d9;\n        top: -2px;\n      }\n      &:last-child::before {\n        border-radius: ", ";\n      }\n    }\n  }\n"])), props => getThemeVariantValue(props, 'borderRadiusTreeNodeDivDefault'));
+TreeNodeDiv.defaultProps = {
+  defaultTheme: {
+    borderRadiusTreeNodeDivDefault: '0 0 0 3px;'
+  }
+};
+
 ;// CONCATENATED MODULE: ../react-tree/esm/TreeNode.js
 
 
 var TreeNode_excluded = ["prefixCls", "renderTitle", "icon", "iconAnimation", "isSelected", "openKeys", "selectedKeys", "data", "level", "parent", "onItemClick", "onItemSelected"];
+
 
 
 
@@ -14445,7 +14482,8 @@ function TreeNode(props) {
   var onEntered = (0,external_root_React_commonjs2_react_commonjs_react_amd_react_.useCallback)(() => {
     node.current.style.height = 'initial';
   }, []);
-  return /*#__PURE__*/(0,jsx_runtime.jsx)(esm_CSSTransition, {
+  return /*#__PURE__*/(0,jsx_runtime.jsx)(CSSTransitionWarp, {
+    as: esm_CSSTransition,
     nodeRef: node,
     classNames: prefixCls,
     in: isOpen,
@@ -14455,8 +14493,10 @@ function TreeNode(props) {
     onEnter: onEnter,
     onEntered: onEntered,
     onEntering: onEntering,
-    children: /*#__PURE__*/(0,jsx_runtime.jsx)("ul", {
+    children: /*#__PURE__*/(0,jsx_runtime.jsx)(TreeNodeUl, {
       ref: node,
+      isOpen: isOpen,
+      level: level,
       className: [level !== 1 && isOpen ? [prefixCls + "-open"] : null, level !== 1 && !isOpen ? [prefixCls + "-close"] : null].filter(Boolean).join(' ').trim(),
       children: data.map((item, idx) => {
         item.parent = parent;
@@ -14494,20 +14534,28 @@ function TreeNode(props) {
           style: {
             display: item.hideNode ? 'none' : 'block'
           },
-          children: [/*#__PURE__*/(0,jsx_runtime.jsxs)("div", {
+          children: [/*#__PURE__*/(0,jsx_runtime.jsxs)(TreeNodeUlLidiv, {
             className: prefixCls + "-label",
-            children: [/*#__PURE__*/(0,jsx_runtime.jsx)("span", {
+            children: [/*#__PURE__*/(0,jsx_runtime.jsx)(TreeNodeUlLidivSpan, {
               style: {
                 display: noChild ? 'none' : 'auto'
               },
               className: prefixCls + "-switcher",
               onClick: evn => onItemClick(item, evn),
-              children: /*#__PURE__*/(0,jsx_runtime.jsx)(Icon, {
+              children: /*#__PURE__*/(0,jsx_runtime.jsx)(TreeNodeUlLidivSpanIcon, {
+                as: Icon,
                 type: iconItem || 'caret-right',
+                isIcon: typeof icon,
+                isNoChild: noChild,
+                isIconAnimation: iconAnimation,
+                isItemIsOpen: itemIsOpen,
                 className: [typeof icon === 'function' ? prefixCls + "-switcher-noop" : null, noChild ? 'no-child' : null, !iconAnimation ? 'no-animation' : null, itemIsOpen ? 'open' : null].filter(Boolean).join(' ').trim()
               })
-            }), /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
+            }), /*#__PURE__*/(0,jsx_runtime.jsx)(TreeNodeUlLidivSpanDiv, {
               onClick: evn => disabledObj.onClick == null ? void 0 : disabledObj.onClick(item, evn),
+              judgeSelected: selected,
+              judgeisSelected: isSelected,
+              isDisabled: disabledObj.disabled,
               className: [prefixCls + "-title", selected && isSelected ? 'selected' : null, disabledObj.disabled, disabledObj.disabledMouse].filter(Boolean).join(' ').trim(),
               children: renderTitle ? renderTitle(item, {
                 selected,
@@ -14544,15 +14592,13 @@ function TreeNode(props) {
   });
 }
 
-;// CONCATENATED MODULE: ../react-tree/esm/style/index.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const react_tree_esm_style = ({});
 ;// CONCATENATED MODULE: ../react-tree/esm/index.js
 
 
 var react_tree_esm_excluded = ["prefixCls", "icon", "data", "openKeys", "selectedKeys", "defaultExpandAll", "showLine", "iconAnimation", "isSelected", "checkStrictly", "multiple", "onExpand", "onSelected", "className", "autoExpandParent", "renderTitle", "onChange", "value"];
 
 
+ // import './style/index.less';
 
 
 
@@ -14750,7 +14796,7 @@ function Tree(props) {
     onChange == null ? void 0 : onChange(item.key, selKeys);
   }
 
-  return /*#__PURE__*/(0,jsx_runtime.jsx)("div", _extends({
+  return /*#__PURE__*/(0,jsx_runtime.jsx)(TreeNodeDiv, _extends({
     className: cls
   }, elementProps, {
     children: /*#__PURE__*/(0,jsx_runtime.jsx)(TreeNode, {
