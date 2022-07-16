@@ -1058,6 +1058,16 @@ var GetStyledCloneComponent = props => {
     children
   });
 };
+/**
+ * 通过 className 获取 react-transition-group 状态
+ * **/
+
+var getTransitionGroupStatusType = (pix, className) => {
+  var reg = new RegExp("^" + pix); // 字符串进行分割数组
+
+  var classArr = className.split(' ').filter(name => reg.test(name)).map(name => name.replace(reg, '')).filter(Boolean);
+  return classArr;
+};
 
 ;// CONCATENATED MODULE: ../utils/esm/index.js
 
