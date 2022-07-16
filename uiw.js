@@ -10357,16 +10357,94 @@ var react_loader_esm_excluded = ["prefixCls", "className", "size", "loading", "t
   }));
 });
 
-;// CONCATENATED MODULE: ../react-message/esm/style/index.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const react_message_esm_style = ({});
+;// CONCATENATED MODULE: ../react-message/esm/style/index.js
+
+
+var react_message_esm_style_templateObject, react_message_esm_style_templateObject2, react_message_esm_style_templateObject3, react_message_esm_style_templateObject4, react_message_esm_style_templateObject5, react_message_esm_style_templateObject6, react_message_esm_style_templateObject7, react_message_esm_style_templateObject8, react_message_esm_style_templateObject9, react_message_esm_style_templateObject10, react_message_esm_style_templateObject11, react_message_esm_style_templateObject12, react_message_esm_style_templateObject13, react_message_esm_style_templateObject14, react_message_esm_style_templateObject15, react_message_esm_style_templateObject16, react_message_esm_style_templateObject17, esm_style_templateObject18, esm_style_templateObject19, esm_style_templateObject20;
+
+
+
+
+var MessageWrap = styled_components_browser_esm.div(react_message_esm_style_templateObject || (react_message_esm_style_templateObject = _taggedTemplateLiteralLoose(["\n  padding: 10px 15px;\n  position: relative;\n  font-size: 14px;\n"]))); // 最外层div
+
+var MessageDivWrap = styled_components_browser_esm(MessageWrap)(react_message_esm_style_templateObject2 || (react_message_esm_style_templateObject2 = _taggedTemplateLiteralLoose(["\n  margin-top: 10px;\n  ", "\n  ", "\n\n  ", "\n\n  ", "\n    > .w-icon {\n    top: 14px;\n    left: 14px;\n    position: absolute;\n  }\n  /* CSSTransition */\n  &.w-message-enter {\n    transform: scaleY(0.5);\n    opacity: 0;\n  }\n  &.w-message-enter-active {\n    opacity: 1;\n    transform: scaleY(1);\n    transition: transform 300ms ease, opacity 300ms ease;\n  }\n  &.w-message-exit {\n    opacity: 1;\n    transform: scaleY(1);\n    transition: transform 300ms ease, opacity 300ms ease;\n  }\n  &.w-message-exit-active {\n    transform: scaleY(0.5);\n    opacity: 0;\n  }\n"])), props => {
+  var _props$params;
+
+  if ((_props$params = props.params) != null && _props$params.showIcon) {
+    var _props$params2, _props$params3, _props$params4, _props$params5;
+
+    if ((_props$params2 = props.params) != null && _props$params2.children && (_props$params3 = props.params) != null && _props$params3.title) {
+      return Ce(react_message_esm_style_templateObject3 || (react_message_esm_style_templateObject3 = _taggedTemplateLiteralLoose(["\n          > .w-icon {\n            font-size: 24px;\n          }\n        "])));
+    }
+
+    if ((_props$params4 = props.params) != null && _props$params4.children) {
+      return Ce(react_message_esm_style_templateObject4 || (react_message_esm_style_templateObject4 = _taggedTemplateLiteralLoose(["\n          display: block;\n          color: rgba(0, 0, 0, 0.65);\n        "])));
+    }
+
+    if ((_props$params5 = props.params) != null && _props$params5.title) {
+      return Ce(react_message_esm_style_templateObject5 || (react_message_esm_style_templateObject5 = _taggedTemplateLiteralLoose(["\n          display: block;\n          color: rgba(0, 0, 0, 0.85);\n        "])));
+    }
+  }
+}, props => {
+  var _props$params6;
+
+  return ((_props$params6 = props.params) == null ? void 0 : _props$params6.rounded) && Ce(react_message_esm_style_templateObject6 || (react_message_esm_style_templateObject6 = _taggedTemplateLiteralLoose(["\n      border-radius: 5px;\n    "])));
+}, props => {
+  var _props$params7;
+
+  return ((_props$params7 = props.params) == null ? void 0 : _props$params7.showIcon) && Ce(react_message_esm_style_templateObject7 || (react_message_esm_style_templateObject7 = _taggedTemplateLiteralLoose(["\n      padding-left: 34px;\n    "])));
+}, props => {
+  //
+  switch (props.params.type) {
+    case 'success':
+      return Ce(react_message_esm_style_templateObject8 || (react_message_esm_style_templateObject8 = _taggedTemplateLiteralLoose(["\n          background: ", ";\n          color: ", ";\n        "])), getThemeVariantValue(props, 'backgroundMessageSuccess'), getThemeVariantValue(props, 'colorMessageSuccess'));
+
+    case 'warning':
+      return Ce(react_message_esm_style_templateObject9 || (react_message_esm_style_templateObject9 = _taggedTemplateLiteralLoose(["\n          background: ", ";\n          color: ", ";\n        "])), getThemeVariantValue(props, 'backgroundMessageWarning'), getThemeVariantValue(props, 'colorMessageWarning'));
+
+    case 'info':
+      return Ce(react_message_esm_style_templateObject10 || (react_message_esm_style_templateObject10 = _taggedTemplateLiteralLoose(["\n          background: ", ";\n          color: ", ";\n        "])), getThemeVariantValue(props, 'backgroundMessageInfo'), getThemeVariantValue(props, 'colorMessageInfo'));
+
+    case 'error':
+      return Ce(react_message_esm_style_templateObject11 || (react_message_esm_style_templateObject11 = _taggedTemplateLiteralLoose(["\n          background: ", ";\n          color: ", ";\n        "])), getThemeVariantValue(props, 'backgroundMessageError'), getThemeVariantValue(props, 'colorMessageError'));
+
+    default:
+      return Ce(react_message_esm_style_templateObject12 || (react_message_esm_style_templateObject12 = _taggedTemplateLiteralLoose([""])));
+  }
+});
+// 原始span
+var MessageSpanWrap = styled_components_browser_esm.span(react_message_esm_style_templateObject13 || (react_message_esm_style_templateObject13 = _taggedTemplateLiteralLoose(["\n  display: block;\n"]))); // 详情description
+
+var MessageDescriptionSpan = styled_components_browser_esm(MessageSpanWrap)(react_message_esm_style_templateObject14 || (react_message_esm_style_templateObject14 = _taggedTemplateLiteralLoose(["\n  color: rgba(0, 0, 0, 0.65);\n  ", "\n"])), props => props.params.showIcon && props.params.title && props.params.children && Ce(react_message_esm_style_templateObject15 || (react_message_esm_style_templateObject15 = _taggedTemplateLiteralLoose(["\n      padding-left: 16px;\n    "])))); // 标题title
+
+var MessageTitleSpan = styled_components_browser_esm(MessageDescriptionSpan)(react_message_esm_style_templateObject16 || (react_message_esm_style_templateObject16 = _taggedTemplateLiteralLoose(["\n  color: rgba(0, 0, 0, 0.85);\n  ", "\n"])), props => props.params.showIcon && props.params.title && props.params.children && Ce(react_message_esm_style_templateObject17 || (react_message_esm_style_templateObject17 = _taggedTemplateLiteralLoose(["\n      font-size: 16px;\n    "]))));
+// icon
+var MessageIconWarp = styled_components_browser_esm.span(esm_style_templateObject18 || (esm_style_templateObject18 = _taggedTemplateLiteralLoose(["\n  ", "\n  top: 14px;\n  left: 14px;\n  position: absolute;\n"])), props => {
+  var _props$params8;
+
+  return ((_props$params8 = props.params) == null ? void 0 : _props$params8.showIcon) && props.params.title && props.params.children && Ce(esm_style_templateObject19 || (esm_style_templateObject19 = _taggedTemplateLiteralLoose(["\n      font-size: 24px;\n    "])));
+});
+var MessageButtonWarp = styled_components_browser_esm(esm)(esm_style_templateObject20 || (esm_style_templateObject20 = _taggedTemplateLiteralLoose(["\n  position: absolute;\n  right: 10px;\n  top: 10px;\n  padding: 2px;\n  min-width: 16px;\n  min-height: 16px;\n  color: rgba(0, 0, 0, 0.38);\n  &:hover {\n    background-color: rgba(255, 255, 255, 0.21) !important;\n  }\n  &:active {\n    background-color: rgba(0, 0, 0, 0.1) !important;\n  }\n"])));
+MessageDivWrap.defaultProps = {
+  defaultTheme: {
+    backgroundMessageSuccess: '#afecbd',
+    colorMessageSuccess: '#28a745',
+    backgroundMessageWarning: '#fff4d3',
+    colorMessageWarning: '#ffc107',
+    backgroundMessageInfo: '#bde4ff',
+    colorMessageInfo: '#008ef0',
+    backgroundMessageError: '#fae3e5',
+    colorMessageError: '#dc3545'
+  }
+};
+
 ;// CONCATENATED MODULE: ../react-message/esm/index.js
 
 
 var react_message_esm_excluded = ["prefixCls", "className", "type", "title", "description", "showIcon", "icon", "rounded", "isCloseButtonShown"];
 
 
-
+ // import './style/index.less';
 
 
 
@@ -10432,6 +10510,7 @@ class Message extends (external_root_React_commonjs2_react_commonjs_react_amd_re
       title,
       description,
       showIcon,
+      icon,
       rounded,
       isCloseButtonShown
     } = _this$props,
@@ -10440,20 +10519,40 @@ class Message extends (external_root_React_commonjs2_react_commonjs_react_amd_re
     var children = description || this.props.children;
     var cls = [prefixCls, className, prefixCls + "-" + type, rounded ? prefixCls + "-rounded" : null, showIcon ? prefixCls + "-icon" : null, showIcon ? "" + prefixCls + (title ? '-title' : '') + (children ? '-description' : '') : null].filter(Boolean).join(' ').trim();
 
-    var Child = /*#__PURE__*/(0,jsx_runtime.jsxs)("div", _extends({
+    var Child = /*#__PURE__*/(0,jsx_runtime.jsxs)(MessageDivWrap, _extends({
+      params: {
+        rounded,
+        type,
+        title,
+        children,
+        showIcon,
+        icon
+      },
       className: cls
     }, elementProps, {
-      children: [isCloseButtonShown && /*#__PURE__*/(0,jsx_runtime.jsx)(esm, {
+      children: [isCloseButtonShown && /*#__PURE__*/(0,jsx_runtime.jsx)(MessageButtonWarp, {
         basic: true,
         onClick: this.handleClosed,
-        icon: "close",
+        icon: /*#__PURE__*/(0,jsx_runtime.jsx)(Icon, {
+          type: "close"
+        }),
         type: "light"
       }), showIcon && /*#__PURE__*/(0,jsx_runtime.jsx)(Icon, {
         type: this.renderIcon()
-      }), /*#__PURE__*/(0,jsx_runtime.jsx)("span", {
+      }), /*#__PURE__*/(0,jsx_runtime.jsx)(MessageTitleSpan, {
+        params: {
+          showIcon,
+          title,
+          children
+        },
         className: prefixCls + "-title",
         children: title
-      }), /*#__PURE__*/(0,jsx_runtime.jsx)("span", {
+      }), /*#__PURE__*/(0,jsx_runtime.jsx)(MessageDescriptionSpan, {
+        params: {
+          showIcon,
+          title,
+          children
+        },
         className: prefixCls + "-description",
         children: children
       })]
@@ -10804,7 +10903,7 @@ function NotificationCreate(props, type) {
 ;// CONCATENATED MODULE: ../react-pagination/esm/style/index.js
 
 
-var react_pagination_esm_style_templateObject, react_pagination_esm_style_templateObject2, react_pagination_esm_style_templateObject3, react_pagination_esm_style_templateObject4, react_pagination_esm_style_templateObject5, react_pagination_esm_style_templateObject6, react_pagination_esm_style_templateObject7, react_pagination_esm_style_templateObject8, react_pagination_esm_style_templateObject9, react_pagination_esm_style_templateObject10, react_pagination_esm_style_templateObject11, react_pagination_esm_style_templateObject12, react_pagination_esm_style_templateObject13, react_pagination_esm_style_templateObject14, react_pagination_esm_style_templateObject15, react_pagination_esm_style_templateObject16, react_pagination_esm_style_templateObject17, esm_style_templateObject18, esm_style_templateObject19;
+var react_pagination_esm_style_templateObject, react_pagination_esm_style_templateObject2, react_pagination_esm_style_templateObject3, react_pagination_esm_style_templateObject4, react_pagination_esm_style_templateObject5, react_pagination_esm_style_templateObject6, react_pagination_esm_style_templateObject7, react_pagination_esm_style_templateObject8, react_pagination_esm_style_templateObject9, react_pagination_esm_style_templateObject10, react_pagination_esm_style_templateObject11, react_pagination_esm_style_templateObject12, react_pagination_esm_style_templateObject13, react_pagination_esm_style_templateObject14, react_pagination_esm_style_templateObject15, react_pagination_esm_style_templateObject16, react_pagination_esm_style_templateObject17, react_pagination_esm_style_templateObject18, react_pagination_esm_style_templateObject19;
 
 
 
@@ -10867,10 +10966,10 @@ var PaginationBaseLI = styled_components_browser_esm.li(react_pagination_esm_sty
 PaginationBaseLI.defaultProps = {
   defaultTheme: PaginationDefaultTheme
 };
-var PaginationBaseUL = styled_components_browser_esm.ul(esm_style_templateObject18 || (esm_style_templateObject18 = _taggedTemplateLiteralLoose(["\n  padding: 0 !important;\n  margin: 0 !important;\n  position: relative;\n  user-select: none;\n  font-size: 12px;\n  ", "\n"])), props => {
+var PaginationBaseUL = styled_components_browser_esm.ul(react_pagination_esm_style_templateObject18 || (react_pagination_esm_style_templateObject18 = _taggedTemplateLiteralLoose(["\n  padding: 0 !important;\n  margin: 0 !important;\n  position: relative;\n  user-select: none;\n  font-size: 12px;\n  ", "\n"])), props => {
   var _props$params8;
 
-  return ((_props$params8 = props.params) == null ? void 0 : _props$params8.size) === 'default' && props.params.isDivider && Ce(esm_style_templateObject19 || (esm_style_templateObject19 = _taggedTemplateLiteralLoose(["\n      ", " + ", " {\n        margin-left: 8px !important;\n        border: 1px solid ", ";\n      }\n      ", " {\n        border-radius: 4px;\n      }\n    "])), PaginationBaseLI, PaginationBaseLI, props => getThemeVariantValue(props, 'borderColorPaginationBase'), PaginationBaseLI);
+  return ((_props$params8 = props.params) == null ? void 0 : _props$params8.size) === 'default' && props.params.isDivider && Ce(react_pagination_esm_style_templateObject19 || (react_pagination_esm_style_templateObject19 = _taggedTemplateLiteralLoose(["\n      ", " + ", " {\n        margin-left: 8px !important;\n        border: 1px solid ", ";\n      }\n      ", " {\n        border-radius: 4px;\n      }\n    "])), PaginationBaseLI, PaginationBaseLI, props => getThemeVariantValue(props, 'borderColorPaginationBase'), PaginationBaseLI);
 });
 PaginationBaseUL.defaultProps = {
   defaultTheme: PaginationDefaultTheme
@@ -11231,7 +11330,7 @@ function IconProgress(props) {
 ;// CONCATENATED MODULE: ../react-progress/esm/style/index.js
 
 
-var react_progress_esm_style_templateObject, react_progress_esm_style_templateObject2, react_progress_esm_style_templateObject3, react_progress_esm_style_templateObject4, react_progress_esm_style_templateObject5, react_progress_esm_style_templateObject6, react_progress_esm_style_templateObject7, react_progress_esm_style_templateObject8, react_progress_esm_style_templateObject9, react_progress_esm_style_templateObject10, react_progress_esm_style_templateObject11, react_progress_esm_style_templateObject12, react_progress_esm_style_templateObject13, react_progress_esm_style_templateObject14, react_progress_esm_style_templateObject15, react_progress_esm_style_templateObject16, react_progress_esm_style_templateObject17, react_progress_esm_style_templateObject18, react_progress_esm_style_templateObject19, esm_style_templateObject20, style_templateObject21, style_templateObject22;
+var react_progress_esm_style_templateObject, react_progress_esm_style_templateObject2, react_progress_esm_style_templateObject3, react_progress_esm_style_templateObject4, react_progress_esm_style_templateObject5, react_progress_esm_style_templateObject6, react_progress_esm_style_templateObject7, react_progress_esm_style_templateObject8, react_progress_esm_style_templateObject9, react_progress_esm_style_templateObject10, react_progress_esm_style_templateObject11, react_progress_esm_style_templateObject12, react_progress_esm_style_templateObject13, react_progress_esm_style_templateObject14, react_progress_esm_style_templateObject15, react_progress_esm_style_templateObject16, react_progress_esm_style_templateObject17, react_progress_esm_style_templateObject18, react_progress_esm_style_templateObject19, react_progress_esm_style_templateObject20, style_templateObject21, style_templateObject22;
 
 
 
@@ -11280,7 +11379,7 @@ var ProgressPath = styled_components_browser_esm.path(react_progress_esm_style_t
         return Ce(react_progress_esm_style_templateObject19 || (react_progress_esm_style_templateObject19 = _taggedTemplateLiteralLoose(["\n            & {\n              stroke: ", ";\n            }\n          "])), props => getThemeVariantValue(props, 'strokeProgressPathSuccess'));
 
       case 'exception':
-        return Ce(esm_style_templateObject20 || (esm_style_templateObject20 = _taggedTemplateLiteralLoose(["\n            & {\n              stroke: ", ";\n            }\n          "])), props => getThemeVariantValue(props, 'strokeProgressPathException'));
+        return Ce(react_progress_esm_style_templateObject20 || (react_progress_esm_style_templateObject20 = _taggedTemplateLiteralLoose(["\n            & {\n              stroke: ", ";\n            }\n          "])), props => getThemeVariantValue(props, 'strokeProgressPathException'));
 
       default:
         return Ce(style_templateObject21 || (style_templateObject21 = _taggedTemplateLiteralLoose(["\n            & {\n              stroke: ", ";\n            }\n          "])), props => getThemeVariantValue(props, 'strokeProgressPath'));
