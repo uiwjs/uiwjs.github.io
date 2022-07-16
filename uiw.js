@@ -10764,9 +10764,6 @@ function NotificationCreate(props, type) {
 });
 /* harmony default export */ const react_notify_esm = (NotificationCreate);
 
-;// CONCATENATED MODULE: ../react-pagination/esm/style/index.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const react_pagination_esm_style = ({});
 ;// CONCATENATED MODULE: ../react-pagination/esm/style/index.js
 
 
@@ -10848,7 +10845,7 @@ PaginationBaseUL.defaultProps = {
 var react_pagination_esm_excluded = ["className", "style", "prefixCls", "alignment", "size", "total", "pageSize", "pageSizeOptions", "current", "onChange", "onShowSizeChange", "divider"];
 
 
-
+// import './style/index.less';
 
 
 
