@@ -668,34 +668,6 @@
   right: 0;
 }
 
-.w-pin-code {
-  display: flex;
-}
-.w-pin-code-inner + .w-pin-code-inner {
-  margin-left: 8px;
-}
-.w-pin-code-inner {
-  width: 30px;
-}
-.w-pin-code-inner > input {
-  text-align: center;
-  padding: 0 !important;
-  font-size: 14px;
-  font-weight: bold;
-}
-.w-pin-code-large .w-pin-code-inner {
-  width: 36px;
-}
-.w-pin-code-large .w-pin-code-inner input {
-  font-size: 16px;
-}
-.w-pin-code-small .w-pin-code-inner {
-  width: 24px;
-}
-.w-pin-code-small .w-pin-code-inner input {
-  font-size: 12px;
-}
-
 .w-search-select-input-contents input {
   box-shadow: none;
   padding: 0px;

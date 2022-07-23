@@ -11204,16 +11204,24 @@ function Pagination(props) {
   }));
 }
 
-;// CONCATENATED MODULE: ../react-pin-code/esm/style/input.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const style_input = ({});
+;// CONCATENATED MODULE: ../react-pin-code/esm/style/index.js
+
+
+var react_pin_code_esm_style_templateObject, react_pin_code_esm_style_templateObject2, react_pin_code_esm_style_templateObject3, react_pin_code_esm_style_templateObject4;
+
+
+ // React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>
+
+var DivWrap = styled_components_browser_esm.div(react_pin_code_esm_style_templateObject || (react_pin_code_esm_style_templateObject = _taggedTemplateLiteralLoose(["\n  display: flex;\n"])));
+var InputWrap = styled_components_browser_esm(react_input_esm)(react_pin_code_esm_style_templateObject2 || (react_pin_code_esm_style_templateObject2 = _taggedTemplateLiteralLoose(["\n  width: 30px;\n  & + & {\n    margin-left: 8px;\n  }\n  > ", " {\n    text-align: center;\n    padding: 0 !important;\n    font-size: 14px;\n    font-weight: bold;\n  }\n\n  ", "\n\n  ", "\n"])), InputBase, props => (props == null ? void 0 : props.size) === 'large' && Ce(react_pin_code_esm_style_templateObject3 || (react_pin_code_esm_style_templateObject3 = _taggedTemplateLiteralLoose(["\n      width: 36px;\n      ", " {\n        font-size: 16px;\n      }\n    "])), InputBase), props => (props == null ? void 0 : props.size) === 'small' && Ce(react_pin_code_esm_style_templateObject4 || (react_pin_code_esm_style_templateObject4 = _taggedTemplateLiteralLoose(["\n      width: 24px;\n      ", " {\n        font-size: 12px;\n      }\n    "])), InputBase));
+
 ;// CONCATENATED MODULE: ../react-pin-code/esm/index.js
 
 
 var react_pin_code_esm_excluded = ["prefixCls", "placeholder", "value", "autoFocus", "className", "size", "style", "disabled", "onChange", "onBlur", "onFocus"];
 
 
-
+// import './style/input.less';
 
 
 
@@ -11288,7 +11296,7 @@ function InternalPinCode(props, ref) {
     onFocus(event);
   }
 
-  return /*#__PURE__*/(0,jsx_runtime.jsx)("div", _extends({
+  return /*#__PURE__*/(0,jsx_runtime.jsx)(DivWrap, _extends({
     className: cls,
     style: style
   }, otherProps, {
@@ -11314,7 +11322,7 @@ function InternalPinCode(props, ref) {
         inpProps.autoFocus = true;
       }
 
-      var child = /*#__PURE__*/(0,external_root_React_commonjs2_react_commonjs_react_amd_react_.createElement)(react_input_esm, _extends({
+      var child = /*#__PURE__*/(0,external_root_React_commonjs2_react_commonjs_react_amd_react_.createElement)(InputWrap, _extends({
         ref: instance => {
           if (instance) {
             input[key] = instance;
