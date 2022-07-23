@@ -14245,10 +14245,47 @@ function Table(props) {
   });
 }
 
+;// CONCATENATED MODULE: ../react-tabs/esm/style/index.js
+
+
+var react_tabs_esm_style_templateObject, react_tabs_esm_style_templateObject2, react_tabs_esm_style_templateObject3, react_tabs_esm_style_templateObject4, react_tabs_esm_style_templateObject5, react_tabs_esm_style_templateObject6, react_tabs_esm_style_templateObject7, react_tabs_esm_style_templateObject8, react_tabs_esm_style_templateObject9, react_tabs_esm_style_templateObject10, react_tabs_esm_style_templateObject11, react_tabs_esm_style_templateObject12, react_tabs_esm_style_templateObject13, react_tabs_esm_style_templateObject14, react_tabs_esm_style_templateObject15, react_tabs_esm_style_templateObject16, react_tabs_esm_style_templateObject17;
+
+
+var TabsWarp = styled_components_browser_esm.div(react_tabs_esm_style_templateObject || (react_tabs_esm_style_templateObject = _taggedTemplateLiteralLoose(["\n  ", "\n"])), props => {
+  if (props.type === 'line') {
+    return Ce(react_tabs_esm_style_templateObject2 || (react_tabs_esm_style_templateObject2 = _taggedTemplateLiteralLoose(["\n        ", " {\n          background-color: #108ee9;\n          box-sizing: border-box;\n          bottom: 0;\n          position: absolute;\n          height: 1px;\n          left: 0;\n          width: 20px;\n          z-index: 1;\n          transition: all 0.3s;\n        }\n        ", "::after {\n          content: '';\n          position: relative;\n          display: block;\n          border-bottom: 1px solid #d9d9d9;\n        }\n      "])), TabsDivSlide, TabsDivNav);
+  }
+
+  if (props.type === 'card') {
+    return Ce(react_tabs_esm_style_templateObject3 || (react_tabs_esm_style_templateObject3 = _taggedTemplateLiteralLoose(["\n        ", "::after {\n          content: '';\n          position: relative;\n          display: block;\n          border-bottom: 1px solid #d9d9d9;\n        }\n        ", " {\n          margin: 0;\n          border: 1px solid #d9d9d9;\n          border-bottom: 0;\n          padding: 7px 16px;\n          border-radius: 4px 4px 0 0;\n          background: #f9f9f9;\n          margin-right: 5px;\n          bottom: -1px;\n        }\n      "])), TabsDivNav, TabsItem);
+  }
+
+  return Ce(react_tabs_esm_style_templateObject4 || (react_tabs_esm_style_templateObject4 = _taggedTemplateLiteralLoose([""])));
+});
+var TabsDivFlex = styled_components_browser_esm.div(react_tabs_esm_style_templateObject5 || (react_tabs_esm_style_templateObject5 = _taggedTemplateLiteralLoose(["\n  display: flex;\n"])));
+var TabsDivHidden = styled_components_browser_esm.div(react_tabs_esm_style_templateObject6 || (react_tabs_esm_style_templateObject6 = _taggedTemplateLiteralLoose(["\n  overflow: hidden;\n"])));
+var TabsDivBar = styled_components_browser_esm.div(react_tabs_esm_style_templateObject7 || (react_tabs_esm_style_templateObject7 = _taggedTemplateLiteralLoose(["\n  position: relative;\n  overflow-x: auto;\n  height: calc(100% + 17px);\n"])));
+var TabsDivNav = styled_components_browser_esm.div(react_tabs_esm_style_templateObject8 || (react_tabs_esm_style_templateObject8 = _taggedTemplateLiteralLoose(["\n  position: relative;\n  width: max-content;\n"])));
+var TabsDivSlide = styled_components_browser_esm.div(react_tabs_esm_style_templateObject9 || (react_tabs_esm_style_templateObject9 = _taggedTemplateLiteralLoose([""])));
+var TabsNavHidden = styled_components_browser_esm.div(react_tabs_esm_style_templateObject10 || (react_tabs_esm_style_templateObject10 = _taggedTemplateLiteralLoose(["\n  display: flex;\n  overflow-y: auto;\n  padding: 5px 10px 5px 5px;\n  max-height: 200px;\n  flex-direction: column;\n  :hover {\n    background: #d9d9d9;\n  }\n"])));
+var TabsFlowContent = styled_components_browser_esm.div(react_tabs_esm_style_templateObject11 || (react_tabs_esm_style_templateObject11 = _taggedTemplateLiteralLoose(["\n  margin-left: 5px;\n  padding: 0px 10px 0px 10px;\n  box-shadow: 1px 0px 0px #d9d9d9 inset;\n  cursor: pointer;\n"])));
+var TabsItem = styled_components_browser_esm.div(react_tabs_esm_style_templateObject12 || (react_tabs_esm_style_templateObject12 = _taggedTemplateLiteralLoose(["\n  padding: 7px 10px;\n  display: inline-block;\n  height: 100%;\n  font-size: 14px;\n  box-sizing: border-box;\n  position: relative;\n  cursor: pointer;\n  text-decoration: none;\n  transition: all 0.3s;\n  ", "\n  ", "\n"])), props => {
+  if (props.active) {
+    return Ce(react_tabs_esm_style_templateObject13 || (react_tabs_esm_style_templateObject13 = _taggedTemplateLiteralLoose(["\n        color: #008ef0;\n        ", "\n      "])), props.type === 'card' && Ce(react_tabs_esm_style_templateObject14 || (react_tabs_esm_style_templateObject14 = _taggedTemplateLiteralLoose(["\n          background: #fff;\n          z-index: 1;\n        "]))));
+  }
+
+  return Ce(react_tabs_esm_style_templateObject15 || (react_tabs_esm_style_templateObject15 = _taggedTemplateLiteralLoose([""])));
+}, props => props.disabled && Ce(react_tabs_esm_style_templateObject16 || (react_tabs_esm_style_templateObject16 = _taggedTemplateLiteralLoose(["\n      cursor: not-allowed;\n      user-select: none;\n      color: rgba(0, 0, 0, 0.25);\n    "]))));
+var TabsPaneWarp = styled_components_browser_esm.div(react_tabs_esm_style_templateObject17 || (react_tabs_esm_style_templateObject17 = _taggedTemplateLiteralLoose([""])));
+TabsWarp.defaultProps = {
+  defaultTheme: {}
+};
+
 ;// CONCATENATED MODULE: ../react-tabs/esm/Pane.js
 
 
 var Pane_excluded = ["prefixCls", "className", "label"];
+
 
 
 /* harmony default export */ const Pane = (function (props) {
@@ -14262,18 +14299,15 @@ var Pane_excluded = ["prefixCls", "className", "label"];
   } = props,
       resetProps = _objectWithoutPropertiesLoose(props, Pane_excluded);
 
-  return /*#__PURE__*/(0,jsx_runtime.jsx)("div", _extends({
+  return /*#__PURE__*/(0,jsx_runtime.jsx)(TabsPaneWarp, _extends({
     className: [prefixCls, className].filter(Boolean).join(' ').trim()
   }, resetProps));
 });
 
-;// CONCATENATED MODULE: ../react-tabs/esm/style/index.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const react_tabs_esm_style = ({});
 ;// CONCATENATED MODULE: ../react-tabs/esm/index.js
 
 
-var react_tabs_esm_excluded = ["prefixCls", "className", "children", "type", "activeKey", "onTabClick"];
+var react_tabs_esm_excluded = ["className", "children", "type", "activeKey", "onTabClick"];
 
 
 
@@ -14287,7 +14321,6 @@ function Tabs(props) {
   var _flowNav$nav;
 
   var {
-    prefixCls = 'w-tabs',
     className,
     children,
     type = 'default',
@@ -14301,7 +14334,6 @@ function Tabs(props) {
     left: 0
   });
   var activeItem = (0,external_root_React_commonjs2_react_commonjs_react_amd_react_.useRef)();
-  var cls = [prefixCls, className, type ? prefixCls + "-" + type : null].filter(Boolean).join(' ').trim();
   var [flowNav, flowNavSet] = (0,external_root_React_commonjs2_react_commonjs_react_amd_react_.useState)({
     content: 0,
     nav: [],
@@ -14384,28 +14416,16 @@ function Tabs(props) {
     }
   }
 
-  return /*#__PURE__*/(0,jsx_runtime.jsxs)("div", _extends({
-    className: cls
+  return /*#__PURE__*/(0,jsx_runtime.jsxs)(TabsWarp, _extends({
+    className: className
   }, elementProps, {
-    children: [/*#__PURE__*/(0,jsx_runtime.jsxs)("div", {
-      style: {
-        display: 'flex'
-      },
-      children: [/*#__PURE__*/(0,jsx_runtime.jsx)("div", {
-        style: {
-          overflow: 'hidden'
-        },
-        children: /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
-          className: prefixCls + "-bar",
+    children: [/*#__PURE__*/(0,jsx_runtime.jsxs)(TabsDivFlex, {
+      children: [/*#__PURE__*/(0,jsx_runtime.jsx)(TabsDivHidden, {
+        children: /*#__PURE__*/(0,jsx_runtime.jsx)(TabsDivBar, {
           ref: divContentRef,
-          children: /*#__PURE__*/(0,jsx_runtime.jsxs)("div", {
-            className: prefixCls + "-nav",
-            style: {
-              width: 'max-content'
-            },
-            children: [renderNav(children), /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
-              style: slideStyle,
-              className: prefixCls + "-slide"
+          children: /*#__PURE__*/(0,jsx_runtime.jsxs)(TabsDivNav, {
+            children: [renderNav(children), /*#__PURE__*/(0,jsx_runtime.jsx)(TabsDivSlide, {
+              style: slideStyle
             })]
           })
         })
@@ -14413,13 +14433,11 @@ function Tabs(props) {
         trigger: "click",
         placement: "bottomRight",
         visibleArrow: false,
-        content: /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
-          className: prefixCls + "-nav-hidden",
+        content: /*#__PURE__*/(0,jsx_runtime.jsx)(TabsNavHidden, {
           children: renderNav(hiddenNav.map(idx => children[idx]))
         }),
-        children: /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
+        children: /*#__PURE__*/(0,jsx_runtime.jsx)(TabsFlowContent, {
           onClick: showHideenNav,
-          className: prefixCls + "-flow-content",
           children: /*#__PURE__*/(0,jsx_runtime.jsx)("span", {
             children: "\u2026"
           })
@@ -14441,7 +14459,6 @@ function Tabs(props) {
       }
 
       var divProps = {
-        className: [prefixCls + "-item", item.key === activeKey ? 'active' : null, item.props.disabled ? 'disabled' : null].filter(Boolean).join(' ').trim(),
         children: item.props.label
       };
 
@@ -14453,7 +14470,10 @@ function Tabs(props) {
         };
       }
 
-      return /*#__PURE__*/(0,jsx_runtime.jsx)("div", _extends({
+      return /*#__PURE__*/(0,jsx_runtime.jsx)(TabsItem, _extends({
+        type: type,
+        disabled: item.props.disabled,
+        active: item.key === activeKey,
         ref: _ref => divNavRef(_ref, key, item.key)
       }, divProps), key);
     });
