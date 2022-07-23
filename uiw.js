@@ -10579,16 +10579,27 @@ Message.defaultProps = {
   isCloseButtonShown: false
 };
 
-;// CONCATENATED MODULE: ../react-month-picker/esm/style/index.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const react_month_picker_esm_style = ({});
+;// CONCATENATED MODULE: ../react-month-picker/esm/style/index.js
+
+
+var react_month_picker_esm_style_templateObject, react_month_picker_esm_style_templateObject2, react_month_picker_esm_style_templateObject3, react_month_picker_esm_style_templateObject4;
+
+
+
+
+var MonthPickerCloseButton = styled_components_browser_esm(esm)(react_month_picker_esm_style_templateObject || (react_month_picker_esm_style_templateObject = _taggedTemplateLiteralLoose([""])));
+var MonthPickerPopoverBase = styled_components_browser_esm.div(react_month_picker_esm_style_templateObject2 || (react_month_picker_esm_style_templateObject2 = _taggedTemplateLiteralLoose(["\n  padding: 5px;\n  min-width: 192px;\n  max-width: 192px;\n  font-size: 14px;\n  line-height: 21px;\n"])));
+var MonthPickerInputBase = styled_components_browser_esm(react_input_esm)(react_month_picker_esm_style_templateObject3 || (react_month_picker_esm_style_templateObject3 = _taggedTemplateLiteralLoose(["\n  display: inline-block;\n  & ", " {\n    min-height: initial;\n    fill: #a5a5a5;\n    cursor: pointer;\n    &:hover {\n      fill: #393e48;\n    }\n    &:active,\n    &:hover {\n      background-color: transparent !important;\n    }\n  }\n  ", "\n"])), MonthPickerCloseButton, props => props.disabled && Ce(react_month_picker_esm_style_templateObject4 || (react_month_picker_esm_style_templateObject4 = _taggedTemplateLiteralLoose(["\n      & ", " {\n        display: none !important;\n      }\n    "])), MonthPickerCloseButton));
+
 ;// CONCATENATED MODULE: ../react-month-picker/esm/index.js
 
 
 var react_month_picker_esm_excluded = ["prefixCls", "format", "onChange", "className", "popoverProps", "pickerCaptionProps", "allowClear", "monthLabel"];
 
 
+// import Button from '@uiw/react-button';
 
+ // import './style/index.less';
 
 
 
@@ -10617,9 +10628,11 @@ function MonthPicker(props) {
   inputProps.value = (0,external_root_React_commonjs2_react_commonjs_react_amd_react_.useMemo)(() => typeof date === 'string' ? date : date ? formatter(format, date) : '', [format, date]);
 
   if (allowClear && inputProps.value) {
-    inputProps.addonAfter = /*#__PURE__*/(0,jsx_runtime.jsx)(esm, {
+    inputProps.addonAfter = /*#__PURE__*/(0,jsx_runtime.jsx)(MonthPickerCloseButton, {
       className: prefixCls + "-close-btn",
-      icon: "close",
+      icon: /*#__PURE__*/(0,jsx_runtime.jsx)(IconBase, {
+        as: Close/* Close */.x
+      }),
       onClick: () => {
         setDate('');
         onChange && onChange();
@@ -10654,7 +10667,7 @@ function MonthPicker(props) {
     isOpen: isOpen
   }, popoverProps, {
     onVisibleChange: open => setIsOpen(open),
-    content: /*#__PURE__*/(0,jsx_runtime.jsxs)("div", {
+    content: /*#__PURE__*/(0,jsx_runtime.jsxs)(MonthPickerPopoverBase, {
       className: prefixCls + "-popover",
       children: [/*#__PURE__*/(0,jsx_runtime.jsx)(DatePickerCaption, _extends({
         panelDate: panelDate,
@@ -10678,7 +10691,7 @@ function MonthPicker(props) {
         onSelected: (year, paging) => handleSelectedDate('setFullYear', year, paging)
       })]
     }),
-    children: /*#__PURE__*/(0,jsx_runtime.jsx)(react_input_esm, _extends({
+    children: /*#__PURE__*/(0,jsx_runtime.jsx)(MonthPickerInputBase, _extends({
       placeholder: "\u8BF7\u8F93\u5165\u65E5\u671F",
       readOnly: true
     }, inputProps, {

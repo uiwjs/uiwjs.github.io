@@ -586,32 +586,6 @@
   transition: all 0.2s;
 }
 
-.w-monthpicker {
-  display: inline-block;
-}
-.w-monthpicker-popover {
-  padding: 5px;
-  min-width: 192px;
-  max-width: 192px;
-  font-size: 14px;
-  line-height: 21px;
-}
-.w-monthpicker.disabled .w-monthpicker-close-btn {
-  display: none !important;
-}
-.w-monthpicker .w-monthpicker-close-btn {
-  min-height: initial;
-  color: #a5a5a5;
-  cursor: pointer;
-}
-.w-monthpicker .w-monthpicker-close-btn:hover {
-  color: #393e48;
-}
-.w-monthpicker .w-monthpicker-close-btn:active,
-.w-monthpicker .w-monthpicker-close-btn:hover {
-  background-color: transparent !important;
-}
-
 .w-notify {
   position: relative !important;
   z-index: 9999;
