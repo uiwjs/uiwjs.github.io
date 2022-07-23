@@ -4444,6 +4444,88 @@ formatter.utc = function (str, date) {
 
 
 
+;// CONCATENATED MODULE: ../react-popover/esm/Confirm.js
+
+ // import './style/index.less';
+
+
+
+
+
+function Confirm(props) {
+  var {
+    trigger = 'click',
+    placement = 'top',
+    confirmText = 'Yes',
+    title,
+    cancelText = 'No',
+    visibleArrow,
+    children,
+    onConfirm
+  } = props;
+  var [isOpen, setIsOpen] = (0,external_root_React_commonjs2_react_commonjs_react_amd_react_.useState)(false);
+  return /*#__PURE__*/(0,jsx_runtime.jsx)(Popover, {
+    isOpen: isOpen,
+    visibleArrow: visibleArrow,
+    content: /*#__PURE__*/(0,jsx_runtime.jsxs)("div", {
+      style: {
+        padding: '12px 16px',
+        position: 'relative'
+      },
+      children: [/*#__PURE__*/(0,jsx_runtime.jsx)(Icon, {
+        type: "information",
+        style: {
+          position: 'absolute',
+          top: 13.5,
+          fontSize: 14,
+          transform: 'rotate(180deg)',
+          color: '#faad14'
+        }
+      }), /*#__PURE__*/(0,jsx_runtime.jsxs)("div", {
+        style: {
+          paddingLeft: 20
+        },
+        children: [/*#__PURE__*/(0,jsx_runtime.jsx)("div", {
+          style: {
+            fontSize: 14
+          },
+          children: title
+        }), /*#__PURE__*/(0,jsx_runtime.jsxs)("div", {
+          style: {
+            position: 'relative',
+            bottom: 0,
+            marginTop: 12,
+            display: 'flex',
+            justifyContent: 'end'
+          },
+          children: [/*#__PURE__*/(0,jsx_runtime.jsx)(esm, {
+            size: "small",
+            onClick: () => setIsOpen(false),
+            children: cancelText
+          }), /*#__PURE__*/(0,jsx_runtime.jsx)(esm, {
+            size: "small",
+            type: "primary",
+            style: {
+              marginLeft: 10
+            },
+            onClick: () => {
+              onConfirm == null ? void 0 : onConfirm();
+              setIsOpen(false);
+            },
+            children: confirmText
+          })]
+        })]
+      })]
+    }),
+    trigger: trigger,
+    placement: placement,
+    children: /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
+      onClick: () => setIsOpen(true),
+      children: children
+    })
+  });
+}
+
 ;// CONCATENATED MODULE: ../react-overlay-trigger/esm/utils.js
 var utils_canUseDOM = !!(typeof window !== 'undefined' && window.document && window.document.createElement);
 
@@ -5117,106 +5199,38 @@ var normalizeDelay = delay => delay && typeof delay === 'object' ? delay : {
   });
 }));
 
-;// CONCATENATED MODULE: ../react-popover/esm/style/index.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const react_popover_esm_style = ({});
-;// CONCATENATED MODULE: ../react-popover/esm/Confirm.js
-
-
-
-
-
-
-
-function Confirm(props) {
-  var {
-    trigger = 'click',
-    placement = 'top',
-    confirmText = 'Yes',
-    title,
-    cancelText = 'No',
-    visibleArrow,
-    children,
-    onConfirm
-  } = props;
-  var [isOpen, setIsOpen] = (0,external_root_React_commonjs2_react_commonjs_react_amd_react_.useState)(false);
-  return /*#__PURE__*/(0,jsx_runtime.jsx)(Popover, {
-    isOpen: isOpen,
-    visibleArrow: visibleArrow,
-    content: /*#__PURE__*/(0,jsx_runtime.jsxs)("div", {
-      style: {
-        padding: '12px 16px',
-        position: 'relative'
-      },
-      children: [/*#__PURE__*/(0,jsx_runtime.jsx)(Icon, {
-        type: "information",
-        style: {
-          position: 'absolute',
-          top: 13.5,
-          fontSize: 14,
-          transform: 'rotate(180deg)',
-          color: '#faad14'
-        }
-      }), /*#__PURE__*/(0,jsx_runtime.jsxs)("div", {
-        style: {
-          paddingLeft: 20
-        },
-        children: [/*#__PURE__*/(0,jsx_runtime.jsx)("div", {
-          style: {
-            fontSize: 14
-          },
-          children: title
-        }), /*#__PURE__*/(0,jsx_runtime.jsxs)("div", {
-          style: {
-            position: 'relative',
-            bottom: 0,
-            marginTop: 12,
-            display: 'flex',
-            justifyContent: 'end'
-          },
-          children: [/*#__PURE__*/(0,jsx_runtime.jsx)(esm, {
-            size: "small",
-            onClick: () => setIsOpen(false),
-            children: cancelText
-          }), /*#__PURE__*/(0,jsx_runtime.jsx)(esm, {
-            size: "small",
-            type: "primary",
-            style: {
-              marginLeft: 10
-            },
-            onClick: () => {
-              onConfirm == null ? void 0 : onConfirm();
-              setIsOpen(false);
-            },
-            children: confirmText
-          })]
-        })]
-      })]
-    }),
-    trigger: trigger,
-    placement: placement,
-    children: /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
-      onClick: () => setIsOpen(true),
-      children: children
-    })
-  });
-}
-
 ;// CONCATENATED MODULE: ../react-popover/esm/style/index.js
 
 
-var react_popover_esm_style_templateObject, react_popover_esm_style_templateObject2, react_popover_esm_style_templateObject3, react_popover_esm_style_templateObject4, react_popover_esm_style_templateObject5, react_popover_esm_style_templateObject6, react_popover_esm_style_templateObject7, react_popover_esm_style_templateObject8, react_popover_esm_style_templateObject9, react_popover_esm_style_templateObject10, esm_style_templateObject11;
+var react_popover_esm_style_templateObject, react_popover_esm_style_templateObject2, react_popover_esm_style_templateObject3, react_popover_esm_style_templateObject4, react_popover_esm_style_templateObject5, react_popover_esm_style_templateObject6, react_popover_esm_style_templateObject7, react_popover_esm_style_templateObject8, react_popover_esm_style_templateObject9, react_popover_esm_style_templateObject10, esm_style_templateObject11, esm_style_templateObject12, esm_style_templateObject13, esm_style_templateObject14, esm_style_templateObject15, esm_style_templateObject16;
+
 
 
 var OverlayTriggerPopoverArrow = styled_components_browser_esm.div(react_popover_esm_style_templateObject || (react_popover_esm_style_templateObject = _taggedTemplateLiteralLoose(["\n  position: absolute;\n  width: 30px;\n  height: 30px;\n  border-color: transparent;\n  z-index: 21;\n"])));
-var OverlayTriggerPopover = styled_components_browser_esm.div(react_popover_esm_style_templateObject2 || (react_popover_esm_style_templateObject2 = _taggedTemplateLiteralLoose(["\n  position: relative;\n  display: inline-block;\n  outline: 0;\n\n  ", "\n\n  ", " \n\n  ", " \n\n  ", " \n\n  ", " \n\n  ", " \n\n  ", " \n\n  ", "\n"])), props => ['right', 'rightTop', 'rightBottom'].includes(props.placement || '') && Ce(react_popover_esm_style_templateObject3 || (react_popover_esm_style_templateObject3 = _taggedTemplateLiteralLoose(["\n      & ", " {\n        left: 2px;\n        margin-top: -15px;\n        top: 50%;\n      }\n    "])), OverlayTriggerPopoverArrow), props => ['left', 'leftTop', 'leftBottom'].includes(props.placement || '') && Ce(react_popover_esm_style_templateObject4 || (react_popover_esm_style_templateObject4 = _taggedTemplateLiteralLoose(["\n      & ", " {\n        transform: rotate(180deg);\n        margin-top: -15px;\n        right: 2px;\n        top: 50%;\n      }\n    "])), OverlayTriggerPopoverArrow), props => ['leftTop', 'rightTop'].includes(props.placement || '') && Ce(react_popover_esm_style_templateObject5 || (react_popover_esm_style_templateObject5 = _taggedTemplateLiteralLoose(["\n      & ", " {\n        top: 15px;\n      }\n    "])), OverlayTriggerPopoverArrow), props => ['leftBottom', 'rightBottom'].includes(props.placement || '') && Ce(react_popover_esm_style_templateObject6 || (react_popover_esm_style_templateObject6 = _taggedTemplateLiteralLoose(["\n      & ", " {\n        bottom: 0;\n        top: auto;\n      }\n    "])), OverlayTriggerPopoverArrow), props => ['top', 'topLeft', 'topRight'].includes(props.placement || '') && Ce(react_popover_esm_style_templateObject7 || (react_popover_esm_style_templateObject7 = _taggedTemplateLiteralLoose(["\n      & ", " {\n        transform: rotate(-90deg);\n        bottom: 2px;\n        left: 50%;\n        margin-left: -15px;\n      }\n    "])), OverlayTriggerPopoverArrow), props => ['bottom', 'bottomLeft', 'bottomRight'].includes(props.placement || '') && Ce(react_popover_esm_style_templateObject8 || (react_popover_esm_style_templateObject8 = _taggedTemplateLiteralLoose(["\n      & ", " {\n        transform: rotate(90deg);\n        left: 50%;\n        margin-left: -15px;\n        top: 2px;\n      }\n    "])), OverlayTriggerPopoverArrow), props => ['bottomLeft', 'topLeft'].includes(props.placement || '') && Ce(react_popover_esm_style_templateObject9 || (react_popover_esm_style_templateObject9 = _taggedTemplateLiteralLoose(["\n      & ", " {\n        left: 15px;\n      }\n    "])), OverlayTriggerPopoverArrow), props => ['bottomRight', 'topRight'].includes(props.placement || '') && Ce(react_popover_esm_style_templateObject10 || (react_popover_esm_style_templateObject10 = _taggedTemplateLiteralLoose(["\n      & ", " {\n        right: 0;\n        left: auto;\n      }\n    "])), OverlayTriggerPopoverArrow));
-var OverlayTriggerPopoverContent = styled_components_browser_esm.div(esm_style_templateObject11 || (esm_style_templateObject11 = _taggedTemplateLiteralLoose(["\n  font-size: 12px;\n  display: block;\n  text-align: left;\n  text-decoration: none;\n  background-color: #fff;\n  border-radius: 4px;\n  min-height: 23px;\n  box-shadow: 'rgba(16, 22, 26, 0.1) 0px 0px 0px 1px, rgba(16, 22, 26, 0.2) 0px 2px 4px,rgba(16, 22, 26, 0.2) 0px 8px 24px';\n"])));
+var OverlayTriggerPopoverBodyBase = styled_components_browser_esm.div(react_popover_esm_style_templateObject2 || (react_popover_esm_style_templateObject2 = _taggedTemplateLiteralLoose(["\n  ", "\n  ", "\n  ", "\n\n  ", "\n"])), props => {
+  var _props$params;
+
+  return ['top', 'topLeft', 'topRight'].includes(((_props$params = props.params) == null ? void 0 : _props$params.placement) || '') && Ce(react_popover_esm_style_templateObject3 || (react_popover_esm_style_templateObject3 = _taggedTemplateLiteralLoose(["\n      padding-bottom: 13px;\n    "])));
+}, props => {
+  var _props$params2;
+
+  return ['bottom', 'bottomLeft', 'bottomRight'].includes(((_props$params2 = props.params) == null ? void 0 : _props$params2.placement) || '') && Ce(react_popover_esm_style_templateObject4 || (react_popover_esm_style_templateObject4 = _taggedTemplateLiteralLoose(["\n      padding-top: 13px;\n    "])));
+}, props => {
+  var _props$params3;
+
+  return ['right', 'rightTop', 'rightBottom'].includes(((_props$params3 = props.params) == null ? void 0 : _props$params3.placement) || '') && Ce(react_popover_esm_style_templateObject5 || (react_popover_esm_style_templateObject5 = _taggedTemplateLiteralLoose(["\n      padding-left: 13px;\n    "])));
+}, props => {
+  var _props$params4;
+
+  return ['left', 'leftTop', 'leftBottom'].includes(((_props$params4 = props.params) == null ? void 0 : _props$params4.placement) || '') && Ce(react_popover_esm_style_templateObject6 || (react_popover_esm_style_templateObject6 = _taggedTemplateLiteralLoose(["\n      padding-right: 13px;\n    "])));
+});
+var OverlayTriggerPopover = styled_components_browser_esm(react_overlay_trigger_esm)(react_popover_esm_style_templateObject7 || (react_popover_esm_style_templateObject7 = _taggedTemplateLiteralLoose(["\n  position: relative;\n  display: inline-block;\n  outline: 0;\n  ", "\n\n  ", " \n\n  ", " \n\n  ", " \n\n  ", " \n\n  ", " \n\n  ", " \n\n  ", "\n"])), props => ['right', 'rightTop', 'rightBottom'].includes(props.placement || '') && Ce(react_popover_esm_style_templateObject8 || (react_popover_esm_style_templateObject8 = _taggedTemplateLiteralLoose(["\n      & ", " {\n        left: 2px;\n        margin-top: -15px;\n        top: 50%;\n      }\n    "])), OverlayTriggerPopoverArrow), props => ['left', 'leftTop', 'leftBottom'].includes(props.placement || '') && Ce(react_popover_esm_style_templateObject9 || (react_popover_esm_style_templateObject9 = _taggedTemplateLiteralLoose(["\n      & ", " {\n        transform: rotate(180deg);\n        margin-top: -15px;\n        right: 2px;\n        top: 50%;\n      }\n    "])), OverlayTriggerPopoverArrow), props => ['leftTop', 'rightTop'].includes(props.placement || '') && Ce(react_popover_esm_style_templateObject10 || (react_popover_esm_style_templateObject10 = _taggedTemplateLiteralLoose(["\n      & ", " {\n        top: 15px;\n      }\n    "])), OverlayTriggerPopoverArrow), props => ['leftBottom', 'rightBottom'].includes(props.placement || '') && Ce(esm_style_templateObject11 || (esm_style_templateObject11 = _taggedTemplateLiteralLoose(["\n      & ", " {\n        bottom: 0;\n        top: auto;\n      }\n    "])), OverlayTriggerPopoverArrow), props => ['top', 'topLeft', 'topRight'].includes(props.placement || '') && Ce(esm_style_templateObject12 || (esm_style_templateObject12 = _taggedTemplateLiteralLoose(["\n      & ", " {\n        transform: rotate(-90deg);\n        bottom: 2px;\n        left: 50%;\n        margin-left: -15px;\n      }\n    "])), OverlayTriggerPopoverArrow), props => ['bottom', 'bottomLeft', 'bottomRight'].includes(props.placement || '') && Ce(esm_style_templateObject13 || (esm_style_templateObject13 = _taggedTemplateLiteralLoose(["\n      & ", " {\n        transform: rotate(90deg);\n        left: 50%;\n        margin-left: -15px;\n        top: 2px;\n      }\n    "])), OverlayTriggerPopoverArrow), props => ['bottomLeft', 'topLeft'].includes(props.placement || '') && Ce(esm_style_templateObject14 || (esm_style_templateObject14 = _taggedTemplateLiteralLoose(["\n      & ", " {\n        left: 15px;\n      }\n    "])), OverlayTriggerPopoverArrow), props => ['bottomRight', 'topRight'].includes(props.placement || '') && Ce(esm_style_templateObject15 || (esm_style_templateObject15 = _taggedTemplateLiteralLoose(["\n      & ", " {\n        right: 0;\n        left: auto;\n      }\n    "])), OverlayTriggerPopoverArrow));
+var OverlayTriggerPopoverContent = styled_components_browser_esm.div(esm_style_templateObject16 || (esm_style_templateObject16 = _taggedTemplateLiteralLoose(["\n  font-size: 12px;\n  display: block;\n  text-align: left;\n  text-decoration: none;\n  background-color: #fff;\n  border-radius: 4px;\n  min-height: 23px;\n  box-shadow: rgba(16, 22, 26, 0.1) 0px 0px 0px 1px, rgba(16, 22, 26, 0.2) 0px 2px 4px,\n    rgba(16, 22, 26, 0.2) 0px 8px 24px;\n"])));
 
 ;// CONCATENATED MODULE: ../react-popover/esm/index.js
 
 
 var react_popover_esm_excluded = ["prefixCls", "className", "content", "visibleArrow"];
-
 
 
 
@@ -5256,10 +5270,11 @@ class Popover extends (external_root_React_commonjs2_react_commonjs_react_amd_re
         other = _objectWithoutPropertiesLoose(_this$props, react_popover_esm_excluded);
 
     var cls = [prefixCls, className, !visibleArrow ? 'no-arrow' : null].filter(Boolean).join(' ').trim();
-    return /*#__PURE__*/(0,jsx_runtime.jsx)(OverlayTriggerPopover, _extends({
-      as: react_overlay_trigger_esm
-    }, other, {
-      overlay: /*#__PURE__*/(0,jsx_runtime.jsxs)("div", {
+    return /*#__PURE__*/(0,jsx_runtime.jsx)(OverlayTriggerPopover, _extends({}, other, {
+      overlay: /*#__PURE__*/(0,jsx_runtime.jsxs)(OverlayTriggerPopoverBodyBase, {
+        params: {
+          placement: this.props.placement
+        },
         className: cls,
         children: [visibleArrow && this.renderArrow(), /*#__PURE__*/(0,jsx_runtime.jsx)(OverlayTriggerPopoverContent, {
           className: prefixCls + "-inner",
@@ -6873,7 +6888,7 @@ function Dropdown(props) {
 ;// CONCATENATED MODULE: ../react-menu/esm/style/index.js
 
 
-var react_menu_esm_style_templateObject, react_menu_esm_style_templateObject2, react_menu_esm_style_templateObject3, react_menu_esm_style_templateObject4, react_menu_esm_style_templateObject5, react_menu_esm_style_templateObject6, react_menu_esm_style_templateObject7, react_menu_esm_style_templateObject8, react_menu_esm_style_templateObject9, react_menu_esm_style_templateObject10, react_menu_esm_style_templateObject11, esm_style_templateObject12, esm_style_templateObject13, esm_style_templateObject14, esm_style_templateObject15, esm_style_templateObject16, style_templateObject17, _templateObject18, _templateObject19, _templateObject20, _templateObject21, _templateObject22, _templateObject23, _templateObject24, _templateObject25, _templateObject26, _templateObject27;
+var react_menu_esm_style_templateObject, react_menu_esm_style_templateObject2, react_menu_esm_style_templateObject3, react_menu_esm_style_templateObject4, react_menu_esm_style_templateObject5, react_menu_esm_style_templateObject6, react_menu_esm_style_templateObject7, react_menu_esm_style_templateObject8, react_menu_esm_style_templateObject9, react_menu_esm_style_templateObject10, react_menu_esm_style_templateObject11, react_menu_esm_style_templateObject12, react_menu_esm_style_templateObject13, react_menu_esm_style_templateObject14, react_menu_esm_style_templateObject15, react_menu_esm_style_templateObject16, style_templateObject17, _templateObject18, _templateObject19, _templateObject20, _templateObject21, _templateObject22, _templateObject23, _templateObject24, _templateObject25, _templateObject26, _templateObject27;
 
 
 
@@ -6902,14 +6917,14 @@ var MenuItemBase = styled_components_browser_esm.a(react_menu_esm_style_template
 
   return ((_props$params5 = props.params) == null ? void 0 : _props$params5.theme) === 'dark' && Ce(react_menu_esm_style_templateObject9 || (react_menu_esm_style_templateObject9 = _taggedTemplateLiteralLoose(["\n      ", "\n      ", "\n    "])), ((_props$params6 = props.params) == null ? void 0 : _props$params6.active) && Ce(react_menu_esm_style_templateObject10 || (react_menu_esm_style_templateObject10 = _taggedTemplateLiteralLoose(["\n        color: #fff !important;\n      "]))), ((_props$params7 = props.params) == null ? void 0 : _props$params7.disabled) && Ce(react_menu_esm_style_templateObject11 || (react_menu_esm_style_templateObject11 = _taggedTemplateLiteralLoose(["\n        &,\n        & ", " {\n          color: rgba(142, 142, 142, 0.79) !important;\n        }\n      "])), MenuItemIcon));
 });
-var SubItemCollapseIcon = styled_components_browser_esm(Icon)(esm_style_templateObject12 || (esm_style_templateObject12 = _taggedTemplateLiteralLoose(["\n  ", "\n  ", "\n"])), props => {
+var SubItemCollapseIcon = styled_components_browser_esm(Icon)(react_menu_esm_style_templateObject12 || (react_menu_esm_style_templateObject12 = _taggedTemplateLiteralLoose(["\n  ", "\n  ", "\n"])), props => {
   var _props$params8;
 
-  return ((_props$params8 = props.params) == null ? void 0 : _props$params8.prefixCls) && Ce(esm_style_templateObject13 || (esm_style_templateObject13 = _taggedTemplateLiteralLoose(["\n      transform: scale(0.79);\n    "])));
+  return ((_props$params8 = props.params) == null ? void 0 : _props$params8.prefixCls) && Ce(react_menu_esm_style_templateObject13 || (react_menu_esm_style_templateObject13 = _taggedTemplateLiteralLoose(["\n      transform: scale(0.79);\n    "])));
 }, props => {
   var _props$params9;
 
-  return ((_props$params9 = props.params) == null ? void 0 : _props$params9.prefixCls) && !props.params.collapse && Ce(esm_style_templateObject14 || (esm_style_templateObject14 = _taggedTemplateLiteralLoose(["\n      ", "\n    "])), props.params.isOpen ? Ce(esm_style_templateObject15 || (esm_style_templateObject15 = _taggedTemplateLiteralLoose(["\n            transition: rotate 0.3s all;\n            transform: scale(0.79) rotate(-90deg);\n          "]))) : Ce(esm_style_templateObject16 || (esm_style_templateObject16 = _taggedTemplateLiteralLoose(["\n            transition: rotate 0.3s all;\n            transform: scale(0.79) rotate(90deg);\n          "]))));
+  return ((_props$params9 = props.params) == null ? void 0 : _props$params9.prefixCls) && !props.params.collapse && Ce(react_menu_esm_style_templateObject14 || (react_menu_esm_style_templateObject14 = _taggedTemplateLiteralLoose(["\n      ", "\n    "])), props.params.isOpen ? Ce(react_menu_esm_style_templateObject15 || (react_menu_esm_style_templateObject15 = _taggedTemplateLiteralLoose(["\n            transition: rotate 0.3s all;\n            transform: scale(0.79) rotate(-90deg);\n          "]))) : Ce(react_menu_esm_style_templateObject16 || (react_menu_esm_style_templateObject16 = _taggedTemplateLiteralLoose(["\n            transition: rotate 0.3s all;\n            transform: scale(0.79) rotate(90deg);\n          "]))));
 });
 var SubOverlayTriggerBase = styled_components_browser_esm(react_overlay_trigger_esm)(style_templateObject17 || (style_templateObject17 = _taggedTemplateLiteralLoose(["\n  ", "\n\n  &.w-menu-subitem-enter,\n  &.w-menu-subitem-enter-done,\n  &.w-menu-subitem-exit {\n    display: inherit;\n  }\n"])), props => {
   var _props$params10;
