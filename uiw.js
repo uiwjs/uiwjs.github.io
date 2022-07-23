@@ -5470,6 +5470,7 @@ var react_input_esm_excluded = ["prefixCls", "className", "style", "size", "type
   });
 }));
 
+
 ;// CONCATENATED MODULE: ../react-time-picker/esm/style/index.js
 
 
@@ -15246,18 +15247,45 @@ function TreeChecked(_ref) {
   }, props));
 }
 
-;// CONCATENATED MODULE: ../react-search-tree/esm/style/index.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const react_search_tree_esm_style = ({});
+;// CONCATENATED MODULE: ../react-search-tree/esm/style/index.js
+
+
+var react_search_tree_esm_style_templateObject, react_search_tree_esm_style_templateObject2, react_search_tree_esm_style_templateObject3, react_search_tree_esm_style_templateObject4, react_search_tree_esm_style_templateObject5, react_search_tree_esm_style_templateObject6, react_search_tree_esm_style_templateObject7, react_search_tree_esm_style_templateObject8;
+
+
+
+
+
+
+var DropdownWrap = styled_components_browser_esm(Dropdown)(react_search_tree_esm_style_templateObject || (react_search_tree_esm_style_templateObject = _taggedTemplateLiteralLoose([""])));
+var DropdownDiv = styled_components_browser_esm.div(react_search_tree_esm_style_templateObject2 || (react_search_tree_esm_style_templateObject2 = _taggedTemplateLiteralLoose(["\n  ", "\n  ", "\n  ", "\n"])), props => Ce(react_search_tree_esm_style_templateObject3 || (react_search_tree_esm_style_templateObject3 = _taggedTemplateLiteralLoose(["\n    display: flex;\n    // overflow: hidden;\n    justify-content: space-between;\n    outline: none;\n    border: none;\n    align-items: center;\n    border-radius: 3px;\n    box-shadow: ", ";\n    box-sizing: border-box;\n    background: #fff;\n    min-height: 30px;\n    margin: 0 !important;\n    padding: 3px 10px 3px 10px;\n    vertical-align: middle;\n    line-height: 30px;\n    color: #393e48;\n    font-weight: 400;\n    font-size: inherit;\n    transition: box-shadow 0.3s cubic-bezier(0.4, 1, 0.75, 0.9);\n    appearance: none;\n\n    &:focus {\n      ", ";\n    }\n\n    &:hover {\n      ", ";\n    }\n\n    &:focus&:hover {\n      ", ";\n    }\n\n    &:disabled {\n      box-shadow: none;\n      background: #dddddd;\n      opacity: 0.75;\n      color: #a5a5a5;\n      cursor: not-allowed;\n      resize: none;\n    }\n  "])), getThemeVariantValue(props, 'boxShadowDropdownDiv'), getThemeVariantValue(props, 'boxShadowDropdownDivFocus'), getThemeVariantValue(props, 'boxShadowDropdownDivhover'), getThemeVariantValue(props, 'boxShadowDropdownDivFocushover')), props => {
+  if (props.size === 'small') {
+    return Ce(react_search_tree_esm_style_templateObject4 || (react_search_tree_esm_style_templateObject4 = _taggedTemplateLiteralLoose(["\n        & ", " {\n          height: 16px;\n          font-size: 10px;\n          padding: 0px;\n        }\n      "])), InputBase);
+  }
+}, props => {
+  if (props.size === 'large') {
+    return Ce(react_search_tree_esm_style_templateObject5 || (react_search_tree_esm_style_templateObject5 = _taggedTemplateLiteralLoose(["\n        & ", " {\n          // line-height:0px !important;\n          height: 28px;\n        }\n      "])), InputBase);
+  }
+});
+DropdownDiv.defaultProps = {
+  defaultTheme: {
+    boxShadowDropdownDiv: "0 0 0 0 rgba(19, 124, 189, 0), 0 0 0 0 rgba(19, 124, 189, 0), inset 0 0 0 1px rgba(16, 22, 26, 0.15),inset 0 1px 1px rgba(16, 22, 26, 0.2)",
+    boxShadowDropdownDivFocus: "box-shadow: 0 0 0 1px #393e48, 0 0 0 3px rgba(57, 62, 72, 0.17), inset 0 1px 1px rgba(16, 22, 26, 0.2)",
+    boxShadowDropdownDivhover: "box-shadow: 0 0 0 1px #6e6e6e, 0 0 0 3px rgba(57, 62, 72, 0), inset 0 1px 1px rgba(16, 22, 26, 0.2)",
+    boxShadowDropdownDivFocushover: "box-shadow: 0 0 0 1px #6e6e6e, 0 0 0 3px rgba(57, 62, 72, 0.17), inset 0 1px 1px rgba(16, 22, 26, 0.2)"
+  }
+};
+var DropdownDivTag = styled_components_browser_esm(react_tag_esm)(react_search_tree_esm_style_templateObject6 || (react_search_tree_esm_style_templateObject6 = _taggedTemplateLiteralLoose([""])));
+var DropdownDivInput = styled_components_browser_esm(react_input_esm)(react_search_tree_esm_style_templateObject7 || (react_search_tree_esm_style_templateObject7 = _taggedTemplateLiteralLoose(["\n  flex: 1;\n  top: 1px;\n\n  input {\n    box-shadow: none;\n    padding: 0px;\n    height: 20px;\n    min-width: 50px;\n  }\n\n  .w-input-inner {\n    &:hover {\n      box-shadow: none !important;\n    }\n\n    &:focus {\n      box-shadow: none !important;\n    }\n  }\n"])));
+var DropdownDivSpan = styled_components_browser_esm.span(react_search_tree_esm_style_templateObject8 || (react_search_tree_esm_style_templateObject8 = _taggedTemplateLiteralLoose(["\n  width: 14px;\n  display: flex;\n  align-content: center;\n"])));
+
 ;// CONCATENATED MODULE: ../react-search-tree/esm/SearchTagInput.js
 
 
 
 
 
-
-
-
+// import './style/index.less';
 
 
 
@@ -15375,7 +15403,7 @@ function SearchTagInput(props) {
 
     return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default().cloneElement(content, newProps);
   }, [JSON.parse(JSON.stringify(selectedOption)), options, emptyOption]);
-  return /*#__PURE__*/(0,jsx_runtime.jsx)(Dropdown, {
+  return /*#__PURE__*/(0,jsx_runtime.jsx)(DropdownWrap, {
     className: cls,
     trigger: "click",
     onVisibleChange: isOpen => {
@@ -15402,7 +15430,8 @@ function SearchTagInput(props) {
         minWidth: (style == null ? void 0 : style.width) || 200,
         maxWidth: 'none'
       }, style),
-      children: /*#__PURE__*/(0,jsx_runtime.jsxs)("div", {
+      children: /*#__PURE__*/(0,jsx_runtime.jsxs)(DropdownDiv, {
+        size: size,
         className: [prefixCls + "-inner", prefixCls + "-" + size].filter(Boolean).join(' ').trim(),
         children: [/*#__PURE__*/(0,jsx_runtime.jsxs)("div", {
           style: {
@@ -15411,7 +15440,7 @@ function SearchTagInput(props) {
             width: '100%'
           },
           children: [selectedOption.map((item, index) => {
-            return /*#__PURE__*/(0,jsx_runtime.jsx)(react_tag_esm, _extends({
+            return /*#__PURE__*/(0,jsx_runtime.jsx)(DropdownDivTag, _extends({
               style: {
                 height: SearchTagInput_TagSize[size],
                 margin: 1,
@@ -15429,7 +15458,7 @@ function SearchTagInput(props) {
               },
               children: item.label
             }), index);
-          }), /*#__PURE__*/(0,jsx_runtime.jsx)(react_input_esm, {
+          }), /*#__PURE__*/(0,jsx_runtime.jsx)(DropdownDivInput, {
             ref: inputRef,
             className: prefixCls + "-input-contents",
             size: size,
@@ -15439,7 +15468,7 @@ function SearchTagInput(props) {
             value: searchValue,
             placeholder: selectedOption.length ? '' : placeholder
           })]
-        }), !disabled && /*#__PURE__*/(0,jsx_runtime.jsx)("span", {
+        }), !disabled && /*#__PURE__*/(0,jsx_runtime.jsx)(DropdownDivSpan, {
           style: {
             height: 25,
             width: 14
