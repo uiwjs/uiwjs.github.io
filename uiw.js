@@ -15043,15 +15043,21 @@ function Tree(props) {
   }));
 }
 
-;// CONCATENATED MODULE: ../react-tree-checked/esm/style/index.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const react_tree_checked_esm_style = ({});
+;// CONCATENATED MODULE: ../react-tree-checked/esm/style/index.js
+
+
+var react_tree_checked_esm_style_templateObject;
+
+
+var TreeCheckbox = styled_components_browser_esm.div(react_tree_checked_esm_style_templateObject || (react_tree_checked_esm_style_templateObject = _taggedTemplateLiteralLoose(["\n  margin-right: 5px;\n"])));
+
 ;// CONCATENATED MODULE: ../react-tree-checked/esm/index.js
 
 
 var react_tree_checked_esm_excluded = ["prefixCls"];
 
 
+ // import './style/index.less';
 
 
 
@@ -15081,7 +15087,8 @@ function TreeChecked(_ref) {
       }
 
       return /*#__PURE__*/(0,jsx_runtime.jsxs)(external_root_React_commonjs2_react_commonjs_react_amd_react_.Fragment, {
-        children: [/*#__PURE__*/(0,jsx_runtime.jsx)(react_checkbox_esm, _extends({
+        children: [/*#__PURE__*/(0,jsx_runtime.jsx)(TreeCheckbox, _extends({
+          as: react_checkbox_esm,
           className: prefixCls + "-checked",
           disabled: node.disabled
         }, checkedProps)), item.label && /*#__PURE__*/(0,jsx_runtime.jsx)("span", {

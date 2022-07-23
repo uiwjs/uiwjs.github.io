@@ -1171,10 +1171,6 @@
   z-index: 1;
 }
 
-.w-treechecked-checked {
-  margin-right: 5px;
-}
-
 .w-search-tree-input-contents {
   flex: 1 1;
   top: 1px;
