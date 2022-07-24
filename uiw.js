@@ -14525,7 +14525,7 @@ var Pane_excluded = ["prefixCls", "className", "label"];
 ;// CONCATENATED MODULE: ../react-tabs/esm/index.js
 
 
-var react_tabs_esm_excluded = ["className", "children", "type", "activeKey", "onTabClick"];
+var react_tabs_esm_excluded = ["prefixCls", "className", "children", "type", "activeKey", "onTabClick"];
 
 
 
@@ -14539,6 +14539,7 @@ function Tabs(props) {
   var _flowNav$nav;
 
   var {
+    prefixCls = 'w-tabs',
     className,
     children,
     type = 'default',
@@ -14635,14 +14636,17 @@ function Tabs(props) {
   }
 
   return /*#__PURE__*/(0,jsx_runtime.jsxs)(TabsWarp, _extends({
-    className: className
+    className: [prefixCls, className].filter(Boolean).join(' ').trim()
   }, elementProps, {
     children: [/*#__PURE__*/(0,jsx_runtime.jsxs)(TabsDivFlex, {
       children: [/*#__PURE__*/(0,jsx_runtime.jsx)(TabsDivHidden, {
         children: /*#__PURE__*/(0,jsx_runtime.jsx)(TabsDivBar, {
+          className: prefixCls + "-bar",
           ref: divContentRef,
           children: /*#__PURE__*/(0,jsx_runtime.jsxs)(TabsDivNav, {
+            className: prefixCls + "-nav",
             children: [renderNav(children), /*#__PURE__*/(0,jsx_runtime.jsx)(TabsDivSlide, {
+              className: prefixCls + "-slide",
               style: slideStyle
             })]
           })
@@ -14652,10 +14656,12 @@ function Tabs(props) {
         placement: "bottomRight",
         visibleArrow: false,
         content: /*#__PURE__*/(0,jsx_runtime.jsx)(TabsNavHidden, {
+          className: prefixCls + "-nav-hidden",
           children: renderNav(hiddenNav.map(idx => children[idx]))
         }),
         children: /*#__PURE__*/(0,jsx_runtime.jsx)(TabsFlowContent, {
           onClick: showHideenNav,
+          className: prefixCls + "-flow-content",
           children: /*#__PURE__*/(0,jsx_runtime.jsx)("span", {
             children: "\u2026"
           })
@@ -14677,6 +14683,7 @@ function Tabs(props) {
       }
 
       var divProps = {
+        className: prefixCls + "-item",
         children: item.props.label
       };
 
