@@ -3601,6 +3601,8 @@ var Button = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd
 });
 /* harmony default export */ const esm = (Button);
 
+// EXTERNAL MODULE: ../../node_modules/@uiw/icons/lib/Close.js
+var Close = __webpack_require__(579);
 ;// CONCATENATED MODULE: ../react-modal/esm/CallShow.js
 
 
@@ -3674,6 +3676,8 @@ ModalWrap.defaultProps = {
 
 
 var react_modal_esm_excluded = ["prefixCls", "className", "children", "useButton", "usePortal", "autoFocus", "isOpen", "title", "cancelText", "cancelButtonProps", "confirmButtonProps", "content", "confirmText", "type", "icon", "maxWidth", "minWidth", "width", "isCloseButtonShown", "onCancel", "onConfirm", "bodyStyle"];
+
+
 
 
 
@@ -3785,7 +3789,9 @@ var Modal = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_
           }), isCloseButtonShown && /*#__PURE__*/(0,jsx_runtime.jsx)(esm, {
             basic: true,
             onClick: e => handleCancel(e),
-            icon: "close",
+            icon: /*#__PURE__*/(0,jsx_runtime.jsx)(IconStyleBase, {
+              as: Close/* Close */.x
+            }),
             type: "light"
           })]
         }), /*#__PURE__*/(0,jsx_runtime.jsx)(ModalBody, {
@@ -3826,7 +3832,7 @@ var react_alert_esm_style_templateObject, react_alert_esm_style_templateObject2,
 
 
 var typeVariant = (type, color) => {
-  return Ce(react_alert_esm_style_templateObject || (react_alert_esm_style_templateObject = _taggedTemplateLiteralLoose(["\n    ", " ", " > ", " {\n      color: ", ";\n    }\n  "])), type, ModalHeader, IconStyleBase, color);
+  return Ce(react_alert_esm_style_templateObject || (react_alert_esm_style_templateObject = _taggedTemplateLiteralLoose(["\n    ", " > ", " {\n      color: ", ";\n    }\n  "])), ModalHeader, IconStyleBase, color);
 };
 
 var typeCss = props => {
@@ -3854,7 +3860,7 @@ var AlertStyleTheme = {
   colorAlertDanger: '#dc3545',
   colorAlertDefault: '#393e48'
 };
-var AlertStyleWarp = styled_components_browser_esm.div(react_alert_esm_style_templateObject2 || (react_alert_esm_style_templateObject2 = _taggedTemplateLiteralLoose(["\n  ", " {\n    display: table-cell;\n    background-color: transparent;\n    padding: 20px 0 0 20px;\n    box-shadow: 0 0 0 0;\n    padding-right: 0;\n    ", " {\n      font-size: 40px;\n      margin-right: 0;\n    }\n  }\n  ", " {\n    display: table-cell;\n    padding-right: 20px;\n    padding-left: 20px;\n    vertical-align: top;\n  }\n  ", "\n  ", " ", " {\n    > button {\n      min-width: 18px;\n      min-height: 18px;\n      padding: 5px 5px;\n      position: absolute;\n      right: 10px;\n      top: 10px;\n    }\n  }\n  ", "\n  ", "\n  ", "\n"])), ModalHeader, IconStyleBase, ModalBody, typeCss, ModalInner, ModalHeader, props => props.title && Ce(react_alert_esm_style_templateObject3 || (react_alert_esm_style_templateObject3 = _taggedTemplateLiteralLoose(["\n      ", " {\n        ", " {\n          word-break: break-word;\n          display: flex;\n          padding-top: 15px;\n          padding-right: 10px;\n          > ", " {\n            font-size: 40px;\n            position: absolute;\n            top: 18px;\n          }\n\n          > button > ", " {\n            font-size: 14px;\n          }\n        }\n        ", " {\n          word-break: break-word;\n          padding-top: 5px;\n        }\n      }\n    "])), ModalInner, ModalHeader, IconStyleBase, IconStyleBase, ModalBody), props => props.icon && Ce(react_alert_esm_style_templateObject4 || (react_alert_esm_style_templateObject4 = _taggedTemplateLiteralLoose(["\n      ", " > h4 {\n        padding-left: 60px;\n      }\n    "])), ModalHeader), props => props.title && props.icon && Ce(esm_style_templateObject5 || (esm_style_templateObject5 = _taggedTemplateLiteralLoose(["\n      ", " {\n        padding-left: 80px;\n      }\n    "])), ModalBody));
+var AlertStyleWarp = styled_components_browser_esm.div(react_alert_esm_style_templateObject2 || (react_alert_esm_style_templateObject2 = _taggedTemplateLiteralLoose(["\n  ", " {\n    display: table-cell;\n    background-color: transparent;\n    padding: 20px 0 0 20px;\n    box-shadow: 0 0 0 0;\n    padding-right: 0;\n    ", " {\n      font-size: 40px;\n      margin-right: 0;\n    }\n    > button > ", " {\n      font-size: 14px;\n    }\n  }\n  ", " {\n    display: table-cell;\n    padding-right: 20px;\n    padding-left: 20px;\n    vertical-align: top;\n  }\n  ", "\n  ", " ", " {\n    > button {\n      min-width: 18px;\n      min-height: 18px;\n      padding: 5px 5px;\n      position: absolute;\n      right: 10px;\n      top: 10px;\n    }\n  }\n  ", "\n  ", "\n  ", "\n"])), ModalHeader, IconStyleBase, IconStyleBase, ModalBody, typeCss, ModalInner, ModalHeader, props => props.title && Ce(react_alert_esm_style_templateObject3 || (react_alert_esm_style_templateObject3 = _taggedTemplateLiteralLoose(["\n      ", " {\n        ", " {\n          word-break: break-word;\n          display: flex;\n          padding-top: 15px;\n          padding-right: 10px;\n          > ", " {\n            font-size: 40px;\n            position: absolute;\n            top: 18px;\n          }\n\n          > button > ", " {\n            font-size: 14px;\n          }\n        }\n        ", " {\n          word-break: break-word;\n          padding-top: 5px;\n        }\n      }\n    "])), ModalInner, ModalHeader, IconStyleBase, IconStyleBase, ModalBody), props => props.icon && Ce(react_alert_esm_style_templateObject4 || (react_alert_esm_style_templateObject4 = _taggedTemplateLiteralLoose(["\n      ", " > h4 {\n        padding-left: 60px;\n      }\n    "])), ModalHeader), props => props.title && props.icon && Ce(esm_style_templateObject5 || (esm_style_templateObject5 = _taggedTemplateLiteralLoose(["\n      ", " {\n        padding-left: 80px;\n      }\n    "])), ModalBody));
 AlertStyleWarp.defaultProps = {
   defaultTheme: _extends({}, AlertStyleTheme)
 };
@@ -7367,8 +7373,6 @@ CascaderStyleIconWarp.defaultProps = {
   }
 };
 
-// EXTERNAL MODULE: ../../node_modules/@uiw/icons/lib/Close.js
-var Close = __webpack_require__(579);
 ;// CONCATENATED MODULE: ../react-cascader/esm/index.js
 
 
