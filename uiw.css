@@ -181,10 +181,6 @@
   transform: translateY(100%);
 }
 
-.w-fileinput-list-shape-circle .w-fileinput-list-box-info {
-  border-radius: 50px;
-}
-
 .w-layout,
 .w-layout * {
   box-sizing: border-box;
