@@ -1460,21 +1460,7 @@ var external_root_ReactDOM_commonjs2_react_dom_commonjs_react_dom_amd_react_dom_
 ;// CONCATENATED MODULE: ../../node_modules/react-transition-group/esm/TransitionGroupContext.js
 
 /* harmony default export */ const TransitionGroupContext = (external_root_React_commonjs2_react_commonjs_react_amd_react_default().createContext(null));
-;// CONCATENATED MODULE: ../../node_modules/react-transition-group/esm/utils/nextTick.js
-// polyfill for requestAnimationFrame
-var rAF = typeof window !== 'undefined' && typeof window.requestAnimationFrame === 'function' ? window.requestAnimationFrame : function (cb) {
-  return setTimeout(cb, 1);
-}; // https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame
-// Note: Your callback routine must itself call requestAnimationFrame() again
-// if you want to animate another frame at the next repaint. requestAnimationFrame() is 1 shot.
-
-var nextTick = function nextTick(cb) {
-  return rAF(function () {
-    return rAF(cb);
-  });
-};
 ;// CONCATENATED MODULE: ../../node_modules/react-transition-group/esm/Transition.js
-
 
 
 
@@ -1693,8 +1679,6 @@ var Transition = /*#__PURE__*/function (_React$Component) {
   };
 
   _proto.updateStatus = function updateStatus(mounting, nextStatus) {
-    var _this2 = this;
-
     if (mounting === void 0) {
       mounting = false;
     }
@@ -1704,17 +1688,7 @@ var Transition = /*#__PURE__*/function (_React$Component) {
       this.cancelNextCallback();
 
       if (nextStatus === ENTERING) {
-        // https://github.com/reactjs/react-transition-group/pull/749
-        // With unmountOnExit or mountOnEnter, the enter animation should happen at the transition between `exited` and `entering`.
-        // To make the animation happen,  we have to separate each rendering and avoid being processed as batched.
-        if (this.props.unmountOnExit || this.props.mountOnEnter) {
-          // `exited` -> `entering`
-          nextTick(function () {
-            return _this2.performEnter(mounting);
-          });
-        } else {
-          this.performEnter(mounting);
-        }
+        this.performEnter(mounting);
       } else {
         this.performExit();
       }
@@ -1726,7 +1700,7 @@ var Transition = /*#__PURE__*/function (_React$Component) {
   };
 
   _proto.performEnter = function performEnter(mounting) {
-    var _this3 = this;
+    var _this2 = this;
 
     var enter = this.props.enter;
     var appearing = this.context ? this.context.isMounting : mounting;
@@ -1743,7 +1717,7 @@ var Transition = /*#__PURE__*/function (_React$Component) {
       this.safeSetState({
         status: ENTERED
       }, function () {
-        _this3.props.onEntered(maybeNode);
+        _this2.props.onEntered(maybeNode);
       });
       return;
     }
@@ -1752,20 +1726,20 @@ var Transition = /*#__PURE__*/function (_React$Component) {
     this.safeSetState({
       status: ENTERING
     }, function () {
-      _this3.props.onEntering(maybeNode, maybeAppearing);
+      _this2.props.onEntering(maybeNode, maybeAppearing);
 
-      _this3.onTransitionEnd(enterTimeout, function () {
-        _this3.safeSetState({
+      _this2.onTransitionEnd(enterTimeout, function () {
+        _this2.safeSetState({
           status: ENTERED
         }, function () {
-          _this3.props.onEntered(maybeNode, maybeAppearing);
+          _this2.props.onEntered(maybeNode, maybeAppearing);
         });
       });
     });
   };
 
   _proto.performExit = function performExit() {
-    var _this4 = this;
+    var _this3 = this;
 
     var exit = this.props.exit;
     var timeouts = this.getTimeouts();
@@ -1775,7 +1749,7 @@ var Transition = /*#__PURE__*/function (_React$Component) {
       this.safeSetState({
         status: EXITED
       }, function () {
-        _this4.props.onExited(maybeNode);
+        _this3.props.onExited(maybeNode);
       });
       return;
     }
@@ -1784,13 +1758,13 @@ var Transition = /*#__PURE__*/function (_React$Component) {
     this.safeSetState({
       status: EXITING
     }, function () {
-      _this4.props.onExiting(maybeNode);
+      _this3.props.onExiting(maybeNode);
 
-      _this4.onTransitionEnd(timeouts.exit, function () {
-        _this4.safeSetState({
+      _this3.onTransitionEnd(timeouts.exit, function () {
+        _this3.safeSetState({
           status: EXITED
         }, function () {
-          _this4.props.onExited(maybeNode);
+          _this3.props.onExited(maybeNode);
         });
       });
     });
@@ -1812,14 +1786,14 @@ var Transition = /*#__PURE__*/function (_React$Component) {
   };
 
   _proto.setNextCallback = function setNextCallback(callback) {
-    var _this5 = this;
+    var _this4 = this;
 
     var active = true;
 
     this.nextCallback = function (event) {
       if (active) {
         active = false;
-        _this5.nextCallback = null;
+        _this4.nextCallback = null;
         callback(event);
       }
     };
