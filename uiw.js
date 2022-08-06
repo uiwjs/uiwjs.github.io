@@ -124,6 +124,78 @@ exports.J = Check;
 
 /***/ }),
 
+/***/ 92:
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+var __webpack_unused_export__;
+
+
+var _interopRequireDefault = (__webpack_require__(600)["default"]);
+
+__webpack_unused_export__ = ({
+  value: true
+});
+exports.y = void 0;
+
+var _objectSpread2 = _interopRequireDefault(__webpack_require__(814));
+
+var _react = _interopRequireDefault(__webpack_require__(787));
+
+var _jsxRuntime = __webpack_require__(664);
+
+var CircleCheck = function CircleCheck(props) {
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)("svg", (0, _objectSpread2["default"])((0, _objectSpread2["default"])({
+    viewBox: "0 0 20 20"
+  }, props), {}, {
+    children: /*#__PURE__*/(0, _jsxRuntime.jsx)("path", {
+      d: "M10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 Z M14.9217059,6.58259135 C14.6410521,6.33153512 14.210016,6.35552866 13.9589598,6.63618243 L13.9589598,6.63618243 L9.54702033,11.5682545 L6.71542243,8.53798936 C6.45832765,8.26285659 6.02687198,8.24823392 5.75173921,8.5053287 C5.47660645,8.76242348 5.46198377,9.19387916 5.71907855,9.46901192 L5.71907855,9.46901192 L9.05982608,13.0441491 C9.33334374,13.336857 9.79907323,13.3317969 10.0661666,13.0332153 L10.0661666,13.0332153 L14.975297,7.54533745 C15.2263532,7.26468369 15.2023597,6.83364758 14.9217059,6.58259135 Z",
+      fillRule: "evenodd"
+    })
+  }));
+};
+
+exports.y = CircleCheck;
+
+
+/***/ }),
+
+/***/ 670:
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+var __webpack_unused_export__;
+
+
+var _interopRequireDefault = (__webpack_require__(600)["default"]);
+
+__webpack_unused_export__ = ({
+  value: true
+});
+exports.K = void 0;
+
+var _objectSpread2 = _interopRequireDefault(__webpack_require__(814));
+
+var _react = _interopRequireDefault(__webpack_require__(787));
+
+var _jsxRuntime = __webpack_require__(664);
+
+var CircleClose = function CircleClose(props) {
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)("svg", (0, _objectSpread2["default"])((0, _objectSpread2["default"])({
+    viewBox: "0 0 20 20"
+  }, props), {}, {
+    children: /*#__PURE__*/(0, _jsxRuntime.jsx)("path", {
+      d: "M10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 Z M12.2066229,6.83655409 L10.01,9.03 L7.81496625,6.83655409 C7.57521591,6.59702468 7.20156116,6.57323292 6.93520889,6.76506765 L6.85072984,6.83699857 C6.58458604,7.10338784 6.58478504,7.53509119 6.85117431,7.80123498 L6.85117431,7.80123498 L9.046,9.994 L6.85117431,12.1870677 C6.58478504,12.4532115 6.58458604,12.8849148 6.85072984,13.1513041 C7.11687363,13.4176934 7.54857698,13.4178924 7.81496625,13.1517486 L10.01,10.957 L12.2066229,13.1517486 C12.4463733,13.391278 12.820028,13.4150698 13.0863803,13.223235 L13.1708593,13.1513041 C13.4370031,12.8849148 13.4368041,12.4532115 13.1704149,12.1870677 L13.1704149,12.1870677 L10.975,9.994 L13.1704149,7.80123498 C13.4368041,7.53509119 13.4370031,7.10338784 13.1708593,6.83699857 C12.9047155,6.57060929 12.4730122,6.5704103 12.2066229,6.83655409 Z",
+      fillRule: "evenodd"
+    })
+  }));
+};
+
+exports.K = CircleClose;
+
+
+/***/ }),
+
 /***/ 579:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
@@ -192,6 +264,42 @@ var DownSquareO = function DownSquareO(props) {
 };
 
 exports.s = DownSquareO;
+
+
+/***/ }),
+
+/***/ 850:
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+var __webpack_unused_export__;
+
+
+var _interopRequireDefault = (__webpack_require__(600)["default"]);
+
+__webpack_unused_export__ = ({
+  value: true
+});
+exports.d = void 0;
+
+var _objectSpread2 = _interopRequireDefault(__webpack_require__(814));
+
+var _react = _interopRequireDefault(__webpack_require__(787));
+
+var _jsxRuntime = __webpack_require__(664);
+
+var Information = function Information(props) {
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)("svg", (0, _objectSpread2["default"])((0, _objectSpread2["default"])({
+    viewBox: "0 0 20 20"
+  }, props), {}, {
+    children: /*#__PURE__*/(0, _jsxRuntime.jsx)("path", {
+      d: "M10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 Z M9.85480657,7.20930233 C9.46949163,7.20930233 9.15713216,7.5216618 9.15713216,7.90697674 L9.15713216,7.90697674 L9.15713216,15.4651343 C9.15713216,15.8504492 9.46949163,16.1628087 9.85480657,16.1628087 C10.2401215,16.1628087 10.552481,15.8504492 10.552481,15.4651343 L10.552481,15.4651343 L10.552481,7.90697674 C10.552481,7.5216618 10.2401215,7.20930233 9.85480657,7.20930233 Z M9.88290177,4.41860465 C9.36914851,4.41860465 8.95266921,4.83508395 8.95266921,5.34883721 C8.95266921,5.86259046 9.36914851,6.27906977 9.88290177,6.27906977 C10.396655,6.27906977 10.8131343,5.86259046 10.8131343,5.34883721 C10.8131343,4.83508395 10.396655,4.41860465 9.88290177,4.41860465 Z",
+      fillRule: "evenodd"
+    })
+  }));
+};
+
+exports.d = Information;
 
 
 /***/ }),
@@ -336,6 +444,42 @@ var SwapRight = function SwapRight(props) {
 };
 
 exports.U = SwapRight;
+
+
+/***/ }),
+
+/***/ 142:
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+var __webpack_unused_export__;
+
+
+var _interopRequireDefault = (__webpack_require__(600)["default"]);
+
+__webpack_unused_export__ = ({
+  value: true
+});
+exports.v = void 0;
+
+var _objectSpread2 = _interopRequireDefault(__webpack_require__(814));
+
+var _react = _interopRequireDefault(__webpack_require__(787));
+
+var _jsxRuntime = __webpack_require__(664);
+
+var Warning = function Warning(props) {
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)("svg", (0, _objectSpread2["default"])((0, _objectSpread2["default"])({
+    viewBox: "0 0 20 20"
+  }, props), {}, {
+    children: /*#__PURE__*/(0, _jsxRuntime.jsx)("path", {
+      d: "M19.5907523,15.8607776 L12.0056301,1.92309891 C11.5148908,1.01057747 10.7787819,0.5 9.98933176,0.5 C9.19988163,0.5 8.47444097,1.02144082 7.97303345,1.93396226 L0.409247749,15.8607776 C-0.0814915205,16.7624357 -0.134832745,17.6858205 0.270560564,18.3919383 C0.675953874,19.098056 1.48674049,19.5 2.48955552,19.5 L17.5104445,19.5 C18.5132595,19.5 19.3240461,19.098056 19.7294394,18.3919383 C20.1348327,17.6858205 20.0814915,16.773299 19.5907523,15.8607776 Z M10,4.85620354 C10.3947251,4.85620354 10.7147724,5.18210406 10.7147724,5.58404803 L10.7147724,12.1672384 C10.7147724,12.5692158 10.3947579,12.8950829 10,12.8950829 C9.6052421,12.8950829 9.28522759,12.5692158 9.28522759,12.1672384 L9.28522759,5.58404803 C9.28522759,5.19296741 9.60527494,4.85620354 10,4.85620354 L10,4.85620354 Z M10,16.4799886 C9.38124179,16.4799886 8.89050252,15.9694111 8.89050252,15.3393368 C8.89050252,14.7092624 9.39191004,14.198685 10,14.198685 C10.6187582,14.198685 11.1094975,14.7092624 11.1094975,15.3393368 C11.1094975,15.9694111 10.60809,16.4799886 10,16.4799886 Z",
+      fillRule: "evenodd"
+    })
+  }));
+};
+
+exports.v = Warning;
 
 
 /***/ }),
@@ -976,7 +1120,7 @@ __webpack_require__.d(__webpack_exports__, {
   "SearchSelect": () => (/* reexport */ SearchSelect),
   "SearchTree": () => (/* reexport */ react_search_tree_esm),
   "Select": () => (/* reexport */ react_select_esm),
-  "SelectWarp": () => (/* reexport */ SelectWarp),
+  "SelectStyleWarp": () => (/* reexport */ SelectStyleWarp),
   "Slider": () => (/* reexport */ Slider),
   "Split": () => (/* reexport */ Split),
   "Steps": () => (/* reexport */ react_steps_esm),
@@ -12714,8 +12858,8 @@ var react_select_esm_style_templateObject, react_select_esm_style_templateObject
 
 
 var selectArrow = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDEyIDE2Ij4gIDxwYXRoIGZpbGw9IiMzOTNFNDgiIGQ9Ik0wLjIyMiw1LjYxMyBMNS40NTEsMC4yMjMgQzUuNzU2MjEyMDksLTAuMDc0MzYzMjMzMyA2LjI0Mjc4NzkxLC0wLjA3NDM2MzIzMzMgNi41NDgsMC4yMjMgTDExLjc3OCw1LjYxMyBDMTIuMTgsNi4wMjcgMTIuMDI1LDYuNjY3IDExLjQwNyw2LjY2NyBMMC41OTIsNi42NjcgQy0wLjAyNCw2LjY2NyAtMC4xOCw2LjAyNyAwLjIyMiw1LjYxMyBaIE0wLjU5Miw5LjMzMyBMMTEuNDA3LDkuMzMzIEMxMi4wMjUsOS4zMzMgMTIuMTgsOS45NzMgMTEuNzc3LDEwLjM4NyBMNi41NDcsMTUuNzc3IEM2LjI0MTkxMjU4LDE2LjA3MzcxNDMgNS43NTYwODc0MiwxNi4wNzM3MTQzIDUuNDUxLDE1Ljc3NyBMMC4yMjIsMTAuMzg3IEMtMC4xOCw5Ljk3MyAtMC4wMjQsOS4zMzMgMC41OTIsOS4zMzMgWiIvPjwvc3ZnPg==';
-var SelectWarp = styled_components_browser_esm.select(react_select_esm_style_templateObject || (react_select_esm_style_templateObject = _taggedTemplateLiteralLoose(["\n  display: inline-flex;\n  appearance: none;\n  cursor: ", ";\n  color: ", ";\n  padding: ", ";\n  font-size: ", ";\n  width: 100%;\n  max-width: 100%;\n  margin: 0;\n  line-height: 18px;\n  vertical-align: middle;\n  box-sizing: border-box;\n  border: none;\n  box-shadow: ", ";\n  border-radius: ", ";\n  background-color: ", ";\n  background-image: ", ",\n    linear-gradient(180deg, hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0));\n  background-repeat: no-repeat, repeat;\n  background-position: right 0.7em top 50%, 0 0;\n  background-size: 0.62em auto, 100%;\n  &:focus {\n    outline: none !important;\n  }\n  &:hover {\n    box-shadow: ", ";\n    background-clip: padding-box;\n    background-color: ", ";\n  }\n  &:disabled {\n    box-shadow: ", ";\n    background-image: ", ";\n    background-size: 0.52em auto, 100%;\n    background-color: ", ";\n    opacity: 0.75;\n    color: ", ";\n    cursor: ", ";\n    resize: none;\n  }\n  ", "\n  ", "\n"])), props => getThemeVariantValue(props, 'cursorSelectDefault'), props => getThemeVariantValue(props, 'colorSelectBase'), props => getThemeVariantValue(props, 'paddingSelectDefault'), props => getThemeVariantValue(props, 'fontSizeSelectDefault'), props => getThemeVariantValue(props, 'boxShadowSelectBase'), props => getThemeVariantValue(props, 'borderRadiusDefault'), props => getThemeVariantValue(props, 'backgroundColorSelectBase'), props => getThemeVariantValue(props, 'backgroundImageSelectUrl'), props => getThemeVariantValue(props, 'boxShadowSelectBase'), props => getThemeVariantValue(props, 'backgroundColorSelectHover'), props => getThemeVariantValue(props, 'boxShadowSelectDisabled'), props => getThemeVariantValue(props, 'backgroundImageSelectUrl'), props => getThemeVariantValue(props, 'backgroundColorSelectDisabled'), props => getThemeVariantValue(props, 'colorSelectDisabled'), props => getThemeVariantValue(props, 'cursorSelectDisabled'), props => props.params.size === 'large' && Ce(react_select_esm_style_templateObject2 || (react_select_esm_style_templateObject2 = _taggedTemplateLiteralLoose(["\n      padding: ", ";\n      font-size: ", ";\n    "])), props => getThemeVariantValue(props, 'paddingSelectLarge'), props => getThemeVariantValue(props, 'fontSizeSelectLarge')), props => props.params.size === 'small' && Ce(react_select_esm_style_templateObject3 || (react_select_esm_style_templateObject3 = _taggedTemplateLiteralLoose(["\n      padding: ", ";\n      font-size: ", ";\n    "])), props => getThemeVariantValue(props, 'paddingSelectSmall'), props => getThemeVariantValue(props, 'fontSizeSelectSmall')));
-SelectWarp.defaultProps = {
+var SelectStyleWarp = styled_components_browser_esm.select(react_select_esm_style_templateObject || (react_select_esm_style_templateObject = _taggedTemplateLiteralLoose(["\n  display: inline-flex;\n  appearance: none;\n  cursor: ", ";\n  color: ", ";\n  padding: ", ";\n  font-size: ", ";\n  width: 100%;\n  max-width: 100%;\n  margin: 0;\n  line-height: 18px;\n  vertical-align: middle;\n  box-sizing: border-box;\n  border: none;\n  box-shadow: ", ";\n  border-radius: ", ";\n  background-color: ", ";\n  background-image: ", ",\n    linear-gradient(180deg, hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0));\n  background-repeat: no-repeat, repeat;\n  background-position: right 0.7em top 50%, 0 0;\n  background-size: 0.62em auto, 100%;\n  &:focus {\n    outline: none !important;\n  }\n  &:hover {\n    box-shadow: ", ";\n    background-clip: padding-box;\n    background-color: ", ";\n  }\n  &:disabled {\n    box-shadow: ", ";\n    background-image: ", ";\n    background-size: 0.52em auto, 100%;\n    background-color: ", ";\n    opacity: 0.75;\n    color: ", ";\n    cursor: ", ";\n    resize: none;\n  }\n  ", "\n  ", "\n"])), props => getThemeVariantValue(props, 'cursorSelectDefault'), props => getThemeVariantValue(props, 'colorSelectBase'), props => getThemeVariantValue(props, 'paddingSelectDefault'), props => getThemeVariantValue(props, 'fontSizeSelectDefault'), props => getThemeVariantValue(props, 'boxShadowSelectBase'), props => getThemeVariantValue(props, 'borderRadiusDefault'), props => getThemeVariantValue(props, 'backgroundColorSelectBase'), props => getThemeVariantValue(props, 'backgroundImageSelectUrl'), props => getThemeVariantValue(props, 'boxShadowSelectBase'), props => getThemeVariantValue(props, 'backgroundColorSelectHover'), props => getThemeVariantValue(props, 'boxShadowSelectDisabled'), props => getThemeVariantValue(props, 'backgroundImageSelectUrl'), props => getThemeVariantValue(props, 'backgroundColorSelectDisabled'), props => getThemeVariantValue(props, 'colorSelectDisabled'), props => getThemeVariantValue(props, 'cursorSelectDisabled'), props => props.params.size === 'large' && Ce(react_select_esm_style_templateObject2 || (react_select_esm_style_templateObject2 = _taggedTemplateLiteralLoose(["\n      padding: ", ";\n      font-size: ", ";\n    "])), props => getThemeVariantValue(props, 'paddingSelectLarge'), props => getThemeVariantValue(props, 'fontSizeSelectLarge')), props => props.params.size === 'small' && Ce(react_select_esm_style_templateObject3 || (react_select_esm_style_templateObject3 = _taggedTemplateLiteralLoose(["\n      padding: ", ";\n      font-size: ", ";\n    "])), props => getThemeVariantValue(props, 'paddingSelectSmall'), props => getThemeVariantValue(props, 'fontSizeSelectSmall')));
+SelectStyleWarp.defaultProps = {
   defaultTheme: {
     // 大小内边距设置
     paddingSelectSmall: '3px 25px 3px 7px',
@@ -12764,7 +12908,7 @@ var Select = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd
       other = _objectWithoutPropertiesLoose(props, react_select_esm_excluded);
 
   var cls = [prefixCls, className, size ? prefixCls + "-" + size : null].filter(Boolean).join(' ').trim();
-  return /*#__PURE__*/(0,jsx_runtime.jsx)(SelectWarp, extends_extends({}, other, {
+  return /*#__PURE__*/(0,jsx_runtime.jsx)(SelectStyleWarp, extends_extends({}, other, {
     ref: ref,
     className: cls,
     params: {
@@ -12844,7 +12988,7 @@ var item_templateObject, item_templateObject2, item_templateObject3, item_templa
 var LabelStyle = styled_components_browser_esm.label(item_templateObject || (item_templateObject = _taggedTemplateLiteralLoose(["\n  line-height: 32px;\n  min-height: 32px;\n  font-weight: 600;\n  font-size: 14px;\n  padding-right: 5px;\n  label {\n    display: inline-block;\n  }\n"])));
 var FormStyleHelpStyle = styled_components_browser_esm.div(item_templateObject2 || (item_templateObject2 = _taggedTemplateLiteralLoose(["\n  color: #c2c2c2;\n  font-size: 12px;\n  padding-top: 3px;\n"])));
 var FormStyleRowStyle = styled_components_browser_esm.div(item_templateObject3 || (item_templateObject3 = _taggedTemplateLiteralLoose(["\n  align-items: center;\n  display: flex;\n"])));
-var FormStyleItem = styled_components_browser_esm.div(item_templateObject4 || (item_templateObject4 = _taggedTemplateLiteralLoose(["\n  margin-bottom: 10px;\n  ", "\n"])), props => props.hasError && Ce(item_templateObject5 || (item_templateObject5 = _taggedTemplateLiteralLoose(["\n      ", ",", ",", " {\n        box-shadow: 0 0 0 1px #dc3545, 0 0 0 3px rgba(220, 53, 69, 0.17), inset 0 1px 1px rgba(16, 22, 26, 0.2);\n        &:hover {\n          box-shadow: 0 0 0 1px #dc3545, 0 0 0 3px rgba(220, 53, 69, 0.17), inset 0 1px 1px rgba(16, 22, 26, 0.2);\n        }\n        &:focus,\n        &:hover {\n          box-shadow: 0 0 0 1px #dc3545, 0 0 0 3px rgba(220, 53, 69, 0.17), inset 0 1px 1px rgba(16, 22, 26, 0.2);\n        }\n      }\n      ", ", ", " {\n        color: #dc3545;\n      }\n    "])), InputStyleBase, SelectWarp, TextareaStyleWarp, LabelStyle, FormStyleHelpStyle));
+var FormStyleItem = styled_components_browser_esm.div(item_templateObject4 || (item_templateObject4 = _taggedTemplateLiteralLoose(["\n  margin-bottom: 10px;\n  ", "\n"])), props => props.hasError && Ce(item_templateObject5 || (item_templateObject5 = _taggedTemplateLiteralLoose(["\n      ", ",", ",", " {\n        box-shadow: 0 0 0 1px #dc3545, 0 0 0 3px rgba(220, 53, 69, 0.17), inset 0 1px 1px rgba(16, 22, 26, 0.2);\n        &:hover {\n          box-shadow: 0 0 0 1px #dc3545, 0 0 0 3px rgba(220, 53, 69, 0.17), inset 0 1px 1px rgba(16, 22, 26, 0.2);\n        }\n        &:focus,\n        &:hover {\n          box-shadow: 0 0 0 1px #dc3545, 0 0 0 3px rgba(220, 53, 69, 0.17), inset 0 1px 1px rgba(16, 22, 26, 0.2);\n        }\n      }\n      ", ", ", " {\n        color: #dc3545;\n      }\n    "])), InputStyleBase, SelectStyleWarp, TextareaStyleWarp, LabelStyle, FormStyleHelpStyle));
 
 ;// CONCATENATED MODULE: ../react-form/esm/FormItem.js
 
@@ -13707,25 +13851,33 @@ var react_loader_esm_excluded = ["prefixCls", "className", "size", "loading", "t
   }));
 });
 
+// EXTERNAL MODULE: ../../node_modules/@uiw/icons/lib/CircleCheck.js
+var lib_CircleCheck = __webpack_require__(92);
+// EXTERNAL MODULE: ../../node_modules/@uiw/icons/lib/Warning.js
+var lib_Warning = __webpack_require__(142);
+// EXTERNAL MODULE: ../../node_modules/@uiw/icons/lib/Information.js
+var lib_Information = __webpack_require__(850);
+// EXTERNAL MODULE: ../../node_modules/@uiw/icons/lib/CircleClose.js
+var lib_CircleClose = __webpack_require__(670);
 ;// CONCATENATED MODULE: ../react-message/esm/style/index.js
 
 
-var react_message_esm_style_templateObject, react_message_esm_style_templateObject2, react_message_esm_style_templateObject3, react_message_esm_style_templateObject4, react_message_esm_style_templateObject5, react_message_esm_style_templateObject6, react_message_esm_style_templateObject7, react_message_esm_style_templateObject8, react_message_esm_style_templateObject9, react_message_esm_style_templateObject10, react_message_esm_style_templateObject11, react_message_esm_style_templateObject12, react_message_esm_style_templateObject13, react_message_esm_style_templateObject14, react_message_esm_style_templateObject15, react_message_esm_style_templateObject16, react_message_esm_style_templateObject17, react_message_esm_style_templateObject18, react_message_esm_style_templateObject19, react_message_esm_style_templateObject20;
+var react_message_esm_style_templateObject, react_message_esm_style_templateObject2, react_message_esm_style_templateObject3, react_message_esm_style_templateObject4, react_message_esm_style_templateObject5, react_message_esm_style_templateObject6, react_message_esm_style_templateObject7, react_message_esm_style_templateObject8, react_message_esm_style_templateObject9, react_message_esm_style_templateObject10, react_message_esm_style_templateObject11, react_message_esm_style_templateObject12, react_message_esm_style_templateObject13, react_message_esm_style_templateObject14, react_message_esm_style_templateObject15, react_message_esm_style_templateObject16, react_message_esm_style_templateObject17, react_message_esm_style_templateObject18;
 
 
 
 
 
-var MessageWrap = styled_components_browser_esm.div(react_message_esm_style_templateObject || (react_message_esm_style_templateObject = _taggedTemplateLiteralLoose(["\n  padding: 10px 15px;\n  position: relative;\n  font-size: 14px;\n"]))); // 最外层div
+var MessageStyleWrap = styled_components_browser_esm.div(react_message_esm_style_templateObject || (react_message_esm_style_templateObject = _taggedTemplateLiteralLoose(["\n  padding: 10px 15px;\n  position: relative;\n  font-size: 14px;\n"]))); // 最外层div
 
-var MessageDivWrap = styled_components_browser_esm(MessageWrap)(react_message_esm_style_templateObject2 || (react_message_esm_style_templateObject2 = _taggedTemplateLiteralLoose(["\n  margin-top: 10px;\n  ", "\n  ", "\n\n  ", "\n\n  ", "\n    > ", " {\n    top: 14px;\n    left: 14px;\n    position: absolute;\n  }\n  /* CSSTransition */\n  &.w-message-enter {\n    transform: scaleY(0.5);\n    opacity: 0;\n  }\n  &.w-message-enter-active {\n    opacity: 1;\n    transform: scaleY(1);\n    transition: transform 300ms ease, opacity 300ms ease;\n  }\n  &.w-message-exit {\n    opacity: 1;\n    transform: scaleY(1);\n    transition: transform 300ms ease, opacity 300ms ease;\n  }\n  &.w-message-exit-active {\n    transform: scaleY(0.5);\n    opacity: 0;\n  }\n"])), props => {
+var MessageStyleDivWrap = styled_components_browser_esm(MessageStyleWrap)(react_message_esm_style_templateObject2 || (react_message_esm_style_templateObject2 = _taggedTemplateLiteralLoose(["\n  margin-top: 10px;\n  ", "\n  ", "\n\n  ", "\n\n  ", "\n    > ", " {\n    top: 14px;\n    left: 14px;\n    position: absolute;\n  }\n  /* CSSTransition */\n  &.w-message-enter {\n    transform: scaleY(0.5);\n    opacity: 0;\n  }\n  &.w-message-enter-active {\n    opacity: 1;\n    transform: scaleY(1);\n    transition: transform 300ms ease, opacity 300ms ease;\n  }\n  &.w-message-exit {\n    opacity: 1;\n    transform: scaleY(1);\n    transition: transform 300ms ease, opacity 300ms ease;\n  }\n  &.w-message-exit-active {\n    transform: scaleY(0.5);\n    opacity: 0;\n  }\n"])), props => {
   var _props$params;
 
   if ((_props$params = props.params) != null && _props$params.showIcon) {
     var _props$params2, _props$params3, _props$params4, _props$params5;
 
     if ((_props$params2 = props.params) != null && _props$params2.children && (_props$params3 = props.params) != null && _props$params3.title) {
-      return Ce(react_message_esm_style_templateObject3 || (react_message_esm_style_templateObject3 = _taggedTemplateLiteralLoose(["\n          > .w-icon {\n            font-size: 24px;\n          }\n        "])));
+      return Ce(react_message_esm_style_templateObject3 || (react_message_esm_style_templateObject3 = _taggedTemplateLiteralLoose(["\n          > ", " {\n            font-size: 24px;\n          }\n        "])), IconStyleBase);
     }
 
     if ((_props$params4 = props.params) != null && _props$params4.children) {
@@ -13764,19 +13916,13 @@ var MessageDivWrap = styled_components_browser_esm(MessageWrap)(react_message_es
   }
 }, IconStyleBase);
 // 原始span
-var MessageSpanWrap = styled_components_browser_esm.span(react_message_esm_style_templateObject13 || (react_message_esm_style_templateObject13 = _taggedTemplateLiteralLoose(["\n  display: block;\n"]))); // 详情description
+var MessageStyleSpanWrap = styled_components_browser_esm.span(react_message_esm_style_templateObject13 || (react_message_esm_style_templateObject13 = _taggedTemplateLiteralLoose(["\n  display: block;\n"]))); // 详情description
 
-var MessageDescriptionSpan = styled_components_browser_esm(MessageSpanWrap)(react_message_esm_style_templateObject14 || (react_message_esm_style_templateObject14 = _taggedTemplateLiteralLoose(["\n  color: rgba(0, 0, 0, 0.65);\n  ", "\n"])), props => props.params.showIcon && props.params.title && props.params.children && Ce(react_message_esm_style_templateObject15 || (react_message_esm_style_templateObject15 = _taggedTemplateLiteralLoose(["\n      padding-left: 16px;\n    "])))); // 标题title
+var MessageStyleDescriptionSpan = styled_components_browser_esm(MessageStyleSpanWrap)(react_message_esm_style_templateObject14 || (react_message_esm_style_templateObject14 = _taggedTemplateLiteralLoose(["\n  color: rgba(0, 0, 0, 0.65);\n  ", "\n"])), props => props.params.showIcon && props.params.title && props.params.children && Ce(react_message_esm_style_templateObject15 || (react_message_esm_style_templateObject15 = _taggedTemplateLiteralLoose(["\n      padding-left: 16px;\n    "])))); // 标题title
 
-var MessageTitleSpan = styled_components_browser_esm(MessageDescriptionSpan)(react_message_esm_style_templateObject16 || (react_message_esm_style_templateObject16 = _taggedTemplateLiteralLoose(["\n  color: rgba(0, 0, 0, 0.85);\n  ", "\n"])), props => props.params.showIcon && props.params.title && props.params.children && Ce(react_message_esm_style_templateObject17 || (react_message_esm_style_templateObject17 = _taggedTemplateLiteralLoose(["\n      font-size: 16px;\n    "]))));
-// icon
-var MessageIconWarp = styled_components_browser_esm.span(react_message_esm_style_templateObject18 || (react_message_esm_style_templateObject18 = _taggedTemplateLiteralLoose(["\n  ", "\n  top: 14px;\n  left: 14px;\n  position: absolute;\n"])), props => {
-  var _props$params8;
-
-  return ((_props$params8 = props.params) == null ? void 0 : _props$params8.showIcon) && props.params.title && props.params.children && Ce(react_message_esm_style_templateObject19 || (react_message_esm_style_templateObject19 = _taggedTemplateLiteralLoose(["\n      font-size: 24px;\n    "])));
-});
-var MessageButtonStyleWarp = styled_components_browser_esm(esm)(react_message_esm_style_templateObject20 || (react_message_esm_style_templateObject20 = _taggedTemplateLiteralLoose(["\n  position: absolute;\n  right: 10px;\n  top: 10px;\n  padding: 2px;\n  min-width: 16px;\n  min-height: 16px;\n  color: rgba(0, 0, 0, 0.38);\n  &:hover {\n    background-color: rgba(255, 255, 255, 0.21) !important;\n  }\n  &:active {\n    background-color: rgba(0, 0, 0, 0.1) !important;\n  }\n"])));
-MessageDivWrap.defaultProps = {
+var MessageStyleTitleSpan = styled_components_browser_esm(MessageStyleDescriptionSpan)(react_message_esm_style_templateObject16 || (react_message_esm_style_templateObject16 = _taggedTemplateLiteralLoose(["\n  color: rgba(0, 0, 0, 0.85);\n  ", "\n"])), props => props.params.showIcon && props.params.title && props.params.children && Ce(react_message_esm_style_templateObject17 || (react_message_esm_style_templateObject17 = _taggedTemplateLiteralLoose(["\n      font-size: 16px;\n    "]))));
+var MessageStyleButtonWarp = styled_components_browser_esm(esm)(react_message_esm_style_templateObject18 || (react_message_esm_style_templateObject18 = _taggedTemplateLiteralLoose(["\n  position: absolute;\n  right: 10px;\n  top: 10px;\n  padding: 2px;\n  min-width: 16px;\n  min-height: 16px;\n  color: rgba(0, 0, 0, 0.38);\n  &:hover {\n    background-color: rgba(255, 255, 255, 0.21) !important;\n  }\n  &:active {\n    background-color: rgba(0, 0, 0, 0.1) !important;\n  }\n"])));
+MessageStyleDivWrap.defaultProps = {
   defaultTheme: {
     backgroundMessageSuccess: '#afecbd',
     colorMessageSuccess: '#28a745',
@@ -13800,6 +13946,11 @@ var react_message_esm_excluded = ["prefixCls", "className", "type", "title", "de
 
 
 
+
+
+
+
+
 class esm_Message extends (external_root_React_commonjs2_react_commonjs_react_amd_react_default()).Component {
   constructor(props) {
     super(props);
@@ -13819,32 +13970,41 @@ class esm_Message extends (external_root_React_commonjs2_react_commonjs_react_am
         type,
         showIcon
       } = this.props;
-      var icon = this.props.icon;
+      var base = this.props.icon;
 
-      if (!icon && showIcon) {
+      if (!base && showIcon) {
+        var fill;
+
         switch (type) {
           case 'success':
-            icon = 'circle-check';
+            fill = '#28a745';
+            base = lib_CircleCheck/* CircleCheck */.y;
             break;
 
           case 'warning':
-            icon = 'warning';
+            fill = '#ffc107';
+            base = lib_Warning/* Warning */.v;
             break;
 
           case 'info':
-            icon = 'information';
+            fill = '#008ef0';
+            base = lib_Information/* Information */.d;
             break;
 
           case 'error':
-            icon = 'circle-close';
+            fill = '#dc3545';
+            base = lib_CircleClose/* CircleClose */.K;
             break;
 
           default:
             break;
         }
-      }
 
-      return icon;
+        return /*#__PURE__*/(0,jsx_runtime.jsx)(IconStyleBase, {
+          fill: fill,
+          as: base
+        });
+      }
     };
 
     this.state = {
@@ -13870,27 +14030,25 @@ class esm_Message extends (external_root_React_commonjs2_react_commonjs_react_am
     var children = description || this.props.children;
     var cls = [prefixCls, className, prefixCls + "-" + type, rounded ? prefixCls + "-rounded" : null, showIcon ? prefixCls + "-icon" : null, showIcon ? "" + prefixCls + (title ? '-title' : '') + (children ? '-description' : '') : null].filter(Boolean).join(' ').trim();
 
-    var Child = /*#__PURE__*/(0,jsx_runtime.jsxs)(MessageDivWrap, extends_extends({
+    var Child = /*#__PURE__*/(0,jsx_runtime.jsxs)(MessageStyleDivWrap, extends_extends({
       params: {
         rounded,
         type,
         title,
         children,
-        showIcon,
-        icon
+        showIcon
       },
       className: cls
     }, elementProps, {
-      children: [isCloseButtonShown && /*#__PURE__*/(0,jsx_runtime.jsx)(MessageButtonStyleWarp, {
+      children: [isCloseButtonShown && /*#__PURE__*/(0,jsx_runtime.jsx)(MessageStyleButtonWarp, {
         basic: true,
         onClick: this.handleClosed,
-        icon: /*#__PURE__*/(0,jsx_runtime.jsx)(Icon, {
-          type: "close"
+        icon: /*#__PURE__*/(0,jsx_runtime.jsx)(IconStyleBase, {
+          fill: "rgba(0, 0, 0, 0.38)",
+          as: Close/* Close */.x
         }),
         type: "light"
-      }), showIcon && /*#__PURE__*/(0,jsx_runtime.jsx)(Icon, {
-        type: this.renderIcon()
-      }), /*#__PURE__*/(0,jsx_runtime.jsx)(MessageTitleSpan, {
+      }), showIcon && (icon ? icon : this.renderIcon()), /*#__PURE__*/(0,jsx_runtime.jsx)(MessageStyleTitleSpan, {
         params: {
           showIcon,
           title,
@@ -13898,7 +14056,7 @@ class esm_Message extends (external_root_React_commonjs2_react_commonjs_react_am
         },
         className: prefixCls + "-title",
         children: title
-      }), /*#__PURE__*/(0,jsx_runtime.jsx)(MessageDescriptionSpan, {
+      }), /*#__PURE__*/(0,jsx_runtime.jsx)(MessageStyleDescriptionSpan, {
         params: {
           showIcon,
           title,
@@ -14348,7 +14506,7 @@ var PaginationStyleBaseLI = styled_components_browser_esm.li(react_pagination_es
 }, props => {
   var _props$params7;
 
-  return ((_props$params7 = props.params) == null ? void 0 : _props$params7.isOptions) && Ce(react_pagination_esm_style_templateObject17 || (react_pagination_esm_style_templateObject17 = _taggedTemplateLiteralLoose(["\n      ", " {\n        border: none !important;\n        padding-top: 0;\n        padding-bottom: 0;\n        box-shadow: none !important;\n        height: 100%;\n      }\n    "])), SelectWarp);
+  return ((_props$params7 = props.params) == null ? void 0 : _props$params7.isOptions) && Ce(react_pagination_esm_style_templateObject17 || (react_pagination_esm_style_templateObject17 = _taggedTemplateLiteralLoose(["\n      ", " {\n        border: none !important;\n        padding-top: 0;\n        padding-bottom: 0;\n        box-shadow: none !important;\n        height: 100%;\n      }\n    "])), SelectStyleWarp);
 });
 PaginationStyleBaseLI.defaultProps = {
   defaultTheme: PaginationDefaultTheme
@@ -14585,8 +14743,8 @@ var react_pin_code_esm_style_templateObject, react_pin_code_esm_style_templateOb
 
  // React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>
 
-var DivWrap = styled_components_browser_esm.div(react_pin_code_esm_style_templateObject || (react_pin_code_esm_style_templateObject = _taggedTemplateLiteralLoose(["\n  display: flex;\n"])));
-var InputWrap = styled_components_browser_esm(react_input_esm)(react_pin_code_esm_style_templateObject2 || (react_pin_code_esm_style_templateObject2 = _taggedTemplateLiteralLoose(["\n  width: 30px;\n  & + & {\n    margin-left: 8px;\n  }\n  > ", " {\n    text-align: center;\n    padding: 0 !important;\n    font-size: 14px;\n    font-weight: bold;\n  }\n\n  ", "\n\n  ", "\n"])), InputStyleBase, props => (props == null ? void 0 : props.size) === 'large' && Ce(react_pin_code_esm_style_templateObject3 || (react_pin_code_esm_style_templateObject3 = _taggedTemplateLiteralLoose(["\n      width: 36px;\n      ", " {\n        font-size: 16px;\n      }\n    "])), InputStyleBase), props => (props == null ? void 0 : props.size) === 'small' && Ce(react_pin_code_esm_style_templateObject4 || (react_pin_code_esm_style_templateObject4 = _taggedTemplateLiteralLoose(["\n      width: 24px;\n      ", " {\n        font-size: 12px;\n      }\n    "])), InputStyleBase));
+var PinCodeStyleDivWrap = styled_components_browser_esm.div(react_pin_code_esm_style_templateObject || (react_pin_code_esm_style_templateObject = _taggedTemplateLiteralLoose(["\n  display: flex;\n"])));
+var PinCodeStyleInputWrap = styled_components_browser_esm(react_input_esm)(react_pin_code_esm_style_templateObject2 || (react_pin_code_esm_style_templateObject2 = _taggedTemplateLiteralLoose(["\n  width: 30px;\n  & + & {\n    margin-left: 8px;\n  }\n  > ", " {\n    text-align: center;\n    padding: 0 !important;\n    font-size: 14px;\n    font-weight: bold;\n  }\n\n  ", "\n\n  ", "\n"])), InputStyleBase, props => (props == null ? void 0 : props.size) === 'large' && Ce(react_pin_code_esm_style_templateObject3 || (react_pin_code_esm_style_templateObject3 = _taggedTemplateLiteralLoose(["\n      width: 36px;\n      ", " {\n        font-size: 16px;\n      }\n    "])), InputStyleBase), props => (props == null ? void 0 : props.size) === 'small' && Ce(react_pin_code_esm_style_templateObject4 || (react_pin_code_esm_style_templateObject4 = _taggedTemplateLiteralLoose(["\n      width: 24px;\n      ", " {\n        font-size: 12px;\n      }\n    "])), InputStyleBase));
 
 ;// CONCATENATED MODULE: ../react-pin-code/esm/index.js
 
@@ -14669,7 +14827,7 @@ function InternalPinCode(props, ref) {
     onFocus(event);
   }
 
-  return /*#__PURE__*/(0,jsx_runtime.jsx)(DivWrap, extends_extends({
+  return /*#__PURE__*/(0,jsx_runtime.jsx)(PinCodeStyleDivWrap, extends_extends({
     className: cls,
     style: style
   }, otherProps, {
@@ -14695,7 +14853,7 @@ function InternalPinCode(props, ref) {
         inpProps.autoFocus = true;
       }
 
-      var child = /*#__PURE__*/(0,external_root_React_commonjs2_react_commonjs_react_amd_react_.createElement)(InputWrap, extends_extends({
+      var child = /*#__PURE__*/(0,external_root_React_commonjs2_react_commonjs_react_amd_react_.createElement)(PinCodeStyleInputWrap, extends_extends({
         ref: instance => {
           if (instance) {
             input[key] = instance;
