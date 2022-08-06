@@ -160,6 +160,42 @@ exports.x = Close;
 
 /***/ }),
 
+/***/ 359:
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+var __webpack_unused_export__;
+
+
+var _interopRequireDefault = (__webpack_require__(600)["default"]);
+
+__webpack_unused_export__ = ({
+  value: true
+});
+exports.s = void 0;
+
+var _objectSpread2 = _interopRequireDefault(__webpack_require__(814));
+
+var _react = _interopRequireDefault(__webpack_require__(787));
+
+var _jsxRuntime = __webpack_require__(664);
+
+var DownSquareO = function DownSquareO(props) {
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)("svg", (0, _objectSpread2["default"])((0, _objectSpread2["default"])({
+    viewBox: "0 0 20 20"
+  }, props), {}, {
+    children: /*#__PURE__*/(0, _jsxRuntime.jsx)("path", {
+      d: "M1.81818182,1.36363636 C1.5671433,1.36363636 1.36363636,1.5671433 1.36363636,1.81818182 L1.36363636,18.1818182 C1.36363636,18.4328567 1.5671433,18.6363636 1.81818182,18.6363636 L18.1818182,18.6363636 C18.4328567,18.6363636 18.6363636,18.4328567 18.6363636,18.1818182 L18.6363636,1.81818182 C18.6363636,1.5671433 18.4328567,1.36363636 18.1818182,1.36363636 L1.81818182,1.36363636 Z M18.1818182,0 C19.1859723,0 20,0.814027728 20,1.81818182 L20,18.1818182 C20,19.1859723 19.1859723,20 18.1818182,20 L1.81818182,20 C0.814027728,20 0,19.1859723 0,18.1818182 L0,1.81818182 C0,0.814027728 0.814027728,0 1.81818182,0 L18.1818182,0 Z M14.4598225,7.6248997 C14.1970199,7.35521364 13.7653526,7.34963347 13.4956665,7.61243605 L13.4956665,7.61243605 L10.0046519,11.0143458 L6.58558122,7.6170873 C6.31846398,7.35167415 5.8867628,7.35305558 5.62134964,7.62017282 C5.35593648,7.88729006 5.35731792,8.31899125 5.62443516,8.58440441 L5.62443516,8.58440441 L9.51942697,12.4545479 C9.78350334,12.7169396 10.2092302,12.71901 10.4758462,12.4591992 L10.4758462,12.4591992 L14.4473588,8.58905566 C14.7170449,8.32625309 14.7226251,7.89458576 14.4598225,7.6248997 Z",
+      fillRule: "evenodd"
+    })
+  }));
+};
+
+exports.s = DownSquareO;
+
+
+/***/ }),
+
 /***/ 309:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
@@ -969,6 +1005,11 @@ __webpack_require__.d(__webpack_exports__, {
   "TimePickerTime": () => (/* reexport */ TimePickerTime),
   "Tooltip": () => (/* reexport */ react_tooltip_esm),
   "Transfer": () => (/* reexport */ react_transfer_esm),
+  "TransferArrow": () => (/* reexport */ TransferArrow),
+  "TransferArrowContent": () => (/* reexport */ TransferArrowContent),
+  "TransferCard": () => (/* reexport */ TransferCard),
+  "TransferChekedContentWrap": () => (/* reexport */ TransferChekedContentWrap),
+  "TransferWrap": () => (/* reexport */ TransferWrap),
   "Tree": () => (/* reexport */ Tree),
   "TreeChecked": () => (/* reexport */ TreeChecked),
   "canUseDOM": () => (/* reexport */ canUseDOM),
@@ -18965,14 +19006,28 @@ function SearchTree(props) {
 
 /* harmony default export */ const react_search_tree_esm = (SearchTree);
 
+// EXTERNAL MODULE: ../../node_modules/@uiw/icons/lib/DownSquareO.js
+var lib_DownSquareO = __webpack_require__(359);
 ;// CONCATENATED MODULE: ../react-transfer/esm/style/index.js
 
 
-var react_transfer_esm_style_templateObject;
+var react_transfer_esm_style_templateObject, react_transfer_esm_style_templateObject2, react_transfer_esm_style_templateObject3, react_transfer_esm_style_templateObject4, react_transfer_esm_style_templateObject5;
 
 
-var Transfer = styled_components_browser_esm.div(react_transfer_esm_style_templateObject || (react_transfer_esm_style_templateObject = _taggedTemplateLiteralLoose(["\n  display: flex;\n  justify-content: space-between;\n\n  &.w-transfer-card {\n    width: 50%;\n  }\n\n  &.w-transfer-cheked-content {\n    height: 200px;\n    overflow-y: auto;\n  }\n\n  &.w-transfer-arrow-content {\n    width: 50px;\n    height: 50px;\n    display: flex;\n    flex-direction: column;\n    align-self: center;\n    justify-content: space-between;\n  }\n\n  &.w-transfer-arrow {\n    transition: all 0.3s;\n    border-radius: 3px;\n\n    &:hover {\n      cursor: pointer;\n      box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);\n    }\n  }\n"])));
-/* harmony default export */ const react_transfer_esm_style = (Transfer);
+
+
+
+var TransferWrap = styled_components_browser_esm.div(react_transfer_esm_style_templateObject || (react_transfer_esm_style_templateObject = _taggedTemplateLiteralLoose(["\n  display: flex;\n  justify-content: space-between;\n"])));
+var TransferChekedContentWrap = styled_components_browser_esm.div(react_transfer_esm_style_templateObject2 || (react_transfer_esm_style_templateObject2 = _taggedTemplateLiteralLoose(["\n  height: 200px;\n  overflow-y: auto;\n"])));
+var TransferArrow = styled_components_browser_esm(IconStyleBase)(react_transfer_esm_style_templateObject3 || (react_transfer_esm_style_templateObject3 = _taggedTemplateLiteralLoose(["\n  transition: all 0.3s;\n  border-radius: 3px;\n\n  &:hover {\n    cursor: pointer;\n    box-shadow: 0 1px 6px ", ";\n  }\n"])), props => getThemeVariantValue(props, 'boxShadowColorTransferArrowPropsHover'));
+TransferArrow.defaultProps = {
+  defaultTheme: {
+    boxShadowColorTransferArrowPropsHover: 'rgba(0, 0, 0, 0.2)'
+  }
+};
+var TransferArrowContent = styled_components_browser_esm.div(react_transfer_esm_style_templateObject4 || (react_transfer_esm_style_templateObject4 = _taggedTemplateLiteralLoose(["\n  width: 50px;\n  height: 50px;\n  display: flex;\n  flex-direction: column;\n  align-self: center;\n  justify-content: space-between;\n"])));
+var TransferCard = styled_components_browser_esm(react_card_esm)(react_transfer_esm_style_templateObject5 || (react_transfer_esm_style_templateObject5 = _taggedTemplateLiteralLoose(["\n  width: 50%;\n"])));
+/* harmony default export */ const react_transfer_esm_style = (TransferWrap);
 
 ;// CONCATENATED MODULE: ../react-transfer/esm/index.js
 
@@ -18993,7 +19048,7 @@ var CheckedStatus;
   CheckedStatus[CheckedStatus["Indeterminate"] = 2] = "Indeterminate";
 })(CheckedStatus || (CheckedStatus = {}));
 
-function esm_Transfer(props) {
+function Transfer(props) {
   var {
     placeholder,
     options,
@@ -19189,14 +19244,13 @@ function esm_Transfer(props) {
     selectAllCheckedSet(selectAllChecked);
   };
 
-  var Arrow = props => /*#__PURE__*/(0,jsx_runtime.jsx)(Icon, {
+  var Arrow = props => /*#__PURE__*/(0,jsx_runtime.jsx)(TransferArrow, {
+    as: lib_DownSquareO/* DownSquareO */.s,
     onClick: () => props.click(),
-    type: "down-square-o",
     className: prefixCls + "-arrow",
     style: extends_extends({
       fontSize: 20,
-      stroke: '#e9e9e9',
-      fill: '#333'
+      stroke: '#e9e9e9'
     }, props.style)
   });
 
@@ -19205,7 +19259,7 @@ function esm_Transfer(props) {
     style: extends_extends({
       width: 400
     }, style),
-    children: [/*#__PURE__*/(0,jsx_runtime.jsxs)(react_card_esm, {
+    children: [/*#__PURE__*/(0,jsx_runtime.jsxs)(TransferCard, {
       bodyStyle: {
         padding: '5px 9px'
       },
@@ -19226,7 +19280,7 @@ function esm_Transfer(props) {
         placeholder: placeholder,
         value: searchValueLeft,
         onChange: e => searchValueLeftChange(e.target.value)
-      }), /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
+      }), /*#__PURE__*/(0,jsx_runtime.jsx)(TransferChekedContentWrap, {
         className: prefixCls + "-cheked-content",
         children: /*#__PURE__*/(0,jsx_runtime.jsx)(TreeChecked, {
           defaultExpandAll: true,
@@ -19236,7 +19290,7 @@ function esm_Transfer(props) {
           onSelected: leftTreeOnSelected
         })
       })]
-    }), /*#__PURE__*/(0,jsx_runtime.jsxs)("div", {
+    }), /*#__PURE__*/(0,jsx_runtime.jsxs)(TransferArrowContent, {
       className: prefixCls + "-arrow-content",
       children: [/*#__PURE__*/(0,jsx_runtime.jsx)(Arrow, {
         click: () => transferClick('left'),
@@ -19251,7 +19305,7 @@ function esm_Transfer(props) {
           background: rightSelectedKeys.length > 0 ? '#393E48' : 'none'
         }
       })]
-    }), /*#__PURE__*/(0,jsx_runtime.jsxs)(react_card_esm, {
+    }), /*#__PURE__*/(0,jsx_runtime.jsxs)(TransferCard, {
       bodyStyle: {
         padding: '5px 9px'
       },
@@ -19285,7 +19339,7 @@ function esm_Transfer(props) {
   });
 }
 
-/* harmony default export */ const react_transfer_esm = (esm_Transfer);
+/* harmony default export */ const react_transfer_esm = (Transfer);
 
 ;// CONCATENATED MODULE: ./src/index.ts
 
