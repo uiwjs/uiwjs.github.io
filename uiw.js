@@ -8971,6 +8971,7 @@ var react_drawer_esm_excluded = ["prefixCls", "className", "style", "placement",
 
 
 
+
  // import './style/index.less';
 
 
@@ -9008,9 +9009,8 @@ var react_drawer_esm_excluded = ["prefixCls", "className", "style", "placement",
     className: prefixCls + "-footer",
     children: footer
   }) : null, [footer]);
-  var iconView = (0,external_root_React_commonjs2_react_commonjs_react_amd_react_.useMemo)(() => icon ? /*#__PURE__*/(0,jsx_runtime.jsx)(Icon, {
-    type: icon
-  }) : null, [icon]);
+  var iconView = icon; // useMemo(() => (icon ? <Icon type={icon} /> : null), [icon]);
+
   var titleView = (0,external_root_React_commonjs2_react_commonjs_react_amd_react_.useMemo)(() => title ? /*#__PURE__*/(0,jsx_runtime.jsx)("h4", {
     children: title
   }) : null, [title]);
@@ -9029,7 +9029,9 @@ var react_drawer_esm_excluded = ["prefixCls", "className", "style", "placement",
         children: [iconView, titleView, title && isCloseButtonShown && /*#__PURE__*/(0,jsx_runtime.jsx)(esm, {
           basic: true,
           onClick: props.onClose,
-          icon: "close",
+          icon: /*#__PURE__*/(0,jsx_runtime.jsx)(IconStyleBase, {
+            as: Close/* Close */.x
+          }),
           type: "light"
         })]
       }), /*#__PURE__*/(0,jsx_runtime.jsx)(DrawerBodyWrap, {
