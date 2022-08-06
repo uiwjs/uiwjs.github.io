@@ -3707,7 +3707,6 @@ var react_modal_esm_excluded = ["prefixCls", "className", "children", "useButton
 
 
 
-
 var Modal = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default().forwardRef((props, ref) => {
   var {
     prefixCls = 'w-modal',
@@ -3802,9 +3801,7 @@ var Modal = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_
         },
         children: [(title || icon) && /*#__PURE__*/(0,jsx_runtime.jsxs)(ModalStyleHeader, {
           className: prefixCls + "-header",
-          children: [icon && /*#__PURE__*/(0,jsx_runtime.jsx)(Icon, {
-            type: icon
-          }), title && /*#__PURE__*/(0,jsx_runtime.jsx)("h4", {
+          children: [icon && icon, title && /*#__PURE__*/(0,jsx_runtime.jsx)("h4", {
             children: title
           }), isCloseButtonShown && /*#__PURE__*/(0,jsx_runtime.jsx)(esm, {
             basic: true,
