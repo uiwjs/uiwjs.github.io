@@ -7531,8 +7531,7 @@ var SubMenu = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_am
   }
 
   function onExiting(node) {
-    node.style.height = '0px';
-    store.onUpdateSize();
+    node.style.height = '0px'; // store.onUpdateSize();
   }
 
   function onEnter(node) {
@@ -7547,12 +7546,10 @@ var SubMenu = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_am
   }
 
   function onEntered(node) {
-    store.onUpdateSize();
-    node.style.height = 'initial';
-
-    if (popupRef.current && popupRef.current.overlayDom) {
-      node.style.height = popupRef.current.overlayDom.current.getBoundingClientRect().height + 'px';
-    }
+    store.onUpdateSize(); // node.style.height = 'initial';
+    // if (popupRef.current && popupRef.current.overlayDom) {
+    //   node.style.height = popupRef.current.overlayDom.current!.getBoundingClientRect().height + 'px';
+    // }
   }
 
   if (!collapse) {
