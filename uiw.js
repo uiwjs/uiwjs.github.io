@@ -13145,16 +13145,10 @@ var SelectStyleTheme = {
   // 阴影
   boxShadowSelectBase: 'inset 0 0 0 1px rgba(16, 22, 26, 0.2), inset 0 -1px 0 rgba(16, 22, 26, 0.1);',
   boxShadowSelectDisabled: 'none',
-  // 鼠标移入
-  cursorSelectDefault: 'pointer',
-  cursorSelectDisabled: 'not-allowed',
-  //
   borderRadiusDefault: '3px',
   backgroundImageSelectUrl: "url(" + selectArrow + ")"
 };
-var SelectStyleWarp = styled_components_browser_esm.select(react_select_esm_style_templateObject || (react_select_esm_style_templateObject = _taggedTemplateLiteralLoose(["\n  display: inline-flex;\n  appearance: none;\n  cursor: ", ";\n  color: ", ";\n  padding: ", ";\n  font-size: ", ";\n  width: 100%;\n  max-width: 100%;\n  margin: 0;\n  line-height: 18px;\n  vertical-align: middle;\n  box-sizing: border-box;\n  border: none;\n  box-shadow: ", ";\n  border-radius: ", ";\n  background-color: ", ";\n  background-image: ", ",\n    linear-gradient(180deg, hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0));\n  background-repeat: no-repeat, repeat;\n  background-position: right 0.7em top 50%, 0 0;\n  background-size: 0.62em auto, 100%;\n  &:focus {\n    outline: none !important;\n  }\n  &:hover {\n    box-shadow: ", ";\n    background-clip: padding-box;\n    background-color: ", ";\n  }\n  &:disabled {\n    box-shadow: ", ";\n    background-image: ", ";\n    background-size: 0.52em auto, 100%;\n    background-color: ", ";\n    opacity: 0.75;\n    color: ", ";\n    cursor: ", ";\n    resize: none;\n  }\n  ", "\n  ", "\n"])), props => getThemeVariantValue(extends_extends({}, props, {
-  defaultTheme: SelectStyleTheme
-}), 'cursorSelectDefault'), props => getThemeVariantValue(extends_extends({}, props, {
+var SelectStyleWarp = styled_components_browser_esm.select(react_select_esm_style_templateObject || (react_select_esm_style_templateObject = _taggedTemplateLiteralLoose(["\n  display: inline-flex;\n  appearance: none;\n  cursor: pointer;\n  color: ", ";\n  padding: ", ";\n  font-size: ", ";\n  width: 100%;\n  max-width: 100%;\n  margin: 0;\n  line-height: 18px;\n  vertical-align: middle;\n  box-sizing: border-box;\n  border: none;\n  box-shadow: ", ";\n  border-radius: ", ";\n  background-color: ", ";\n  background-image: ", ",\n    linear-gradient(180deg, hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0));\n  background-repeat: no-repeat, repeat;\n  background-position: right 0.7em top 50%, 0 0;\n  background-size: 0.62em auto, 100%;\n  &:focus {\n    outline: none !important;\n  }\n  &:hover {\n    box-shadow: ", ";\n    background-clip: padding-box;\n    background-color: ", ";\n  }\n  &:disabled {\n    box-shadow: ", ";\n    background-image: ", ";\n    background-size: 0.52em auto, 100%;\n    background-color: ", ";\n    opacity: 0.75;\n    color: ", ";\n    cursor: not-allowed;\n    resize: none;\n  }\n  ", "\n  ", "\n"])), props => getThemeVariantValue(extends_extends({}, props, {
   defaultTheme: SelectStyleTheme
 }), 'colorSelectBase'), props => getThemeVariantValue(extends_extends({}, props, {
   defaultTheme: SelectStyleTheme
@@ -13180,9 +13174,7 @@ var SelectStyleWarp = styled_components_browser_esm.select(react_select_esm_styl
   defaultTheme: SelectStyleTheme
 }), 'backgroundColorSelectDisabled'), props => getThemeVariantValue(extends_extends({}, props, {
   defaultTheme: SelectStyleTheme
-}), 'colorSelectDisabled'), props => getThemeVariantValue(extends_extends({}, props, {
-  defaultTheme: SelectStyleTheme
-}), 'cursorSelectDisabled'), props => props.params.size === 'large' && Ce(react_select_esm_style_templateObject2 || (react_select_esm_style_templateObject2 = _taggedTemplateLiteralLoose(["\n      padding: ", ";\n      font-size: ", ";\n    "])), props => getThemeVariantValue(extends_extends({}, props, {
+}), 'colorSelectDisabled'), props => props.params.size === 'large' && Ce(react_select_esm_style_templateObject2 || (react_select_esm_style_templateObject2 = _taggedTemplateLiteralLoose(["\n      padding: ", ";\n      font-size: ", ";\n    "])), props => getThemeVariantValue(extends_extends({}, props, {
   defaultTheme: SelectStyleTheme
 }), 'paddingSelectLarge'), props => getThemeVariantValue(extends_extends({}, props, {
   defaultTheme: SelectStyleTheme
