@@ -4217,7 +4217,7 @@ var propsTheme = {
 };
 
 var typeVariant = (type, color) => {
-  return Ce(react_alert_esm_style_templateObject || (react_alert_esm_style_templateObject = _taggedTemplateLiteralLoose(["\n    ", " > ", " {\n      color: ", ";\n    }\n  "])), ModalStyleHeader, IconStyleBase, color);
+  return Ce(react_alert_esm_style_templateObject || (react_alert_esm_style_templateObject = _taggedTemplateLiteralLoose(["\n    ", " > ", " {\n      color: ", ";\n      fill: ", ";\n    }\n  "])), ModalStyleHeader, IconStyleBase, color, color);
 };
 
 var typeCss = props => {
@@ -7467,7 +7467,7 @@ function Internal(props, ref) {
     children: [/*#__PURE__*/(0,jsx_runtime.jsx)(MenuStyleItemIcon, {
       className: prefixCls + "-icon",
       type: icon
-    }), /*#__PURE__*/(0,jsx_runtime.jsx)("div", {}), /*#__PURE__*/(0,jsx_runtime.jsx)(MenuItemStyleTextBase, {
+    }), /*#__PURE__*/(0,jsx_runtime.jsx)(MenuItemStyleTextBase, {
       params: {
         multiline,
         isText: !!prefixCls
@@ -14723,6 +14723,11 @@ Container.defaultProps = {
 
 
 
+
+
+
+
+
 var esm_notifys = {};
 var notifysDom = {};
 
@@ -14740,19 +14745,27 @@ function NotificationCreate(props, type) {
   if (!props.icon && props.icon !== null) {
     switch (props.type) {
       case 'success':
-        props.icon = 'circle-check';
+        props.icon = /*#__PURE__*/(0,jsx_runtime.jsx)(IconStyleBase, {
+          children: /*#__PURE__*/(0,jsx_runtime.jsx)(lib_CircleCheck/* CircleCheck */.y, {})
+        });
         break;
 
       case 'warning':
-        props.icon = 'warning';
+        props.icon = /*#__PURE__*/(0,jsx_runtime.jsx)(IconStyleBase, {
+          children: /*#__PURE__*/(0,jsx_runtime.jsx)(lib_Warning/* Warning */.v, {})
+        });
         break;
 
       case 'info':
-        props.icon = 'information';
+        props.icon = /*#__PURE__*/(0,jsx_runtime.jsx)(IconStyleBase, {
+          children: /*#__PURE__*/(0,jsx_runtime.jsx)(lib_Information/* Information */.d, {})
+        });
         break;
 
       case 'error':
-        props.icon = 'circle-close';
+        props.icon = /*#__PURE__*/(0,jsx_runtime.jsx)(IconStyleBase, {
+          children: /*#__PURE__*/(0,jsx_runtime.jsx)(lib_CircleClose/* CircleClose */.K, {})
+        });
         break;
 
       default:

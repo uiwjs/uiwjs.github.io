@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.7a17942f.css",
-    "main.js": "/static/js/main.34cd18a1.js",
+    "main.js": "/static/js/main.8cf4c906.js",
     "static/css/1859.507013dd.chunk.css": "/static/css/1859.507013dd.chunk.css",
     "static/js/1859.024a297a.chunk.js": "/static/js/1859.024a297a.chunk.js",
     "static/js/6512.40eb765d.chunk.js": "/static/js/6512.40eb765d.chunk.js",
@@ -160,7 +160,7 @@
     "index.html": "/index.html",
     "static/media/getFetch.cjs": "/static/media/getFetch.c780682470504fffbd04.cjs",
     "main.7a17942f.css.map": "/static/css/main.7a17942f.css.map",
-    "main.34cd18a1.js.map": "/static/js/main.34cd18a1.js.map",
+    "main.8cf4c906.js.map": "/static/js/main.8cf4c906.js.map",
     "1859.507013dd.chunk.css.map": "/static/css/1859.507013dd.chunk.css.map",
     "1859.024a297a.chunk.js.map": "/static/js/1859.024a297a.chunk.js.map",
     "6512.40eb765d.chunk.js.map": "/static/js/6512.40eb765d.chunk.js.map",
@@ -323,6 +323,6 @@
     "static/js/vendors-react.9374d2f8.js",
     "static/js/4285.d22ed587.js",
     "static/css/main.7a17942f.css",
-    "static/js/main.34cd18a1.js"
+    "static/js/main.8cf4c906.js"
   ]
 }
