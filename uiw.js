@@ -1091,7 +1091,7 @@ __webpack_require__.d(__webpack_exports__, {
   "DateTimeStylePanelUl": () => (/* reexport */ DateTimeStylePanelUl),
   "DayRect": () => (/* reexport */ DayRect),
   "Descriptions": () => (/* reexport */ react_descriptions_esm),
-  "DescriptionsStyleItem": () => (/* reexport */ style_DescriptionsStyleItem),
+  "DescriptionsStyleItem": () => (/* reexport */ DescriptionsStyleItem),
   "DescriptionsStyleTable": () => (/* reexport */ DescriptionsStyleTable),
   "DescriptionsStyleTableCaption": () => (/* reexport */ DescriptionsStyleTableCaption),
   "DescriptionsStyleTableRow": () => (/* reexport */ DescriptionsStyleTableRow),
@@ -7796,7 +7796,8 @@ var Menu_excluded = ["prefixCls", "className", "children", "bordered", "theme", 
 
 
 
-var Menu = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default().forwardRef((props, ref) => {
+
+var Menu = (props, ref) => {
   var {
     prefixCls = 'w-menu',
     className,
@@ -7837,12 +7838,14 @@ var Menu = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_r
       })
     }))
   });
-});
+};
+
 Menu.displayName = 'uiw.Menu';
-Menu.Item = MenuItem;
-Menu.SubMenu = SubMenu;
-Menu.Divider = MenuDivider;
-/* harmony default export */ const esm_Menu = (Menu);
+var ContextMenu = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default().forwardRef(Menu);
+ContextMenu.Item = MenuItem;
+ContextMenu.SubMenu = SubMenu;
+ContextMenu.Divider = MenuDivider;
+/* harmony default export */ const esm_Menu = (ContextMenu);
 
 ;// CONCATENATED MODULE: ../react-menu/esm/index.js
 
@@ -8761,6 +8764,7 @@ function InternalCollapse(props, ref) {
 }
 
 var Collapse = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default().forwardRef(InternalCollapse);
+Collapse.displayName = 'Collapse';
 Collapse.Panel = Panel;
 /* harmony default export */ const esm_Collapse = (Collapse);
 
@@ -9051,14 +9055,14 @@ function DateInput(props) {
 }
 
 ;// CONCATENATED MODULE: ../react-descriptions/esm/DescriptionsItem.js
-var DescriptionsStyleItem = _ref => {
+var DescriptionsItem = _ref => {
   var {
     children
   } = _ref;
   return children;
 };
 
-/* harmony default export */ const DescriptionsItem = (DescriptionsStyleItem);
+/* harmony default export */ const esm_DescriptionsItem = (DescriptionsItem);
 
 ;// CONCATENATED MODULE: ../react-descriptions/esm/style/index.js
 
@@ -9089,11 +9093,11 @@ var react_descriptions_esm_style_propsTheme = {
   defaultTheme: extends_extends({}, DescriptionsStyleTheme)
 };
 var DescriptionsStyleWarp = styled_components_browser_esm.div(react_descriptions_esm_style_templateObject || (react_descriptions_esm_style_templateObject = _taggedTemplateLiteralLoose(["\n  background: ", ";\n  ", "\n"])), props => getThemeVariantValue(extends_extends({}, props, react_descriptions_esm_style_propsTheme), 'backgroundColorBase'), props => props.bordered && Ce(react_descriptions_esm_style_templateObject2 || (react_descriptions_esm_style_templateObject2 = _taggedTemplateLiteralLoose(["\n      & {\n        overflow: hidden;\n        border-radius: 3px;\n        border: 1px solid ", ";\n      }\n    "])), props => getThemeVariantValue(extends_extends({}, props, react_descriptions_esm_style_propsTheme), 'borderColorDescriptions')));
-var style_DescriptionsStyleItem = styled_components_browser_esm.th(react_descriptions_esm_style_templateObject3 || (react_descriptions_esm_style_templateObject3 = _taggedTemplateLiteralLoose(["\n  ", "\n\n  ", "\n      ", "\n    ", "\n"])), props => props.isLabel && Ce(react_descriptions_esm_style_templateObject4 || (react_descriptions_esm_style_templateObject4 = _taggedTemplateLiteralLoose(["\n      & {\n        font-size: 14px;\n        font-weight: normal;\n        &::after {\n          position: relative;\n          top: -0.5px;\n          margin: 0 8px 0 2px;\n          content: ' ';\n        }\n      }\n    "]))), props => props.isColon && Ce(react_descriptions_esm_style_templateObject5 || (react_descriptions_esm_style_templateObject5 = _taggedTemplateLiteralLoose(["\n      &::after {\n        content: ':';\n      }\n      & {\n        color: ", ";\n      }\n    "])), props => getThemeVariantValue(extends_extends({}, props, react_descriptions_esm_style_propsTheme), 'colorDescriptionsColon')), props => props.isContent && Ce(react_descriptions_esm_style_templateObject6 || (react_descriptions_esm_style_templateObject6 = _taggedTemplateLiteralLoose(["\n      & {\n        font-size: ", ";\n        color: ", ";\n      }\n    "])), props => getThemeVariantValue(extends_extends({}, props, react_descriptions_esm_style_propsTheme), 'fontSizeDefault'), props => getThemeVariantValue(extends_extends({}, props, react_descriptions_esm_style_propsTheme), 'colorDescriptionsConent')), props => props.bordered && (props.isContent || props.isLabel) && Ce(react_descriptions_esm_style_templateObject7 || (react_descriptions_esm_style_templateObject7 = _taggedTemplateLiteralLoose(["\n      &&:last-child {\n        border-right: none;\n      }\n    "]))));
+var DescriptionsStyleItem = styled_components_browser_esm.th(react_descriptions_esm_style_templateObject3 || (react_descriptions_esm_style_templateObject3 = _taggedTemplateLiteralLoose(["\n  ", "\n\n  ", "\n      ", "\n    ", "\n"])), props => props.isLabel && Ce(react_descriptions_esm_style_templateObject4 || (react_descriptions_esm_style_templateObject4 = _taggedTemplateLiteralLoose(["\n      & {\n        font-size: 14px;\n        font-weight: normal;\n        &::after {\n          position: relative;\n          top: -0.5px;\n          margin: 0 8px 0 2px;\n          content: ' ';\n        }\n      }\n    "]))), props => props.isColon && Ce(react_descriptions_esm_style_templateObject5 || (react_descriptions_esm_style_templateObject5 = _taggedTemplateLiteralLoose(["\n      &::after {\n        content: ':';\n      }\n      & {\n        color: ", ";\n      }\n    "])), props => getThemeVariantValue(extends_extends({}, props, react_descriptions_esm_style_propsTheme), 'colorDescriptionsColon')), props => props.isContent && Ce(react_descriptions_esm_style_templateObject6 || (react_descriptions_esm_style_templateObject6 = _taggedTemplateLiteralLoose(["\n      & {\n        font-size: ", ";\n        color: ", ";\n      }\n    "])), props => getThemeVariantValue(extends_extends({}, props, react_descriptions_esm_style_propsTheme), 'fontSizeDefault'), props => getThemeVariantValue(extends_extends({}, props, react_descriptions_esm_style_propsTheme), 'colorDescriptionsConent')), props => props.bordered && (props.isContent || props.isLabel) && Ce(react_descriptions_esm_style_templateObject7 || (react_descriptions_esm_style_templateObject7 = _taggedTemplateLiteralLoose(["\n      &&:last-child {\n        border-right: none;\n      }\n    "]))));
 var DescriptionsStyleTable = styled_components_browser_esm.table(react_descriptions_esm_style_templateObject8 || (react_descriptions_esm_style_templateObject8 = _taggedTemplateLiteralLoose(["\n  display: table !important;\n  margin-bottom: 0 !important;\n  margin: 0;\n  border-spacing: 0;\n  border-collapse: collapse;\n  table-layout: fixed;\n  width: 100%;\n"])));
 var DescriptionsStyleTableCaption = styled_components_browser_esm.caption(react_descriptions_esm_style_templateObject9 || (react_descriptions_esm_style_templateObject9 = _taggedTemplateLiteralLoose(["\n  font-weight: bold;\n  text-align: left;\n  margin-bottom: 8px;\n  color: ", ";\n  font-size: ", ";\n  line-height: 1.5;\n  ", "\n"])), props => getThemeVariantValue(extends_extends({}, props, react_descriptions_esm_style_propsTheme), 'colorDescriptionsHead'), props => getThemeVariantValue(extends_extends({}, props, react_descriptions_esm_style_propsTheme), 'fontSizeLarge'), props => props.bordered && Ce(react_descriptions_esm_style_templateObject10 || (react_descriptions_esm_style_templateObject10 = _taggedTemplateLiteralLoose(["\n      & {\n        margin-bottom: 0;\n        padding: 7px 12px;\n      }\n    "]))));
 var DescriptionsStyleTableRow = styled_components_browser_esm.tr(react_descriptions_esm_style_templateObject11 || (react_descriptions_esm_style_templateObject11 = _taggedTemplateLiteralLoose(["\n  &&:nth-child(2n) {\n    background-color: transparent;\n  }\n  ", "\n  ", "\n"])), props => props.bordered && Ce(react_descriptions_esm_style_templateObject12 || (react_descriptions_esm_style_templateObject12 = _taggedTemplateLiteralLoose(["\n      & td {\n        padding: 8px 12px;\n      }\n    "]))), props => !props.bordered && Ce(react_descriptions_esm_style_templateObject13 || (react_descriptions_esm_style_templateObject13 = _taggedTemplateLiteralLoose(["\n      & td {\n        padding-bottom: 8px;\n      }\n    "]))));
-var DescriptionsStyleTableTbody = styled_components_browser_esm.tbody(react_descriptions_esm_style_templateObject14 || (react_descriptions_esm_style_templateObject14 = _taggedTemplateLiteralLoose(["\n  word-wrap: break-word;\n  ", "\n  ", "\n  ", "\n"])), props => props.bordered && Ce(react_descriptions_esm_style_templateObject15 || (react_descriptions_esm_style_templateObject15 = _taggedTemplateLiteralLoose(["\n      & {\n        tr th {\n          padding: 8px 12px;\n          background-color: ", ";\n          font-weight: normal;\n        }\n        tr th,\n        tr td {\n          border-top: 1px solid\n            ", ";\n          border-right: 1px solid\n            ", ";\n        }\n        &:first-child tr:first-child th,\n        &:first-child tr:first-child td {\n          border-top: 0;\n        }\n      }\n    "])), props => getThemeVariantValue(extends_extends({}, props, react_descriptions_esm_style_propsTheme), 'borderColorDescriptionsTh'), props => getThemeVariantValue(extends_extends({}, props, react_descriptions_esm_style_propsTheme), 'borderColorDescriptions'), props => getThemeVariantValue(extends_extends({}, props, react_descriptions_esm_style_propsTheme), 'borderColorDescriptions')), props => props.size === 'small' && props.bordered && Ce(react_descriptions_esm_style_templateObject16 || (react_descriptions_esm_style_templateObject16 = _taggedTemplateLiteralLoose(["\n      & ", " td,\n      & ", " th {\n        padding: 4px 8px;\n      }\n    "])), DescriptionsStyleTableRow, DescriptionsStyleTableRow), props => props.size === 'large' && props.bordered && Ce(style_templateObject17 || (style_templateObject17 = _taggedTemplateLiteralLoose(["\n      & ", " ", " {\n        padding: 14px 16px;\n      }\n    "])), DescriptionsStyleTableRow, style_DescriptionsStyleItem));
+var DescriptionsStyleTableTbody = styled_components_browser_esm.tbody(react_descriptions_esm_style_templateObject14 || (react_descriptions_esm_style_templateObject14 = _taggedTemplateLiteralLoose(["\n  word-wrap: break-word;\n  ", "\n  ", "\n  ", "\n"])), props => props.bordered && Ce(react_descriptions_esm_style_templateObject15 || (react_descriptions_esm_style_templateObject15 = _taggedTemplateLiteralLoose(["\n      & {\n        tr th {\n          padding: 8px 12px;\n          background-color: ", ";\n          font-weight: normal;\n        }\n        tr th,\n        tr td {\n          border-top: 1px solid\n            ", ";\n          border-right: 1px solid\n            ", ";\n        }\n        &:first-child tr:first-child th,\n        &:first-child tr:first-child td {\n          border-top: 0;\n        }\n      }\n    "])), props => getThemeVariantValue(extends_extends({}, props, react_descriptions_esm_style_propsTheme), 'borderColorDescriptionsTh'), props => getThemeVariantValue(extends_extends({}, props, react_descriptions_esm_style_propsTheme), 'borderColorDescriptions'), props => getThemeVariantValue(extends_extends({}, props, react_descriptions_esm_style_propsTheme), 'borderColorDescriptions')), props => props.size === 'small' && props.bordered && Ce(react_descriptions_esm_style_templateObject16 || (react_descriptions_esm_style_templateObject16 = _taggedTemplateLiteralLoose(["\n      & ", " td,\n      & ", " th {\n        padding: 4px 8px;\n      }\n    "])), DescriptionsStyleTableRow, DescriptionsStyleTableRow), props => props.size === 'large' && props.bordered && Ce(style_templateObject17 || (style_templateObject17 = _taggedTemplateLiteralLoose(["\n      & ", " ", " {\n        padding: 14px 16px;\n      }\n    "])), DescriptionsStyleTableRow, DescriptionsStyleItem));
 
 ;// CONCATENATED MODULE: ../react-descriptions/esm/Cell.js
 
@@ -9128,17 +9132,17 @@ function Cell(props) {
 
   if (layout === 'horizontal') {
     if (!bordered) {
-      return /*#__PURE__*/(0,jsx_runtime.jsxs)(style_DescriptionsStyleItem, extends_extends({
+      return /*#__PURE__*/(0,jsx_runtime.jsxs)(DescriptionsStyleItem, extends_extends({
         as: TagName
       }, other, {
         colSpan: span,
-        children: [/*#__PURE__*/(0,jsx_runtime.jsx)(style_DescriptionsStyleItem, extends_extends({
+        children: [/*#__PURE__*/(0,jsx_runtime.jsx)(DescriptionsStyleItem, extends_extends({
           as: "span"
         }, labelProps, {
           isColon: colon,
           isLabel: !!label,
           children: label
-        })), /*#__PURE__*/(0,jsx_runtime.jsx)(style_DescriptionsStyleItem, {
+        })), /*#__PURE__*/(0,jsx_runtime.jsx)(DescriptionsStyleItem, {
           as: "span",
           isContent: !!prefixCls,
           className: prefixCls ? prefixCls + "-item-content" : '',
@@ -9148,14 +9152,14 @@ function Cell(props) {
     }
 
     return /*#__PURE__*/(0,jsx_runtime.jsxs)(external_root_React_commonjs2_react_commonjs_react_amd_react_.Fragment, {
-      children: [/*#__PURE__*/(0,jsx_runtime.jsx)(style_DescriptionsStyleItem, extends_extends({
+      children: [/*#__PURE__*/(0,jsx_runtime.jsx)(DescriptionsStyleItem, extends_extends({
         as: "th"
       }, labelProps, {
         bordered: bordered,
         isColon: colon,
         isLabel: !!label,
         children: label
-      })), /*#__PURE__*/(0,jsx_runtime.jsx)(style_DescriptionsStyleItem, extends_extends({}, other, {
+      })), /*#__PURE__*/(0,jsx_runtime.jsx)(DescriptionsStyleItem, extends_extends({}, other, {
         as: TagName,
         isContent: !!prefixCls,
         bordered: bordered,
@@ -9166,7 +9170,7 @@ function Cell(props) {
     });
   }
 
-  return /*#__PURE__*/(0,jsx_runtime.jsx)(style_DescriptionsStyleItem, {
+  return /*#__PURE__*/(0,jsx_runtime.jsx)(DescriptionsStyleItem, {
     bordered: bordered,
     isLabel: TagName === 'th',
     isContent: TagName === 'td',
@@ -9317,10 +9321,15 @@ function InternalDescriptions(props, ref) {
       })]
     }))
   });
-}
+} // const Descriptions = React.forwardRef<HTMLDivElement, DescriptionsProps>(InternalDescriptions);
+// type Descriptions = typeof Descriptions & {
+//   Item: typeof DescriptionsItem;
+// };
+// (Descriptions as Descriptions).Item = DescriptionsItem;
+
 
 var Descriptions = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default().forwardRef(InternalDescriptions);
-Descriptions.Item = DescriptionsItem;
+Descriptions.Item = esm_DescriptionsItem;
 /* harmony default export */ const react_descriptions_esm = (Descriptions);
 
 ;// CONCATENATED MODULE: ../react-divider/esm/style/index.js
@@ -13239,7 +13248,8 @@ var react_select_esm_excluded = ["prefixCls", "className", "size"];
 
 
 
-var Select = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default().forwardRef((props, ref) => {
+
+var InternalSelect = (props, ref) => {
   var {
     prefixCls = 'w-select',
     className,
@@ -13255,7 +13265,9 @@ var Select = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd
       size
     }
   }));
-});
+};
+
+var Select = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default().forwardRef(InternalSelect);
 Select.Option = Option;
 Select.Group = Group;
 /* harmony default export */ const react_select_esm = (Select);
@@ -13480,6 +13492,7 @@ var Form_excluded = ["prefixCls", "className", "fields", "children", "resetOnSub
 
 
 
+
 function newFormState(fields, cb) {
   var state = {
     initial: {},
@@ -13510,8 +13523,7 @@ function newInitialValue(value) {
 
 var isPromise = promise => promise && typeof promise.then === 'function';
 
-function Form(_ref, ref //| React.RefObject<FormRefType>,
-) {
+function Form(props, ref) {
   var {
     prefixCls = 'w-form',
     className,
@@ -13522,13 +13534,13 @@ function Form(_ref, ref //| React.RefObject<FormRefType>,
     onChange,
     onSubmit,
     afterSubmit
-  } = _ref,
-      others = _objectWithoutPropertiesLoose(_ref, Form_excluded);
+  } = props,
+      others = _objectWithoutPropertiesLoose(props, Form_excluded);
 
-  var initData = (0,external_root_React_commonjs2_react_commonjs_react_amd_react_.useMemo)(() => newFormState(fields, _ref2 => {
+  var initData = (0,external_root_React_commonjs2_react_commonjs_react_amd_react_.useMemo)(() => newFormState(fields, _ref => {
     var {
       initialValue
-    } = _ref2;
+    } = _ref;
     initialValue = newInitialValue(initialValue);
     return {
       initialValue,
@@ -13547,28 +13559,27 @@ function Form(_ref, ref //| React.RefObject<FormRefType>,
   var formUnits = {};
 
   for (var name in fields) {
-    var props = fields[name];
-    if (!props) continue;
+    var itemProps = fields[name];
+    if (!itemProps) continue;
     var error = data.errors[name];
 
-    if (typeof props.initialValue === 'boolean') {
-      props.checked = props.initialValue;
+    if (typeof itemProps.initialValue === 'boolean') {
+      itemProps.checked = itemProps.initialValue;
     }
 
-    var childField = controlField(extends_extends({}, props, {
+    var childField = controlField(extends_extends({}, itemProps, {
       name
     }));
-    var help = error || props.help;
-    var labelFor = props.labelFor;
-    formUnits[name] = /*#__PURE__*/(0,jsx_runtime.jsx)(FormItem, extends_extends({}, extends_extends({}, props, {
+    var help = error || itemProps.help;
+    var labelFor = itemProps.labelFor;
+    formUnits[name] = /*#__PURE__*/(0,external_root_React_commonjs2_react_commonjs_react_amd_react_.createElement)(FormItem, extends_extends({}, itemProps, {
       key: name,
       children: childField,
-      help,
-      labelFor,
-      state: data,
-      name,
+      help: help,
+      labelFor: labelFor,
+      name: name,
       hasError: !!error
-    })));
+    }));
   }
 
   function setFields(fields) {
@@ -13705,8 +13716,8 @@ function Form(_ref, ref //| React.RefObject<FormRefType>,
 
     var initials = extends_extends({}, initial);
 
-    Object.entries(initials).map(_ref3 => {
-      var [key, value] = _ref3;
+    Object.entries(initials).map(_ref2 => {
+      var [key, value] = _ref2;
 
       if (Array.isArray(value)) {
         initials[key] = [...value];
@@ -13719,13 +13730,13 @@ function Form(_ref, ref //| React.RefObject<FormRefType>,
     }));
   }
 
-  function controlField(_ref4) {
+  function controlField(_ref3) {
     var {
       children,
       validator,
       name
-    } = _ref4,
-        other = _objectWithoutPropertiesLoose(_ref4, Form_excluded2);
+    } = _ref3,
+        other = _objectWithoutPropertiesLoose(_ref3, Form_excluded2);
 
     var element = typeof children !== 'function' ? children : children({
       onChange: handleChange(name, validator),
@@ -13753,10 +13764,9 @@ function Form(_ref, ref //| React.RefObject<FormRefType>,
     return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default().cloneElement(element, props);
   }
 
-  return /*#__PURE__*/(0,jsx_runtime.jsx)(FormStyleWarp, extends_extends({}, extends_extends({}, others, {
+  return /*#__PURE__*/(0,jsx_runtime.jsx)(FormStyleWarp, extends_extends({}, others, {
     className: [prefixCls, className].filter(Boolean).join(' ').trim(),
-    onSubmit: handleSubmit
-  }), {
+    onSubmit: handleSubmit,
     children: /*#__PURE__*/(0,jsx_runtime.jsx)(FormStyleFieldset, {
       disabled: data.submitting,
       children: typeof children === 'function' ? children({
@@ -13867,7 +13877,6 @@ var react_list_esm_excluded = ["prefixCls", "bordered", "striped", "noHover", "a
 
 
 
-
 function InternalList(props, ref) {
   var {
     prefixCls = 'w-list',
@@ -13876,7 +13885,7 @@ function InternalList(props, ref) {
     noHover = false,
     active = false,
     size = 'default',
-    renderItem = noop,
+    renderItem,
     className,
     children,
     header,
@@ -13888,7 +13897,7 @@ function InternalList(props, ref) {
   var items;
 
   if (dataSource && dataSource.length > 0) {
-    items = dataSource.map((item, index) => renderItem(item, index));
+    items = dataSource.map((item, index) => renderItem && renderItem(item, index));
   } else {
     items = children;
   }
