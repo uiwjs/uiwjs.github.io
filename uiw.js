@@ -3541,7 +3541,7 @@ var style_templateObject, style_templateObject2, style_templateObject3, style_te
 
 
 var loadingCircle = Ue(style_templateObject || (style_templateObject = _taggedTemplateLiteralLoose(["\n  0% {\n    transform: rotate(0deg);\n  }\n  100% {\n    transform: rotate(360deg);\n  }\n"])));
-var IconStyleBase = styled_components_browser_esm.span(style_templateObject2 || (style_templateObject2 = _taggedTemplateLiteralLoose(["\n  height: 1em;\n  width: 1em;\n  fill: 'currentColor';\n  & svg {\n    height: 1em;\n    width: 1em;\n    fill: 'currentColor';\n  }\n  display: inline-flex;\n  align-self: center;\n  position: relative;\n  transition: color 0.3s;\n  box-sizing: inherit;\n  ", "\n  ", "\n"])), props => {
+var IconStyleBase = styled_components_browser_esm.span(style_templateObject2 || (style_templateObject2 = _taggedTemplateLiteralLoose(["\n  height: 1em;\n  width: 1em;\n  fill: currentColor;\n  & svg {\n    height: 1em;\n    width: 1em;\n    fill: currentColor;\n  }\n  display: inline-flex;\n  align-self: center;\n  position: relative;\n  transition: color 0.3s;\n  box-sizing: inherit;\n  ", "\n  ", "\n"])), props => {
   var _props$params;
 
   return (props.verticalAlign === 'baseline' || ((_props$params = props.params) == null ? void 0 : _props$params.verticalAlign) === 'baseline') && Ce(style_templateObject3 || (style_templateObject3 = _taggedTemplateLiteralLoose(["\n      top: 0.125em;\n    "])));
