@@ -7505,7 +7505,7 @@ function Internal(props, ref) {
       disabled
     }
   }), /*#__PURE__*/(0,jsx_runtime.jsxs)(external_root_React_commonjs2_react_commonjs_react_amd_react_.Fragment, {
-    children: [/*#__PURE__*/(0,jsx_runtime.jsx)(MenuStyleItemIcon, {
+    children: [icon && /*#__PURE__*/(0,jsx_runtime.jsx)(MenuStyleItemIcon, {
       className: prefixCls + "-icon",
       children: icon
     }), /*#__PURE__*/(0,jsx_runtime.jsx)(MenuItemStyleTextBase, {
