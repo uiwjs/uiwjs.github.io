@@ -88,6 +88,42 @@ return /******/ (() => { // webpackBootstrap
 
 /***/ }),
 
+/***/ 394:
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+var __webpack_unused_export__;
+
+
+var _interopRequireDefault = (__webpack_require__(600)["default"]);
+
+__webpack_unused_export__ = ({
+  value: true
+});
+exports.T = void 0;
+
+var _objectSpread2 = _interopRequireDefault(__webpack_require__(814));
+
+var _react = _interopRequireDefault(__webpack_require__(787));
+
+var _jsxRuntime = __webpack_require__(664);
+
+var CaretRight = function CaretRight(props) {
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)("svg", (0, _objectSpread2["default"])((0, _objectSpread2["default"])({
+    viewBox: "0 0 20 20"
+  }, props), {}, {
+    children: /*#__PURE__*/(0, _jsxRuntime.jsx)("path", {
+      d: "M4.99997298,2.64282227 L4.99997298,17.4082642 C5.09237787,17.7285055 5.29866028,17.9191895 5.61882019,17.9803162 C5.9389801,18.0414429 6.25233968,17.9564514 6.55889893,17.7253418 L14.6656665,10.7321242 C14.8885375,10.5329849 14.999973,10.2889901 14.999973,10.0001397 C14.999973,9.71128923 14.8885375,9.46773884 14.6656665,9.26948848 C11.7588863,6.76244709 9.06373939,4.43805189 6.58022575,2.29630288 C6.3482666,2.09913635 5.94128418,1.91293335 5.51852417,2.04302979 C5.23668416,2.12976074 5.06383377,2.32969157 4.99997298,2.64282227 Z",
+      fillRule: "evenodd"
+    })
+  }));
+};
+
+exports.T = CaretRight;
+
+
+/***/ }),
+
 /***/ 809:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
@@ -7325,7 +7361,7 @@ var MenuStyleTheme = {
 };
 var MenuDividerBase = styled_components_browser_esm.li(react_menu_esm_style_templateObject || (react_menu_esm_style_templateObject = _taggedTemplateLiteralLoose([""]))); // export interface MenuStyleItemBaseProps extends Omit<MenuItemProps<'a'>, 'theme'>, ThemeVar {
 
-var MenuStyleItemIcon = styled_components_browser_esm(Icon)(react_menu_esm_style_templateObject2 || (react_menu_esm_style_templateObject2 = _taggedTemplateLiteralLoose([""])));
+var MenuStyleItemIcon = styled_components_browser_esm(IconStyleBase)(react_menu_esm_style_templateObject2 || (react_menu_esm_style_templateObject2 = _taggedTemplateLiteralLoose([""])));
 var MenuItemStyleTextBase = styled_components_browser_esm.div(react_menu_esm_style_templateObject3 || (react_menu_esm_style_templateObject3 = _taggedTemplateLiteralLoose(["\n  ", "\n  ", "\n"])), props => {
   var _props$params;
 
@@ -7363,7 +7399,7 @@ var MenuStyleItemBase = styled_components_browser_esm.a(react_menu_esm_style_tem
 MenuStyleItemBase.defaultProps = {
   defaultTheme: MenuStyleTheme
 };
-var SubItemCollapseIcon = styled_components_browser_esm(Icon)(react_menu_esm_style_templateObject12 || (react_menu_esm_style_templateObject12 = _taggedTemplateLiteralLoose(["\n  ", "\n  ", "\n"])), props => {
+var SubItemCollapseIcon = styled_components_browser_esm(IconStyleBase)(react_menu_esm_style_templateObject12 || (react_menu_esm_style_templateObject12 = _taggedTemplateLiteralLoose(["\n  ", "\n  ", "\n"])), props => {
   var _props$params8;
 
   return ((_props$params8 = props.params) == null ? void 0 : _props$params8.prefixCls) && Ce(react_menu_esm_style_templateObject13 || (react_menu_esm_style_templateObject13 = _taggedTemplateLiteralLoose(["\n      transform: scale(0.79);\n    "])));
@@ -7471,7 +7507,7 @@ function Internal(props, ref) {
   }), /*#__PURE__*/(0,jsx_runtime.jsxs)(external_root_React_commonjs2_react_commonjs_react_amd_react_.Fragment, {
     children: [/*#__PURE__*/(0,jsx_runtime.jsx)(MenuStyleItemIcon, {
       className: prefixCls + "-icon",
-      type: icon
+      children: icon
     }), /*#__PURE__*/(0,jsx_runtime.jsx)(MenuItemStyleTextBase, {
       params: {
         multiline,
@@ -7563,10 +7599,13 @@ var useMenuContext = () => {
   };
 };
 
+// EXTERNAL MODULE: ../../node_modules/@uiw/icons/lib/CaretRight.js
+var CaretRight = __webpack_require__(394);
 ;// CONCATENATED MODULE: ../react-menu/esm/SubMenu.js
 
 
 var SubMenu_excluded = ["prefixCls", "className", "disabled", "overlayProps", "children", "collapse", "inlineIndent", "inlineCollapsed", "theme"];
+
 
 
 
@@ -7600,13 +7639,17 @@ function IconView(_ref) {
     isOpen
   } = _ref;
   return (0,external_root_React_commonjs2_react_commonjs_react_amd_react_.useMemo)(() => /*#__PURE__*/(0,jsx_runtime.jsx)(SubItemCollapseIcon, {
-    type: "caret-right",
     params: {
       prefixCls,
       collapse,
       isOpen
     },
-    className: [prefixCls ? prefixCls + "-collapse-icon" : null, !collapse && isOpen ? 'w-open' : null, !collapse && !isOpen ? 'w-close' : null].filter(Boolean).join(' ').trim()
+    className: [prefixCls ? prefixCls + "-collapse-icon" : null, !collapse && isOpen ? 'w-open' : null, !collapse && !isOpen ? 'w-close' : null].filter(Boolean).join(' ').trim(),
+    children: /*#__PURE__*/(0,jsx_runtime.jsx)(CaretRight/* CaretRight */.T, {
+      style: {
+        fill: 'currentColor'
+      }
+    })
   }), [prefixCls, collapse, isOpen]);
 }
 
@@ -9986,7 +10029,7 @@ var CaretLeft = props => /*#__PURE__*/_jsx("svg", _extends({
 
 
 
-var CaretRight = props => /*#__PURE__*/_jsx("svg", _extends({
+var CaretRight_CaretRight = props => /*#__PURE__*/_jsx("svg", _extends({
   viewBox: "0 0 20 20"
 }, props, {
   children: /*#__PURE__*/_jsx("path", {
