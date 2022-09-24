@@ -1033,7 +1033,6 @@ __webpack_require__.d(__webpack_exports__, {
   "CarouselStyleWarp": () => (/* reexport */ CarouselStyleWarp),
   "CarouselStyleWarpContent": () => (/* reexport */ CarouselStyleWarpContent),
   "Cascader": () => (/* reexport */ react_cascader_esm),
-  "CascaderStyleIcon": () => (/* reexport */ CascaderStyleIcon),
   "CascaderStyleIconWarp": () => (/* reexport */ CascaderStyleIconWarp),
   "CascaderStyleTheme": () => (/* reexport */ CascaderStyleTheme),
   "CheckGroupStyleBase": () => (/* reexport */ CheckGroupStyleBase),
@@ -1057,7 +1056,6 @@ __webpack_require__.d(__webpack_exports__, {
   "CopyToClipbordSelect": () => (/* reexport */ CopyToClipbordSelect),
   "CopyToClipbordWarp": () => (/* reexport */ CopyToClipbordWarp),
   "DateInput": () => (/* reexport */ DateInput),
-  "DateInputIcon": () => (/* reexport */ DateInputIcon),
   "DateInputIconStyleWarp": () => (/* reexport */ DateInputIconStyleWarp),
   "DateInputRange": () => (/* reexport */ DateInputRange),
   "DateInputRangeStyleWarp": () => (/* reexport */ DateInputRangeStyleWarp),
@@ -3946,6 +3944,7 @@ var react_button_esm_excluded = ["prefixCls", "disabled", "active", "loading", "
 
 
 
+
 /**@internal */
 var Button = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default().forwardRef((props, ref) => {
   var {
@@ -3981,7 +3980,9 @@ var Button = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd
       active,
       block
     },
-    children: [icon, children && external_root_React_commonjs2_react_commonjs_react_amd_react_default().Children.map(children, child => {
+    children: [icon ? /*#__PURE__*/(0,jsx_runtime.jsx)(IconStyleBase, {
+      children: icon
+    }) : /*#__PURE__*/(0,jsx_runtime.jsx)((external_root_React_commonjs2_react_commonjs_react_amd_react_default()).Fragment, {}), children && external_root_React_commonjs2_react_commonjs_react_amd_react_default().Children.map(children, child => {
       if (!child) return child;
       if ( /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default().isValidElement(child)) return child;
       return /*#__PURE__*/(0,jsx_runtime.jsx)("span", {
@@ -4100,7 +4101,6 @@ var react_modal_esm_excluded = ["prefixCls", "className", "children", "useButton
 
 
 
-
 var Modal = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default().forwardRef((props, ref) => {
   var {
     prefixCls = 'w-modal',
@@ -4200,9 +4200,7 @@ var Modal = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_
           }), isCloseButtonShown && /*#__PURE__*/(0,jsx_runtime.jsx)(esm, {
             basic: true,
             onClick: e => handleCancel(e),
-            icon: /*#__PURE__*/(0,jsx_runtime.jsx)(IconStyleBase, {
-              as: Close/* Close */.x
-            }),
+            icon: /*#__PURE__*/(0,jsx_runtime.jsx)(Close/* Close */.x, {}),
             type: "light"
           })]
         }), /*#__PURE__*/(0,jsx_runtime.jsx)(ModalStyleBody, {
@@ -4400,6 +4398,7 @@ var react_avatar_esm_excluded = ["prefixCls", "shape", "size", "className", "src
 
 
 
+
 /* harmony default export */ const react_avatar_esm = (/*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default().forwardRef((props, ref) => {
   var {
     prefixCls = 'w-avatar',
@@ -4433,7 +4432,9 @@ var react_avatar_esm_excluded = ["prefixCls", "shape", "size", "className", "src
       }
     });
   } else if (icon) {
-    children = icon;
+    children = /*#__PURE__*/(0,jsx_runtime.jsx)(IconStyleBase, {
+      children: icon
+    });
   }
 
   return /*#__PURE__*/(0,jsx_runtime.jsxs)(AvatarStyleWarp, extends_extends({}, resetProps, {
@@ -4691,7 +4692,7 @@ var react_badge_esm_excluded = ["prefixCls", "className", "style", "color", "max
     className: cls
   }, other, warpperProps, {
     ref: ref,
-    children: [/*#__PURE__*/(0,jsx_runtime.jsx)("span", {}), color && /*#__PURE__*/(0,jsx_runtime.jsx)(BadgeStyleColorDot, {
+    children: [color && /*#__PURE__*/(0,jsx_runtime.jsx)(BadgeStyleColorDot, {
       className: prefixCls + "-dot",
       processing: processing,
       style: {
@@ -5958,6 +5959,7 @@ var react_time_picker_esm_style_templateObject, react_time_picker_esm_style_temp
 
 
 
+
 var DateTimePickerStyleTheme = {
   borderLeftColorDateTimeStylePanelUl: '#e9e9e9',
   colorDateTimeLi: '#393e48',
@@ -5972,14 +5974,11 @@ var DateTimePickerStyleTheme = {
 var DateTimeInput = styled_components_browser_esm.input(react_time_picker_esm_style_templateObject || (react_time_picker_esm_style_templateObject = _taggedTemplateLiteralLoose([""])));
 
 /** dateTime 清空按钮 **/
-var DateTimeStyleCloseButton = styled_components_browser_esm.button(react_time_picker_esm_style_templateObject2 || (react_time_picker_esm_style_templateObject2 = _taggedTemplateLiteralLoose(["\n  ", ".disabled & {\n    display: none !important;\n  }\n  ", " & {\n    display: none;\n    min-height: initial;\n    color: ", ";\n    &:hover {\n      color: ", ";\n      background-color: transparent !important;\n    }\n  }\n"])), DateTimeInput, DateTimeInput, props => getThemeVariantValue(extends_extends({}, props, {
+var DateTimeStyleCloseButton = styled_components_browser_esm(esm)(react_time_picker_esm_style_templateObject2 || (react_time_picker_esm_style_templateObject2 = _taggedTemplateLiteralLoose(["\n  ", ".disabled & {\n    display: none !important;\n  }\n  ", " & {\n    display: none;\n    min-height: initial;\n    color: ", " !important;\n    &:hover {\n      color: ", " !important;\n      background-color: transparent !important;\n    }\n  }\n"])), DateTimeInput, DateTimeInput, props => getThemeVariantValue(extends_extends({}, props, {
   defaultTheme: DateTimePickerStyleTheme
 }), 'colorDateTimeStyleCloseButton'), props => getThemeVariantValue(extends_extends({}, props, {
   defaultTheme: DateTimePickerStyleTheme
-}), 'colorDateTimeStyleCloseButtonHover')); // DateTimeStyleCloseButton.defaultProps = {
-//   defaultTheme: DateTimePickerStyleTheme,
-// };
-
+}), 'colorDateTimeStyleCloseButtonHover'));
 var DateTimeStylePanelUl = styled_components_browser_esm.ul(react_time_picker_esm_style_templateObject3 || (react_time_picker_esm_style_templateObject3 = _taggedTemplateLiteralLoose(["\n  list-style: none;\n  min-width: 56px;\n  margin: 0 !important;\n  padding-left: 0 !important;\n  padding-right: 0 !important;\n  padding-bottom: 162px !important;\n"])));
 var DateTimeStylePanelLi = styled_components_browser_esm.li(react_time_picker_esm_style_templateObject4 || (react_time_picker_esm_style_templateObject4 = _taggedTemplateLiteralLoose(["\n  & + & {\n    margin-top: 0 !important;\n  }\n  & {\n    cursor: pointer;\n    text-align: center;\n    height: 28px;\n    line-height: 28px;\n    transition: all 0.3s;\n    color: ", ";\n    ", "\n    ", "\n    ", "\n  }\n"])), props => getThemeVariantValue(extends_extends({}, props, {
   defaultTheme: DateTimePickerStyleTheme
@@ -6142,7 +6141,6 @@ var react_time_picker_esm_excluded = ["prefixCls", "className", "disabled", "val
 
 
 
-
 function TimePicker(props) {
   var {
     prefixCls = 'w-timepicker',
@@ -6179,7 +6177,6 @@ function TimePicker(props) {
 
   if (allowClear && inputValue !== '' && !!inputValue) {
     _props.addonAfter = /*#__PURE__*/(0,jsx_runtime.jsx)(DateTimeStyleCloseButton, {
-      as: esm,
       className: prefixCls + "-close-btn",
       icon: icon,
       disabled: props.disabled,
@@ -7457,9 +7454,7 @@ var MenuStyleBase = styled_components_browser_esm.ul(_templateObject20 || (_temp
   }), 'colorMenuStyleBaseDark'), props.params.bordered && Ce(_templateObject27 || (_templateObject27 = _taggedTemplateLiteralLoose(["\n        box-shadow: initial;\n      "]))), MenuDividerBase, getThemeVariantValue(extends_extends({}, props, {
     defaultTheme: MenuStyleTheme
   }), 'borderTopColorMenuDividerBaseDark'));
-}); // MenuStyleBase.defaultProps = {
-//   defaultTheme: MenuStyleTheme,
-// };
+});
 
 ;// CONCATENATED MODULE: ../react-menu/esm/MenuItem.js
 
@@ -7860,7 +7855,7 @@ ContextMenu.Divider = MenuDivider;
 
 
 
-var react_cascader_esm_style_templateObject, react_cascader_esm_style_templateObject2, react_cascader_esm_style_templateObject3;
+var react_cascader_esm_style_templateObject, react_cascader_esm_style_templateObject2;
 
 
 
@@ -7871,11 +7866,7 @@ var CascaderStyleTheme = {
 var react_cascader_esm_style_propsTheme = {
   defaultTheme: extends_extends({}, CascaderStyleTheme)
 };
-var CascaderStyleIcon = styled_components_browser_esm.div(react_cascader_esm_style_templateObject || (react_cascader_esm_style_templateObject = _taggedTemplateLiteralLoose(["\n  height: 1em;\n  width: 1em;\n"])));
-var CascaderStyleIconWarp = styled_components_browser_esm(IconStyleBase)(react_cascader_esm_style_templateObject2 || (react_cascader_esm_style_templateObject2 = _taggedTemplateLiteralLoose(["\n  ", "\n"])), props => props.closebtn && Ce(react_cascader_esm_style_templateObject3 || (react_cascader_esm_style_templateObject3 = _taggedTemplateLiteralLoose(["\n      & {\n        font-size: 15px;\n        margin-right: 1px;\n        color: ", ";\n      }\n    "])), props => getThemeVariantValue(extends_extends({}, props, react_cascader_esm_style_propsTheme), 'colorCascaderClose')));
-CascaderStyleIconWarp.defaultProps = {
-  defaultTheme: CascaderStyleTheme
-};
+var CascaderStyleIconWarp = styled_components_browser_esm(IconStyleBase)(react_cascader_esm_style_templateObject || (react_cascader_esm_style_templateObject = _taggedTemplateLiteralLoose(["\n  ", "\n"])), props => props.closebtn && Ce(react_cascader_esm_style_templateObject2 || (react_cascader_esm_style_templateObject2 = _taggedTemplateLiteralLoose(["\n      & {\n        font-size: 15px;\n        margin-right: 1px;\n        color: ", ";\n      }\n    "])), props => getThemeVariantValue(extends_extends({}, props, react_cascader_esm_style_propsTheme), 'colorCascaderClose')));
 
 ;// CONCATENATED MODULE: ../react-cascader/esm/index.js
 
@@ -8142,9 +8133,7 @@ function Cascader(props) {
             closebtn: true,
             className: prefixCls + "-close",
             onClick: onClear,
-            children: /*#__PURE__*/(0,jsx_runtime.jsx)(CascaderStyleIcon, {
-              as: Close/* Close */.x
-            })
+            children: /*#__PURE__*/(0,jsx_runtime.jsx)(Close/* Close */.x, {})
           })
         })
       }))
@@ -8831,7 +8820,7 @@ function CopyToClipboard(props) {
 
 
 
-var react_date_input_esm_style_templateObject, react_date_input_esm_style_templateObject2, react_date_input_esm_style_templateObject3, react_date_input_esm_style_templateObject4, react_date_input_esm_style_templateObject5, react_date_input_esm_style_templateObject6, react_date_input_esm_style_templateObject7;
+var react_date_input_esm_style_templateObject, react_date_input_esm_style_templateObject2, react_date_input_esm_style_templateObject3, react_date_input_esm_style_templateObject4, react_date_input_esm_style_templateObject5, react_date_input_esm_style_templateObject6;
 
 
 
@@ -8855,9 +8844,8 @@ var react_date_input_esm_style_propsTheme = {
 };
 var DateInputStyleDatePickerPopover = styled_components_browser_esm.div(react_date_input_esm_style_templateObject || (react_date_input_esm_style_templateObject = _taggedTemplateLiteralLoose(["\n  box-shadow: 0 0 0 0;\n"])));
 var DateInputStyleBase = styled_components_browser_esm.input(react_date_input_esm_style_templateObject2 || (react_date_input_esm_style_templateObject2 = _taggedTemplateLiteralLoose(["\n  display: inline-block;\n  ", "\n"])), props => props.disabled && Ce(react_date_input_esm_style_templateObject3 || (react_date_input_esm_style_templateObject3 = _taggedTemplateLiteralLoose(["\n      &::before {\n        cursor: not-allowed;\n        content: ' ';\n        display: block;\n        position: absolute;\n        top: 0;\n        bottom: 0;\n        left: 0;\n        right: 0;\n        z-index: 1;\n      }\n    "]))));
-var DateInputIconStyleWarp = styled_components_browser_esm(IconStyleBase)(react_date_input_esm_style_templateObject4 || (react_date_input_esm_style_templateObject4 = _taggedTemplateLiteralLoose(["\n  ", "\n"])), props => props.closebtn && Ce(react_date_input_esm_style_templateObject5 || (react_date_input_esm_style_templateObject5 = _taggedTemplateLiteralLoose(["\n      & {\n        display: flex;\n        margin: 0 3px;\n        fill: ", ";\n        cursor: pointer;\n        &:hover {\n          fill: ", ";\n        }\n      }\n    "])), props => getThemeVariantValue(extends_extends({}, props, react_date_input_esm_style_propsTheme), 'fillDateInputCloseBase'), props => getThemeVariantValue(extends_extends({}, props, react_date_input_esm_style_propsTheme), 'fillDateInputCloseHover')));
-var DateInputIcon = styled_components_browser_esm.div(react_date_input_esm_style_templateObject6 || (react_date_input_esm_style_templateObject6 = _taggedTemplateLiteralLoose(["\n  height: 1em;\n  width: 1em;\n"])));
-var DateInputRangeStyleWarp = styled_components_browser_esm.div(react_date_input_esm_style_templateObject7 || (react_date_input_esm_style_templateObject7 = _taggedTemplateLiteralLoose(["\n  display: flex;\n  justify-content: space-between;\n\n  input {\n    box-shadow: none;\n    padding: 0px;\n    height: 20px;\n  }\n\n  ", " {\n    &:hover {\n      box-shadow: none !important;\n    }\n\n    &:focus {\n      box-shadow: none !important;\n    }\n  }\n\n  outline: none;\n  border: none;\n  align-items: center;\n  border-radius: ", ";\n  box-shadow: ", ";\n  box-sizing: border-box;\n  background: ", ";\n  min-height: 30px;\n  margin: 0 !important;\n  padding: 3px 10px 3px 10px;\n  vertical-align: middle;\n  line-height: 30px;\n  color: ", ";\n  font-weight: 400;\n  font-size: inherit;\n  transition: box-shadow 0.3s cubic-bezier(0.4, 1, 0.75, 0.9);\n  appearance: none;\n\n  &:focus {\n    box-shadow: ", ";\n  }\n\n  &:hover {\n    box-shadow: ", ";\n  }\n\n  &:focus&:hover {\n    box-shadow: ", ";\n  }\n\n  &:disabled {\n    box-shadow: none;\n    background: ", ";\n    opacity: 0.75;\n    color: ", ";\n    cursor: not-allowed;\n    resize: none;\n  }\n"])), InputStyleBase, props => getThemeVariantValue(extends_extends({}, props, react_date_input_esm_style_propsTheme), 'borderRadiusDefault'), props => getThemeVariantValue(extends_extends({}, props, react_date_input_esm_style_propsTheme), 'boxShadowDateInputBase'), props => getThemeVariantValue(extends_extends({}, props, react_date_input_esm_style_propsTheme), 'backgroundColorBase'), props => getThemeVariantValue(extends_extends({}, props, react_date_input_esm_style_propsTheme), 'colorDateInputStyleBase'), props => getThemeVariantValue(extends_extends({}, props, react_date_input_esm_style_propsTheme), 'boxShadowDateInputFocus'), props => getThemeVariantValue(extends_extends({}, props, react_date_input_esm_style_propsTheme), 'boxShadowDateInputHover'), props => getThemeVariantValue(extends_extends({}, props, react_date_input_esm_style_propsTheme), 'boxShadowDateInputFocusHover'), props => getThemeVariantValue(extends_extends({}, props, react_date_input_esm_style_propsTheme), 'backgroundColorDateInputDisabled'), props => getThemeVariantValue(extends_extends({}, props, react_date_input_esm_style_propsTheme), 'colorDateInputDisabled'));
+var DateInputIconStyleWarp = styled_components_browser_esm(IconStyleBase)(react_date_input_esm_style_templateObject4 || (react_date_input_esm_style_templateObject4 = _taggedTemplateLiteralLoose(["\n  ", "\n"])), props => props.closebtn && Ce(react_date_input_esm_style_templateObject5 || (react_date_input_esm_style_templateObject5 = _taggedTemplateLiteralLoose(["\n      & {\n        display: flex;\n        margin: 0 3px;\n        color: ", ";\n        cursor: pointer;\n        &:hover {\n          color: ", ";\n        }\n      }\n    "])), props => getThemeVariantValue(extends_extends({}, props, react_date_input_esm_style_propsTheme), 'fillDateInputCloseBase'), props => getThemeVariantValue(extends_extends({}, props, react_date_input_esm_style_propsTheme), 'fillDateInputCloseHover')));
+var DateInputRangeStyleWarp = styled_components_browser_esm.div(react_date_input_esm_style_templateObject6 || (react_date_input_esm_style_templateObject6 = _taggedTemplateLiteralLoose(["\n  display: flex;\n  justify-content: space-between;\n\n  input {\n    box-shadow: none;\n    padding: 0px;\n    height: 20px;\n  }\n\n  ", " {\n    &:hover {\n      box-shadow: none !important;\n    }\n\n    &:focus {\n      box-shadow: none !important;\n    }\n  }\n\n  outline: none;\n  border: none;\n  align-items: center;\n  border-radius: ", ";\n  box-shadow: ", ";\n  box-sizing: border-box;\n  background: ", ";\n  min-height: 30px;\n  margin: 0 !important;\n  padding: 3px 10px 3px 10px;\n  vertical-align: middle;\n  line-height: 30px;\n  color: ", ";\n  font-weight: 400;\n  font-size: inherit;\n  transition: box-shadow 0.3s cubic-bezier(0.4, 1, 0.75, 0.9);\n  appearance: none;\n\n  &:focus {\n    box-shadow: ", ";\n  }\n\n  &:hover {\n    box-shadow: ", ";\n  }\n\n  &:focus&:hover {\n    box-shadow: ", ";\n  }\n\n  &:disabled {\n    box-shadow: none;\n    background: ", ";\n    opacity: 0.75;\n    color: ", ";\n    cursor: not-allowed;\n    resize: none;\n  }\n"])), InputStyleBase, props => getThemeVariantValue(extends_extends({}, props, react_date_input_esm_style_propsTheme), 'borderRadiusDefault'), props => getThemeVariantValue(extends_extends({}, props, react_date_input_esm_style_propsTheme), 'boxShadowDateInputBase'), props => getThemeVariantValue(extends_extends({}, props, react_date_input_esm_style_propsTheme), 'backgroundColorBase'), props => getThemeVariantValue(extends_extends({}, props, react_date_input_esm_style_propsTheme), 'colorDateInputStyleBase'), props => getThemeVariantValue(extends_extends({}, props, react_date_input_esm_style_propsTheme), 'boxShadowDateInputFocus'), props => getThemeVariantValue(extends_extends({}, props, react_date_input_esm_style_propsTheme), 'boxShadowDateInputHover'), props => getThemeVariantValue(extends_extends({}, props, react_date_input_esm_style_propsTheme), 'boxShadowDateInputFocusHover'), props => getThemeVariantValue(extends_extends({}, props, react_date_input_esm_style_propsTheme), 'backgroundColorDateInputDisabled'), props => getThemeVariantValue(extends_extends({}, props, react_date_input_esm_style_propsTheme), 'colorDateInputDisabled'));
 
 // EXTERNAL MODULE: ../../node_modules/@uiw/icons/lib/SwapRight.js
 var SwapRight = __webpack_require__(876);
@@ -8936,15 +8924,13 @@ function DateInputRange(props) {
         className: [prefixCls, className].filter(Boolean).join(' ').trim()
       }))
     })), /*#__PURE__*/(0,jsx_runtime.jsx)(DateInputIconStyleWarp, {
-      baseline: true,
+      verticalAlign: "baseline",
       style: {
         fontSize: 21,
         top: -1,
         margin: '0px 8px 0px 5px'
       },
-      children: /*#__PURE__*/(0,jsx_runtime.jsx)(DateInputIcon, {
-        as: SwapRight/* SwapRight */.U
-      })
+      children: /*#__PURE__*/(0,jsx_runtime.jsx)(SwapRight/* SwapRight */.U, {})
     }), /*#__PURE__*/(0,jsx_runtime.jsx)(Popover, extends_extends({
       trigger: "focus",
       placement: "bottomLeft",
@@ -8969,9 +8955,7 @@ function DateInputRange(props) {
       closebtn: true,
       onClick: () => setDateRange([]),
       className: prefixCls + "-close-btn",
-      children: /*#__PURE__*/(0,jsx_runtime.jsx)(DateInputIcon, {
-        as: Close/* Close */.x
-      })
+      children: /*#__PURE__*/(0,jsx_runtime.jsx)(Close/* Close */.x, {})
     })]
   });
 }
@@ -9023,9 +9007,7 @@ function DateInput(props) {
       closebtn: true,
       className: prefixCls + "-close-btn",
       onClick: () => handleChange(undefined),
-      children: /*#__PURE__*/(0,jsx_runtime.jsx)(DateInputIcon, {
-        as: Close/* Close */.x
-      })
+      children: /*#__PURE__*/(0,jsx_runtime.jsx)(Close/* Close */.x, {})
     });
   }
 
@@ -9451,7 +9433,6 @@ var react_drawer_esm_excluded = ["prefixCls", "className", "style", "placement",
 
 
 
-
 /* harmony default export */ const react_drawer_esm = (function (props) {
   if (props === void 0) {
     props = {};
@@ -9505,9 +9486,7 @@ var react_drawer_esm_excluded = ["prefixCls", "className", "style", "placement",
         children: [iconView, titleView, title && isCloseButtonShown && /*#__PURE__*/(0,jsx_runtime.jsx)(esm, {
           basic: true,
           onClick: props.onClose,
-          icon: /*#__PURE__*/(0,jsx_runtime.jsx)(IconStyleBase, {
-            as: Close/* Close */.x
-          }),
+          icon: /*#__PURE__*/(0,jsx_runtime.jsx)(Close/* Close */.x, {}),
           type: "light"
         })]
       }), /*#__PURE__*/(0,jsx_runtime.jsx)(DrawerStyleBodyWrap, {
@@ -12783,11 +12762,11 @@ var List_Picture = props => {
               className: prefixCls + "-actions-search",
               onClick: () => onPreview == null ? void 0 : onPreview(item),
               children: /*#__PURE__*/(0,jsx_runtime.jsx)(IconStyleBase, {
-                as: Search,
                 style: {
                   color: '#fff',
                   fontSize: 16
-                }
+                },
+                children: /*#__PURE__*/(0,jsx_runtime.jsx)(Search, {})
               })
             })
           })]
@@ -12798,10 +12777,10 @@ var List_Picture = props => {
           className: prefixCls + "-" + uploadType + "-icon",
           onClick: () => onRemove == null ? void 0 : onRemove(index),
           children: /*#__PURE__*/(0,jsx_runtime.jsx)(IconStyleBase, {
-            as: Delete,
             style: {
               color: '#999'
-            }
+            },
+            children: /*#__PURE__*/(0,jsx_runtime.jsx)(Delete, {})
           })
         })]
       }, index))
@@ -12857,21 +12836,21 @@ var Card = props => {
           className: prefixCls + "-actions-remove",
           onClick: () => onPreview == null ? void 0 : onPreview(item),
           children: /*#__PURE__*/(0,jsx_runtime.jsx)(IconStyleBase, {
-            as: Search,
             style: {
-              fill: '#fff',
+              color: '#fff',
               fontSize: 16
-            }
+            },
+            children: /*#__PURE__*/(0,jsx_runtime.jsx)(Search, {})
           })
         }), (showFileIcon == null ? void 0 : showFileIcon.showRemoveIcon) && /*#__PURE__*/(0,jsx_runtime.jsx)(FileInputStyleCardActionsRemoveWarp, {
           className: prefixCls + "-actions-remove",
           onClick: () => onRemove == null ? void 0 : onRemove(index),
           children: /*#__PURE__*/(0,jsx_runtime.jsx)(IconStyleBase, {
-            as: Delete,
             style: {
-              fill: '#fff',
+              color: '#fff',
               fontSize: 16
-            }
+            },
+            children: /*#__PURE__*/(0,jsx_runtime.jsx)(Delete, {})
           })
         })]
       })]
@@ -13008,6 +12987,8 @@ var FileList = props => {
 ;// CONCATENATED MODULE: ../react-file-input/esm/index.js
 
 
+var react_file_input_esm_excluded = ["uploadType"];
+
 
 
 
@@ -13017,17 +12998,16 @@ var FileList = props => {
 function esm_Upload(props) {
   var {
     uploadType = 'input'
-  } = props;
-
-  if (uploadType === 'input') {
-    return /*#__PURE__*/(0,jsx_runtime.jsx)(Input, extends_extends({}, props));
-  }
+  } = props,
+      other = _objectWithoutPropertiesLoose(props, react_file_input_esm_excluded);
 
   if (isUploadType(uploadType)) {
-    return /*#__PURE__*/(0,jsx_runtime.jsx)(esm_FileList, extends_extends({}, props));
+    var prop = props;
+    return /*#__PURE__*/(0,jsx_runtime.jsx)(esm_FileList, extends_extends({}, prop));
   }
 
-  return null;
+  var otherProp = other;
+  return /*#__PURE__*/(0,jsx_runtime.jsx)(Input, extends_extends({}, otherProp));
 }
 
 /* harmony default export */ const react_file_input_esm = (esm_Upload);
@@ -14401,22 +14381,22 @@ class esm_Message extends (external_root_React_commonjs2_react_commonjs_react_am
         switch (type) {
           case 'success':
             fill = '#28a745';
-            base = lib_CircleCheck/* CircleCheck */.y;
+            base = /*#__PURE__*/(0,jsx_runtime.jsx)(lib_CircleCheck/* CircleCheck */.y, {});
             break;
 
           case 'warning':
             fill = '#ffc107';
-            base = lib_Warning/* Warning */.v;
+            base = /*#__PURE__*/(0,jsx_runtime.jsx)(lib_Warning/* Warning */.v, {});
             break;
 
           case 'info':
             fill = '#008ef0';
-            base = lib_Information/* Information */.d;
+            base = /*#__PURE__*/(0,jsx_runtime.jsx)(lib_Information/* Information */.d, {});
             break;
 
           case 'error':
             fill = '#dc3545';
-            base = lib_CircleClose/* CircleClose */.K;
+            base = /*#__PURE__*/(0,jsx_runtime.jsx)(lib_CircleClose/* CircleClose */.K, {});
             break;
 
           default:
@@ -14424,8 +14404,10 @@ class esm_Message extends (external_root_React_commonjs2_react_commonjs_react_am
         }
 
         return /*#__PURE__*/(0,jsx_runtime.jsx)(IconStyleBase, {
-          fill: fill,
-          as: base
+          style: {
+            color: fill
+          },
+          children: base
         });
       }
     };
@@ -14466,9 +14448,10 @@ class esm_Message extends (external_root_React_commonjs2_react_commonjs_react_am
       children: [isCloseButtonShown && /*#__PURE__*/(0,jsx_runtime.jsx)(MessageStyleButtonWarp, {
         basic: true,
         onClick: this.handleClosed,
-        icon: /*#__PURE__*/(0,jsx_runtime.jsx)(IconStyleBase, {
-          fill: "rgba(0, 0, 0, 0.38)",
-          as: Close/* Close */.x
+        icon: /*#__PURE__*/(0,jsx_runtime.jsx)(Close/* Close */.x, {
+          style: {
+            fill: 'rgba(0, 0, 0, 0.38)'
+          }
         }),
         type: "light"
       }), showIcon && (icon ? icon : this.renderIcon()), /*#__PURE__*/(0,jsx_runtime.jsx)(MessageStyleTitleSpan, {
@@ -14526,7 +14509,7 @@ var MonthPickerTheme = {
 };
 var MonthPickerStyleCloseButton = styled_components_browser_esm(esm)(react_month_picker_esm_style_templateObject || (react_month_picker_esm_style_templateObject = _taggedTemplateLiteralLoose([""])));
 var MonthPickerStylePopoverBase = styled_components_browser_esm.div(react_month_picker_esm_style_templateObject2 || (react_month_picker_esm_style_templateObject2 = _taggedTemplateLiteralLoose(["\n  padding: 5px;\n  min-width: 192px;\n  max-width: 192px;\n  font-size: 14px;\n  line-height: 21px;\n"])));
-var MonthPickerStyleInputStyleBase = styled_components_browser_esm(react_input_esm)(react_month_picker_esm_style_templateObject3 || (react_month_picker_esm_style_templateObject3 = _taggedTemplateLiteralLoose(["\n  display: inline-block;\n  & ", " {\n    min-height: initial;\n    fill: ", ";\n    cursor: pointer;\n    &:hover {\n      fill: ", ";\n    }\n    &:active,\n    &:hover {\n      background-color: transparent !important;\n    }\n  }\n  ", "\n"])), MonthPickerStyleCloseButton, props => getThemeVariantValue(extends_extends({}, props, {
+var MonthPickerStyleInputStyleBase = styled_components_browser_esm(react_input_esm)(react_month_picker_esm_style_templateObject3 || (react_month_picker_esm_style_templateObject3 = _taggedTemplateLiteralLoose(["\n  display: inline-block;\n  & ", " {\n    min-height: initial;\n    color: ", " !important;\n    cursor: pointer;\n    &:hover {\n      color: ", " !important;\n    }\n    &:active,\n    &:hover {\n      background-color: transparent !important;\n    }\n  }\n  ", "\n"])), MonthPickerStyleCloseButton, props => getThemeVariantValue(extends_extends({}, props, {
   defaultTheme: MonthPickerTheme
 }), 'fillMonthPickerStyleCloseButtonBase'), props => getThemeVariantValue(extends_extends({}, props, {
   defaultTheme: MonthPickerTheme
@@ -14538,7 +14521,6 @@ var MonthPickerStyleInputStyleBase = styled_components_browser_esm(react_input_e
 
 
 var react_month_picker_esm_excluded = ["prefixCls", "format", "onChange", "className", "popoverProps", "pickerCaptionProps", "allowClear", "monthLabel"];
-
 
 
 
@@ -14572,9 +14554,7 @@ function MonthPicker(props) {
   if (allowClear && inputProps.value) {
     inputProps.addonAfter = /*#__PURE__*/(0,jsx_runtime.jsx)(MonthPickerStyleCloseButton, {
       className: prefixCls + "-close-btn",
-      icon: /*#__PURE__*/(0,jsx_runtime.jsx)(IconStyleBase, {
-        as: Close/* Close */.x
-      }),
+      icon: /*#__PURE__*/(0,jsx_runtime.jsx)(Close/* Close */.x, {}),
       onClick: () => {
         setDate('');
         onChange && onChange();
@@ -15329,13 +15309,26 @@ function InternalPinCode(props, ref) {
 
 /* harmony default export */ const react_pin_code_esm = (/*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default().forwardRef(InternalPinCode));
 
+// EXTERNAL MODULE: ../../node_modules/@uiw/icons/lib/Check.js
+var lib_Check = __webpack_require__(809);
 ;// CONCATENATED MODULE: ../react-progress/esm/utils.js
 
 
 
+
+
+
+
+var Icons = {
+  close: /*#__PURE__*/(0,jsx_runtime.jsx)(Close/* Close */.x, {}),
+  check: /*#__PURE__*/(0,jsx_runtime.jsx)(lib_Check/* Check */.J, {}),
+  'circle-close': /*#__PURE__*/(0,jsx_runtime.jsx)(lib_CircleClose/* CircleClose */.K, {}),
+  'circle-check': /*#__PURE__*/(0,jsx_runtime.jsx)(lib_CircleCheck/* CircleCheck */.y, {})
+};
 function IconProgress(props) {
-  return /*#__PURE__*/(0,jsx_runtime.jsx)(Icon, {
-    type: props.type
+  var Icon = Icons[props.type];
+  return /*#__PURE__*/(0,jsx_runtime.jsx)(IconStyleBase, {
+    children: Icon
   });
 }
 
@@ -16512,8 +16505,6 @@ Split.defaultProps = {
   mode: 'horizontal'
 };
 
-// EXTERNAL MODULE: ../../node_modules/@uiw/icons/lib/Check.js
-var lib_Check = __webpack_require__(809);
 ;// CONCATENATED MODULE: ../react-steps/esm/style/index.js
 
 
@@ -18051,8 +18042,8 @@ function TableTr(props) {
   var IconDom = (0,external_root_React_commonjs2_react_commonjs_react_amd_react_.useMemo)(() => {
     return (key, isOpacity) => {
       var flag = expandIndex.includes(key);
+      var Icon = flag ? lib_MinusSquareO/* MinusSquareO */.d : lib_PlusSquareO/* PlusSquareO */.D;
       return /*#__PURE__*/(0,jsx_runtime.jsx)(TableStyleDomIcon, {
-        as: flag ? lib_MinusSquareO/* MinusSquareO */.d : lib_PlusSquareO/* PlusSquareO */.D,
         style: {
           marginRight: 10,
           opacity: isOpacity ? 1 : 0,
@@ -18062,7 +18053,8 @@ function TableTr(props) {
         },
         onClick: () => {
           setExpandIndex(flag ? expandIndex.filter(it => it !== key) : [...expandIndex, key]);
-        }
+        },
+        children: /*#__PURE__*/(0,jsx_runtime.jsx)(Icon, {})
       });
     };
   }, [expandIndex]);
@@ -20142,13 +20134,13 @@ function Transfer(props) {
   };
 
   var Arrow = props => /*#__PURE__*/(0,jsx_runtime.jsx)(TransferArrow, {
-    as: lib_DownSquareO/* DownSquareO */.s,
     onClick: () => props.click(),
     className: prefixCls + "-arrow",
     style: extends_extends({
       fontSize: 20,
       stroke: '#e9e9e9'
-    }, props.style)
+    }, props.style),
+    children: /*#__PURE__*/(0,jsx_runtime.jsx)(lib_DownSquareO/* DownSquareO */.s, {})
   });
 
   return /*#__PURE__*/(0,jsx_runtime.jsxs)(react_transfer_esm_style, {
