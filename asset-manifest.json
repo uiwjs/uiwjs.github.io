@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.fe418263.css",
-    "main.js": "/static/js/main.f6cc38c6.js",
+    "main.js": "/static/js/main.21f39013.js",
     "static/css/1859.507013dd.chunk.css": "/static/css/1859.507013dd.chunk.css",
     "static/js/1859.024a297a.chunk.js": "/static/js/1859.024a297a.chunk.js",
     "static/js/6512.0ea623c4.chunk.js": "/static/js/6512.0ea623c4.chunk.js",
@@ -148,7 +148,7 @@
     "static/js/8630.339f77d2.chunk.js": "/static/js/8630.339f77d2.chunk.js",
     "static/js/7157.a2b2d210.chunk.js": "/static/js/7157.a2b2d210.chunk.js",
     "static/js/6795.67f38316.chunk.js": "/static/js/6795.67f38316.chunk.js",
-    "static/js/7096.27444d84.chunk.js": "/static/js/7096.27444d84.chunk.js",
+    "static/js/7096.52a6b49f.chunk.js": "/static/js/7096.52a6b49f.chunk.js",
     "static/js/4070.01d5f943.chunk.js": "/static/js/4070.01d5f943.chunk.js",
     "vendors-runtime-helpers.js": "/static/js/vendors-runtime-helpers.714047fb.js",
     "vendors-standalone.js": "/static/js/vendors-standalone.443be40b.chunk.js",
@@ -160,7 +160,7 @@
     "index.html": "/index.html",
     "static/media/getFetch.cjs": "/static/media/getFetch.40f37ddea2378391108f.cjs",
     "main.fe418263.css.map": "/static/css/main.fe418263.css.map",
-    "main.f6cc38c6.js.map": "/static/js/main.f6cc38c6.js.map",
+    "main.21f39013.js.map": "/static/js/main.21f39013.js.map",
     "1859.507013dd.chunk.css.map": "/static/css/1859.507013dd.chunk.css.map",
     "1859.024a297a.chunk.js.map": "/static/js/1859.024a297a.chunk.js.map",
     "6512.0ea623c4.chunk.js.map": "/static/js/6512.0ea623c4.chunk.js.map",
@@ -307,7 +307,7 @@
     "8630.339f77d2.chunk.js.map": "/static/js/8630.339f77d2.chunk.js.map",
     "7157.a2b2d210.chunk.js.map": "/static/js/7157.a2b2d210.chunk.js.map",
     "6795.67f38316.chunk.js.map": "/static/js/6795.67f38316.chunk.js.map",
-    "7096.27444d84.chunk.js.map": "/static/js/7096.27444d84.chunk.js.map",
+    "7096.52a6b49f.chunk.js.map": "/static/js/7096.52a6b49f.chunk.js.map",
     "4070.01d5f943.chunk.js.map": "/static/js/4070.01d5f943.chunk.js.map",
     "vendors-runtime-helpers.714047fb.js.map": "/static/js/vendors-runtime-helpers.714047fb.js.map",
     "vendors-standalone.443be40b.chunk.js.map": "/static/js/vendors-standalone.443be40b.chunk.js.map",
@@ -323,6 +323,6 @@
     "static/js/vendors-react.9374d2f8.js",
     "static/js/6890.d8a65d8e.js",
     "static/css/main.fe418263.css",
-    "static/js/main.f6cc38c6.js"
+    "static/js/main.21f39013.js"
   ]
 }
