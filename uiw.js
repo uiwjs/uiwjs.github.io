@@ -15123,16 +15123,16 @@ var SearchSelectStyleTheme = {
   boxShadowSearchSelectHover: ' 0 0 0 1px #6e6e6e, 0 0 0 3px rgba(57, 62, 72, 0), inset 0 1px 1px rgba(16, 22, 26, 0.2)',
   boxShadowSearchSelectFocusHover: ' 0 0 0 1px #6e6e6e, 0 0 0 3px rgba(57, 62, 72, 0.17), inset 0 1px 1px rgba(16, 22, 26, 0.2)'
 };
-var SearchSelectInputContentsBase = styled_components_browser_esm(react_input_esm)(react_search_select_esm_style_templateObject || (react_search_select_esm_style_templateObject = _taggedTemplateLiteralLoose(["\n  ", " {\n    box-shadow: none;\n    padding: 0px;\n    // min-width: 50px;\n    height: 28px;\n    &:hover {\n      box-shadow: none !important;\n    }\n\n    &:focus {\n      box-shadow: none !important;\n    }\n    ", "\n  }\n  ", "\n  ", "\n"])), InputStyleBase, props => props.disabled && Ce(react_search_select_esm_style_templateObject2 || (react_search_select_esm_style_templateObject2 = _taggedTemplateLiteralLoose(["\n        box-shadow: none;\n        background: ", ";\n        opacity: 0.75;\n        color: ", ";\n        cursor: not-allowed;\n        resize: none;\n      "])), props => getThemeVariantValue(extends_extends({}, props, {
+var SearchSelectInputContentsBase = styled_components_browser_esm(react_input_esm)(react_search_select_esm_style_templateObject || (react_search_select_esm_style_templateObject = _taggedTemplateLiteralLoose(["\n  ", " {\n    box-shadow: none;\n    padding: 0px;\n    // min-width: 50px;\n    height: 20px;\n    &:hover {\n      box-shadow: none !important;\n    }\n\n    &:focus {\n      box-shadow: none !important;\n    }\n    ", "\n  }\n  ", "\n  ", "\n"])), InputStyleBase, props => props.disabled && Ce(react_search_select_esm_style_templateObject2 || (react_search_select_esm_style_templateObject2 = _taggedTemplateLiteralLoose(["\n        box-shadow: none;\n        background: ", ";\n        opacity: 0.75;\n        color: ", ";\n        cursor: not-allowed;\n        resize: none;\n      "])), props => getThemeVariantValue(extends_extends({}, props, {
   defaultTheme: SearchSelectStyleTheme
 }), 'backgroundSearchSelectDisabled'), props => getThemeVariantValue(extends_extends({}, props, {
   defaultTheme: SearchSelectStyleTheme
-}), 'colorSearchSelectDisabled')), props => props.size === 'small' && Ce(react_search_select_esm_style_templateObject3 || (react_search_select_esm_style_templateObject3 = _taggedTemplateLiteralLoose(["\n      ", " {\n        height: 16px;\n        font-size: 10px;\n        padding: 0px;\n      }\n    "])), InputStyleBase), props => props.size === 'large' && Ce(react_search_select_esm_style_templateObject4 || (react_search_select_esm_style_templateObject4 = _taggedTemplateLiteralLoose(["\n      ", " {\n        height: 28px;\n      }\n    "])), InputStyleBase));
+}), 'colorSearchSelectDisabled')), props => props.size === 'small' && Ce(react_search_select_esm_style_templateObject3 || (react_search_select_esm_style_templateObject3 = _taggedTemplateLiteralLoose(["\n      ", " {\n        height: 20px;\n        font-size: 10px;\n        padding: 0px;\n      }\n    "])), InputStyleBase), props => props.size === 'large' && Ce(react_search_select_esm_style_templateObject4 || (react_search_select_esm_style_templateObject4 = _taggedTemplateLiteralLoose(["\n      ", " {\n        height: 26px;\n      }\n    "])), InputStyleBase));
 // SearchSelectInputContentsBase.defaultProps = {
 //   defaultTheme: SearchSelectStyleTheme,
 // };
 
-var SearchSelectTagContentsBase = styled_components_browser_esm.div(react_search_select_esm_style_templateObject5 || (react_search_select_esm_style_templateObject5 = _taggedTemplateLiteralLoose(["\n  display: flex;\n  align-items: center;\n  flex-flow: wrap;\n  width: 100%;\n"])));
+var SearchSelectTagContentsBase = styled_components_browser_esm.div(react_search_select_esm_style_templateObject5 || (react_search_select_esm_style_templateObject5 = _taggedTemplateLiteralLoose(["\n  display: flex;\n  align-items: center;\n  flex-flow: wrap;\n  width: 100%;\n  box-sizing: border-box;\n"])));
 var SearchSelectInputStyleBase = styled_components_browser_esm(react_input_esm)(react_search_select_esm_style_templateObject6 || (react_search_select_esm_style_templateObject6 = _taggedTemplateLiteralLoose(["\n  ", "\n"])), props => {
   var _props$params;
   return ((_props$params = props.params) == null ? void 0 : _props$params.showSearch) === false && Ce(react_search_select_esm_style_templateObject7 || (react_search_select_esm_style_templateObject7 = _taggedTemplateLiteralLoose(["\n      cursor: pointer;\n    "])));
@@ -15144,7 +15144,7 @@ var SearchSelectIconStyleBase = styled_components_browser_esm(IconStyleBase)(rea
   var _props$params3;
   return ((_props$params3 = props.params) == null ? void 0 : _props$params3.singe) && Ce(react_search_select_esm_style_templateObject10 || (react_search_select_esm_style_templateObject10 = _taggedTemplateLiteralLoose(["\n      font-size: 15px;\n    "])));
 });
-var SearchSelectInner = styled_components_browser_esm.div(react_search_select_esm_style_templateObject11 || (react_search_select_esm_style_templateObject11 = _taggedTemplateLiteralLoose(["\n  display: flex;\n  justify-content: space-between;\n  outline: none;\n  border: none;\n  align-items: center;\n  border-radius: 3px;\n  box-shadow: ", ";\n  box-sizing: border-box;\n  background: ", ";\n  margin: 0 !important;\n  padding: 1px 10px;\n  vertical-align: middle;\n  line-height: 30px;\n  align-items: center;\n  color: ", ";\n  font-weight: 400;\n  font-size: inherit;\n  transition: box-shadow 0.3s cubic-bezier(0.4, 1, 0.75, 0.9);\n  appearance: none;\n\n  &:focus {\n    box-shadow: ", ";\n  }\n\n  &:hover {\n    box-shadow: ", ";\n  }\n\n  &:focus&:hover {\n    box-shadow: ", ";\n  }\n  ", "\n"])), props => getThemeVariantValue(extends_extends({}, props, {
+var SearchSelectInner = styled_components_browser_esm.div(react_search_select_esm_style_templateObject11 || (react_search_select_esm_style_templateObject11 = _taggedTemplateLiteralLoose(["\n  display: flex;\n  justify-content: space-between;\n  outline: none;\n  border: none;\n  align-items: center;\n  border-radius: 3px;\n  box-shadow: ", ";\n  box-sizing: border-box;\n  background: ", ";\n  margin: 0 !important;\n  padding: 5px 10px;\n  vertical-align: middle;\n  line-height: 30px;\n  align-items: center;\n  color: ", ";\n  font-weight: 400;\n  font-size: inherit;\n  transition: box-shadow 0.3s cubic-bezier(0.4, 1, 0.75, 0.9);\n  appearance: none;\n\n  &:focus {\n    box-shadow: ", ";\n  }\n\n  &:hover {\n    box-shadow: ", ";\n  }\n\n  &:focus&:hover {\n    box-shadow: ", ";\n  }\n  ", "\n"])), props => getThemeVariantValue(extends_extends({}, props, {
   defaultTheme: SearchSelectStyleTheme
 }), 'boxShadowSearchSelectBase'), props => getThemeVariantValue(extends_extends({}, props, {
   defaultTheme: SearchSelectStyleTheme
@@ -15157,12 +15157,19 @@ var SearchSelectInner = styled_components_browser_esm.div(react_search_select_es
 }), 'boxShadowSearchSelectHover'), props => getThemeVariantValue(extends_extends({}, props, {
   defaultTheme: SearchSelectStyleTheme
 }), 'boxShadowSearchSelectFocusHover'), props => {
-  var _props$params4;
-  return ((_props$params4 = props.params) == null ? void 0 : _props$params4.showSearch) === false && Ce(react_search_select_esm_style_templateObject12 || (react_search_select_esm_style_templateObject12 = _taggedTemplateLiteralLoose(["\n      cursor: pointer;\n    "])));
+  var {
+    showSearch,
+    size = 'default',
+    len = 0
+  } = (props == null ? void 0 : props.params) || {};
+  return Ce(react_search_select_esm_style_templateObject12 || (react_search_select_esm_style_templateObject12 = _taggedTemplateLiteralLoose(["\n      cursor: ", ";\n      padding: ", ";\n      padding-left: ", ";\n    "])), showSearch === false && 'pointer', size === 'small' && '2px 5px', len > 0 && returnPaddingLeft(size));
 });
-// SearchSelectInner.defaultProps = {
-//   defaultTheme: SearchSelectStyleTheme,
-// };
+function returnPaddingLeft(size) {
+  if (size !== 'small') {
+    return '6px';
+  }
+  return null;
+}
 
 // EXTERNAL MODULE: ../../node_modules/@uiw/icons/lib/Loading.js
 var lib_Loading = __webpack_require__(309);
@@ -15188,9 +15195,9 @@ var ICONTYPE = {
   loading: lib_Loading/* Loading */.g
 };
 var TagSize = {
-  large: 25,
-  default: 20,
-  small: 17
+  large: 24,
+  default: 18,
+  small: 18
 };
 function SearchSelect(props) {
   var _style$width;
@@ -15401,7 +15408,9 @@ function SearchSelect(props) {
       }, style),
       children: isMultiple ? /*#__PURE__*/(0,jsx_runtime.jsxs)(SearchSelectInner, {
         params: {
-          showSearch
+          showSearch,
+          size,
+          len: selectedValue ? selectedValue.length : 0
         },
         className: [prefixCls + "-inner", prefixCls + "-search-" + showSearch, prefixCls + "-" + size].filter(Boolean).join(' ').trim(),
         children: [/*#__PURE__*/(0,jsx_runtime.jsxs)(SearchSelectTagContentsBase, {
@@ -15427,7 +15436,7 @@ function SearchSelect(props) {
             }), index);
           }), !!omitTagCount && /*#__PURE__*/(0,jsx_runtime.jsxs)(react_tag_esm, {
             style: {
-              height: 20,
+              height: TagSize[size],
               margin: 1,
               display: 'flex',
               alignItems: 'center'
@@ -15449,7 +15458,7 @@ function SearchSelect(props) {
             value: selectedLabel,
             placeholder: selectedValue.length ? '' : placeholder
           })]
-        }), !disabled && (selectIconType === 'close' || selectIconType === 'loading' && loading) && /*#__PURE__*/(0,jsx_runtime.jsx)(SearchSelectIconStyleBase, {
+        }), /*#__PURE__*/(0,jsx_runtime.jsx)(SearchSelectIconStyleBase, {
           className: prefixCls + "-multiple-colse",
           as: ICONTYPE[selectIconType],
           params: {
