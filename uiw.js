@@ -4293,7 +4293,6 @@ var react_avatar_esm_excluded = ["prefixCls", "shape", "size", "className", "src
 
 
 
-
 /* harmony default export */ const react_avatar_esm = (/*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default().forwardRef((props, ref) => {
   var {
       prefixCls = 'w-avatar',
@@ -4328,12 +4327,12 @@ var react_avatar_esm_excluded = ["prefixCls", "shape", "size", "className", "src
       children: icon
     });
   }
-  return /*#__PURE__*/(0,jsx_runtime.jsxs)(AvatarStyleWarp, extends_extends({}, resetProps, {
+  return /*#__PURE__*/(0,jsx_runtime.jsx)(AvatarStyleWarp, extends_extends({}, resetProps, {
     size: size,
     shape: shape,
     className: cls,
     ref: ref,
-    children: [children, /*#__PURE__*/(0,jsx_runtime.jsx)("span", {})]
+    children: children
   }));
 }));
 
