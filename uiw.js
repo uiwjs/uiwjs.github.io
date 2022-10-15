@@ -7733,7 +7733,7 @@ var RadioStyleTheme = {
   backgroundColorBase: '#fff',
   fontSizeSamll: '12px',
   colorRadioDefault: '#c7c7c7',
-  colorNotCheckedNotDisabledDefault: '#efefef',
+  colorNotCheckedNotDisabledDefault: '#cecece',
   widthRadioDefault: '16px',
   heightRadioDefault: '16px',
   borderRadioDefault: '1.2px solid #d7d7d7',
@@ -7743,7 +7743,7 @@ var RadioInputStyleBase = styled_components_browser_esm.input(react_radio_esm_st
 var RadioText = styled_components_browser_esm.div(react_radio_esm_style_templateObject2 || (react_radio_esm_style_templateObject2 = _taggedTemplateLiteralLoose(["\n  vertical-align: middle;\n  display: inline-block;\n  margin-left: 4px;\n  margin-right: 5px;\n  font-size: 14px;\n"])));
 var RadioBase = styled_components_browser_esm.label(react_radio_esm_style_templateObject3 || (react_radio_esm_style_templateObject3 = _taggedTemplateLiteralLoose(["\n  ", "\n"])), props => {
   var disabled = props == null ? void 0 : props.disabled;
-  return Ce(react_radio_esm_style_templateObject4 || (react_radio_esm_style_templateObject4 = _taggedTemplateLiteralLoose(["\n      color: ", ";\n      cursor: ", ";\n      vertical-align: middle;\n      display: inline-block;\n      font-size: ", ";\n      input[type='radio'] {\n        outline: none;\n        position: relative;\n        width: ", ";\n        height: ", ";\n        background-clip: border-box;\n        appearance: none;\n        margin: -0.15px 0.6px 0 0;\n        border-radius: 50%;\n        background-color: ", ";\n        border: ", ";\n        transition: border 0.25s, box-shadow 0.25s;\n        cursor: ", ";\n        &:not(:checked):not(:disabled):not(.disabled) {\n          background-color: ", ";\n          &:hover,\n          &:focus {\n            box-shadow: 0 0 0 2px rgba(0, 142, 240, 0.25);\n          }\n        }\n        &:checked {\n          border: ", ";\n          &:focus {\n            box-shadow: 0 0 0 2px rgba(0, 142, 240, 0.25);\n          }\n        }\n      }\n    "])), disabled && getThemeVariantValue(extends_extends({}, props, {
+  return Ce(react_radio_esm_style_templateObject4 || (react_radio_esm_style_templateObject4 = _taggedTemplateLiteralLoose(["\n      color: ", ";\n      cursor: ", ";\n      vertical-align: middle;\n      display: inline-block;\n      font-size: ", ";\n      input[type='radio'] {\n        outline: none;\n        position: relative;\n        width: ", ";\n        height: ", ";\n        background-clip: border-box;\n        appearance: none;\n        margin-top: -1.5px;\n        margin-right: 1px;\n        border-radius: 50%;\n        background-color: ", ";\n        border: ", ";\n        transition: border 0.25s, box-shadow 0.25s;\n        vertical-align: middle;\n        cursor: ", ";\n        &:not(:checked):not(:disabled):not(.disabled) {\n          background-color: ", ";\n          &:hover,\n          &:focus {\n            box-shadow: 0 0 0 2px rgba(0, 142, 240, 0.25);\n          }\n        }\n        &:checked {\n          border: ", ";\n          &:focus {\n            box-shadow: 0 0 0 2px rgba(0, 142, 240, 0.25);\n          }\n          border-color: ", ";\n        }\n      }\n    "])), disabled && getThemeVariantValue(extends_extends({}, props, {
     defaultTheme: RadioStyleTheme
   }), 'colorRadioDefault'), disabled && 'not-allowed', getThemeVariantValue(extends_extends({}, props, {
     defaultTheme: RadioStyleTheme
@@ -7757,16 +7757,13 @@ var RadioBase = styled_components_browser_esm.label(react_radio_esm_style_templa
     defaultTheme: RadioStyleTheme
   }), 'borderRadioDefault'), disabled && 'not-allowed', disabled && getThemeVariantValue(extends_extends({}, props, {
     defaultTheme: RadioStyleTheme
-  }), 'colorNotCheckedNotDisabledDefault'), disabled && getThemeVariantValue(extends_extends({}, props, {
+  }), 'colorNotCheckedNotDisabledDefault'), getThemeVariantValue(extends_extends({}, props, {
     defaultTheme: RadioStyleTheme
-  }), 'borderRadioCheckedDefault'));
+  }), 'borderRadioCheckedDefault'), disabled && getThemeVariantValue(extends_extends({}, props, {
+    defaultTheme: RadioStyleTheme
+  }), 'colorNotCheckedNotDisabledDefault'));
 });
 var RadioGroupBase = styled_components_browser_esm.div(react_radio_esm_style_templateObject5 || (react_radio_esm_style_templateObject5 = _taggedTemplateLiteralLoose(["\n  font-size: 0;\n"])));
-
-// RadioBase.defaultProps = {
-//   defaultTheme: RadioStyleTheme,
-// };
-
 
 
 ;// CONCATENATED MODULE: ../react-radio/esm/RadioAbstract.js
