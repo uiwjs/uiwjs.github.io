@@ -16674,7 +16674,7 @@ var TableStyleWrap = styled_components_browser_esm.div(react_table_esm_style_tem
   defaultTheme: TableBaseDefaultTheme
 }), 'backgroundColorTableTr'), props => getThemeVariantValue(extends_extends({}, props, {
   defaultTheme: TableBaseDefaultTheme
-}), 'backgroundColorTableTbodyTrTd'), props => getThemeVariantValue(extends_extends({}, props, {
+}), 'backgroundColorTable'), props => getThemeVariantValue(extends_extends({}, props, {
   defaultTheme: TableBaseDefaultTheme
 }), 'backgroundColorTableEvenRowsHover'), props => getThemeVariantValue(extends_extends({}, props, {
   defaultTheme: TableBaseDefaultTheme
