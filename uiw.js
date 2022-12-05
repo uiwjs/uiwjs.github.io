@@ -17041,7 +17041,7 @@ function TableTr(props) {
     childrenColumnName,
     locationWidth,
     header,
-    isAutoExpandedCol = true
+    isAutoExpanded = true
   } = props;
   var [isOpacity, setIsOpacity] = (0,external_root_React_commonjs2_react_commonjs_react_amd_react_.useState)(false);
   var [childrenIndex, setChildrenIndex] = (0,external_root_React_commonjs2_react_commonjs_react_amd_react_.useState)(0);
@@ -17107,9 +17107,9 @@ function TableTr(props) {
             }
             var isHasChildren = Array.isArray(trData[childrenColumnName]);
             var isExpanded = false;
-            if ((isOpacity || hierarchy || isHasChildren) && colNum === childrenIndex && isAutoExpandedCol) {
+            if ((isOpacity || hierarchy || isHasChildren) && colNum === childrenIndex && isAutoExpanded) {
               isExpanded = true;
-            } else if ((isOpacity || hierarchy || isHasChildren) && !isAutoExpandedCol && keyName.isExpanded) {
+            } else if ((isOpacity || hierarchy || isHasChildren) && !isAutoExpanded && keyName.isExpanded) {
               isExpanded = true;
             }
             if (isExpanded) {
@@ -17419,7 +17419,7 @@ function esm_Table(props) {
             isExpandedDom: isExpandedDom,
             indentSize: typeof (expandable == null ? void 0 : expandable.indentSize) === 'number' ? expandable == null ? void 0 : expandable.indentSize : 16,
             childrenColumnName: (expandable == null ? void 0 : expandable.childrenColumnName) || 'children',
-            isAutoExpandedCol: expandable == null ? void 0 : expandable.isAutoExpandedCol
+            isAutoExpanded: expandable == null ? void 0 : expandable.isAutoExpanded
           })
         }), data && data.length === 0 && empty && /*#__PURE__*/(0,jsx_runtime.jsx)("tbody", {
           children: /*#__PURE__*/(0,jsx_runtime.jsx)("tr", {
