@@ -16869,6 +16869,72 @@ function locationFixed(fixed, location, index) {
   };
 }
 
+// 通过树获取子节点个数
+// 记录顶层父级
+// 通过顶层父级进行获取展开的 key
+// 通过 key 进行获取个数
+class NodeTreeData {
+  constructor(dataList, rowKey, childName) {
+    this.parentToChild = new Map([]);
+    this.childToParent = new Map([]);
+    this.childTreeCount = new Map([]);
+    this.rowKey = 'id';
+    this.childName = 'children';
+    this.rowKey = rowKey || this.rowKey;
+    this.childName = childName || this.childName;
+    this.init(dataList);
+  }
+  /**把根据父级 key 存储对应下所有子集的个数*/
+  init(dataList, parentList) {
+    if (parentList === void 0) {
+      parentList = [];
+    }
+    dataList.forEach(item => {
+      if (Array.isArray(item[this.childName])) {
+        var newParent = parentList.concat([item[this.rowKey]]);
+        var parentKey = newParent[0];
+        this.childToParent.set(item[this.rowKey], parentKey);
+        this.parentToChild.set(parentKey, newParent);
+        this.childTreeCount.set(item[this.rowKey], item[this.childName].length);
+        this.init(item[this.childName], newParent);
+      }
+    });
+  }
+  /**获取合并行数*/
+  getSum(key, expandedKeys) {
+    var _this = this;
+    var parentKey = this.childToParent.get(key) || '';
+    var childList = this.parentToChild.get(parentKey) || [];
+    var summary = {};
+    var lg = childList.length;
+    for (var index = 0; index < lg; index++) {
+      var childKey = childList[index];
+      if (expandedKeys.includes(childKey)) {
+        (function () {
+          summary[childKey] = 1;
+          var count = _this.childTreeCount.get(childKey || '') || 0;
+          Object.entries(summary).forEach(_ref => {
+            var [k, value] = _ref;
+            /**计算合并行个数*/
+            summary[k] = value + count;
+          });
+        })();
+      } else {
+        break;
+      }
+    }
+    return summary;
+  }
+}
+var getRowSpan = (rowSpan, leve, index) => {
+  var show = leve < index + 1;
+  var newRowSpan = leve === index ? rowSpan : undefined;
+  return {
+    show,
+    rowSpan: newRowSpan
+  };
+};
+
 ;// CONCATENATED MODULE: ../react-table/esm/ThComponent.js
 
 
@@ -17041,7 +17107,9 @@ function TableTr(props) {
     childrenColumnName,
     locationWidth,
     header,
-    isAutoExpanded = true
+    isAutoExpanded = true,
+    treeData,
+    isAutoMergeRowSpan
   } = props;
   var [isOpacity, setIsOpacity] = (0,external_root_React_commonjs2_react_commonjs_react_amd_react_.useState)(false);
   var [childrenIndex, setChildrenIndex] = (0,external_root_React_commonjs2_react_commonjs_react_amd_react_.useState)(0);
@@ -17083,14 +17151,22 @@ function TableTr(props) {
   return /*#__PURE__*/(0,jsx_runtime.jsx)((external_root_React_commonjs2_react_commonjs_react_amd_react_default()).Fragment, {
     children: data.map((trData, rowNum) => {
       var key = rowKey ? trData[rowKey] : rowNum;
+      var summary = treeData == null ? void 0 : treeData.getSum(key, expandIndex);
       return /*#__PURE__*/(0,jsx_runtime.jsxs)((external_root_React_commonjs2_react_commonjs_react_amd_react_default()).Fragment, {
         children: [/*#__PURE__*/(0,jsx_runtime.jsx)("tr", {
           children: keys.map((keyName, colNum) => {
+            var itemShow = {};
+            if (isAutoMergeRowSpan && summary) {
+              itemShow = getRowSpan(summary[key], hierarchy, colNum);
+              if (!itemShow.show) {
+                return /*#__PURE__*/(0,jsx_runtime.jsx)(external_root_React_commonjs2_react_commonjs_react_amd_react_.Fragment, {});
+              }
+            }
             var objs = {
               children: trData[keyName.key]
             };
             if (render[keyName.key]) {
-              var child = render[keyName.key](trData[keyName.key], keyName.key, trData, rowNum, colNum);
+              var child = render[keyName.key](trData[keyName.key], keyName.key, trData, rowNum, colNum, itemShow.rowSpan);
               if ( /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default().isValidElement(child)) {
                 objs.children = child;
               } else {
@@ -17104,6 +17180,8 @@ function TableTr(props) {
                   objs.children = child.children;
                 }
               }
+            } else if (itemShow.rowSpan && isAutoMergeRowSpan) {
+              objs.rowSpan = itemShow.rowSpan;
             }
             var isHasChildren = Array.isArray(trData[childrenColumnName]);
             var isExpanded = false;
@@ -17162,7 +17240,7 @@ function TableTr(props) {
 ;// CONCATENATED MODULE: ../react-table/esm/index.js
 
 
-var react_table_esm_excluded = ["prefixCls", "className", "columns", "data", "title", "footer", "bordered", "onCell", "onCellHead", "empty", "children", "expandable", "rowKey", "scroll"];
+var react_table_esm_excluded = ["prefixCls", "className", "columns", "data", "title", "footer", "bordered", "onCell", "onCellHead", "empty", "children", "expandable", "rowKey", "scroll", "isAutoMergeRowSpan"];
 
 
 
@@ -17195,7 +17273,8 @@ function esm_Table(props) {
       empty,
       expandable,
       rowKey,
-      scroll
+      scroll,
+      isAutoMergeRowSpan = false
     } = props,
     other = _objectWithoutPropertiesLoose(props, react_table_esm_excluded);
   var [expandIndex, setExpandIndex] = (0,external_root_React_commonjs2_react_commonjs_react_amd_react_.useState)([]);
@@ -17385,6 +17464,7 @@ function esm_Table(props) {
     render,
     ellipsis
   } = getLevelItems(self.selfColumns);
+  var treeData = (0,external_root_React_commonjs2_react_commonjs_react_amd_react_.useMemo)(() => isAutoMergeRowSpan && new NodeTreeData(data, rowKey, (expandable == null ? void 0 : expandable.childrenColumnName) || 'children') || undefined, [data, rowKey, expandable == null ? void 0 : expandable.childrenColumnName, isAutoMergeRowSpan]);
   return /*#__PURE__*/(0,jsx_runtime.jsxs)((external_root_React_commonjs2_react_commonjs_react_amd_react_default()).Fragment, {
     children: [/*#__PURE__*/(0,jsx_runtime.jsx)(TableStyleWrap, extends_extends({
       className: cls
@@ -17419,7 +17499,9 @@ function esm_Table(props) {
             isExpandedDom: isExpandedDom,
             indentSize: typeof (expandable == null ? void 0 : expandable.indentSize) === 'number' ? expandable == null ? void 0 : expandable.indentSize : 16,
             childrenColumnName: (expandable == null ? void 0 : expandable.childrenColumnName) || 'children',
-            isAutoExpanded: expandable == null ? void 0 : expandable.isAutoExpanded
+            isAutoExpanded: expandable == null ? void 0 : expandable.isAutoExpanded,
+            treeData: treeData,
+            isAutoMergeRowSpan: isAutoMergeRowSpan
           })
         }), data && data.length === 0 && empty && /*#__PURE__*/(0,jsx_runtime.jsx)("tbody", {
           children: /*#__PURE__*/(0,jsx_runtime.jsx)("tr", {
