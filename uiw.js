@@ -17413,7 +17413,6 @@ function esm_Table(props) {
   }, [expandable, expandIndex]);
   var self = (0,external_root_React_commonjs2_react_commonjs_react_amd_react_.useMemo)(() => {
     var keys = getAllColumnsKeys(columns);
-    console.log('keys--->', keys);
     var selfColumns = [];
     if (expandable != null && expandable.expandedRowRender) {
       keys = [{
