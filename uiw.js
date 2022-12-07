@@ -17170,7 +17170,6 @@ function TableTr(props) {
           children: keys.map((keyName, colNum) => {
             var isHasChildren = Array.isArray(trData[childrenColumnName]);
             var itemShow = {};
-            console.log(isAutoMergeRowSpan, summary);
             if (isAutoMergeRowSpan && summary) {
               var newLaval = Reflect.get(keyName, 'level');
               var summaryCount = summary.summaryCount[newLaval];
@@ -17184,7 +17183,11 @@ function TableTr(props) {
               children: trData[keyName.key]
             };
             if (render[keyName.key]) {
-              var child = render[keyName.key](trData[keyName.key], keyName.key, trData, rowNum, colNum, itemShow.rowSpan);
+              var child = render[keyName.key](trData[keyName.key], keyName.key, trData, rowNum, colNum, {
+                level: hierarchy,
+                rowSpan: itemShow.rowSpan,
+                summary
+              });
               if ( /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default().isValidElement(child)) {
                 objs.children = child;
               } else {
@@ -17410,6 +17413,7 @@ function esm_Table(props) {
   }, [expandable, expandIndex]);
   var self = (0,external_root_React_commonjs2_react_commonjs_react_amd_react_.useMemo)(() => {
     var keys = getAllColumnsKeys(columns);
+    console.log('keys--->', keys);
     var selfColumns = [];
     if (expandable != null && expandable.expandedRowRender) {
       keys = [{
@@ -17481,7 +17485,7 @@ function esm_Table(props) {
     render,
     ellipsis
   } = getLevelItems(self.selfColumns);
-  var treeData = (0,external_root_React_commonjs2_react_commonjs_react_amd_react_.useMemo)(() => isAutoMergeRowSpan && new NodeTreeData(data, rowKey, (expandable == null ? void 0 : expandable.childrenColumnName) || 'children') || undefined, [data, rowKey, expandable == null ? void 0 : expandable.childrenColumnName, isAutoMergeRowSpan]);
+  var treeData = (0,external_root_React_commonjs2_react_commonjs_react_amd_react_.useMemo)(() => new NodeTreeData(data, rowKey, (expandable == null ? void 0 : expandable.childrenColumnName) || 'children'), [data, rowKey, expandable == null ? void 0 : expandable.childrenColumnName, isAutoMergeRowSpan]);
   return /*#__PURE__*/(0,jsx_runtime.jsxs)((external_root_React_commonjs2_react_commonjs_react_amd_react_default()).Fragment, {
     children: [/*#__PURE__*/(0,jsx_runtime.jsx)(TableStyleWrap, extends_extends({
       className: cls
