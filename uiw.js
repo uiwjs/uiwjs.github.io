@@ -17122,17 +17122,17 @@ function TableTr(props) {
     treeData,
     isAutoMergeRowSpan,
     expandIndex,
-    setExpandIndex
+    setExpandIndex,
+    onExpand
   } = props;
   var [isOpacity, setIsOpacity] = (0,external_root_React_commonjs2_react_commonjs_react_amd_react_.useState)(false);
   var [childrenIndex, setChildrenIndex] = (0,external_root_React_commonjs2_react_commonjs_react_amd_react_.useState)(0);
-  // const [expandIndex, setExpandIndex] = useState<Array<T[keyof T] | number>>([]);
   (0,external_root_React_commonjs2_react_commonjs_react_amd_react_.useEffect)(() => {
     setIsOpacity(!!(data != null && data.find(it => it[childrenColumnName])));
     setChildrenIndex((keys == null ? void 0 : keys.findIndex(it => it.key === 'uiw-expanded')) === -1 ? 0 : 1);
   }, [data]);
   var IconDom = (0,external_root_React_commonjs2_react_commonjs_react_amd_react_.useMemo)(() => {
-    return (key, isOpacity) => {
+    return (key, isOpacity, trData, rowNum) => {
       var flag = expandIndex.includes(key);
       var Icon = flag ? lib_MinusSquareO/* MinusSquareO */.d : lib_PlusSquareO/* PlusSquareO */.D;
       return /*#__PURE__*/(0,jsx_runtime.jsx)(TableStyleDomIcon, {
@@ -17144,6 +17144,7 @@ function TableTr(props) {
           marginTop: 3.24
         },
         onClick: () => {
+          onExpand && onExpand(flag, trData, rowNum, hierarchy);
           setExpandIndex(flag ? expandIndex.filter(it => it !== key) : [...expandIndex, key]);
         },
         children: /*#__PURE__*/(0,jsx_runtime.jsx)(Icon, {})
@@ -17210,14 +17211,24 @@ function TableTr(props) {
             } else if ((isOpacity || hierarchy || isHasChildren) && !isAutoExpanded && keyName.isExpanded) {
               isExpanded = true;
             }
-            if (isExpanded) {
-              objs.children = /*#__PURE__*/(0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
-                children: [IconDom(key, isHasChildren), /*#__PURE__*/(0,jsx_runtime.jsx)("span", {
-                  style: {
-                    paddingLeft: hierarchy * indentSize
-                  }
-                }), objs.children]
-              });
+            if (isExpanded || keyName.isExpandedButton) {
+              if (keyName.isExpandedButtonLayout === 'right') {
+                objs.children = /*#__PURE__*/(0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+                  children: [IconDom(key, isHasChildren || !!(keyName != null && keyName.isExpandedButton), trData, rowNum), /*#__PURE__*/(0,jsx_runtime.jsx)("span", {
+                    style: {
+                      paddingLeft: hierarchy * indentSize
+                    }
+                  }), objs.children]
+                });
+              } else {
+                objs.children = /*#__PURE__*/(0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+                  children: [/*#__PURE__*/(0,jsx_runtime.jsx)("span", {
+                    style: {
+                      paddingLeft: hierarchy * indentSize
+                    }
+                  }), objs.children, IconDom(key, isHasChildren || !!(keyName != null && keyName.isExpandedButton), trData, rowNum)]
+                });
+              }
             }
             if (keyName.fixed) {
               if (keyName.fixed === 'right') {
@@ -17517,6 +17528,7 @@ function esm_Table(props) {
             onCell: onCell,
             hierarchy: 0,
             isExpandedDom: isExpandedDom,
+            onExpand: expandable == null ? void 0 : expandable.onExpand,
             indentSize: typeof (expandable == null ? void 0 : expandable.indentSize) === 'number' ? expandable == null ? void 0 : expandable.indentSize : 16,
             childrenColumnName: (expandable == null ? void 0 : expandable.childrenColumnName) || 'children',
             isAutoExpanded: expandable == null ? void 0 : expandable.isAutoExpanded,
