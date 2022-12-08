@@ -16649,7 +16649,7 @@ var lib_PlusSquareO = __webpack_require__(571);
 ;// CONCATENATED MODULE: ../react-table/esm/style/index.js
 
 
-var react_table_esm_style_templateObject, react_table_esm_style_templateObject2, react_table_esm_style_templateObject3, react_table_esm_style_templateObject4, react_table_esm_style_templateObject5, react_table_esm_style_templateObject6, react_table_esm_style_templateObject7, react_table_esm_style_templateObject8, react_table_esm_style_templateObject9, react_table_esm_style_templateObject10, react_table_esm_style_templateObject11, react_table_esm_style_templateObject12;
+var react_table_esm_style_templateObject, react_table_esm_style_templateObject2, react_table_esm_style_templateObject3, react_table_esm_style_templateObject4, react_table_esm_style_templateObject5, react_table_esm_style_templateObject6, react_table_esm_style_templateObject7, react_table_esm_style_templateObject8, react_table_esm_style_templateObject9, react_table_esm_style_templateObject10, react_table_esm_style_templateObject11, react_table_esm_style_templateObject12, react_table_esm_style_templateObject13, react_table_esm_style_templateObject14;
 
 
 
@@ -16668,7 +16668,7 @@ var TableBaseDefaultTheme = {
   borderRightColorFixedRows: '#f0f0f0' // 固定列
 };
 
-var TableStyleWrap = styled_components_browser_esm.div(react_table_esm_style_templateObject || (react_table_esm_style_templateObject = _taggedTemplateLiteralLoose(["\n  > table {\n    display: table !important;\n    margin: 0 !important;\n    width: 100%;\n    border-spacing: 0;\n    border-collapse: collapse;\n    tr > th,\n    tr > td {\n      border: 0;\n      padding: 5px 8px;\n      border-bottom: 1px solid\n        ", ";\n    }\n    tr {\n      background-color: ", ";\n    }\n    > caption {\n      text-align: left;\n      padding: 10px 8px;\n    }\n    > tbody > tr {\n      transition: all 0.3s;\n      > td {\n        background-color: ", ";\n        position: relative;\n        z-index: 1;\n      }\n      &:hover,\n      &:hover:nth-child(2n) {\n        > td {\n          background-color: ", ";\n        }\n      }\n      &:nth-child(2n) {\n        > td {\n          background-color: ", ";\n        }\n      }\n    }\n    > thead {\n      > tr > th {\n        font-weight: normal;\n        padding: 8px;\n        background-color: ", ";\n        position: relative;\n        z-index: 1;\n      }\n      > tr,\n      tr:nth-child(2n) {\n        background-color: ", ";\n        border: transparent;\n      }\n    }\n  }\n  ", "\n"])), props => getThemeVariantValue(extends_extends({}, props, {
+var TableStyleWrap = styled_components_browser_esm.div(react_table_esm_style_templateObject || (react_table_esm_style_templateObject = _taggedTemplateLiteralLoose(["\n  width: 100%;\n  overflow: auto;\n  > table {\n    display: table !important;\n    margin: 0 !important;\n    width: 100%;\n    border-spacing: 0;\n    border-collapse: collapse;\n    tr > th,\n    tr > td {\n      border: 0;\n      padding: 5px 8px;\n      border-bottom: 1px solid\n        ", ";\n    }\n    tr {\n      background-color: ", ";\n    }\n    > caption {\n      text-align: left;\n      padding: 10px 8px;\n    }\n    > tbody > tr {\n      transition: all 0.3s;\n      > td {\n        background-color: ", ";\n        position: relative;\n        z-index: 1;\n      }\n      &:hover,\n      &:hover:nth-child(2n) {\n        > td {\n          background-color: ", ";\n        }\n      }\n      &:nth-child(2n) {\n        > td {\n          background-color: ", ";\n        }\n      }\n    }\n    > thead {\n      > tr > th {\n        font-weight: normal;\n        padding: 8px;\n        background-color: ", ";\n        position: relative;\n        z-index: 1;\n      }\n      > tr,\n      tr:nth-child(2n) {\n        background-color: ", ";\n        border: transparent;\n      }\n    }\n  }\n  ", "\n"])), props => getThemeVariantValue(extends_extends({}, props, {
   defaultTheme: TableBaseDefaultTheme
 }), 'borderBottomColorTableRows'), props => getThemeVariantValue(extends_extends({}, props, {
   defaultTheme: TableBaseDefaultTheme
@@ -16699,24 +16699,28 @@ var TableStyleCol = styled_components_browser_esm.td(react_table_esm_style_templ
   var _props$params2;
   return props == null ? void 0 : (_props$params2 = props.params) == null ? void 0 : _props$params2.align;
 }, props => {
-  var _props$params3, _props$params4;
-  return (props == null ? void 0 : (_props$params3 = props.params) == null ? void 0 : _props$params3.fixed) && ((props == null ? void 0 : (_props$params4 = props.params) == null ? void 0 : _props$params4.fixed) === 'right' ? Ce(react_table_esm_style_templateObject7 || (react_table_esm_style_templateObject7 = _taggedTemplateLiteralLoose(["\n          position: sticky !important;\n          z-index: 2 !important;\n          // border: 0; \u900F\u98CE 1px\n          &::after {\n            box-shadow: inset -10px 0 8px -8px rgb(0 0 0 / 15%);\n            position: absolute;\n            top: 0;\n            bottom: -1px;\n            left: 0;\n            width: 30px;\n            transform: translateX(-100%);\n            transition: box-shadow 0.3s;\n            content: '';\n            pointer-events: none;\n            border-right: 1px solid\n              ", ";\n            /* border-right: 1px solid #f0f0f0; */\n          }\n          // \u6682\u65F6\u6CA1\u6709\u770B\u5230left\n        "])), props => getThemeVariantValue(extends_extends({}, props, {
+  var _props$params3, _props$params4, _props$params5, _props$params6;
+  return (props == null ? void 0 : (_props$params3 = props.params) == null ? void 0 : _props$params3.fixed) && ((props == null ? void 0 : (_props$params4 = props.params) == null ? void 0 : _props$params4.fixed) === 'right' ? Ce(react_table_esm_style_templateObject7 || (react_table_esm_style_templateObject7 = _taggedTemplateLiteralLoose(["\n          position: sticky !important;\n          z-index: 2 !important;\n\n          ", "\n\n          &::after {\n            box-shadow: inset -10px 0 8px -8px rgb(0 0 0 / 15%);\n            position: absolute;\n            top: 0;\n            bottom: -1px;\n            left: 0;\n            width: 30px;\n            transform: translateX(-100%);\n            transition: box-shadow 0.3s;\n            content: '';\n            pointer-events: none;\n            border-right: 1px solid\n              ", ";\n            /* border-right: 1px solid #f0f0f0; */\n          }\n          // \u6682\u65F6\u6CA1\u6709\u770B\u5230left\n        "])), (props == null ? void 0 : (_props$params5 = props.params) == null ? void 0 : _props$params5.bordered) && Ce(react_table_esm_style_templateObject8 || (react_table_esm_style_templateObject8 = _taggedTemplateLiteralLoose(["\n            &:before {\n              content: '';\n              position: absolute;\n              right: -1px;\n              top: 0;\n              bottom: 0;\n              border-right: 1px solid\n                ", ";\n            }\n          "])), getThemeVariantValue(extends_extends({}, props, {
     defaultTheme: TableBaseDefaultTheme
-  }), 'borderRightColorFixedRows')) : Ce(react_table_esm_style_templateObject8 || (react_table_esm_style_templateObject8 = _taggedTemplateLiteralLoose(["\n          position: sticky !important;\n          z-index: 2 !important;\n          // border: 0; \u900F\u98CE 1px\n          &:after {\n            box-shadow: inset 10px 0 8px -8px rgb(0 0 0 / 15%);\n            position: absolute;\n            top: 0;\n            right: 0;\n            bottom: -1px;\n            width: 30px;\n            transform: translateX(100%);\n            transition: box-shadow 0.3s;\n            content: '';\n            pointer-events: none;\n          }\n        "]))));
+  }), 'borderColorTable')), props => getThemeVariantValue(extends_extends({}, props, {
+    defaultTheme: TableBaseDefaultTheme
+  }), 'borderRightColorFixedRows')) : Ce(react_table_esm_style_templateObject9 || (react_table_esm_style_templateObject9 = _taggedTemplateLiteralLoose(["\n          position: sticky !important;\n          z-index: 2 !important;\n          ", "\n          &:after {\n            box-shadow: inset 10px 0 8px -8px rgb(0 0 0 / 15%);\n            position: absolute;\n            top: 0;\n            right: 0;\n            bottom: -1px;\n            width: 30px;\n            transform: translateX(100%);\n            transition: box-shadow 0.3s;\n            content: '';\n            pointer-events: none;\n          }\n        "])), (props == null ? void 0 : (_props$params6 = props.params) == null ? void 0 : _props$params6.bordered) && Ce(react_table_esm_style_templateObject10 || (react_table_esm_style_templateObject10 = _taggedTemplateLiteralLoose(["\n            &:before {\n              content: '';\n              position: absolute;\n              left: -1px;\n              top: 0;\n              bottom: 0;\n              border-left: 1px solid\n                ", ";\n            }\n          "])), getThemeVariantValue(extends_extends({}, props, {
+    defaultTheme: TableBaseDefaultTheme
+  }), 'borderColorTable'))));
 });
 // TableStyleCol.defaultProps = { defaultTheme: TableBaseDefaultTheme };
 
-var TableStyleColContent = styled_components_browser_esm.span(react_table_esm_style_templateObject9 || (react_table_esm_style_templateObject9 = _taggedTemplateLiteralLoose(["\n  ", "\n"])), props => {
-  var _props$params5;
-  return (props == null ? void 0 : (_props$params5 = props.params) == null ? void 0 : _props$params5.ellipsis) && Ce(react_table_esm_style_templateObject10 || (react_table_esm_style_templateObject10 = _taggedTemplateLiteralLoose(["\n      overflow: hidden;\n      white-space: nowrap;\n      text-overflow: ellipsis;\n      word-break: keep-all;\n      display: block;\n    "])));
+var TableStyleColContent = styled_components_browser_esm.span(react_table_esm_style_templateObject11 || (react_table_esm_style_templateObject11 = _taggedTemplateLiteralLoose(["\n  ", "\n"])), props => {
+  var _props$params7;
+  return (props == null ? void 0 : (_props$params7 = props.params) == null ? void 0 : _props$params7.ellipsis) && Ce(react_table_esm_style_templateObject12 || (react_table_esm_style_templateObject12 = _taggedTemplateLiteralLoose(["\n      overflow: hidden;\n      white-space: nowrap;\n      text-overflow: ellipsis;\n      word-break: keep-all;\n      display: block;\n    "])));
 });
 // TableStyleColContent.defaultProps = { defaultTheme: TableBaseDefaultTheme };
 
-var TableStyleFooter = styled_components_browser_esm.div(react_table_esm_style_templateObject11 || (react_table_esm_style_templateObject11 = _taggedTemplateLiteralLoose(["\n  background: ", ";\n  padding: 10px 8px;\n  ", "\n"])), props => getThemeVariantValue(extends_extends({}, props, {
+var TableStyleFooter = styled_components_browser_esm.div(react_table_esm_style_templateObject13 || (react_table_esm_style_templateObject13 = _taggedTemplateLiteralLoose(["\n  background: ", ";\n  padding: 10px 8px;\n  ", "\n"])), props => getThemeVariantValue(extends_extends({}, props, {
   defaultTheme: TableBaseDefaultTheme
 }), 'backgroundColorTableFooter'), props => {
-  var _props$params6;
-  return ((_props$params6 = props.params) == null ? void 0 : _props$params6.bordered) && Ce(react_table_esm_style_templateObject12 || (react_table_esm_style_templateObject12 = _taggedTemplateLiteralLoose(["\n      & {\n        border: 1px solid\n          ", ";\n        border-top: 0;\n      }\n    "])), props => getThemeVariantValue(extends_extends({}, props, {
+  var _props$params8;
+  return ((_props$params8 = props.params) == null ? void 0 : _props$params8.bordered) && Ce(react_table_esm_style_templateObject14 || (react_table_esm_style_templateObject14 = _taggedTemplateLiteralLoose(["\n      & {\n        border: 1px solid\n          ", ";\n        border-top: 0;\n      }\n    "])), props => getThemeVariantValue(extends_extends({}, props, {
     defaultTheme: TableBaseDefaultTheme
   }), 'borderColorTable'));
 });
@@ -16994,7 +16998,8 @@ class ThComponent extends external_root_React_commonjs2_react_commonjs_react_amd
       className: prefixCls + "-tr-children-" + ((item == null ? void 0 : item.align) || 'left') + " " + (item.className || '') + " " + cls,
       params: {
         align: (item == null ? void 0 : item.align) || 'left',
-        fixed: fixed
+        fixed: fixed,
+        bordered: this.props.bordered
       },
       onClick: evn => onCellHead == null ? void 0 : onCellHead(item, colNum, rowNum, evn),
       children: titleNode
@@ -17049,6 +17054,7 @@ function TheadComponent(props) {
         return /*#__PURE__*/(0,jsx_runtime.jsx)(ThComponent, {
           colNum: colNum,
           item: item,
+          bordered: props.bordered,
           prefixCls: prefixCls,
           onCellHead: onCellHead,
           rowNum: rowNum,
@@ -17250,7 +17256,8 @@ function TableTr(props) {
               className: [prefixCls + '-tr-children-' + (keyName.align || 'left'), keyName.className, objs.className].filter(it => it).join(' ').trim(),
               params: {
                 align: keyName.align,
-                fixed: keyName.fixed
+                fixed: keyName.fixed,
+                bordered: props.bordered
               },
               onClick: evn => onCell(trData, {
                 rowNum,
@@ -17512,6 +17519,7 @@ function esm_Table(props) {
           children: title
         }), columns && columns.length > 0 && /*#__PURE__*/(0,jsx_runtime.jsx)(TheadComponent, {
           onCellHead: onCellHead,
+          bordered: bordered,
           data: header,
           locationWidth: locationWidth,
           updateLocation: updateLocation
@@ -17525,6 +17533,7 @@ function esm_Table(props) {
             render: render,
             ellipsis: ellipsis,
             prefixCls: prefixCls,
+            bordered: bordered,
             onCell: onCell,
             hierarchy: 0,
             isExpandedDom: isExpandedDom,
