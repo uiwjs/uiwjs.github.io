@@ -17074,18 +17074,28 @@ function TableTr(props) {
     setIsOpacity(!!(data != null && data.find(it => it[childrenColumnName])));
     setChildrenIndex((keys == null ? void 0 : keys.findIndex(it => it.key === 'uiw-expanded')) === -1 ? 0 : 1);
   }, [data]);
+  //
+
   var IconDom = (0,external_root_React_commonjs2_react_commonjs_react_amd_react_.useMemo)(() => {
-    return (key, isOpacity, trData, rowNum) => {
+    return function (key, isOpacity, trData, rowNum, layout) {
+      if (layout === void 0) {
+        layout = 'left';
+      }
       var flag = expandIndex.includes(key);
       var Icon = flag ? lib_MinusSquareO/* MinusSquareO */.d : lib_PlusSquareO/* PlusSquareO */.D;
+      var newProps = {};
+      if (layout === 'left') {
+        newProps.float = 'left';
+        newProps.marginLeft = hierarchy * indentSize;
+      } else {
+        newProps.marginLeft = indentSize;
+      }
       return /*#__PURE__*/(0,jsx_runtime.jsx)(TableStyleDomIcon, {
-        style: {
+        style: extends_extends({
           marginRight: 10,
           opacity: isOpacity ? 1 : 0,
-          marginLeft: hierarchy * indentSize,
-          float: 'left',
           marginTop: 3.24
-        },
+        }, newProps),
         onClick: () => {
           onExpand && onExpand(flag, trData, rowNum, hierarchy);
           setExpandIndex(flag ? expandIndex.filter(it => it !== key) : [...expandIndex, key]);
@@ -17167,19 +17177,19 @@ function TableTr(props) {
             if (isExpanded) {
               if (keyName.isExpandedButtonLayout === 'right') {
                 objs.children = /*#__PURE__*/(0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+                  children: [/*#__PURE__*/(0,jsx_runtime.jsx)("span", {
+                    style: {
+                      paddingLeft: hierarchy * indentSize
+                    }
+                  }), objs.children, isExpandedBtn && IconDom(key, isHasChildren || !!(keyName != null && keyName.isExpandedButton), trData, rowNum, keyName.isExpandedButtonLayout)]
+                });
+              } else {
+                objs.children = /*#__PURE__*/(0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
                   children: [isExpandedBtn && IconDom(key, isHasChildren || !!(keyName != null && keyName.isExpandedButton), trData, rowNum), /*#__PURE__*/(0,jsx_runtime.jsx)("span", {
                     style: {
                       paddingLeft: hierarchy * indentSize
                     }
                   }), objs.children]
-                });
-              } else {
-                objs.children = /*#__PURE__*/(0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
-                  children: [/*#__PURE__*/(0,jsx_runtime.jsx)("span", {
-                    style: {
-                      paddingLeft: hierarchy * indentSize
-                    }
-                  }), objs.children, isExpandedBtn && IconDom(key, isHasChildren || !!(keyName != null && keyName.isExpandedButton), trData, rowNum)]
                 });
               }
             }
