@@ -16889,25 +16889,33 @@ class NodeTreeData {
     this.init(dataList);
   }
   /**把根据父级 key 存储对应下所有子集的个数*/
-  init(dataList, parentList) {
+  init(dataList, parentList, level) {
     if (parentList === void 0) {
       parentList = [];
     }
+    if (level === void 0) {
+      level = 0;
+    }
     dataList.forEach(item => {
-      if (Array.isArray(item[this.childName])) {
-        var newParent = parentList.concat([item[this.rowKey]]);
+      var rowKey = item[this.rowKey];
+      var newParent = parentList.concat([rowKey]);
+      if (level === 0) {
+        this.childToParent.set(rowKey, rowKey);
+      }
+      if (parentList.length) {
         var parentKey = newParent[0];
-        this.childToParent.set(item[this.rowKey], parentKey);
         this.parentToChild.set(parentKey, newParent);
-        this.childTreeCount.set(item[this.rowKey], item[this.childName].length);
-        this.init(item[this.childName], newParent);
+      }
+      if (Array.isArray(item[this.childName])) {
+        this.childTreeCount.set(rowKey, item[this.childName].length);
+        this.init(item[this.childName], newParent, level + 1);
       }
     });
   }
   /**获取合并行数*/
   getSum(key, expandedKeys) {
     var _this = this;
-    var parentKey = this.childToParent.get(key) || '';
+    var parentKey = this.childToParent.get(key);
     var childList = this.parentToChild.get(parentKey) || [];
     var summary = {};
     var summaryCount = {};
@@ -16920,7 +16928,7 @@ class NodeTreeData {
             count: 1,
             level: index
           };
-          var count = _this.childTreeCount.get(childKey || '') || 0;
+          var count = _this.childTreeCount.get(childKey) || 0;
           Object.entries(summary).forEach(_ref => {
             var [k, value] = _ref;
             /**计算合并行个数*/
@@ -16949,6 +16957,37 @@ var getRowSpan = (rowSpan, leve, index) => {
     rowSpan: newRowSpan
   };
 };
+class DeepData {
+  constructor(dataList, rowKey, childName) {
+    if (rowKey === void 0) {
+      rowKey = 'id';
+    }
+    if (childName === void 0) {
+      childName = 'children';
+    }
+    this.rowKey = rowKey;
+    this.childName = childName;
+    this.loop(dataList);
+  }
+  /**
+   * 1. 子集对应的父级树
+   * 2. 每一项对应当前子集个数
+   */
+
+  loop(dataList, parentList) {
+    if (parentList === void 0) {
+      parentList = [];
+    }
+    dataList.forEach(item => {
+      var rowKey = item[this.rowKey];
+      var newParentList = parentList.concat([rowKey]);
+      if (Array.isArray(item[this.childName])) {
+        // this.childTreeCount.set(rowKey, item[this.childName].length);
+        // this.init(item[this.childName], newParent, level + 1);
+      }
+    });
+  }
+}
 
 ;// CONCATENATED MODULE: ../react-table/esm/ThComponent.js
 
@@ -17199,6 +17238,9 @@ function TableTr(props) {
                 objs.children = child;
               } else {
                 if (child.props) {
+                  if (itemShow.rowSpan) {
+                    child.props.rowSpan = itemShow.rowSpan;
+                  }
                   objs = extends_extends({}, child.props, {
                     children: objs.children
                   });
@@ -17210,6 +17252,9 @@ function TableTr(props) {
               }
             } else if (itemShow.rowSpan && isAutoMergeRowSpan) {
               objs.rowSpan = itemShow.rowSpan;
+            }
+            if ("" + key === '0') {
+              console.log('key--->', objs);
             }
             var isExpanded = false;
             if ((isOpacity || hierarchy || isHasChildren) && colNum === childrenIndex && isAutoExpanded) {
@@ -17266,7 +17311,7 @@ function TableTr(props) {
               }, evn)
             }));
           })
-        }, key), isExpandedDom(trData, rowNum), expandIndex.includes(key) && /*#__PURE__*/(0,jsx_runtime.jsx)(TableTr, extends_extends({}, props, {
+        }), isExpandedDom(trData, rowNum), expandIndex.includes(key) && /*#__PURE__*/(0,jsx_runtime.jsx)(TableTr, extends_extends({}, props, {
           data: trData[childrenColumnName],
           hierarchy: hierarchy + 1
         }))]
