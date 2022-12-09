@@ -17237,6 +17237,9 @@ function TableTr(props) {
             if (keyName.isExpandedButton) {
               isExpanded = true;
             }
+
+            /**按钮不展示，其他的距离还保留*/
+            var isExpandedBtn = isExpanded;
             if (render[keyName.key]) {
               var child = render[keyName.key](trData[keyName.key], keyName.key, trData, rowNum, colNum, {
                 level: hierarchy,
@@ -17246,7 +17249,7 @@ function TableTr(props) {
                 objs.children = child;
               } else {
                 if (child.isExpanded === false) {
-                  isExpanded = false;
+                  isExpandedBtn = false;
                 }
                 if (child.props) {
                   if (itemShow.rowSpan) {
@@ -17267,7 +17270,7 @@ function TableTr(props) {
             if (isExpanded) {
               if (keyName.isExpandedButtonLayout === 'right') {
                 objs.children = /*#__PURE__*/(0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
-                  children: [IconDom(key, isHasChildren || !!(keyName != null && keyName.isExpandedButton), trData, rowNum), /*#__PURE__*/(0,jsx_runtime.jsx)("span", {
+                  children: [isExpandedBtn && IconDom(key, isHasChildren || !!(keyName != null && keyName.isExpandedButton), trData, rowNum), /*#__PURE__*/(0,jsx_runtime.jsx)("span", {
                     style: {
                       paddingLeft: hierarchy * indentSize
                     }
@@ -17279,7 +17282,7 @@ function TableTr(props) {
                     style: {
                       paddingLeft: hierarchy * indentSize
                     }
-                  }), objs.children, IconDom(key, isHasChildren || !!(keyName != null && keyName.isExpandedButton), trData, rowNum)]
+                  }), objs.children, isExpandedBtn && IconDom(key, isHasChildren || !!(keyName != null && keyName.isExpandedButton), trData, rowNum)]
                 });
               }
             }
