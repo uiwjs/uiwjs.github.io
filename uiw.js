@@ -6675,7 +6675,6 @@ var utils_propsTheme = {
   defaultTheme: extends_extends({}, CardStyleTheme)
 };
 var getHoverOrActive = props => Ce(utils_templateObject || (utils_templateObject = _taggedTemplateLiteralLoose(["\n  box-shadow: 0 1px 6px ", ";\n  border-color: ", ";\n"])), () => getThemeVariantValue(extends_extends({}, props, utils_propsTheme), 'borderColorBaseActive'), () => getThemeVariantValue(extends_extends({}, props, utils_propsTheme), 'borderColorBaseActive'));
-console.log('333', CardStyleTheme, getThemeVariantValue(extends_extends({}, utils_propsTheme), 'borderColorBaseActive'));
 var getNoHover = props => {
   if (!props.noHover) {
     return Ce(utils_templateObject2 || (utils_templateObject2 = _taggedTemplateLiteralLoose(["\n      &:hover {\n        ", "\n      }\n    "])), () => getHoverOrActive(props));
@@ -16872,122 +16871,22 @@ function locationFixed(fixed, location, index) {
     left: (_location$index2 = location[index]) == null ? void 0 : _location$index2.left
   };
 }
-
-// 通过树获取子节点个数
-// 记录顶层父级
-// 通过顶层父级进行获取展开的 key
-// 通过 key 进行获取个数
-class NodeTreeData {
-  constructor(dataList, rowKey, childName) {
-    this.parentToChild = new Map([]);
-    this.childToParent = new Map([]);
-    this.childTreeCount = new Map([]);
-    this.rowKey = 'id';
-    this.childName = 'children';
-    this.rowKey = rowKey || this.rowKey;
-    this.childName = childName || this.childName;
-    this.init(dataList);
+var getMergeRowSpan = function getMergeRowSpan(data, expandedKeys, rowKey, childName) {
+  if (rowKey === void 0) {
+    rowKey = 'id';
   }
-  /**把根据父级 key 存储对应下所有子集的个数*/
-  init(dataList, parentList, level) {
-    if (parentList === void 0) {
-      parentList = [];
-    }
-    if (level === void 0) {
-      level = 0;
-    }
-    dataList.forEach(item => {
-      var rowKey = item[this.rowKey];
-      var newParent = parentList.concat([rowKey]);
-      if (level === 0) {
-        this.childToParent.set(rowKey, rowKey);
-      }
-      if (parentList.length) {
-        var parentKey = newParent[0];
-        this.parentToChild.set(parentKey, newParent);
-      }
-      if (Array.isArray(item[this.childName])) {
-        this.childTreeCount.set(rowKey, item[this.childName].length);
-        this.init(item[this.childName], newParent, level + 1);
-      }
-    });
+  if (childName === void 0) {
+    childName = 'children';
   }
-  /**获取合并行数*/
-  getSum(key, expandedKeys) {
-    var _this = this;
-    var parentKey = this.childToParent.get(key);
-    var childList = this.parentToChild.get(parentKey) || [];
-    var summary = {};
-    var summaryCount = {};
-    var lg = childList.length;
-    for (var index = 0; index < lg; index++) {
-      var childKey = childList[index];
-      if (expandedKeys.includes(childKey)) {
-        (function () {
-          summary[childKey] = {
-            count: 1,
-            level: index
-          };
-          var count = _this.childTreeCount.get(childKey) || 0;
-          Object.entries(summary).forEach(_ref => {
-            var [k, value] = _ref;
-            /**计算合并行个数*/
-            summary[k] = {
-              count: value.count + count,
-              level: value.level
-            };
-            summaryCount[value.level] = value.count + count;
-          });
-        })();
-      } else {
-        break;
-      }
+  var childSum = data.length;
+  data.forEach(item => {
+    if (Array.isArray(item[childName]) && expandedKeys.includes(item[rowKey])) {
+      var sum = getMergeRowSpan(item[childName], expandedKeys);
+      childSum = childSum + sum;
     }
-    return {
-      summary,
-      summaryCount
-    };
-  }
-}
-var getRowSpan = (rowSpan, leve, index) => {
-  var show = leve < index + 1;
-  var newRowSpan = leve === index ? rowSpan : undefined;
-  return {
-    show,
-    rowSpan: newRowSpan
-  };
+  });
+  return childSum;
 };
-class DeepData {
-  constructor(dataList, rowKey, childName) {
-    if (rowKey === void 0) {
-      rowKey = 'id';
-    }
-    if (childName === void 0) {
-      childName = 'children';
-    }
-    this.rowKey = rowKey;
-    this.childName = childName;
-    this.loop(dataList);
-  }
-  /**
-   * 1. 子集对应的父级树
-   * 2. 每一项对应当前子集个数
-   */
-
-  loop(dataList, parentList) {
-    if (parentList === void 0) {
-      parentList = [];
-    }
-    dataList.forEach(item => {
-      var rowKey = item[this.rowKey];
-      var newParentList = parentList.concat([rowKey]);
-      if (Array.isArray(item[this.childName])) {
-        // this.childTreeCount.set(rowKey, item[this.childName].length);
-        // this.init(item[this.childName], newParent, level + 1);
-      }
-    });
-  }
-}
 
 ;// CONCATENATED MODULE: ../react-table/esm/ThComponent.js
 
@@ -17164,7 +17063,6 @@ function TableTr(props) {
     locationWidth,
     header,
     isAutoExpanded = true,
-    treeData,
     isAutoMergeRowSpan,
     expandIndex,
     setExpandIndex,
@@ -17210,17 +17108,16 @@ function TableTr(props) {
   return /*#__PURE__*/(0,jsx_runtime.jsx)((external_root_React_commonjs2_react_commonjs_react_amd_react_default()).Fragment, {
     children: data.map((trData, rowNum) => {
       var key = rowKey ? trData[rowKey] : rowNum;
-      var summary = treeData == null ? void 0 : treeData.getSum(key, expandIndex || []);
+      var mergeSpan = getMergeRowSpan([trData], expandIndex, rowKey, childrenColumnName);
       return /*#__PURE__*/(0,jsx_runtime.jsxs)((external_root_React_commonjs2_react_commonjs_react_amd_react_default()).Fragment, {
         children: [/*#__PURE__*/(0,jsx_runtime.jsx)("tr", {
           children: keys.map((keyName, colNum) => {
             var isHasChildren = Array.isArray(trData[childrenColumnName]);
             var itemShow = {};
-            if (isAutoMergeRowSpan && summary) {
+            if (isAutoMergeRowSpan) {
               var newLaval = Reflect.get(keyName, 'level');
-              var summaryCount = summary.summaryCount[newLaval];
               if (hierarchy === newLaval && isHasChildren) {
-                itemShow.rowSpan = summaryCount;
+                itemShow.rowSpan = mergeSpan;
               } else if (hierarchy && Reflect.has(keyName, 'level') && hierarchy > newLaval) {
                 return /*#__PURE__*/(0,jsx_runtime.jsx)(external_root_React_commonjs2_react_commonjs_react_amd_react_.Fragment, {}, colNum);
               }
@@ -17552,7 +17449,6 @@ function esm_Table(props) {
     render,
     ellipsis
   } = getLevelItems(self.selfColumns);
-  var treeData = (0,external_root_React_commonjs2_react_commonjs_react_amd_react_.useMemo)(() => new NodeTreeData(data, rowKey, (expandable == null ? void 0 : expandable.childrenColumnName) || 'children'), [data, rowKey, expandable == null ? void 0 : expandable.childrenColumnName, isAutoMergeRowSpan]);
   return /*#__PURE__*/(0,jsx_runtime.jsxs)((external_root_React_commonjs2_react_commonjs_react_amd_react_default()).Fragment, {
     children: [/*#__PURE__*/(0,jsx_runtime.jsx)(TableStyleWrap, extends_extends({
       className: cls
@@ -17591,7 +17487,6 @@ function esm_Table(props) {
             indentSize: typeof (expandable == null ? void 0 : expandable.indentSize) === 'number' ? expandable == null ? void 0 : expandable.indentSize : 16,
             childrenColumnName: (expandable == null ? void 0 : expandable.childrenColumnName) || 'children',
             isAutoExpanded: expandable == null ? void 0 : expandable.isAutoExpanded,
-            treeData: treeData,
             isAutoMergeRowSpan: isAutoMergeRowSpan,
             expandIndex: expandIndex,
             setExpandIndex: setExpandIndex
