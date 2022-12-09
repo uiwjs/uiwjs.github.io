@@ -17228,15 +17228,26 @@ function TableTr(props) {
             var objs = {
               children: trData[keyName.key]
             };
+            var isExpanded = false;
+            if ((isOpacity || hierarchy || isHasChildren) && colNum === childrenIndex && isAutoExpanded) {
+              isExpanded = true;
+            } else if ((isOpacity || hierarchy || isHasChildren) && !isAutoExpanded && keyName.isExpanded) {
+              isExpanded = true;
+            }
+            if (keyName.isExpandedButton) {
+              isExpanded = true;
+            }
             if (render[keyName.key]) {
               var child = render[keyName.key](trData[keyName.key], keyName.key, trData, rowNum, colNum, {
                 level: hierarchy,
-                rowSpan: itemShow.rowSpan,
-                summary
+                rowSpan: itemShow.rowSpan
               });
               if ( /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default().isValidElement(child)) {
                 objs.children = child;
               } else {
+                if (child.isExpanded === false) {
+                  isExpanded = false;
+                }
                 if (child.props) {
                   if (itemShow.rowSpan) {
                     child.props.rowSpan = itemShow.rowSpan;
@@ -17252,20 +17263,6 @@ function TableTr(props) {
               }
             } else if (itemShow.rowSpan && isAutoMergeRowSpan) {
               objs.rowSpan = itemShow.rowSpan;
-            }
-            var isExpanded = false;
-            if ((isOpacity || hierarchy || isHasChildren) && colNum === childrenIndex && isAutoExpanded) {
-              isExpanded = true;
-            } else if ((isOpacity || hierarchy || isHasChildren) && !isAutoExpanded && keyName.isExpanded) {
-              isExpanded = true;
-            }
-            if (keyName.isExpandedButton) {
-              isExpanded = true;
-            }
-            if (Reflect.has(objs, 'isExpanded')) {
-              isExpanded = Reflect.get(objs, 'isExpanded');
-              // @ts-ignore
-              delete objs['isExpanded'];
             }
             if (isExpanded) {
               if (keyName.isExpandedButtonLayout === 'right') {
