@@ -17253,16 +17253,21 @@ function TableTr(props) {
             } else if (itemShow.rowSpan && isAutoMergeRowSpan) {
               objs.rowSpan = itemShow.rowSpan;
             }
-            if ("" + key === '0') {
-              console.log('key--->', objs);
-            }
             var isExpanded = false;
             if ((isOpacity || hierarchy || isHasChildren) && colNum === childrenIndex && isAutoExpanded) {
               isExpanded = true;
             } else if ((isOpacity || hierarchy || isHasChildren) && !isAutoExpanded && keyName.isExpanded) {
               isExpanded = true;
             }
-            if (isExpanded || keyName.isExpandedButton) {
+            if (keyName.isExpandedButton) {
+              isExpanded = true;
+            }
+            if (Reflect.has(objs, 'isExpanded')) {
+              isExpanded = Reflect.get(objs, 'isExpanded');
+              // @ts-ignore
+              delete objs['isExpanded'];
+            }
+            if (isExpanded) {
               if (keyName.isExpandedButtonLayout === 'right') {
                 objs.children = /*#__PURE__*/(0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
                   children: [IconDom(key, isHasChildren || !!(keyName != null && keyName.isExpandedButton), trData, rowNum), /*#__PURE__*/(0,jsx_runtime.jsx)("span", {
