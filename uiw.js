@@ -17427,6 +17427,7 @@ function esm_Table(props) {
   var [expandIndex, setExpandIndex] = (0,external_root_React_commonjs2_react_commonjs_react_amd_react_.useState)([]);
   var [locationWidth, setLocationWidth] = (0,external_root_React_commonjs2_react_commonjs_react_amd_react_.useState)({});
   var finalLocationWidth = (0,external_root_React_commonjs2_react_commonjs_react_amd_react_.useRef)({});
+  var tableRef = (0,external_root_React_commonjs2_react_commonjs_react_amd_react_.useRef)(null);
   var updateLocation = function updateLocation(params, index, key, colSpan) {
     if (colSpan === void 0) {
       colSpan = 0;
@@ -17445,7 +17446,6 @@ function esm_Table(props) {
     var initialValue = 0,
       headerIndex = 0,
       deepParams = [];
-    console.log('initialValue0000', initialValue);
     params.forEach((_, index) => {
       var i = "" + fistIndex + headerIndex;
       if (typeof params[index] === 'number') {
@@ -17477,7 +17477,6 @@ function esm_Table(props) {
       }
       headerIndex -= 1;
     }
-    console.log('initialValue', initialValue);
     if (deepParams.filter(it => typeof it !== 'number').length) deepClumnsLocation(deepParams, fistIndex + 1);
   };
   var computed = () => {
@@ -17613,8 +17612,35 @@ function esm_Table(props) {
     render,
     ellipsis
   } = getLevelItems(self.selfColumns);
+
+  /**
+   * 处理 column width
+   */
+  var headData = (0,external_root_React_commonjs2_react_commonjs_react_amd_react_.useMemo)(() => {
+    var newData = header;
+    if (tableRef.current && header[0].length > 0) {
+      var arr = header[0].map(item => item.width || false);
+      if (!arr.includes(false)) {
+        // 如果每列都设置了宽度，则判断设置的宽度小于容器宽度，则删除列的宽度，让table自动计算
+        var w = tableRef.current.scrollWidth;
+        var allNum = header[0].reduce((pre, cur) => {
+          return pre + (cur.width || 0);
+        }, 0);
+        if (allNum < w - 1) {
+          newData[0] = header[0].map(item => {
+            if (!item.fixed) {
+              delete item.width;
+            }
+            return item;
+          });
+        }
+      }
+    }
+    return newData;
+  }, [header, tableRef]);
   return /*#__PURE__*/(0,jsx_runtime.jsxs)((external_root_React_commonjs2_react_commonjs_react_amd_react_default()).Fragment, {
     children: [/*#__PURE__*/(0,jsx_runtime.jsx)(TableStyleWrap, extends_extends({
+      ref: tableRef,
       className: cls
     }, other, {
       style: extends_extends({}, other.style, style.div),
@@ -17630,7 +17656,7 @@ function esm_Table(props) {
         }), columns && columns.length > 0 && /*#__PURE__*/(0,jsx_runtime.jsx)(TheadComponent, {
           onCellHead: onCellHead,
           bordered: bordered,
-          data: header,
+          data: headData,
           locationWidth: locationWidth,
           updateLocation: updateLocation
         }), data && data.length > 0 && /*#__PURE__*/(0,jsx_runtime.jsx)("tbody", {
